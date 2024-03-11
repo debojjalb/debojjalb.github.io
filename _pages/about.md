@@ -15,7 +15,7 @@ redirect_from:
         color: #000;
     }
     a {
-        color: #00008B; /* Dark blue color for links */
+        color: #014552; /* Dark blue color for links */
     }
     h1, h2, h3, h4, h5, h6 {
         margin-top: 24px;
@@ -31,7 +31,18 @@ My roots trace back to the picturesque city of Kalyani, nestled near Kolkata. I 
 
 [Download CV](https://drive.google.com/file/d/1fXmIsmBN7k4oHH5HYkSOIQhcDQGhsekE/view?usp=sharing)
 
-### Research Interests
+## Education
+
+**Master of Science in Engineering (M.S.E)** - May, 2024 (Expected)  
+*Major*: Transportation Engineering, [UT Austin](https://www.utexas.edu/)  
+*Advisor*: [Prof. Stephen Boyles](https://sboyles.github.io/)
+
+**Bachelor of Science (Research)** - May, 2023  
+*Major*: Earth and Environmental Science; *Minor*: Mathematics, [IISc, Bengaluru](https://iisc.ac.in/)  
+*Thesis*: Energy Efficient and Safe Routing for Last-mile Logistics  
+*Advisor*: [Prof. Tarun Rambha](http://civil.iisc.ernet.in/%7Etarunr/)
+
+## Research Interests
 
 My primary area of interest lies in sustainable operations, especially in transportation network analysis and the optimization of routes with a focus on their environmental impacts. I have worked extensively on reverse logistics network design, variants of the Travelling Salesman Problem, and traffic routing. Recently, I developed a keen interest in congestion pricing and tolling. In my research, I consistently employ metaheuristics and mathematical programming as my go-to solution techniques.
 
@@ -43,22 +54,12 @@ My primary area of interest lies in sustainable operations, especially in transp
 
 [Learn more about my research](Research.html)
 
-### Achievements
+## Achievements
 
 I am an [NTSE National Scholar](https://ncert.nic.in/national-talent-examination.php) recognized by MHRD, Govt. of India & [KVPY Research Fellow](http://www.kvpy.iisc.ernet.in/main/about.htm). I was awarded [Jagadish Bose National Science Talent Search Fellowship](https://jbnsts.ac.in) by Padma Shree [Prof. Sanghamitra Bandyopadhyay](https://www.isical.ac.in/%7Esanghami/) (Currently director of ISI, Kolkata). Further, I received the [Dhirubhai Ambani Fellowship](https://das.reliancefoundation.org) and [The Telegraph School Award](https://www.youtube.com/watch?v=gjFi4Li04hE). I was awarded the [MITACS Globalink Research Internship Award](https://www.mitacs.ca/en/programs/globalink/globalink-research-internship) to carry out 12 weeks of research in Canada. Most recently, I was granted the [Graduate School Fellowship](https://gradschool.utexas.edu/finances/fellowships) from the University of Texas at Austin.
 
-### Education
 
-**Master of Science in Engineering (M.S.E)** - May, 2024 (Expected)  
-*Major*: Transportation Engineering, [UT Austin](https://www.utexas.edu/)  
-*Advisor*: [Prof. Stephen Boyles](https://sboyles.github.io/)
-
-**Bachelor of Science (Research)** - May, 2023  
-*Major*: Earth and Environmental Science; *Minor*: Mathematics, [IISc, Bengaluru](https://iisc.ac.in/)  
-*Thesis*: Energy Efficient and Safe Routing for Last-mile Logistics  
-*Advisor*: [Prof. Tarun Rambha](http://civil.iisc.ernet.in/%7Etarunr/)
-
-### Non Academic Interests
+## Non Academic Interests
 
 I am currently learning to play the guitar. My leisure moments are often spent engrossed in chess or exploring new content for my budding YouTube channel. I'm fervently passionate about the startup ecosystem and love hearing stories and pitches from aspiring entrepreneurs. I was one of the founding members of [coachio.in](https://play.google.com/store/apps/details?id=co.sansa.uyolx). Oh, and yes! planning or going on a trip? Always count me in!
 

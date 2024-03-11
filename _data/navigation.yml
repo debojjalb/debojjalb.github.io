@@ -1,8 +1,12 @@
 # main links links
 main:
-  # - title: "CV"
-  #   # url: /cv/
-  #   url: /files/Resume.pdf
+  - title: "CV"
+    # url: /cv/
+    url: /files/Resume.pdf
+
+  - title: "Blog"
+    # url: /publications/
+    url: https://debojjal-bagchi.medium.com
 
   # - title: "Portfolio"
   #   url: /portfolio/
