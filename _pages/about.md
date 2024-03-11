@@ -8,6 +8,23 @@ redirect_from:
   - /about.html
 ---
 
+<style>
+    body {
+        font-family: "Times New Roman", Times, serif;
+        font-size: 14px;
+        color: #000;
+    }
+    a {
+        color: #00008B; /* Dark blue color for links */
+    }
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 24px;
+        margin-bottom: 16px;
+        font-weight: 600;
+        line-height: 1.25;
+    }
+</style>
+
 Hi! I'm currently a graduate student specializing in [transportation engineering](https://www.caee.utexas.edu/research/research-areas/transportation-engineering) at the [Department of Civil, Architectural, and Environmental Engineering](https://www.caee.utexas.edu/), [University of Texas at Austin](https://www.utexas.edu/). My academic journey began with a [BS (research)](https://ug.iisc.ac.in/) degree from the [Indian Institute of Science (IISc), Bangalore](https://iisc.ac.in/), where I majored in Earth & Environmental Science along with a minor in Mathematics. During my time there, I was associated with the [Transportation Networks Lab](http://civil.iisc.ernet.in/%7Etarunr/group.html) at the [Center for Infrastructure, Sustainable Transportation & Urban Planning (CiSTUP)](https://cistup.iisc.ac.in/). Over the past two years, I have delved into sustainable logistics and transportation.
 
 My roots trace back to the picturesque city of Kalyani, nestled near Kolkata. I then moved to Bangalore, often referred to as the Garden City of India, for my undergraduate studies. Currently, I call the vibrant and musically-rich city of Austin my home. Thank you for visiting. I invite you to explore the site and learn more about my research. Should you wish to discuss or simply chat, please don't hesitate to reach out via [email](mailto:debojjalb@utexas.edu).
