@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "👋🏼 Hello there, I'm Boris!"
+title: "👋🏼 Hello there, I'm Deb!"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -10,10 +10,10 @@ redirect_from:
 
 
 
-![Illustration of combining vision and language modalities](/images/image_to_text_vis.png){: .align-right width="300px"}
-👨🏻‍💻 I'm a final year graduate student at the TU Berlin.
+<!-- ![Illustration of combining vision and language modalities](/images/image_to_text_vis.png){: .align-right width="300px"} -->
+👨🏻‍💻 I'm a first year graduate student at the UT Austin.
 
-🔬 My research interests are in bridging vision and language modalities and Self-Supervised Learning!
+<!-- 🔬 My research interests are in bridging vision and language modalities and Self-Supervised Learning!
 
 📚 I'm currently working towards my Master's Thesis in the field of Vision-Language-Modelling.
 
@@ -39,7 +39,7 @@ Additionally, I have professional experience working as an **Applied Machine Lea
 There I worked on dynamic traffic flow forecasting using Graph Neural Networks.
 
 ## 📚 Teaching and Community Contributions
-To further contribute to the Machine Learning community, I have a [YouTube](https://www.youtube.com/@borismeinardus) and [Medium](https://medium.com/@boris.meinardus) channel where I publish educational Machine Learning content.
+To further contribute to the Machine Learning community, I have a [YouTube](https://www.youtube.com/@borismeinardus) and [Medium](https://medium.com/@boris.meinardus) channel where I publish educational Machine Learning content. -->
 
 
 
