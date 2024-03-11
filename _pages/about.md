@@ -31,7 +31,7 @@ My roots trace back to the picturesque city of Kalyani, nestled near Kolkata. I 
 
 ## Education
 
-**Master of Science in Engineering (M.S.E)** - May, 2024 (Expected)  
+**Master of Science in Engineering (M.S.E)** - May, 2025 (Expected)  
 *Major*: Transportation Engineering, [UT Austin](https://www.utexas.edu/)  
 *Advisor*: [Prof. Stephen Boyles](https://sboyles.github.io/)
 
