@@ -29,8 +29,6 @@ Hi! I'm currently a graduate student specializing in [transportation engineering
 
 My roots trace back to the picturesque city of Kalyani, nestled near Kolkata. I then moved to Bangalore, often referred to as the Garden City of India, for my undergraduate studies. Currently, I call the vibrant and musically-rich city of Austin my home. Thank you for visiting. I invite you to explore the site and learn more about my research. Should you wish to discuss or simply chat, please don't hesitate to reach out via [email](mailto:debojjalb@utexas.edu).
 
-[Download CV](https://drive.google.com/file/d/1fXmIsmBN7k4oHH5HYkSOIQhcDQGhsekE/view?usp=sharing)
-
 ## Education
 
 **Master of Science in Engineering (M.S.E)** - May, 2024 (Expected)  
@@ -52,7 +50,7 @@ My primary area of interest lies in sustainable operations, especially in transp
 
 **Allied Focus**: Convex Optimization, Metaheuristics, Machine Learning, Algorithmic Game Theory, Mathematical Programming
 
-[Learn more about my research](Research.html)
+<!-- [Learn more about my research](Research.html) -->
 
 ## Achievements
 
