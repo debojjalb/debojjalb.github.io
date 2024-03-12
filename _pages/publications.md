@@ -23,10 +23,10 @@ redirect_from:
         line-height: 1.25;
     }
     ul, ol {
-        margin-bottom: 10px; /* Adjust the bottom margin of lists */
+        margin-bottom: 6px; /* Adjust the bottom margin of lists */
     }
     li {
-        margin-bottom: 5px; /* Adjust the bottom margin of list items */
+        margin-bottom: 3px; /* Adjust the bottom margin of list items */
     }
 </style>
 
