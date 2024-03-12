@@ -27,12 +27,14 @@ redirect_from:
 
 Hi! I'm currently a graduate student specializing in [transportation engineering](https://www.caee.utexas.edu/research/research-areas/transportation-engineering) at the [Department of Civil, Architectural, and Environmental Engineering](https://www.caee.utexas.edu/), [University of Texas at Austin](https://www.utexas.edu/). My academic journey began with a [BS (research)](https://ug.iisc.ac.in/) degree from the [Indian Institute of Science (IISc), Bangalore](https://iisc.ac.in/), where I majored in Earth & Environmental Science along with a minor in Mathematics. During my time there, I was associated with the [Transportation Networks Lab](http://civil.iisc.ernet.in/%7Etarunr/group.html) at the [Center for Infrastructure, Sustainable Transportation & Urban Planning (CiSTUP)](https://cistup.iisc.ac.in/). Over the past two years, I have delved into sustainable logistics and transportation.
 
-My roots trace back to the picturesque city of Kalyani, nestled near Kolkata. I then moved to Bangalore, often referred to as the Garden City of India, for my undergraduate studies. Currently, I call the vibrant and musically-rich city of Austin my home. Thank you for visiting. I invite you to explore the site and learn more about my research. Should you wish to discuss or simply chat, please don't hesitate to reach out via [email](mailto:debojjalb@utexas.edu).
+My roots trace back to the picturesque city of Kalyani, nestled near Kolkata. I then moved to Bangalore, often referred to as the Garden City of India, for my undergraduate studies. Currently, I call the vibrant and musically-rich city of Austin my home. 
+
+Thank you for visiting my site. I invite you to explore the site and learn more about my research. Should you wish to discuss my research or simply chat, please don't hesitate to reach out via [email](mailto:debojjalb@utexas.edu).
 
 ## Education
 
 **Master of Science in Engineering (M.S.E)** - May, 2025 (Expected)  
-*Major*: Transportation Engineering, [UT Austin](https://www.utexas.edu/)  
+*Major*: Transportation Engineering, *Minor*: Industrial Engineering and Operations Research, [UT Austin](https://www.utexas.edu/)  
 *Advisor*: [Prof. Stephen Boyles](https://sboyles.github.io/)
 
 **Bachelor of Science (Research)** - May, 2023  
@@ -42,13 +44,11 @@ My roots trace back to the picturesque city of Kalyani, nestled near Kolkata. I 
 
 ## Research Interests
 
-My primary area of interest lies in sustainable operations, especially in transportation network analysis and the optimization of routes with a focus on their environmental impacts. I have worked extensively on reverse logistics network design, variants of the Travelling Salesman Problem, and traffic routing. Recently, I developed a keen interest in congestion pricing and tolling. In my research, I consistently employ metaheuristics and mathematical programming as my go-to solution techniques.
+My primary area of interest lies in transportation network analysis, traffic assignment and the optimization of routes with a focus on their environmental impacts. I have worked extensively on reverse logistics network design, variants of the Travelling Salesman Problem, and traffic routing. Recently, I developed a keen interest in congestion pricing and tolling. In my research, I consistently employ metaheuristics and mathematical programming as my go-to solution techniques.
 
 **Primary Focus**: Transportation Network Optimisation, Sustainable Transportation, Congestion Pricing, Traffic Equilibrium
 
-**Secondary Focus**: Life Cycle Analysis, Environment Management
-
-**Allied Focus**: Convex Optimization, Metaheuristics, Machine Learning, Algorithmic Game Theory, Mathematical Programming
+**Allied Focus**: Convex Optimization, Discrete Event Simulation, Metaheuristics, Machine Learning, Algorithmic Game Theory, Mathematical Programming
 
 <!-- [Learn more about my research](Research.html) -->
 
