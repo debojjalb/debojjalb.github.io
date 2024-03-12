@@ -1,21 +1,27 @@
 # main links links
 main:
+  - title: "Publications"
+    url: /publications/
+  
+  - title: "Research"
+    url: /research/
+
   - title: "CV"
     # url: /cv/
     url: /files/Resume.pdf
 
   - title: "Blog"
     # url: /publications/
-    url: https://debojjal-bagchi.medium.com
+    url: https://debojjal-bagchi.medium.com/
+  
+  
 
-  - title: "Publications"
-    url: /publications/
+  
 
   # - title: "Portfolio"
   #   url: /portfolio/
   
-  - title: "Research"
-    url: /research/
+  
   #   # url: https://scholar.google.es/citations?user=xxxxxxxx=en
         
   # - title: "Blog Posts"
