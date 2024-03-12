@@ -8,6 +8,9 @@ main:
     # url: /publications/
     url: https://debojjal-bagchi.medium.com
 
+  - title: "Research"
+    url: /research/
+
   # - title: "Portfolio"
   #   url: /portfolio/
   
