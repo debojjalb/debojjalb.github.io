@@ -13,6 +13,9 @@ main:
   - title: "Blog"
     # url: /publications/
     url: https://debojjal-bagchi.medium.com/
+
+  - title: "Gallery"
+    url: /gallery/
   
   
 
