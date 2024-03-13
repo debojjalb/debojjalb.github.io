@@ -89,7 +89,7 @@ redirect_from:
 <div class="image-group three-images">
     <div>
         <img src="/images/MITACS.png" alt="Image 4.1">
-        <p><strong>Caption:</strong> My first day at UQTR, I would be crrying out 12 weeks of research into Reverse Logistics as a part of my MITACS Globalink Internship Award</p>
+        <p><strong>Caption:</strong> My first day at UQTR, I would be carrying out 12 weeks of research into Reverse Logistics as a part of my MITACS Globalink Internship Award</p>
     </div>
     <div>
         <img src="/images/MITACS_Mentor.jpg" alt="Image 4.2">
