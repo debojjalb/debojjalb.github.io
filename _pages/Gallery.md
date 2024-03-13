@@ -25,105 +25,87 @@ redirect_from:
 </style>
 
 
-## Image 1
+## I joined UT Austin as a Grad Student
+![Image 1.1](/images/UT2.jpg)
+**Caption:** In front of the UT Tower
 
-![Image 1.1](/images/UT.jpg)
-**Caption:** A walk through the autumn woods
-**Date:** March 14, 2024
-
-![Image 1.2](/images/UT2.jpg)
-**Caption:** A walk through the autumn woods
-**Date:** March 14, 2024
+![Image 1.2](/images/UT.jpg)
+**Caption:** With few of my friends from India at Austin
 
 ---
 
-## Image 2
+## IISc Convocation
 ![Image 2.1](/images/Grad.png)
-**Caption:** The majestic mountains at sunrise
-**Date:** March 12, 2024
+**Caption:** I graduated top of the class (in major) from IISc, Bangalore. In pic: Receiving Gold Medal from Mr. Amitabh Chaudhry, CEO of Axis Bank
 
 ![Image 2.2](/images/IISc.jpg)
-**Caption:** A walk through the autumn woods
-**Date:** March 14, 2024
+**Caption:** Close friends from IISc '23 batch.
 
 ![Image 2.3](/images/IIScGrad.jpg)
-**Caption:** A walk through the autumn woods
-**Date:** March 14, 2024
+**Caption:** With my parents
 
 ---
 
-## Image 3
+## INFORMS Anual Meeting 2023
 ![Image 3.1](/images/INFORMS.jpeg)
-**Caption:** A walk through the autumn woods
-**Date:** March 14, 2024
+**Caption:** I presented the work I did as a part of my Bachelor's thesis at the INFORMS Annual Meeting, Indianapolis
 
 ![Image 3.2](/images/Chicago.jpg)
-**Caption:** A walk through the autumn woods
-**Date:** March 14, 2024
+**Caption:** I took a detour to visit the adjacent city vibrajnt Chicago. 
 
 ---
 
-## Image 4
+## MITACS Globalink Internship 
 ![Image 4.1](/images/MITACS.png)
-**Caption:** The calm before the storm
-**Date:** March 13, 2024
+**Caption:** My first day at UQTR, I would be acrrying out 12 weeks of research into Reverse Logistics as a part of my MITACS Globalink Internship  Award
 
 ![Image 4.2](/images/MITACS_Mentor.jpg)
-**Caption:** A walk through the autumn woods
-**Date:** March 14, 2024
+**Caption:** WIth my fellow MITACS Intern (left) and mentor (right)
 
 ![Image 4.3](/images/MITACS4.jpg)
-**Caption:** A walk through the autumn woods
-**Date:** March 14, 2024
+**Caption:** My home for these 12 weeks would be the beautifil city of Trois-Rivières
 
 
 ---
 
-## Image 5
+## Noagara Falls
 ![Image 5.1](/images/Niagara.jpg)
-**Caption:** A walk through the autumn woods
-**Date:** March 14, 2024
+**Caption:** Niagara Falls at Night. The entire falls gets lit up at night. A visit post midnight fills your heart with peace and tranquility amidst Niagara’s fury.
 
 ![Image 5.2](/images/Niagara2.jpg)
-**Caption:** A walk through the autumn woods
-**Date:** March 14, 2024
+**Caption:** Boat ride into (?) the Niagara Falls ((world's fastest-moving waterfall))
 
 ![Image 5.3](/images/Niagara3.jpg)
-**Caption:** A walk through the autumn woods
-**Date:** March 14, 2024
+**Caption:** Located 4km away from niagara falls, the white water walk is one of the wildest gorge. The way to the gorge is by going 230ft underground followed by a 240ft long tunnel. The opposite side of the gorge is New York State, USA (our background in the images!). The border passes along the gorge.
 
 ---
 
-## Image 6
+## I viisted Canada as a part of MITACS Globalink Internship
 ![Image 6.1](/images/Toronto.jpg)
-**Caption:** A walk through the autumn woods
-**Date:** March 14, 2024
+**Caption:** View of Downtown Toronto from CN Tower. CN Tower, Toronto
+is tallest free standing structure in western hemisphere and 3rd highest tower in the world. On the topmost level (skypod), you can feel the tower moving due to wind by almost half a metre!
 
 ![Image 6.2](/images/Ottawa.jpg)
-**Caption:** A walk through the autumn woods
-**Date:** March 14, 2024
+**Caption:** Ottawa, Capital city of Canada. In pic: Parliament Hill and Peace Tower. The (Centennial) Flame was first lit as the climax of the centennial celebrations of January 1, 1967 and has become a permanent monument being lit 24x7!
 
 ![Image 6.3](/images/Montreal.jpg)
-**Caption:** A walk through the autumn woods
-**Date:** March 14, 2024
+**Caption:** L'International des Feux Loto-Québec (Fireworks Festival), Montreal
 
 ![Image 6.4](/images/Quebec.jpg)
-**Caption:** A walk through the autumn woods
-**Date:** March 14, 2024
+**Caption:** A walk through downtown, Quenec City. In pic: Fairmont Le Château Frontenac and streets of Old Quebec, Quebec City
+Streets of Old Quebec, Oh you beauty! The roads, the architecture, the ambience, the heritage, the food, there’s nothing you can’t admire about this city.
 
 ---
 
-## Image 7
-![Image 7](/mages/TELEGRAPH.jpeg)
-**Caption:** A walk through the autumn woods
-**Date:** March 14, 2024
+## The Telegraph School Award
+![Image 7](/images/TELEGRAPH.jpeg)
+**Caption:** My father receiving Telegraph School Award from Barry O’Brien on my behalf.
 
 ---
 
-## Image 8
+## JBNSTS Award Ceremony
 ![Image 8](/images/JBNSTS.jpeg)
-**Caption:** A walk through the autumn woods
-**Date:** March 14, 2024
+**Caption:** Receivng the Jagdish Bose National Science Talent Search Award from Padma Shree [Prof. Sanghamitra Bandyopadhyay](https://www.isical.ac.in/%7Esanghami/) (Director of ISI, Kolkata)
 
 
 ---
