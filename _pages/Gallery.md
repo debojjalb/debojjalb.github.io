@@ -31,10 +31,16 @@ redirect_from:
         margin-right: 20px;
         margin-bottom: 20px;
     }
+    .image-group.two-images img {
+        max-width: 48%;
+    }
+    .image-group.three-images img {
+        max-width: 32%;
+    }
 </style>
 
 ## I joined UT Austin as a Grad Student
-<div class="image-group">
+<div class="image-group two-images">
     <div>
         <img src="/images/UT2.jpg" alt="Image 1.1">
         <p><strong>Caption:</strong> In front of the UT Tower</p>
@@ -48,7 +54,7 @@ redirect_from:
 ---
 
 ## IISc Convocation
-<div class="image-group">
+<div class="image-group three-images">
     <div>
         <img src="/images/Grad.png" alt="Image 2.1">
         <p><strong>Caption:</strong> I graduated top of the class (in major) from IISc, Bangalore. In pic: Receiving Gold Medal from Mr. Amitabh Chaudhry, CEO of Axis Bank</p>
@@ -66,7 +72,7 @@ redirect_from:
 ---
 
 ## INFORMS Anual Meeting 2023
-<div class="image-group">
+<div class="image-group two-images">
     <div>
         <img src="/images/INFORMS.jpeg" alt="Image 3.1">
         <p><strong>Caption:</strong> I presented the work I did as a part of my Bachelor's thesis at the INFORMS Annual Meeting, Indianapolis</p>
@@ -80,7 +86,7 @@ redirect_from:
 ---
 
 ## MITACS Globalink Internship
-<div class="image-group">
+<div class="image-group three-images">
     <div>
         <img src="/images/MITACS.png" alt="Image 4.1">
         <p><strong>Caption:</strong> My first day at UQTR, I would be acrrying out 12 weeks of research into Reverse Logistics as a part of my MITACS Globalink Internship  Award</p>
@@ -98,7 +104,7 @@ redirect_from:
 ---
 
 ## Noagara Falls
-<div class="image-group">
+<div class="image-group three-images">
     <div>
         <img src="/images/Niagara.jpg" alt="Image 5.1">
         <p><strong>Caption:</strong> Niagara Falls at Night. The entire falls gets lit up at night. A visit post midnight fills your heart with peace and tranquility amidst Niagara’s fury.</p>
@@ -116,7 +122,7 @@ redirect_from:
 ---
 
 ## I viisted Canada as a part of MITACS Globalink Internship
-<div class="image-group">
+<div class="image-group four-images">
     <div>
         <img src="/images/Toronto.jpg" alt="Image 6.1">
         <p><strong>Caption:</strong> View of Downtown Toronto from CN Tower. CN Tower, Toronto is tallest free standing structure in western hemisphere and 3rd highest tower in the world. On the topmost level (skypod), you can feel the tower moving due to wind by almost half a metre!</p>
@@ -138,7 +144,7 @@ redirect_from:
 ---
 
 ## The Telegraph School Award
-<div class="image-group">
+<div class="image-group one-image">
     <div>
         <img src="/images/TELEGRAPH.jpeg" alt="Image 7">
         <p><strong>Caption:</strong> My father receiving Telegraph School Award from Barry O’Brien on my behalf.</p>
@@ -148,7 +154,7 @@ redirect_from:
 ---
 
 ## JBNSTS Award Ceremony
-<div class="image-group">
+<div class="image-group one-image">
     <div>
         <img src="/images/JBNSTS.jpeg" alt="Image 8">
         <p><strong>Caption:</strong> Receivng the Jagdish Bose National Science Talent Search Award from Padma Shree [Prof. Sanghamitra Bandyopadhyay](https://www.isical.ac.in/%7Esanghami/) (Director of ISI, Kolkata)</p>
