@@ -39,7 +39,7 @@ redirect_from:
     }
 </style>
 
-## I joined UT Austin as a Grad Student
+# I joined UT Austin as a Grad Student
 <div class="image-group two-images">
     <div>
         <img src="/images/UT2.jpg" alt="Image 1.1">
@@ -53,7 +53,7 @@ redirect_from:
 
 ---
 
-## IISc Convocation
+# IISc Convocation
 <div class="image-group three-images">
     <div>
         <img src="/images/Grad.png" alt="Image 2.1">
@@ -71,7 +71,7 @@ redirect_from:
 
 ---
 
-## INFORMS Annual Meeting 2023
+# INFORMS Annual Meeting 2023
 <div class="image-group two-images">
     <div>
         <img src="/images/INFORMS.jpeg" alt="Image 3.1">
@@ -85,7 +85,7 @@ redirect_from:
 
 ---
 
-## MITACS Globalink Internship 2023
+# MITACS Globalink Internship 2023
 <div class="image-group three-images">
     <div>
         <img src="/images/MITACS.png" alt="Image 4.1">
@@ -103,7 +103,7 @@ redirect_from:
 
 ---
 
-## Niagara Falls
+# Niagara Falls
 <div class="image-group three-images">
     <div>
         <img src="/images/Niagara.jpg" alt="Image 5.1">
@@ -121,7 +121,7 @@ redirect_from:
 
 ---
 
-## I visted Canada as a part of MITACS Globalink Internship
+# I visted Canada as a part of MITACS Globalink Internship
 <div class="image-group four-images">
     <div>
         <img src="/images/Toronto.jpg" alt="Image 6.1">
@@ -143,7 +143,7 @@ redirect_from:
 
 ---
 
-## The Telegraph School Awards
+# The Telegraph School Awards
 <div class="image-group one-image">
     <div>
         <img src="/images/TELEGRAPH.jpeg" alt="Image 7">
@@ -153,11 +153,11 @@ redirect_from:
 
 ---
 
-## JBNSTS Award Ceremony
+# JBNSTS Award Ceremony
 <div class="image-group one-image">
     <div>
         <img src="/images/JBNSTS.jpeg" alt="Image 8">
-        <p><strong>Caption:</strong> Receivng the Jagdish Bose National Science Talent Search Award from Padma Shree [Prof. Sanghamitra Bandyopadhyay](https://www.isical.ac.in/%7Esanghami/) (Director of ISI, Kolkata)</p>
+        <p><strong>Caption:</strong> Receivng the Jagdish Bose National Science Talent Search Award from Padma Shree Prof. Sanghamitra Bandyopadhyay</p>
     </div>
 </div>
 
