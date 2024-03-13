@@ -25,20 +25,99 @@ redirect_from:
 </style>
 
 ## Image 1
-![Image 1](images/Profile_pic.jpg)
+![Image 1](images/Grad.png)
 **Caption:** The majestic mountains at sunrise
 **Date:** March 12, 2024
 
 ---
 
 ## Image 2
-![Image 2](iamges/image2.jpg)
+![Image 2](iamges/MITACS.png)
 **Caption:** The calm before the storm
 **Date:** March 13, 2024
 
 ---
 
 ## Image 3
-![Image 3](images/image3.jpg)
+![Image 3](images/MITACS_Mentor.jpg)
 **Caption:** A walk through the autumn woods
 **Date:** March 14, 2024
+
+---
+
+## Image 3
+![Image 3](images/Niagara.jpg)
+**Caption:** A walk through the autumn woods
+**Date:** March 14, 2024
+
+---
+
+## Image 3
+![Image 3](images/Niagara2.jpg)
+**Caption:** A walk through the autumn woods
+**Date:** March 14, 2024
+
+---
+
+## Image 3
+![Image 3](images/Chicago.jpg)
+**Caption:** A walk through the autumn woods
+**Date:** March 14, 2024
+
+---
+
+## Image 3
+![Image 3](images/IISc.jpg)
+**Caption:** A walk through the autumn woods
+**Date:** March 14, 2024
+
+---
+
+## Image 3
+![Image 3](images/IIScGrad.jpg)
+**Caption:** A walk through the autumn woods
+**Date:** March 14, 2024
+
+---
+
+## Image 3
+![Image 3](images/UT.jpg)
+**Caption:** A walk through the autumn woods
+**Date:** March 14, 2024
+
+---
+
+## Image 3
+![Image 3](images/UT2.jpg)
+**Caption:** A walk through the autumn woods
+**Date:** March 14, 2024
+
+---
+
+## Image 3
+![Image 3](images/IISC.png)
+**Caption:** A walk through the autumn woods
+**Date:** March 14, 2024
+
+---
+
+## Image 3
+![Image 3](images/TELEGRAPH.jpeg)
+**Caption:** A walk through the autumn woods
+**Date:** March 14, 2024
+
+---
+
+## Image 3
+![Image 3](images/JBNSTS.jpeg)
+**Caption:** A walk through the autumn woods
+**Date:** March 14, 2024
+
+
+---
+
+## Image 3
+![Image 3](images/INFORMS.jpeg)
+**Caption:** A walk through the autumn woods
+**Date:** March 14, 2024
+
