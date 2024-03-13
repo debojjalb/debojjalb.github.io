@@ -32,10 +32,10 @@ redirect_from:
         margin-bottom: 20px;
     }
     .image-group.two-images img {
-        max-width: 48%;
+        max-width: 99%;
     }
     .image-group.three-images img {
-        max-width: 32%;
+        max-width: 99%;
     }
 </style>
 
