@@ -27,54 +27,52 @@ redirect_from:
 
 ## Image 1
 
-![Illustration of combining vision and language modalities](/images/image_to_text_vis.png)
-
 ![Image 1.1](/images/UT.jpg)
 **Caption:** A walk through the autumn woods
 **Date:** March 14, 2024
 
-![Image 1.2](images/UT2.jpg)
+![Image 1.2](/images/UT2.jpg)
 **Caption:** A walk through the autumn woods
 **Date:** March 14, 2024
 
 ---
 
 ## Image 2
-![Image 2.1](images/Grad.png)
+![Image 2.1](/images/Grad.png)
 **Caption:** The majestic mountains at sunrise
 **Date:** March 12, 2024
 
-![Image 2.2](images/IISc.jpg)
+![Image 2.2](/images/IISc.jpg)
 **Caption:** A walk through the autumn woods
 **Date:** March 14, 2024
 
-![Image 2.3](images/IIScGrad.jpg)
+![Image 2.3](/images/IIScGrad.jpg)
 **Caption:** A walk through the autumn woods
 **Date:** March 14, 2024
 
 ---
 
 ## Image 3
-![Image 3.1](images/INFORMS.jpeg)
+![Image 3.1](/images/INFORMS.jpeg)
 **Caption:** A walk through the autumn woods
 **Date:** March 14, 2024
 
-![Image 3.2](images/Chicago.jpg)
+![Image 3.2](/images/Chicago.jpg)
 **Caption:** A walk through the autumn woods
 **Date:** March 14, 2024
 
 ---
 
 ## Image 4
-![Image 4.1](iamges/MITACS.png)
+![Image 4.1](/images/MITACS.png)
 **Caption:** The calm before the storm
 **Date:** March 13, 2024
 
-![Image 4.2](images/MITACS_Mentor.jpg)
+![Image 4.2](/images/MITACS_Mentor.jpg)
 **Caption:** A walk through the autumn woods
 **Date:** March 14, 2024
 
-![Image 4.3](images/MITACS4.jpg)
+![Image 4.3](/images/MITACS4.jpg)
 **Caption:** A walk through the autumn woods
 **Date:** March 14, 2024
 
@@ -82,48 +80,48 @@ redirect_from:
 ---
 
 ## Image 5
-![Image 5.1](images/Niagara.jpg)
+![Image 5.1](/images/Niagara.jpg)
 **Caption:** A walk through the autumn woods
 **Date:** March 14, 2024
 
-![Image 5.2](images/Niagara2.jpg)
+![Image 5.2](/images/Niagara2.jpg)
 **Caption:** A walk through the autumn woods
 **Date:** March 14, 2024
 
-![Image 5.3](images/Niagara3.jpg)
+![Image 5.3](/images/Niagara3.jpg)
 **Caption:** A walk through the autumn woods
 **Date:** March 14, 2024
 
 ---
 
 ## Image 6
-![Image 6.1](images/Toronto.jpg)
+![Image 6.1](/images/Toronto.jpg)
 **Caption:** A walk through the autumn woods
 **Date:** March 14, 2024
 
-![Image 6.2](images/Ottawa.jpg)
+![Image 6.2](/images/Ottawa.jpg)
 **Caption:** A walk through the autumn woods
 **Date:** March 14, 2024
 
-![Image 6.3](images/Montreal.jpg)
+![Image 6.3](/images/Montreal.jpg)
 **Caption:** A walk through the autumn woods
 **Date:** March 14, 2024
 
-![Image 6.4](images/Quebec.jpg)
+![Image 6.4](/images/Quebec.jpg)
 **Caption:** A walk through the autumn woods
 **Date:** March 14, 2024
 
 ---
 
 ## Image 7
-![Image 7](images/TELEGRAPH.jpeg)
+![Image 7](/mages/TELEGRAPH.jpeg)
 **Caption:** A walk through the autumn woods
 **Date:** March 14, 2024
 
 ---
 
 ## Image 8
-![Image 8](images/JBNSTS.jpeg)
+![Image 8](/images/JBNSTS.jpeg)
 **Caption:** A walk through the autumn woods
 **Date:** March 14, 2024
 
