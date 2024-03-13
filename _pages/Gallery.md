@@ -26,6 +26,9 @@ redirect_from:
 
 
 ## Image 1
+
+![Illustration of combining vision and language modalities](/images/image_to_text_vis.png)
+
 ![Image 1.1](/images/UT.jpg)
 **Caption:** A walk through the autumn woods
 **Date:** March 14, 2024
