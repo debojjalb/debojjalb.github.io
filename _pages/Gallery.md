@@ -71,7 +71,7 @@ redirect_from:
 
 ---
 
-## INFORMS Anual Meeting 2023
+## INFORMS Annual Meeting 2023
 <div class="image-group two-images">
     <div>
         <img src="/images/INFORMS.jpeg" alt="Image 3.1">
@@ -85,7 +85,7 @@ redirect_from:
 
 ---
 
-## MITACS Globalink Internship
+## MITACS Globalink Internship 2023
 <div class="image-group three-images">
     <div>
         <img src="/images/MITACS.png" alt="Image 4.1">
@@ -103,7 +103,7 @@ redirect_from:
 
 ---
 
-## Noagara Falls
+## Niagara Falls
 <div class="image-group three-images">
     <div>
         <img src="/images/Niagara.jpg" alt="Image 5.1">
@@ -121,7 +121,7 @@ redirect_from:
 
 ---
 
-## I viisted Canada as a part of MITACS Globalink Internship
+## I visted Canada as a part of MITACS Globalink Internship
 <div class="image-group four-images">
     <div>
         <img src="/images/Toronto.jpg" alt="Image 6.1">
@@ -143,7 +143,7 @@ redirect_from:
 
 ---
 
-## The Telegraph School Award
+## The Telegraph School Awards
 <div class="image-group one-image">
     <div>
         <img src="/images/TELEGRAPH.jpeg" alt="Image 7">
