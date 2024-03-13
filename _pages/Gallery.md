@@ -47,7 +47,7 @@ redirect_from:
     </div>
     <div>
         <img src="/images/UT.jpg" alt="Image 1.2">
-        <p><strong>Caption:</strong> With few of my friends from India at Austin</p>
+        <p><strong>Caption:</strong> With few of my friends from India in Austin</p>
     </div>
 </div>
 
@@ -57,7 +57,7 @@ redirect_from:
 <div class="image-group three-images">
     <div>
         <img src="/images/Grad.png" alt="Image 2.1">
-        <p><strong>Caption:</strong> I graduated top of the class (in major) from IISc, Bangalore. In pic: Receiving Gold Medal from Mr. Amitabh Chaudhry, CEO of Axis Bank</p>
+        <p><strong>Caption:</strong> I graduated top of my class (in major) from IISc, Bangalore. In pic: Receiving Gold Medal from Mr. Amitabh Chaudhry, CEO of Axis Bank</p>
     </div>
     <div>
         <img src="/images/IISc.jpg" alt="Image 2.2">
@@ -65,7 +65,7 @@ redirect_from:
     </div>
     <div>
         <img src="/images/IIScGrad.jpg" alt="Image 2.3">
-        <p><strong>Caption:</strong> With my parents</p>
+        <p><strong>Caption:</strong> With my parents infront of IISc Main Building</p>
     </div>
 </div>
 
@@ -79,7 +79,7 @@ redirect_from:
     </div>
     <div>
         <img src="/images/Chicago.jpg" alt="Image 3.2">
-        <p><strong>Caption:</strong> I took a detour to visit the adjacent city vibrajnt Chicago.</p>
+        <p><strong>Caption:</strong> I took a detour to visit the adjacent and vibrant city of Chicago.</p>
     </div>
 </div>
 
@@ -89,15 +89,15 @@ redirect_from:
 <div class="image-group three-images">
     <div>
         <img src="/images/MITACS.png" alt="Image 4.1">
-        <p><strong>Caption:</strong> My first day at UQTR, I would be acrrying out 12 weeks of research into Reverse Logistics as a part of my MITACS Globalink Internship  Award</p>
+        <p><strong>Caption:</strong> My first day at UQTR, I would be crrying out 12 weeks of research into Reverse Logistics as a part of my MITACS Globalink Internship Award</p>
     </div>
     <div>
         <img src="/images/MITACS_Mentor.jpg" alt="Image 4.2">
-        <p><strong>Caption:</strong> WIth my fellow MITACS Intern (left) and mentor (right)</p>
+        <p><strong>Caption:</strong> With my fellow MITACS Intern (left) and mentor (right)</p>
     </div>
     <div>
         <img src="/images/MITACS4.jpg" alt="Image 4.3">
-        <p><strong>Caption:</strong> My home for these 12 weeks would be the beautifil city of Trois-Rivières</p>
+        <p><strong>Caption:</strong> My home for these 12 weeks would be the beautiful city of Trois-Rivières</p>
     </div>
 </div>
 
@@ -111,11 +111,11 @@ redirect_from:
     </div>
     <div>
         <img src="/images/Niagara2.jpg" alt="Image 5.2">
-        <p><strong>Caption:</strong> Boat ride into (?) the Niagara Falls ((world's fastest-moving waterfall))</p>
+        <p><strong>Caption:</strong> Boat ride into (?) the Niagara Falls (world's fastest-moving waterfall)</p>
     </div>
     <div>
         <img src="/images/Niagara3.jpg" alt="Image 5.3">
-        <p><strong>Caption:</strong> Located 4km away from niagara falls, the white water walk is one of the wildest gorge. The way to the gorge is by going 230ft underground followed by a 240ft long tunnel. The opposite side of the gorge is New York State, USA (our background in the images!). The border passes along the gorge.</p>
+        <p><strong>Caption:</strong> Located 4km away from niagara falls, the white water walk is one of the wildest gorge. The way to the gorge is by going 230ft underground followed by a 240ft long tunnel. The opposite side of the gorge is New York State, USA. The border passes along the gorge.</p>
     </div>
 </div>
 
@@ -137,7 +137,7 @@ redirect_from:
     </div>
     <div>
         <img src="/images/Quebec.jpg" alt="Image 6.4">
-        <p><strong>Caption:</strong> A walk through downtown, Quenec City. In pic: Fairmont Le Château Frontenac and streets of Old Quebec, Quebec City Streets of Old Quebec, Oh you beauty! The roads, the architecture, the ambience, the heritage, the food, there’s nothing you can’t admire about this city.</p>
+        <p><strong>Caption:</strong> A walk through downtown, Quenec City. In pic: Fairmont Le Château Frontenac and streets of Old Quebec, Quebec City Streets of Old Quebec, The roads, the architecture, the ambience, the heritage, the food, there’s nothing you can’t admire about this city.</p>
     </div>
 </div>
 
@@ -157,7 +157,7 @@ redirect_from:
 <div class="image-group one-image">
     <div>
         <img src="/images/JBNSTS.jpeg" alt="Image 8">
-        <p><strong>Caption:</strong> Receivng the Jagdish Bose National Science Talent Search Award from Padma Shree Prof. Sanghamitra Bandyopadhyay</p>
+        <p><strong>Caption:</strong> Receivng the Jagdish Bose National Science Talent Search Award from Padma Shree Prof. Sanghamitra Bandyopadhyay (Director of ISI Kolkata)</p>
     </div>
 </div>
 
