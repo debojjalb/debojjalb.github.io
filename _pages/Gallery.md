@@ -26,7 +26,7 @@ redirect_from:
 
 
 ## Image 1
-![Image 1.1](images/UT.jpg)
+![Image 1.1](UT.jpg)
 **Caption:** A walk through the autumn woods
 **Date:** March 14, 2024
 
