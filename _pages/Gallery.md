@@ -1,10 +1,9 @@
 ---
-permalink: /gallery
+permalink: /gallery/
 title: "Gallery"
-excerpt: "Gallery"
 author_profile: true
 redirect_from: 
-  - /gallery/
+  - /gal/
   - /gallery.html
 ---
 
