@@ -42,9 +42,7 @@ Thank you for visiting my site. I invite you to explore the site and learn more 
 *Major*: Earth and Environmental Science; *Minor*: Mathematics, [IISc, Bengaluru](https://iisc.ac.in/)  
 *Thesis*: Energy Efficient and Safe Routing for Last-mile Logistics  
 *Advisor*: [Prof. Tarun Rambha](http://civil.iisc.ernet.in/%7Etarunr/)
-*Awards*: - Gold Medal for highest GPA in major
-- Highest project grade
-- First Class Distinction
+*Awards*: - **Gold Medal** for highest GPA in major, **Highest project grade**, First Class **Distinction**
 
 ## Research Interests
 
