@@ -53,8 +53,6 @@ redirect_from:
     }
 </style>
 
-# Gallery
-
 ## I joined UT Austin as a Grad Student
 
 <div class="image-group two-images">
