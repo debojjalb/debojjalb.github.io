@@ -37,7 +37,7 @@ redirect_from:
 
 - **Bagchi, D.**, Agarwal, P., Rambha T., and Pandey V. (2022). A local Search Heuristic for Bi-Criterion Steiner Traveling Salesman Problem. In Transportation Research Board, Washington, USA (TRB 2022).
 
-## Reports
+## Course Project Reports / Proposals
 
 - Speeding up the Frank Wolfe Algorithm — Implementation changes,
 Contraction Hierarchies and Bi-conjugate direction, Debojjal Bagchi, 2023 [Summary](/files/Speeding%20up%20the%20Frank%20Wolfe%20Algorithm%20---%20Implementation%20changes,%20Contraction%20Hierarchies%20and%20Bi-conjugate%20direction.pdf)
