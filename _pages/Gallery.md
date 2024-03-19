@@ -55,7 +55,7 @@ redirect_from:
 
 # Gallery
 
-## UT Austin
+## I joined UT Austin as a Grad Student
 
 <div class="image-group two-images">
     <div>
@@ -115,24 +115,7 @@ redirect_from:
     </div>
 </div>
 
-## Niagara Falls
-
-<div class="image-group three-images">
-    <div>
-        <img src="/images/Niagara.jpg" alt="Niagara Falls at Night">
-        <p class="caption">Niagara Falls at Night</p>
-    </div>
-    <div>
-        <img src="/images/Niagara2.jpg" alt="Boat ride into Niagara Falls">
-        <p class="caption">Boat ride into Niagara Falls</p>
-    </div>
-    <div>
-        <img src="/images/Niagara3.jpg" alt="White Water Walk near Niagara Falls">
-        <p class="caption">White Water Walk near Niagara Falls</p>
-    </div>
-</div>
-
-## Visit to Canada
+## I visted Canada as a part of MITACS Globalink Internship
 
 <div class="image-group four-images">
     <div>
@@ -152,6 +135,24 @@ redirect_from:
         <p class="caption">Downtown Quebec City</p>
     </div>
 </div>
+
+## Niagara Falls
+
+<div class="image-group three-images">
+    <div>
+        <img src="/images/Niagara.jpg" alt="Niagara Falls at Night">
+        <p class="caption">Niagara Falls at Night</p>
+    </div>
+    <div>
+        <img src="/images/Niagara2.jpg" alt="Boat ride into Niagara Falls">
+        <p class="caption">Boat ride into Niagara Falls</p>
+    </div>
+    <div>
+        <img src="/images/Niagara3.jpg" alt="White Water Walk near Niagara Falls">
+        <p class="caption">White Water Walk near Niagara Falls</p>
+    </div>
+</div>
+
 
 ## The Telegraph School Awards
 
