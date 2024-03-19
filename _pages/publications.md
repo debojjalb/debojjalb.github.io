@@ -39,9 +39,26 @@ redirect_from:
 
 ## Reports
 
-- Comparison between Label Correcting & Label Setting algorithms for Method of Successive Averages, Debojjal Bagchi [Google Drive Link](https://drive.google.com/file/d/17jLWS-SIvKLEexxDNXGMmfGB4ifLxPeC/view?usp=sharing)
+- Speeding up the Frank Wolfe Algorithm — Implementation changes,
+Contraction Hierarchies and Bi-conjugate direction, Debojjal Bagchi, 2023 [Summary](/files/Speeding%20up%20the%20Frank%20Wolfe%20Algorithm%20---%20Implementation%20changes,%20Contraction%20Hierarchies%20and%20Bi-conjugate%20direction.pdf)
+
+- A k-best link tolling scheme, 2023 [Report](/files/tolling_scheme_report.pdf), [Presentation](/files/tolling_Scheme.pdf)
+Collaborators: Debojjal Bagchi, Keya Li1, and Qianqian Tong
+
+- Fair and Efficient Allocation of Indivisible Public
+Good -- Paper Review and Future Directions, Debojjal Bagchi, 2023 [Summary](/files/gmtd_summary.pdf), [Report](/files/gmtf_report.pdf), [Presentation](/files/gmtd_ppt.pdf)
+
+- Literature Review and project proposal on horizontal collaboration between Dial-a-ride services, Debojjal Bagchi, 2023 [Proposal](/files/NYU_Proposal.pdf)
+
+- Greenhouse Gas Emission from transit at IISc, Bengaluru, Debojjal Bagchi, 2022 [Report](/files/IISC_TRANSPORTATION_GHG_EMISSION.pdf)
+
+- Comparison between Label Correcting & Label Setting algorithms for Method of Successive Averages, Debojjal Bagchi, 2022 [Report](/files/MSAFW.pdf)
+
 
 ## Presentations
+
+#### Note: Links to the below items might not work. (Under Development)
+
 
 - Integer Programming Formulation for Steiner Travelling Salesman Problem, Debojjal Bagchi [Google Drive Link](https://drive.google.com/file/d/17kLVYwvRRiBj6FfLI1aHA8At3c-GN4gn/view?usp=sharing)
 
