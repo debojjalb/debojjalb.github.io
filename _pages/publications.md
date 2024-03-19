@@ -43,7 +43,7 @@ redirect_from:
 Contraction Hierarchies and Bi-conjugate Direction, Debojjal Bagchi, 2023 [Summary](/files/Speeding%20up%20the%20Frank%20Wolfe%20Algorithm%20---%20Implementation%20changes,%20Contraction%20Hierarchies%20and%20Bi-conjugate%20direction.pdf)
 
 - A k-best Link Tolling Scheme, 2023 [Report](/files/tolling_scheme_report.pdf), [Presentation](/files/tolling_Scheme.pdf)
-(**Collaborators:** Debojjal Bagchi, Keya Li1, and Qianqian Tong)
+(**Collaborators:** Debojjal Bagchi, Keya Li, and Qianqian Tong)
 
 - Fair and Efficient Allocation of Indivisible Public
 Good -- Paper Review and Future Directions, Debojjal Bagchi, 2023 [Summary](/files/gmtd_summary.pdf), [Report](/files/gmtf_report.pdf), [Presentation](/files/gmtd_ppt.pdf)
