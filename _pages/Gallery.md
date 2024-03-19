@@ -115,7 +115,7 @@ redirect_from:
 
 ## I visted Canada as a part of MITACS Globalink Internship
 
-<div class="image-group four-images">
+<div class="image-group two-images">
     <div>
         <img src="/images/Toronto.jpg" alt="View of Downtown Toronto from CN Tower">
         <p class="caption">View of Downtown Toronto from CN Tower</p>
@@ -124,6 +124,8 @@ redirect_from:
         <img src="/images/Ottawa.jpg" alt="Parliament Hill and Peace Tower in Ottawa">
         <p class="caption">Parliament Hill and Peace Tower in Ottawa</p>
     </div>
+</div>
+<div class="image-group two-images">
     <div>
         <img src="/images/Montreal.jpg" alt="Fireworks Festival in Montreal">
         <p class="caption">Fireworks Festival in Montreal</p>
