@@ -88,7 +88,7 @@ redirect_from:
 <div class="image-group two-images">
     <div>
         <img src="/images/INFORMS.jpeg" alt="Presenting at INFORMS Annual Meeting">
-        <p class="caption">Presenting at INFORMS Annual Meeting</p>
+        <p class="caption">Presenting at INFORMS Annual Meeting, Indianapolis</p>
     </div>
     <div>
         <img src="/images/Chicago.jpg" alt="Detour to Chicago">
