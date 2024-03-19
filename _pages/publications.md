@@ -50,7 +50,7 @@ Good -- Paper Review and Future Directions, Debojjal Bagchi, 2023 [Summary](/fil
 
 - Literature Review and Project Proposal on Horizontal Collaboration between Dial-a-ride Services, Debojjal Bagchi, 2023 [Proposal](/files/NYU_Proposal.pdf)
 
-- Greenhouse Gas Emission from Transit at IISc, Bengaluru, Debojjal Bagchi, 2022 [Report](/files/IISC_TRANSPORTATION_GHG_EMISSION.pdf)
+- Greenhouse Gas Emission from Tansportation at IISc, Bengaluru, Debojjal Bagchi, 2022 [Report](/files/IISC_TRANSPORTATION_GHG_EMISSION.pdf)
 
 - Comparison between Label Correcting & Label Setting Algorithms for Method of Successive Averages, Debojjal Bagchi, 2022 [Report](/files/MSAFW.pdf)
 
