@@ -39,17 +39,38 @@ redirect_from:
     .image-group div {
         flex: 1;
         text-align: center;
+        overflow: hidden;
+        position: relative;
     }
     .image-group img {
         width: 100%;
         height: auto;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease, filter 0.3s ease;
+    }
+    .image-group img:hover {
+        transform: scale(1.05);
+        filter: brightness(110%);
     }
     .caption {
         font-style: italic;
         color: #666;
         margin-top: 8px;
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.8);
+        padding: 5px 0;
+        opacity: 0;
+        transform: translateY(10px);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+    .image-group div:hover .caption {
+        opacity: 1;
+        transform: translateY(0);
     }
 </style>
 
