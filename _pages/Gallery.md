@@ -7,94 +7,127 @@ redirect_from:
   - /gallery.html
 ---
 
-<style>
-/* Slider CSS code from the snippet you shared earlier */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - I joined UT Austin</title>
+    <style>
+        /* Slider CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-body {
-    background: #eaeaea;
-    overflow: hidden;
-}
+        body {
+            background: #eaeaea;
+            font-family: "Georgia", serif;
+        }
 
-.container {
-    position: relative;
-    width: 100%;
-    max-width: 1000px;
-    margin: 0 auto;
-    background: #f5f5f5;
-    box-shadow: 0 30px 50px #dbdbdb;
-}
+        .container {
+            position: relative;
+            width: 100%;
+            max-width: 1000px;
+            margin: 40px auto;
+            background: #f5f5f5;
+            box-shadow: 0 30px 50px #dbdbdb;
+            overflow: hidden;
+        }
 
-.container .slide .item {
-    width: 200px;
-    height: 300px;
-    position: absolute;
-    top: 50%;
-    transform: translate(0, -50%);
-    border-radius: 20px;
-    box-shadow: 0 30px 50px #505050;
-    background-position: 50% 50%;
-    background-size: cover;
-    display: inline-block;
-    transition: 0.5s;
-}
+        .container .slide {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
 
-.slide .item:nth-child(3) {
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+        .container .slide .item {
+            flex: 0 0 33.3333%; /* Adjust the width of each item (100 / number of visible items) */
+            height: 300px;
+            position: relative;
+            background-position: center;
+            background-size: cover;
+            border-radius: 20px;
+            box-shadow: 0 30px 50px #505050;
+        }
 
-.slide .item:nth-child(4) {
-    left: calc(50% + 220px);
-    transform: translate(-50%, -50%);
-}
+        .item .content {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 10px;
+        }
 
-/* Add more nth-child rules as needed */
+        .content .name {
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: bold;
+        }
 
-.item .content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
-    display: none;
-}
+        /* Navigation buttons */
+        .container .prev,
+        .container .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            z-index: 10;
+        }
 
-.slide .item:nth-child(3) .content {
-    display: block;
-}
+        .container .prev {
+            left: 10px;
+        }
 
-.content .name {
-    font-size: 24px;
-    text-transform: uppercase;
-    font-weight: bold;
-}
+        .container .next {
+            right: 10px;
+        }
 
-/* Add additional styles for your page */
-</style>
+    </style>
+</head>
+<body>
+    <h2>I joined UT Austin as a Grad Student</h2>
 
-## I joined UT Austin as a Grad Student
-
-<div class="container">
-    <div class="slide">
-        <div class="item" style="background-image: url('/images/UT2.jpg');">
-            <div class="content">
-                <div class="name">In front of the UT Tower</div>
+    <div class="container">
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+        <div class="slide">
+            <div class="item" style="background-image: url('/images/UT2.jpg');">
+                <div class="content">
+                    <div class="name">In front of the UT Tower</div>
+                </div>
             </div>
-        </div>
-        <div class="item" style="background-image: url('/images/UT.jpg');">
-            <div class="content">
-                <div class="name">With friends from India in Austin</div>
+            <div class="item" style="background-image: url('/images/UT.jpg');">
+                <div class="content">
+                    <div class="name">With friends from India in Austin</div>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
+    <script>
+        // JavaScript for scrolling
+        let next = document.querySelector('.next');
+        let prev = document.querySelector('.prev');
+        let slide = document.querySelector('.slide');
+
+        next.addEventListener('click', function() {
+            slide.appendChild(slide.firstElementChild);
+        });
+
+        prev.addEventListener('click', function() {
+            slide.prepend(slide.lastElementChild);
+        });
+    </script>
+</body>
+</html>
 
 
 
