@@ -1,3 +1,12 @@
+---
+permalink: /gallery/
+title: "Gallery"
+author_profile: true
+redirect_from: 
+  - /gal/
+  - /gallery.html
+---
+
 <style>
 /* Slider CSS code from the snippet you shared earlier */
 * {
