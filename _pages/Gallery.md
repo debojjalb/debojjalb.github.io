@@ -1,4 +1,96 @@
----
+<style>
+/* Slider CSS code from the snippet you shared earlier */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #eaeaea;
+    overflow: hidden;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #f5f5f5;
+    box-shadow: 0 30px 50px #dbdbdb;
+}
+
+.container .slide .item {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    border-radius: 20px;
+    box-shadow: 0 30px 50px #505050;
+    background-position: 50% 50%;
+    background-size: cover;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.slide .item:nth-child(3) {
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.slide .item:nth-child(4) {
+    left: calc(50% + 220px);
+    transform: translate(-50%, -50%);
+}
+
+/* Add more nth-child rules as needed */
+
+.item .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    display: none;
+}
+
+.slide .item:nth-child(3) .content {
+    display: block;
+}
+
+.content .name {
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* Add additional styles for your page */
+</style>
+
+## I joined UT Austin as a Grad Student
+
+<div class="container">
+    <div class="slide">
+        <div class="item" style="background-image: url('/images/UT2.jpg');">
+            <div class="content">
+                <div class="name">In front of the UT Tower</div>
+            </div>
+        </div>
+        <div class="item" style="background-image: url('/images/UT.jpg');">
+            <div class="content">
+                <div class="name">With friends from India in Austin</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<!-- ---
 permalink: /gallery/
 title: "Gallery"
 author_profile: true
@@ -170,4 +262,4 @@ redirect_from:
         <img src="/images/JBNSTS.jpeg" alt="Receiving JBNSTS Award">
         <p class="caption">Receiving JBNSTS Award</p>
     </div>
-</div>
+</div> -->
