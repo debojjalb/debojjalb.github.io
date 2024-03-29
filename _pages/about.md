@@ -38,7 +38,7 @@ Thank you for visiting my site. I invite you to explore the site and learn more 
 *Major*: Transportation Engineering; *Minor*: Industrial Engineering and Operations Research, [UT Austin](https://www.utexas.edu/)    
 *Advisor*: [Prof. Stephen Boyles](https://sboyles.github.io/)  
 
-**Bachelor of Science (Research)** - Aug 2019 -- May, 2023  
+**Bachelor of Science (B.S. by Research)** - Aug 2019 -- May, 2023  
 *Major*: Earth and Environmental Science; *Minor*: Mathematics, [IISc, Bengaluru](https://iisc.ac.in/)   
 *Awards*: **Gold Medal** for highest GPA in major, **Highest project grade**, First Class **Distinction**  
 *Thesis*: Energy Efficient and Safe Routing for Last-mile Logistics   
