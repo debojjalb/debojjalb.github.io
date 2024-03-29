@@ -33,7 +33,7 @@ Thank you for visiting my site. I invite you to explore the site and learn more 
 
 ## Education
 
-**Master of Science in Engineering (M.S.E)** - May, 2025 (Expected) 
+**Master of Science in Engineering (M.S.E)** - Fall, 2024 (Expected) 
 (Admitted to the Ph.D. program with an M.S. (Thesis) en route)  
 *Major*: Transportation Engineering; *Minor*: Industrial Engineering and Operations Research, [UT Austin](https://www.utexas.edu/)    
 *Advisor*: [Prof. Stephen Boyles](https://sboyles.github.io/)  
