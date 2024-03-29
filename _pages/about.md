@@ -33,12 +33,12 @@ Thank you for visiting my site. I invite you to explore the site and learn more 
 
 ## Education
 
-**Master of Science in Engineering (M.S.E)** - Fall, 2024 (Expected) 
+**Master of Science in Engineering (M.S.E)** - Aug 2023 -- Fall, 2024 (Expected) 
 (Admitted to the Ph.D. program with an M.S. (Thesis) en route)  
 *Major*: Transportation Engineering; *Minor*: Industrial Engineering and Operations Research, [UT Austin](https://www.utexas.edu/)    
 *Advisor*: [Prof. Stephen Boyles](https://sboyles.github.io/)  
 
-**Bachelor of Science (Research)** - May, 2023  
+**Bachelor of Science (Research)** - Aug 2019 -- May, 2023  
 *Major*: Earth and Environmental Science; *Minor*: Mathematics, [IISc, Bengaluru](https://iisc.ac.in/)   
 *Awards*: **Gold Medal** for highest GPA in major, **Highest project grade**, First Class **Distinction**  
 *Thesis*: Energy Efficient and Safe Routing for Last-mile Logistics   
