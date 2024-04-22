@@ -53,6 +53,19 @@ redirect_from:
     }
 </style>
 
+## Keep Austin Beautiful Day '24
+
+<div class="image-group two-images">
+    <div>
+        <img src="/images/KABD.jpeg" alt="In front of the UT Tower">
+        <p class="caption">UT Transportation participated in Keep Austin Beautiful Day</p>
+    </div>
+    <div>
+        <img src="/images/CASITE.jpeg" alt="With friends from India in Austin">
+        <p class="caption">With Capital Area Section Institute of Transportation Engineers (CASITE)</p>
+    </div>
+</div>
+
 ## I joined UT Austin as a Grad Student
 
 <div class="image-group two-images">
