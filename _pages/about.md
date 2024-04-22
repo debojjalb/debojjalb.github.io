@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "👋🏼 Hello there, I'm Debojjal (Deb)!"
+title: "👋🏼 Hello there, I'm Debojjal  /deːboˈdʒɔl/ (Deb)!"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
