@@ -41,8 +41,9 @@ redirect_from:
         text-align: center;
     }
     .image-group img {
-        width: 100%;
-        height: auto;
+        width: 300px; /* Set a fixed width */
+        height: 200px; /* Set a fixed height */
+        object-fit: cover; /* Ensure images are cropped to fit the dimensions */
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
