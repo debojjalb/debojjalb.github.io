@@ -36,9 +36,13 @@ redirect_from:
 
 ## Conference Presentations
 
-- **Bagchi, D.**, Agarwal, P., Rambha T., and Pandey V. (2022). A local Search Heuristic for Bi-Criterion Steiner Traveling Salesman Problem. In The Institute for Operations Research and the Management Sciences, Indianapolis, USA (INFORMS 2022).
+- **Bagchi, D.** and Boyles S. (2025). Error Bounds for Stochastic User Equilibrium Traffic Assignment. In The Institute for Operations Research and the Management Sciences Annual Meeting, Seattle, USA (INFORMS 2022).
 
-- **Bagchi, D.**, Agarwal, P., Rambha T., and Pandey V. (2022). A local Search Heuristic for Bi-Criterion Steiner Traveling Salesman Problem. In Transportation Research Board, Washington, USA (TRB 2022).
+- Bathgate, K., **Bagchi, D.**, and Boyles S. (2025). Identifying capacities in a multimodal maritime freight network. In The Institute for Operations Research and the Management Sciences Annual Meeting, Seattle, USA (INFORMS 2022).
+
+- **Bagchi, D.**, Agarwal, P., Rambha T., and Pandey V. (2022). A local Search Heuristic for Bi-Criterion Steiner Traveling Salesman Problem. In The Institute for Operations Research and the Management Sciences Annual Meeting, Indianapolis, USA (INFORMS 2022).
+
+- **Bagchi, D.**, Agarwal, P., Rambha T., and Pandey V. (2022). A local Search Heuristic for Bi-Criterion Steiner Traveling Salesman Problem. In Transportation Research Board Annual Meeting, Washington, USA (TRB 2022).
 
 ## Course Project Reports / Proposals
 
