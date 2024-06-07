@@ -1,6 +1,6 @@
 ---
 permalink: /publications/
-title: "Research"
+title: ""
 author_profile: true
 redirect_from: 
   - /pub/
