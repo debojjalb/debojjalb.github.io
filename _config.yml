@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Deb's Homepage"
+title                    : "Home"
 title_separator          : "-"
 name                     : &name "Debojjal Bagchi"
 description              : &description "personal description"
