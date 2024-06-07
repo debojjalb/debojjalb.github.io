@@ -46,51 +46,11 @@ redirect_from:
         object-fit: cover; /* Ensure images are cropped to fit the dimensions */
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        cursor: pointer; /* Make the cursor a pointer to indicate clickability */
     }
     .caption {
         font-style: italic;
         color: #666;
         margin-top: 8px;
-    }
-    /* Lightbox styles */
-    .lightbox {
-        display: none;
-        position: fixed;
-        z-index: 1000;
-        padding-top: 100px;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        overflow: auto;
-        background-color: rgba(0,0,0,0.9);
-    }
-    .lightbox-content {
-        position: relative;
-        margin: auto;
-        display: block;
-        width: 80%;
-        max-width: 700px;
-    }
-    .lightbox-content img {
-        width: 100%;
-        height: auto;
-    }
-    .close {
-        position: absolute;
-        top: 10px;
-        right: 25px;
-        color: #fff;
-        font-size: 35px;
-        font-weight: bold;
-        transition: 0.3s;
-    }
-    .close:hover,
-    .close:focus {
-        color: #bbb;
-        text-decoration: none;
-        cursor: pointer;
     }
 </style>
 
@@ -167,7 +127,7 @@ redirect_from:
     </div>
 </div>
 
-## I visited Canada as a part of MITACS Globalink Internship
+## I visted Canada as a part of MITACS Globalink Internship
 
 <div class="image-group two-images">
     <div>
@@ -225,37 +185,3 @@ redirect_from:
         <p class="caption">Receiving JBNSTS Award</p>
     </div>
 </div> 
-
-<!-- Lightbox HTML -->
-<div id="lightbox" class="lightbox">
-    <span class="close">&times;</span>
-    <img class="lightbox-content" id="lightbox-img">
-</div>
-
-<script>
-    // Get the lightbox elements
-    var lightbox = document.getElementById("lightbox");
-    var lightboxImg = document.getElementById("lightbox-img");
-    var closeBtn = document.getElementsByClassName("close")[0];
-
-    // Add click event to all images
-    var images = document.querySelectorAll(".image-group img");
-    images.forEach(function(img) {
-        img.onclick = function() {
-            lightbox.style.display = "block";
-            lightboxImg.src = this.src;
-        }
-    });
-
-    // Close the lightbox when the close button is clicked
-    closeBtn.onclick = function() {
-        lightbox.style.display = "none";
-    }
-
-    // Close the lightbox when clicking outside of the image
-    lightbox.onclick = function(event) {
-        if (event.target !== lightboxImg) {
-            lightbox.style.display = "none";
-        }
-    }
-</script>
