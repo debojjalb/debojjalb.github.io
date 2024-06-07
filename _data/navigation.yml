@@ -6,16 +6,18 @@ main:
   # - title: "Research"
   #   url: /research/
 
-  # - title: "CV"
-  #   # url: /cv/
-  #   url: /files/Resume.pdf
+  - title: "CV"
+    # url: /cv/
+    url: /files/Resume.pdf
+
+  - title: "Gallery"
+    url: /gallery/
 
   - title: "Blog"
     # url: /publications/
     url: https://debojjal-bagchi.medium.com/
 
-  - title: "Gallery"
-    url: /gallery/
+
   
   
 
