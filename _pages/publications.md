@@ -28,7 +28,33 @@ redirect_from:
     li {
         margin-bottom: 3px;
     }
+    .center-box {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .download-box {
+        border: 2px solid #014552;
+        padding: 10px;
+        text-align: center;
+        font-size: 16px;
+        background-color: #f9f9f9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    .download-box a {
+        text-decoration: none;
+        color: #014552;
+        font-weight: bold;
+    }
 </style>
+
+<div class="center-box">
+    <div class="download-box">
+        <a href="/files/Resume.pdf" download>Download CV</a>
+    </div>
+</div>
 
 ## Manuscripts under Preparation 
 
