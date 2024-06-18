@@ -54,6 +54,20 @@ redirect_from:
     }
 </style>
 
+## I am learning to play the guitar and keyboard
+
+## I am learning to play the guitar and keyboard
+
+I tried singing [Coffee House er shei adda ta](https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTE0NzgzNDcyODY0NTk1?story_media_id=3392853021300432854&igsh=MXBscGo3ejR5YXduZw==).
+
+I also gave [Ye jism hai to kya](https://www.instagram.com/reel/C3LoYunOXOnLAduMRLkz_qKT80kuC_wPcqLxEs0/?igsh=bmlnNGM5MXI1Yjd5) a try.
+
+When back home in Kolkata, I play on my keyboard:
+- [Bosonto esge geche on Keyboard + Arranger](https://youtu.be/boWtt-A6qTU?si=vzbv0Mmv89o3w9Pc)
+- [Purano shei diner kotha](https://youtu.be/uqbLpiiSf9M?si=j1hw4WHTiQ6bVB4t)
+- [Pran chay chokhu na chay](https://youtu.be/M9QqOV-6YJo?si=dbRzfBskeRMM-rgm)
+
+
 ## Keep Austin Beautiful Day '24
 
 <div class="image-group two-images">
