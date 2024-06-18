@@ -3,8 +3,9 @@ permalink: /news/
 title: ""
 author_profile: true
 redirect_from: 
-  - /gal/
-  - /gallery.html
+  - /news/
+  - /News.html
+  - /news.html
 ---
 
 <style>
