@@ -93,7 +93,7 @@ I organised a volunteering event with UT Austin chapter of ITS/ITE along with CA
 
 ## I joined UT Austin as a Grad Student
 
-I am starting my MS/PhD Degree at The Fariborz Maseeh Department of Civil, Architectural and Environmental Engineering in the Cockrell School of Engineering in Transporttaion Engineering Field. I will be working with Dr. Stephen Boyles at the Simulation, Parking, Autonomous vehicles, Routing, & Traffic Assignment (SPARTA) lab.
+I am starting my MS/PhD Degree at The Fariborz Maseeh Department of Civil, Architectural and Environmental Engineering in the Cockrell School of Engineering in the Transportaion Engineering Field. I will be working with Dr. Stephen Boyles at the Simulation, Parking, Autonomous vehicles, Routing, & Traffic Assignment (SPARTA) lab.
 
 <div class="image-group two-images">
     <div>
