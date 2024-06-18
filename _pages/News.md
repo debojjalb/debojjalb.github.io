@@ -1,5 +1,5 @@
 ---
-permalink: /news/
+permalink: /gallery/
 title: ""
 author_profile: true
 redirect_from: 
