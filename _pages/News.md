@@ -64,7 +64,7 @@ You can access it through GitHub [https://github.com/debojjalb/UTAustinBeamer](h
 
 ## I am learning to play the guitar and keyboard
 
-I tried singing [Coffee House er shei adda ta](https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTE0NzgzNDcyODY0NTk1?story_media_id=3392853021300432854&igsh=MXBscGo3ejR5YXduZw==). I also gave [Ye jism hai to kya](https://www.instagram.com/reel/C3LoYunOXOnLAduMRLkz_qKT80kuC_wPcqLxEs0/?igsh=bmlnNGM5MXI1Yjd5) a try.
+I tried singing [Coffee House er shei adda ta](https://youtube.com/shorts/_3zst7uvgE8?si=JbpdwBvnh7QRhbRP). I also gave [Ye jism hai to kya](https://www.instagram.com/reel/C3LoYunOXOnLAduMRLkz_qKT80kuC_wPcqLxEs0/?igsh=bmlnNGM5MXI1Yjd5) a try.
 
 When back home in Kolkata, I play on my keyboard:
 - [Bosonto esge geche on Keyboard + Arranger](https://youtu.be/boWtt-A6qTU?si=vzbv0Mmv89o3w9Pc)
@@ -73,6 +73,8 @@ When back home in Kolkata, I play on my keyboard:
 
 
 ## Keep Austin Beautiful Day '24
+
+I organised a volunteering event with UT Austin chapter of ITS/ITE along with CASITE for Keep Austin Beautiful Day 2024. 
 
 <div class="image-group two-images">
     <div>
@@ -91,6 +93,8 @@ When back home in Kolkata, I play on my keyboard:
 
 ## I joined UT Austin as a Grad Student
 
+I am starting my MS/PhD Degree at The Fariborz Maseeh Department of Civil, Architectural and Environmental Engineering in the Cockrell School of Engineering in Transporttaion Engineering Field. I will be working with Dr. Stephen Boyles at the Simulation, Parking, Autonomous vehicles, Routing, & Traffic Assignment (SPARTA) lab.
+
 <div class="image-group two-images">
     <div>
         <a href="/images/UT2.jpg" data-lightbox="ut-austin" data-title="In front of the UT Tower">
@@ -107,6 +111,8 @@ When back home in Kolkata, I play on my keyboard:
 </div>
 
 ## IISc Convocation
+
+I graduated top of my major with a gold medal from IISc Bangalore with a Bachelor of Science (Research) degree.
 
 <div class="image-group three-images">
     <div>
@@ -131,6 +137,8 @@ When back home in Kolkata, I play on my keyboard:
 
 ## INFORMS Annual Meeting 2023
 
+I preseneted our work on Electric Vehcile Last Mile Logistics. See my Research page for more details.
+
 <div class="image-group two-images">
     <div>
         <a href="/images/INFORMS.jpeg" data-lightbox="informs" data-title="Presenting at INFORMS Annual Meeting, Indianapolis">
@@ -147,6 +155,8 @@ When back home in Kolkata, I play on my keyboard:
 </div>
 
 ## MITACS Globalink Internship 2023
+
+Here's a short vlog of my typical day during MITACS: [Watch on Youtube](https://youtu.be/YhyQzgftU6Y?si=9H4cYrdd136VDaGd)
 
 <div class="image-group three-images">
     <div>
