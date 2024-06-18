@@ -10,8 +10,8 @@ main:
   #   # url: /cv/
   #   url: /files/Resume.pdf
 
-  - title: "Gallery"
-    url: /gallery/
+  - title: "News"
+    url: /news/
 
   - title: "Blog"
     # url: /publications/

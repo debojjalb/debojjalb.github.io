@@ -1,10 +1,10 @@
 ---
-permalink: /gallery/
+permalink: /news/
 title: ""
 author_profile: true
 redirect_from: 
-  - /gal/
-  - /gallery.html
+  - /news/
+  - /news.html
 ---
 
 <style>
