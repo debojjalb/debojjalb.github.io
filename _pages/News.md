@@ -10,15 +10,18 @@ redirect_from:
 
 <style>
     body {
-        font-family: "Georgia", serif;
-        font-size: 16px;
-        color: #333;
-        background-color: #f8f8f8;
-        line-height: 1.6;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 14px;
+        color: #000;
     }
     a {
-        color: #0074D9; /* Vivid blue color for links */
-        text-decoration: none;
+        color: #014552; /* Dark blue color for links */
+    }
+    h1, h2, h3, h4, h5, h6 {
+        margin-top: 24px;
+        margin-bottom: 16px;
+        font-weight: 600;
+        line-height: 1.25;
     }
     a:hover {
         text-decoration: underline;
@@ -61,9 +64,7 @@ You can access it through GitHub [https://github.com/debojjalb/UTAustinBeamer](h
 
 ## I am learning to play the guitar and keyboard
 
-I tried singing [Coffee House er shei adda ta](https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTE0NzgzNDcyODY0NTk1?story_media_id=3392853021300432854&igsh=MXBscGo3ejR5YXduZw==).
-
-I also gave [Ye jism hai to kya](https://www.instagram.com/reel/C3LoYunOXOnLAduMRLkz_qKT80kuC_wPcqLxEs0/?igsh=bmlnNGM5MXI1Yjd5) a try.
+I tried singing [Coffee House er shei adda ta](https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTE0NzgzNDcyODY0NTk1?story_media_id=3392853021300432854&igsh=MXBscGo3ejR5YXduZw==). I also gave [Ye jism hai to kya](https://www.instagram.com/reel/C3LoYunOXOnLAduMRLkz_qKT80kuC_wPcqLxEs0/?igsh=bmlnNGM5MXI1Yjd5) a try.
 
 When back home in Kolkata, I play on my keyboard:
 - [Bosonto esge geche on Keyboard + Arranger](https://youtu.be/boWtt-A6qTU?si=vzbv0Mmv89o3w9Pc)
