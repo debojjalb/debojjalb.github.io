@@ -3,8 +3,8 @@ permalink: /news/
 title: ""
 author_profile: true
 redirect_from: 
-  - /news/
-  - /news.html
+  - /gal/
+  - /gallery.html
 ---
 
 <style>
@@ -54,7 +54,9 @@ redirect_from:
     }
 </style>
 
-## I am learning to play the guitar and keyboard
+## I made a UT Austin Beamer Template
+
+You can access it through GitHub [https://github.com/debojjalb/UTAustinBeamer](https://github.com/debojjalb/UTAustinBeamer). I have tried to replicate the colors and logos as per the UT Official design rules but my template is not official. Please crosscheck before using! 
 
 ## I am learning to play the guitar and keyboard
 
