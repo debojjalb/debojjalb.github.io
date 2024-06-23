@@ -8,7 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -22,6 +21,7 @@ redirect_from:
         background-color: #f4f4f9;
         margin: 0;
         padding: 0;
+        overflow-x: hidden;
     }
     a {
         color: #0056b3;
