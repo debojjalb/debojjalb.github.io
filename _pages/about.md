@@ -1,3 +1,13 @@
+---
+permalink: /
+title: 
+excerpt: "About me"
+author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
