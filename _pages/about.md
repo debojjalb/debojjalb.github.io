@@ -79,7 +79,6 @@ redirect_from:
         background-color: #f4f4f9;
         color: #666;
         border-top: 1px solid #ddd;
-        position: relative;
     }
     @media (max-width: 768px) {
         .header h1 {
