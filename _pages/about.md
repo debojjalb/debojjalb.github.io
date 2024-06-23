@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "👋🏼 Hello there, I'm Debojjal  (Deb)!"
+title: 
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -36,13 +36,13 @@ redirect_from:
         line-height: 1.6;
     }
     .container {
-        max-width: 800px;
+        max-width: 1000px;
         margin: 0 auto;
         padding: 20px;
     }
     .header {
         text-align: center;
-        padding: 50px 0;
+        padding: 50px 20px;
     }
     .header h1 {
         font-size: 2.5em;
@@ -56,6 +56,22 @@ redirect_from:
         background: #fff;
         padding: 20px;
         box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        margin: 20px 0;
+    }
+    .content h2 {
+        border-bottom: 2px solid #ddd;
+        padding-bottom: 5px;
+    }
+    @media (max-width: 768px) {
+        .header h1 {
+            font-size: 2em;
+        }
+        .header p {
+            font-size: 1em;
+        }
+        .content {
+            padding: 15px;
+        }
     }
 </style>
 
