@@ -11,10 +11,9 @@ body {
   margin: 0;
   padding: 0;
   padding-bottom: 9em;
-  color: #333; /* Dark text color for better readability */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: $text-color;
+  font-family: $global-font-family;
   line-height: 1.5;
-  background-color: #f4f4f4; /* Light grey background color */
 
   &.overflow--hidden {
     /* when primary navigation is visible, the content in the background won't scroll */
@@ -25,38 +24,37 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 2em 0 0.5em;
   line-height: 1.2;
-  font-family: 'Merriweather', serif;
+  font-family: $header-font-family;
   font-weight: bold;
-  color: #2c3e50; /* Professional dark blue color */
 }
 
 h1 {
   margin-top: 0;
-  font-size: 2.5em;
+  font-size: $type-size-3;
 }
 
 h2 {
-  font-size: 2em;
+  font-size: $type-size-4;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-size: $type-size-5;
 }
 
 h4 {
-  font-size: 1.5em;
+  font-size: $type-size-6;
 }
 
 h5 {
-  font-size: 1.25em;
+  font-size: $type-size-6;
 }
 
 h6 {
-  font-size: 1em;
+  font-size: $type-size-6;
 }
 
 small, .small {
-  font-size: 0.875em;
+  font-size: $type-size-6;
 }
 
 p {
@@ -66,7 +64,7 @@ p {
 u,
 ins {
   text-decoration: none;
-  border-bottom: 1px solid #3498db; /* Professional blue color */
+  border-bottom: 1px solid $text-color;
   a {
     color: inherit;
   }
@@ -77,26 +75,29 @@ del a {
 }
 
 /* reduce orphans and widows when printing */
+
 p, pre, blockquote, ul, ol, dl, figure, table, fieldset {
   orphans: 3;
   widows: 3;
 }
 
 /* abbreviations */
+
 abbr[title],
 abbr[data-original-title] {
   text-decoration: none;
   cursor: help;
-  border-bottom: 1px dotted #3498db;
+  border-bottom: 1px dotted $text-color;
 }
 
 /* blockquotes */
+
 blockquote {
   margin: 2em 1em 2em 0;
   padding-left: 1em;
   padding-right: 1em;
   font-style: italic;
-  border-left: 0.25em solid #e74c3c; /* Professional red color */
+  border-left: 0.25em solid $primary-color;
 
   cite {
     font-style: italic;
@@ -109,32 +110,26 @@ blockquote {
 }
 
 /* links */
-a {
-  color: #3498db; /* Professional blue color */
-  text-decoration: none;
 
+a {
   &:focus {
-    outline: 2px solid #3498db;
-    outline-offset: 2px;
+    @extend %tab-focus;
   }
 
   &:hover,
   &:active {
-    color: #2980b9; /* Darker blue on hover */
     outline: 0;
   }
 }
 
 /* code */
+
 tt, code, kbd, samp, pre {
-  font-family: 'Courier New', Courier, monospace;
-  background: #ecf0f1; /* Light grey background for code */
-  padding: 0.2em 0.4em;
-  border-radius: 4px;
+  font-family: $monospace;
 }
 
 pre {
-  overflow-x: auto; /* add scrollbars to wide code blocks */
+  overflow-x: auto; /* add scrollbars to wide code blocks*/
 }
 
 p > code,
@@ -144,27 +139,29 @@ figcaption > code,
 td > code {
   padding-top: 0.1rem;
   padding-bottom: 0.1rem;
-  font-size: 0.875em;
-  background: #ecf0f1;
-  border: 1px solid #bdc3c7;
-  border-radius: 4px;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  font-size: $type-size-6;
+  background: $code-background-color;
+  border: 1px solid $lighter-gray;
+  border-radius: $border-radius;
+  box-shadow: $box-shadow;
 
   &:before, &:after {
     letter-spacing: -0.2em;
-    content: "\00a0"; /* non-breaking space */
+    content: "\00a0"; /* non-breaking space*/
   }
 }
 
 /* horizontal rule */
+
 hr {
   display: block;
   margin: 1em 0;
   border: 0;
-  border-top: 1px solid #bdc3c7;
+  border-top: 1px solid $border-color;
 }
 
 /* lists */
+
 ul li,
 ol li {
   margin-bottom: 0.5em;
@@ -175,11 +172,19 @@ li ol {
   margin-top: 0.5em;
 }
 
+/*
+   Media and embeds
+   ========================================================================== */
+
 /* Figures and images */
+
 figure {
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+          align-items: flex-start;
   flex-wrap: wrap;
   margin: 2em 0;
 
@@ -191,8 +196,9 @@ figure {
 
   img {
     width: 100%;
-    border-radius: 4px;
-    transition: all 0.3s ease;
+    border-radius: $border-radius;
+    -webkit-transition: $global-transition;
+    transition: $global-transition;
   }
 
   > a {
@@ -227,36 +233,56 @@ figure {
 }
 
 /* Figure captions */
+
 figcaption {
   margin-bottom: 0.5em;
-  color: #7f8c8d; /* Professional grey color */
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 0.875em;
+  color: mix(#fff, $text-color, 25%);
+  font-family: $caption-font-family;
+  font-size: $type-size-6;
 
   a {
     color: inherit;
     text-decoration: none;
-    border-bottom: 1px solid #bdc3c7;
-    transition: all 0.3s ease;
+    border-bottom: 1px solid $light-gray;
+    -webkit-transition: $global-transition;
+    transition: $global-transition;
 
     &:hover {
-      color: #2c3e50;
-      border-bottom-color: #2c3e50;
+      color: #000;
+      border-bottom-color: #000;
     }
   }
 }
 
+
 /* Fix IE9 SVG bug */
+
 svg:not(:root) {
   overflow: hidden;
 }
 
-/* Navigation lists */
+
+/*
+   Navigation lists
+   ========================================================================== */
+
+/**
+ * Removes margins, padding, and bullet points from navigation lists
+ *
+ * Example usage:
+ * <nav>
+ *    <ul>
+ *      <li><a href="#link-1">Link 1</a></li>
+ *      <li><a href="#link-2">Link 2</a></li>
+ *      <li><a href="#link-3">Link 3</a></li>
+ *    </ul>
+ *  </nav>
+ */
+
 nav {
   ul {
     margin: 0;
     padding: 0;
-    list-style: none;
   }
 
   li {
@@ -265,7 +291,6 @@ nav {
 
   a {
     text-decoration: none;
-    color: inherit;
   }
 
   /* override white-space for nested lists */
@@ -280,7 +305,11 @@ nav {
   }
 }
 
-/* Global animation transition */
+/*
+   Global animation transition
+   ========================================================================== */
+
 b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a, tr, td, form button, input[type="submit"], .btn, .highlight, .archive__item-teaser {
-  transition: all 0.3s ease;
+  -webkit-transition: $global-transition;
+  transition: $global-transition;
 }
