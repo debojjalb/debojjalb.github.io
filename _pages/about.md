@@ -1,4 +1,4 @@
----
+make this a dynamic and beautiful home page: ---
 permalink: /
 title: "👋🏼 Hello there, I'm Debojjal  (Deb)!"
 excerpt: "About me"
@@ -13,9 +13,6 @@ redirect_from:
         font-family: "Times New Roman", Times, serif;
         font-size: 14px;
         color: #000;
-        background-color: #f4f4f9;
-        margin: 0;
-        padding: 0;
     }
     a {
         color: #014552; /* Dark blue color for links */
@@ -26,43 +23,85 @@ redirect_from:
         font-weight: 600;
         line-height: 1.25;
     }
-    .big-heading {
-        font-size: 2.5em;
-        margin-bottom: 10px;
-    }
 </style>
 
-<div>
-    <h1 class="big-heading">👋🏼 Hello there, I'm Debojjal (Deb)!</h1>
-    <p>Hi! I'm currently a graduate student specializing in <a href="https://www.caee.utexas.edu/research/research-areas/transportation-engineering" target="_blank">Transportation Engineering</a> at the <a href="https://www.caee.utexas.edu/" target="_blank">Department of Civil, Architectural, and Environmental Engineering</a>, <a href="https://www.utexas.edu/" target="_blank">University of Texas at Austin</a>. My academic journey began with a <a href="https://ug.iisc.ac.in/" target="_blank">BS (research)</a> degree from the <a href="https://iisc.ac.in/" target="_blank">Indian Institute of Science (IISc), Bangalore</a>, where I majored in Earth & Environmental Science along with a minor in Mathematics. During my time there, I was associated with the <a href="http://civil.iisc.ernet.in/%7Etarunr/group.html" target="_blank">Transportation Networks Lab</a> at the <a href="https://cistup.iisc.ac.in/" target="_blank">Center for Infrastructure, Sustainable Transportation & Urban Planning (CiSTUP)</a>. Over the past two years, I have delved into sustainable logistics and transportation.</p>
+Hi! I'm currently a graduate student specializing in [Transportation Engineering](https://www.caee.utexas.edu/research/research-areas/transportation-engineering) at the [Department of Civil, Architectural, and Environmental Engineering](https://www.caee.utexas.edu/), [University of Texas at Austin](https://www.utexas.edu/). My academic journey began with a [BS (research)](https://ug.iisc.ac.in/) degree from the [Indian Institute of Science (IISc), Bangalore](https://iisc.ac.in/), where I majored in Earth & Environmental Science along with a minor in Mathematics. During my time there, I was associated with the [Transportation Networks Lab](http://civil.iisc.ernet.in/%7Etarunr/group.html) at the [Center for Infrastructure, Sustainable Transportation & Urban Planning (CiSTUP)](https://cistup.iisc.ac.in/). Over the past two years, I have delved into sustainable logistics and transportation.
 
-    <p>My roots trace back to the picturesque city of Kalyani, nestled near Kolkata. I then moved to Bangalore, often referred to as the Garden City of India, for my undergraduate studies. Currently, I call the vibrant and musically-rich city of Austin my home.</p>
+My roots trace back to the picturesque city of Kalyani, nestled near Kolkata. I then moved to Bangalore, often referred to as the Garden City of India, for my undergraduate studies. Currently, I call the vibrant and musically-rich city of Austin my home. 
 
-    <p>Thank you for visiting my site. I invite you to explore the site and learn more about my research. Should you wish to discuss my research or simply chat, please don't hesitate to reach out via <a href="mailto:debojjalb@utexas.edu">email</a>.</p>
+Thank you for visiting my site. I invite you to explore the site and learn more about my research. Should you wish to discuss my research or simply chat, please don't hesitate to reach out via [email](mailto:debojjalb@utexas.edu).
 
-    <h2>Education</h2>
-    <p><strong>Master of Science in Engineering (M.S.E)</strong> - Aug 2023 -- Fall, 2024 (Expected) <br>
-    (Admitted to the Ph.D. program with an M.S. (Thesis) en route) <br>
-    <em>Major</em>: Transportation Engineering; <em>Minor</em>: Industrial Engineering and Operations Research, <a href="https://www.utexas.edu/" target="_blank">UT Austin</a> <br>
-    <em>Advisor</em>: <a href="https://sboyles.github.io/" target="_blank">Prof. Stephen Boyles</a></p>
+## Education
 
-    <p><strong>Bachelor of Science (B.S. by Research)</strong> - Aug 2019 -- May, 2023 <br>
-    <em>Major</em>: Earth and Environmental Science; <em>Minor</em>: Mathematics, <a href="https://iisc.ac.in/" target="_blank">IISc, Bengaluru</a> <br>
-    <em>Awards</em>: <strong>Gold Medal</strong> for highest GPA in major, <strong>Highest project grade</strong>, First Class <strong>Distinction</strong> <br>
-    <em>Thesis</em>: Energy Efficient and Safe Routing for Last-mile Logistics <br>
-    <em>Advisor</em>: <a href="http://civil.iisc.ernet.in/%7Etarunr/" target="_blank">Prof. Tarun Rambha</a></p>
+**Master of Science in Engineering (M.S.E)** - Aug 2023 -- Fall, 2024 (Expected) 
+(Admitted to the Ph.D. program with an M.S. (Thesis) en route)  
+*Major*: Transportation Engineering; *Minor*: Industrial Engineering and Operations Research, [UT Austin](https://www.utexas.edu/)    
+*Advisor*: [Prof. Stephen Boyles](https://sboyles.github.io/)  
 
-    <h2>Research Interests</h2>
-    <p>My primary area of interest lies in transportation network analysis, traffic assignment, and the optimization of routes with a focus on their environmental impacts. I have worked extensively on reverse logistics network design, variants of the Travelling Salesman Problem, and traffic routing. Recently, I developed a keen interest in congestion pricing and tolling. In my research, I consistently employ metaheuristics and mathematical programming as my go-to solution techniques.</p>
+**Bachelor of Science (B.S. by Research)** - Aug 2019 -- May, 2023  
+*Major*: Earth and Environmental Science; *Minor*: Mathematics, [IISc, Bengaluru](https://iisc.ac.in/)   
+*Awards*: **Gold Medal** for highest GPA in major, **Highest project grade**, First Class **Distinction**  
+*Thesis*: Energy Efficient and Safe Routing for Last-mile Logistics   
+*Advisor*: [Prof. Tarun Rambha](http://civil.iisc.ernet.in/%7Etarunr/) 
 
-    <ul>
-        <li><strong>Primary Focus</strong>: Transportation Network Optimisation, Sustainable Transportation, Congestion Pricing, Traffic Equilibrium</li>
-        <li><strong>Allied Focus</strong>: Convex Optimization, Discrete Event Simulation, Metaheuristics, Machine Learning, Algorithmic Game Theory, Mathematical Programming</li>
-    </ul>
 
-    <h2>Achievements</h2>
-    <p>I am an <a href="https://ncert.nic.in/national-talent-examination.php" target="_blank">NTSE National Scholar</a> recognized by MHRD, Govt. of India & <a href="http://www.kvpy.iisc.ernet.in/main/about.htm" target="_blank">KVPY Research Fellow</a>. I was awarded the <a href="https://jbnsts.ac.in" target="_blank">Jagadish Bose National Science Talent Search Fellowship</a> by Padma Shree <a href="https://www.isical.ac.in/%7Esanghami/" target="_blank">Prof. Sanghamitra Bandyopadhyay</a> (Currently director of ISI, Kolkata). Further, I received the <a href="https://das.reliancefoundation.org" target="_blank">Dhirubhai Ambani Fellowship</a> and <a href="https://www.youtube.com/watch?v=gjFi4Li04hE" target="_blank">The Telegraph School Award</a>. I was awarded the <a href="https://www.mitacs.ca/en/programs/globalink/globalink-research-internship" target="_blank">MITACS Globalink Research Internship Award</a> to carry out 12 weeks of research in Canada. Most recently, I was granted the <a href="https://gradschool.utexas.edu/finances/fellowships" target="_blank">Graduate School Fellowship</a> from the University of Texas at Austin.</p>
+## Research Interests
 
-    <h2>Non Academic Interests</h2>
-    <p>I am currently learning to play the guitar. My leisure moments are often spent engrossed in chess or exploring new content for my budding YouTube channel. I'm fervently passionate about the startup ecosystem and love hearing stories and pitches from aspiring entrepreneurs. I was one of the founding members of <a href="https://play.google.com/store/apps/details?id=co.sansa.uyolx" target="_blank">coachio.in</a>. Oh, and yes! Planning or going on a trip? Always count me in!</p>
-</div>
+My primary area of interest lies in transportation network analysis, traffic assignment and the optimization of routes with a focus on their environmental impacts. I have worked extensively on reverse logistics network design, variants of the Travelling Salesman Problem, and traffic routing. Recently, I developed a keen interest in congestion pricing and tolling. In my research, I consistently employ metaheuristics and mathematical programming as my go-to solution techniques.
+
+**Primary Focus**: Transportation Network Optimisation, Sustainable Transportation, Congestion Pricing, Traffic Equilibrium
+
+**Allied Focus**: Convex Optimization, Discrete Event Simulation, Metaheuristics, Machine Learning, Algorithmic Game Theory, Mathematical Programming
+
+<!-- [Learn more about my research](Research.html) -->
+
+## Achievements
+
+I am an [NTSE National Scholar](https://ncert.nic.in/national-talent-examination.php) recognized by MHRD, Govt. of India & [KVPY Research Fellow](http://www.kvpy.iisc.ernet.in/main/about.htm). I was awarded [Jagadish Bose National Science Talent Search Fellowship](https://jbnsts.ac.in) by Padma Shree [Prof. Sanghamitra Bandyopadhyay](https://www.isical.ac.in/%7Esanghami/) (Currently director of ISI, Kolkata). Further, I received the [Dhirubhai Ambani Fellowship](https://das.reliancefoundation.org) and [The Telegraph School Award](https://www.youtube.com/watch?v=gjFi4Li04hE). I was awarded the [MITACS Globalink Research Internship Award](https://www.mitacs.ca/en/programs/globalink/globalink-research-internship) to carry out 12 weeks of research in Canada. Most recently, I was granted the [Graduate School Fellowship](https://gradschool.utexas.edu/finances/fellowships) from the University of Texas at Austin.
+
+
+## Non Academic Interests
+
+I am currently learning to play the guitar. My leisure moments are often spent engrossed in chess or exploring new content for my budding YouTube channel. I'm fervently passionate about the startup ecosystem and love hearing stories and pitches from aspiring entrepreneurs. I was one of the founding members of [coachio.in](https://play.google.com/store/apps/details?id=co.sansa.uyolx). Oh, and yes! planning or going on a trip? Always count me in!
+
+
+
+
+
+<!-- ![Illustration of combining vision and language modalities](/images/image_to_text_vis.png){: .align-right width="300px"}
+👨🏻‍💻 I'm a final year graduate student at the TU Berlin.
+
+🔬 My research interests are in bridging vision and language modalities and Self-Supervised Learning!
+
+📚 I'm currently working towards my Master's Thesis in the field of Vision-Language-Modelling.
+
+📽️ I am also interested in assisting others on their path in the world of Machine Learning and academia.
+
+# Selected Experience
+
+## 🤖 Open Source Contributions
+I have experience contributing to [Arena Bench](https://github.com/Arena-Rosnav) a large open-source project for robotic obstacle avoidance using Deep Reinforcement Learning.
+
+Moreover, I have published a [respective paper](https://sudo-boris.github.io/publication/2022-Arena-Bench) at the IROS conference and in the Robotics and Automation Letters (RA-L) journal.
+
+## 📜 Reimplementing and Reproducing Papers
+I have experience with independent research. I have implemented the Reward Constrained Policy Optimization paper into stable-baselines3 PPO and reproduced the original results by running and tracking experiments.
+
+To accompany this work, I have submitted a blog post to the **ICLR** Blogposts Track communicating the paper's theory and my results.
+
+Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/portfolio/RCPPO/).
+
+## 👨🏻‍🔬 Professional Experience
+Currently I am working as a **Student Researcher** at the Reliable Multimodal AI Lab at the TU Darmstadt under the supervision of Prof. Marcus Rohrbach working on **Generative Video-Language Modelling**.
+Additionally, I have professional experience working as an **Applied Machine Learning Student Researcher** at the Fraunhofer Heinrich Hertz Institute. \
+There I worked on dynamic traffic flow forecasting using Graph Neural Networks.
+
+## 📚 Teaching and Community Contributions
+To further contribute to the Machine Learning community, I have a [YouTube](https://www.youtube.com/@borismeinardus) and [Medium](https://medium.com/@boris.meinardus) channel where I publish educational Machine Learning content.
+
+
+
+
+
+
+ -->
