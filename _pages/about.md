@@ -73,6 +73,14 @@ redirect_from:
         border-bottom: 2px solid #ddd;
         padding-bottom: 5px;
     }
+    .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #f4f4f9;
+        color: #666;
+        border-top: 1px solid #ddd;
+        position: relative;
+    }
     @media (max-width: 768px) {
         .header h1 {
             font-size: 2em;
@@ -131,6 +139,9 @@ redirect_from:
             <h2>Non Academic Interests</h2>
             <p>I am currently learning to play the guitar. My leisure moments are often spent engrossed in chess or exploring new content for my budding YouTube channel. I'm fervently passionate about the startup ecosystem and love hearing stories and pitches from aspiring entrepreneurs. I was one of the founding members of <a href="https://play.google.com/store/apps/details?id=co.sansa.uyolx" target="_blank">coachio.in</a>. Oh, and yes! Planning or going on a trip? Always count me in!</p>
         </div>
+    </div>
+    <div class="footer">
+        &copy; 2024 Debojjal (Deb) | All Rights Reserved
     </div>
 </div>
 </body>
