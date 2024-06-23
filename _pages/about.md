@@ -1,4 +1,4 @@
-make this a dynamic and beautiful home page: ---
+---
 permalink: /
 title: "👋🏼 Hello there, I'm Debojjal  (Deb)!"
 excerpt: "About me"
