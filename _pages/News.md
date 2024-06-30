@@ -64,7 +64,11 @@ You can access it through GitHub [https://github.com/debojjalb/UTAustinBeamer](h
 
 ## I am learning to play the guitar and keyboard
 
-One of my favourites licks is the opening intro to Choo lo. On an odd summer afternoon, I decided to give it a shot. [Here’s my attempt!](/videos/Video-374.mov). Bengali is my mother tongue, and though I never learned singing, I gave  [Coffee House er shei adda ta](https://youtube.com/shorts/_3zst7uvgE8?si=JbpdwBvnh7QRhbRP) a try. I also played [Ye jism hai to kya](https://www.instagram.com/reel/C3LoYunOXOnLAduMRLkz_qKT80kuC_wPcqLxEs0/?igsh=bmlnNGM5MXI1Yjd5) on my friend's electric guitar.
+One of my favourites licks is the opening intro to Choo lo. On an odd summer afternoon, I decided to give it a shot. [Here’s my attempt!](/videos/Video-374.mov)
+
+Bengali is my mother tongue, and though I never learned singing, I gave  [Coffee House er shei adda ta](https://youtube.com/shorts/_3zst7uvgE8?si=JbpdwBvnh7QRhbRP) a try. 
+
+I also played [Ye jism hai to kya](/videos/Video-417.mov) on my friend's electric guitar.
 
 When back home in Kolkata, I play on my keyboard:
 - [Bosonto esge geche](https://youtu.be/boWtt-A6qTU?si=vzbv0Mmv89o3w9Pc)
