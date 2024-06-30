@@ -64,10 +64,10 @@ You can access it through GitHub [https://github.com/debojjalb/UTAustinBeamer](h
 
 ## I am learning to play the guitar and keyboard
 
-I tried singing [Coffee House er shei adda ta](https://youtube.com/shorts/_3zst7uvgE8?si=JbpdwBvnh7QRhbRP). I also gave [Ye jism hai to kya](https://www.instagram.com/reel/C3LoYunOXOnLAduMRLkz_qKT80kuC_wPcqLxEs0/?igsh=bmlnNGM5MXI1Yjd5) a try.
+One of my favourites licks is the opening intro to Choo lo. On an odd summer afternoon, I decided to give it a shot. [Here’s my attempt!](/videos/Video-374.mov). Bengali is my mother tongue, and though I never learned singing, I gave  [Coffee House er shei adda ta](https://youtube.com/shorts/_3zst7uvgE8?si=JbpdwBvnh7QRhbRP) a try. I also played [Ye jism hai to kya](https://www.instagram.com/reel/C3LoYunOXOnLAduMRLkz_qKT80kuC_wPcqLxEs0/?igsh=bmlnNGM5MXI1Yjd5) on my friend's electric guitar.
 
 When back home in Kolkata, I play on my keyboard:
-- [Bosonto esge geche on Keyboard + Arranger](https://youtu.be/boWtt-A6qTU?si=vzbv0Mmv89o3w9Pc)
+- [Bosonto esge geche](https://youtu.be/boWtt-A6qTU?si=vzbv0Mmv89o3w9Pc)
 - [Purano shei diner kotha](https://youtu.be/uqbLpiiSf9M?si=j1hw4WHTiQ6bVB4t)
 - [Pran chay chokhu na chay](https://youtu.be/M9QqOV-6YJo?si=dbRzfBskeRMM-rgm)
 
