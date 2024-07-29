@@ -64,16 +64,24 @@ You can access it through GitHub [https://github.com/debojjalb/UTAustinBeamer](h
 
 ## I am learning to play the guitar and keyboard
 
-One of my favourites licks is the opening intro to Choo lo. On an odd summer afternoon, I decided to give it a shot. [Here’s my attempt!](/videos/Video-374.mov)
+Links to some of my guitar covers:
 
-Bengali is my mother tongue, and though I never learned singing, I gave  [Coffee House er shei adda ta](https://youtube.com/shorts/_3zst7uvgE8?si=JbpdwBvnh7QRhbRP) a try. 
+- This song is perfect to be played on acoustic guitar, and I believe it will be a timeless classic. Here's my version of [Ishq Wala Love (इश्क वाला लव)](/videos/IshqWalaLove.mov).
 
-I also played [Ye jism hai to kya](/videos/Video-417.mov) on my friend's electric guitar.
+- I played this song on my father's birthday from the movie Animal. Keeping the stir that this movie created aside, I feel this song is just beautiful. [Papa meri jaan (पापा मेरी जान)](/videos/PapaMeriJaan.MP4)
+
+- One of my favorite licks is the opening intro to Choo lo. [Here’s my attempt! (छू लो)](/videos/Video-374.mov)
+
+- Bengali is my mother tongue, and though I never learned singing, I gave [Coffee House er shei adda ta (কফি হাউসের সেই আড্ডাটা)](https://youtube.com/shorts/_3zst7uvgE8?si=JbpdwBvnh7QRhbRP) a try.
+
+- I also played [Ye jism hai to kya (ये जिस्म है तो क्या)](/videos/Video-417.mov) on my friend's electric guitar.
 
 When back home in Kolkata, I play on my keyboard:
-- [Bosonto esge geche](https://youtu.be/boWtt-A6qTU?si=vzbv0Mmv89o3w9Pc)
-- [Purano shei diner kotha](https://youtu.be/uqbLpiiSf9M?si=j1hw4WHTiQ6bVB4t)
-- [Pran chay chokhu na chay](https://youtu.be/M9QqOV-6YJo?si=dbRzfBskeRMM-rgm)
+
+- [Bosonto esge geche (বসন্ত এসে গেছে)](https://youtu.be/boWtt-A6qTU?si=vzbv0Mmv89o3w9Pc)
+- [Purano shei diner kotha (পুরানো সেই দিনের কথা)](https://youtu.be/uqbLpiiSf9M?si=j1hw4WHTiQ6bVB4t)
+- [Pran chay chokhu na chay (প্রাণ চায় চক্ষু না চায়)](https://youtu.be/M9QqOV-6YJo?si=dbRzfBskeRMM-rgm)
+
 
 
 ## Keep Austin Beautiful Day '24
