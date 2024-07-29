@@ -65,9 +65,9 @@ redirect_from:
 
 ## Manuscripts under Review 
 
-- Agarwal, P.†, **Bagchi, D.**†, Rambha, T., and Pandey, V. (2024). A Bi-criterion Steiner Traveling Salesperson Problem with Time Windows for Last-Mile Electric Vehicle Logistics.
+- Agarwal, P.†, **Bagchi, D.**†, Rambha, T., and Pandey, V. (2024). A Bi-criterion Steiner Traveling Salesperson Problem with Time Windows for Last-Mile Electric Vehicle Logistics. [[Code](https://github.com/transnetlab/last-mile-ev-logistics)]
 
-**† Equal contribution.**
+    **† Equal contribution.**
 
 
 ## Refereed Conference Presentations
