@@ -12,7 +12,7 @@ Based on the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal
 
 ## Licensing
 
-This template is derived from [this repository](https://github.com/academicpages/academicpages.github.io), with all rights belonging to the original authors. The current repository includes several modifications made by the author. Both the original content and the modifications are covered under the MIT License. See the [license file](\LICENSE) for more details. 
+This template is derived from [this repository](https://github.com/academicpages/academicpages.github.io), with all rights belonging to the original authors. The current repository includes several modifications made by the author. Both the original content and the modifications are covered under the MIT License. See the [license file](LICENSE) for more details. 
 
 If you choose to fork this repository rather than the original one, please credit both the original authors and myself.
 
