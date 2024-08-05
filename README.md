@@ -1,4 +1,4 @@
-# GitHub Pages Personal Website
+# Github Pages Personal Website
 
 **Author:**<br>
 Debojjal Bagchi<br>
