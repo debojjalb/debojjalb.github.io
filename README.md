@@ -10,10 +10,11 @@ debojjalb@utexas.edu<br>
 
 Based on the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.
 
-## Licensing 
-The template is forked from ork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
+## Licensing
 
-If you are forking this repository instead of the original repository please add credits to bpth original authors and me!
+This template is derived from [this repository](https://github.com/academicpages/academicpages.github.io), with all rights belonging to the original authors. The current repository includes several modifications made by the author. Both the original content and the modifications are covered under the MIT License.
+
+If you choose to fork this repository rather than the original one, please credit both the original authors and myself.
 
 
 ## To run locally (not on GitHub Pages, to serve on your own computer)
