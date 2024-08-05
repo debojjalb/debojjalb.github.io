@@ -1,4 +1,4 @@
-# GitHub Pages website template for Debojjal Bagchi
+# GitHub Pages Personal Website
 
 **Author:**<br>
 Debojjal Bagchi<br>
