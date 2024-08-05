@@ -1,10 +1,10 @@
 # GitHub Pages website template for Debojjal Bagchi
 
-Author:
-Debojjal Bagchi
-The University of Texas at Austin
-debojjalb@utexas.edu
-https://debojjalb@githiub.io
+**Author:**<br>
+Debojjal Bagchi<br>
+The University of Texas at Austin<br>
+debojjalb@utexas.edu<br>
+[https://debojjalb.github.io](https://debojjalb.github.io)
 
 ## Details
 
