@@ -115,7 +115,7 @@ redirect_from:
 - Traffic Demand Modeling: Growth Factor Modeling, YouTube Unlisted, Debojjal Bagchi [YouTube Link](https://youtu.be/l3qOH2LagAI)
 
 - Environment Impact Assessment (EIA): Process & Documentation, YouTube Unlisted, Debojjal Bagchi [YouTube Link](https://youtu.be/zbwz0avpth4)
-
+<!-- 
 ## Repositories
 
 - [Comparison between Label Correcting & Label Setting Algorithms for Method of Successive Averages, Debojjal Bagchi](https://github.com/debojjalb/MSA-) (Completed as part of the course CE272 at IISc, Bengaluru)
@@ -132,4 +132,4 @@ redirect_from:
 
 - IBM Employee Attrition in the Dawn of Recession due to COVID-19 ([PDF](https://drive.google.com/file/d/17kX1egT9lEVwGswV6M6VNpr3hJ--wSwY/view?usp=sharing), [IPynb Notebook](https://github.com/debojjalb/IBM_Employee_Attrition/blob/master/IBM_ATTRITION_SummerAnalytics.ipynb))
 
-- Student Grade Prediction using Random Forest Classifier ([Presentation](https://github.com/debojjalb/grade_prediction/blob/main/DS226_Powerpoint_Barnopriyos_team.pdf), [IPynb Notebook](https://github.com/debojjalb/grade_prediction/blob/main/DS226_Project_TW_BD_DB%281%29.ipynb)) (Collaborators: Barnopriyo Dutta, Tsungrojungla Walling)
+- Student Grade Prediction using Random Forest Classifier ([Presentation](https://github.com/debojjalb/grade_prediction/blob/main/DS226_Powerpoint_Barnopriyos_team.pdf), [IPynb Notebook](https://github.com/debojjalb/grade_prediction/blob/main/DS226_Project_TW_BD_DB%281%29.ipynb)) (Collaborators: Barnopriyo Dutta, Tsungrojungla Walling) -->
