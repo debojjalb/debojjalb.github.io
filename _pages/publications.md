@@ -50,11 +50,11 @@ redirect_from:
     }
 </style>
 
-<!-- <div class="center-box">
+<div class="center-box">
     <div class="download-box">
         <a href="/files/Resume.pdf" download>Download CV</a>
     </div>
-</div> -->
+</div>
 
 ## Work in Progress
 
