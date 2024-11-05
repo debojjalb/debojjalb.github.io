@@ -71,6 +71,12 @@ redirect_from:
 
 
 ## Refereed Conference Presentations
+
+6. **Bagchi, D.**, Bathgate, K., and Boyles, S. D. (2025). A queuing-theory-based operating capacity model for multimodal port operations. In __Transportation Research Board 104th Annual Meeting 2023, Washington, D.C., USA. Lectern session.(TRB, 2025)__.
+
+5.  Bathgate, K., **Bagchi, D.**, and Boyles, S. D. (2025). Use of AIS data to characterize vessel mix in
+Houston port operations for simulation. . In __Transportation Research Board 104th Annual Meeting 2023, Washington, D.C., USA. Lectern session.(TRB, 2025)__.
+
 4. **Bagchi, D.** and Boyles S. D. (2024). Error Bounds for Stochastic User Equilibrium Traffic Assignment. In __The Institute for Operations Research and the Management Sciences Annual Meeting, Seattle, USA (INFORMS 2024)__.
 
 3. Bathgate, K., **Bagchi, D.**, and Boyles S. (2024). Identifying capacities in a multimodal maritime freight network. In __The Institute for Operations Research and the Management Sciences Annual Meeting, Seattle, USA (INFORMS 2024)__.
