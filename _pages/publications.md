@@ -56,12 +56,6 @@ redirect_from:
     </div>
 </div>
 
-## Work in Progress
-
-- **Bagchi, D.**, Bathgate, K., and Boyles S. D. (2024). A queuing-theory-based operating capacity model for multimodal port operations
-
-- Bathgate, K., **Bagchi, D.**, and Boyles S. D. (2024). Use of AIS data to characterize vessel mix in Houston port operations for simulation
-
 
 ## Manuscripts under Review 
 
@@ -84,6 +78,12 @@ Houston port operations for simulation. . In __Transportation Research Board 104
 2. **Bagchi, D.**, Agarwal, P., Rambha T., and Pandey V. (2022). A Local Search Heuristic for Bi-Criterion Steiner Traveling Salesman Problem. In __The Institute for Operations Research and the Management Sciences Annual Meeting, Indianapolis, USA (INFORMS 2022)__.
 
 1. **Bagchi, D.**, Agarwal, P., Rambha T., and Pandey V. (2022). A Local Search Heuristic for Bi-Criterion Steiner Traveling Salesman Problem. In __Transportation Research Board Annual Meeting, Washington, USA (TRB 2022)__.
+
+## Work in Progress
+
+- **Bagchi, D.**, Bathgate, K., and Boyles S. D. (2024). A queuing-theory-based operating capacity model for multimodal port operations
+
+- Bathgate, K., **Bagchi, D.**, and Boyles S. D. (2024). Use of AIS data to characterize vessel mix in Houston port operations for simulation
 
 ## Course Project Reports / Proposals
 
