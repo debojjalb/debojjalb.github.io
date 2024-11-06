@@ -86,9 +86,9 @@ author:
   location         : "Austin, Texas"
   employer         : "UT Austin"
   pubmed           : 
-  googlescholar    : 
+  googlescholar    : "https://scholar.google.co.in/citations?user=vzSxiw4AAAAJ&hl=en&authuser=2&oi=ao"
   email            : "debojjalb@gmail.com"
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  researchgate     : "https://www.researchgate.net/profile/Debojjal-Bagchi"
   uri              :
   bitbucket        :
   codepen          :
