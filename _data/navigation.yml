@@ -10,16 +10,12 @@ main:
   #   # url: /cv/
   #   url: /files/Resume.pdf
 
-  - title: "News"
+  - title: "Updates"
     url: /gallery/
 
-  - title: "Blog"
+  - title: "Grad School Resources"
     # url: /publications/
     url: https://debojjal-bagchi.medium.com/
-
-
-  
-  
 
   
 
