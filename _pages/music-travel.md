@@ -154,7 +154,7 @@ author_profile: true
     <li>Recently, my girlfriend visited me in Austin, and we recorded a cover of <a href="https://youtu.be/i9sKbcSbjF4">Purano Sei Diner Kotha (পুরানো সেই দিনের কথা)</a>.</li>
     <li>This song is perfect to be played on acoustic guitar, and I believe it will be a timeless classic. Here's my version of <a href="/videos/IshqWalaLove.mov">Ishq Wala Love (इश्क वाला लव)</a>.</li>
     <li>One of my favorite licks is the opening intro to Choo Lo. <a href="/videos/Video-374.mov">Here’s my attempt! (छू लो)</a></li>
-    <li>Bengali is my mother tongue, and though I never learned singing, I gave <a href="https://youtube.com/shorts/_3zst7uvgE8?si=JbpdwBvnh7QRhbRP">Coffee House er Shei Adda Ta (কফি হাউসের সেই আড্ডাটা)</a> a try.</li>
+    <!-- <li>Bengali is my mother tongue, and though I never learned singing, I gave <a href="https://youtube.com/shorts/_3zst7uvgE8?si=JbpdwBvnh7QRhbRP">Coffee House er Shei Adda Ta (কফি হাউসের সেই আড্ডাটা)</a> a try.</li> -->
   </ul>
   <p>When back home in Kolkata, I play on my keyboard:</p>
   <ul>

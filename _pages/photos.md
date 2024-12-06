@@ -1,13 +1,11 @@
----
-permalink: /travel/
-author_profile: true
----
-
 <style>
   body {
       font-family: "Arial", sans-serif;
       font-size: 14px;
       color: #333;
+  }
+  body.no-scroll {
+      overflow: hidden; /* Prevent scrolling */
   }
   a {
       color: #014552;
@@ -62,7 +60,7 @@ author_profile: true
       top: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 1); /* Fully black background */
   }
   .modal-content {
       position: fixed;
@@ -96,50 +94,6 @@ author_profile: true
   }
 </style>
 
-<div class="section travel-section">
-  <h2>✈️ Travel</h2>
-  <p>I enjoy exploring new places. Click on a state to see a gallery of my travel pictures from that region.</p>
-  
-  <h3>USA</h3>
-  <table>
-    <thead>
-      <tr>
-        <th>State</th>
-        <th>Gallery</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Seattle, Washington</td>
-        <td><a href="javascript:void(0)" onclick="openGallery(['/images/INFORMS_Seattle1.jpeg', '/images/INFORMS_Seattle2.jpeg'])">View Photos</a></td>
-      </tr>
-      <tr>
-        <td>Boise, Idaho</td>
-        <td><a href="javascript:void(0)" onclick="openGallery(['/images/Boise1.jpeg', '/images/Boise2.jpeg'])">View Photos</a></td>
-      </tr>
-      <tr>
-        <td>Chicago, Illinois</td>
-        <td><a href="javascript:void(0)" onclick="openGallery(['/images/Chicago1.jpeg', '/images/Chicago2.jpeg'])">View Photos</a></td>
-      </tr>
-      <tr>
-        <td>Austin, Texas</td>
-        <td><a href="javascript:void(0)" onclick="openGallery(['/images/Austin1.jpeg', '/images/Austin2.jpeg'])">View Photos</a></td>
-      </tr>
-    </tbody>
-  </table>
-</div>
-
-<div id="galleryModal" class="modal">
-  <span class="close" onclick="closeGallery()">&times;</span>
-  <div class="modal-content">
-    <img id="modalImage" src="" alt="Gallery Image">
-    <div class="carousel-controls">
-      <span id="prev" onclick="prevImage()">&#10094;</span>
-      <span id="next" onclick="nextImage()">&#10095;</span>
-    </div>
-  </div>
-</div>
-
 <script>
   let currentImageIndex = 0;
   let images = [];
@@ -149,10 +103,12 @@ author_profile: true
       currentImageIndex = 0;
       document.getElementById('modalImage').src = images[currentImageIndex];
       document.getElementById('galleryModal').style.display = 'block';
+      document.body.classList.add('no-scroll'); // Disable background scrolling
   }
 
   function closeGallery() {
       document.getElementById('galleryModal').style.display = 'none';
+      document.body.classList.remove('no-scroll'); // Re-enable background scrolling
   }
 
   function prevImage() {
