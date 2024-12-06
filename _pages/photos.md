@@ -111,7 +111,7 @@ author_profile: true
     <tbody>
       <tr>
         <td>Seattle, Washington</td>
-        <td><a href="javascript:void(0)" onclick="openGallery(['/images/Seattle1.jpeg', '/images/Seattle2.jpeg'])">View Photos</a></td>
+        <td><a href="javascript:void(0)" onclick="openGallery(['/images/INFORMS_Seattle1.jpeg', '/images/INFORMS_Seattle2.jpeg'])">View Photos</a></td>
       </tr>
       <tr>
         <td>Boise, Idaho</td>
