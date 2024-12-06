@@ -2,39 +2,21 @@
 permalink: /travel/
 author_profile: true
 ---
-
 <style>
   body {
       font-family: "Arial", sans-serif;
       font-size: 14px;
       color: #333;
   }
-  a {
-      color: #014552;
-  }
   h2 {
       text-align: center;
       font-weight: bold;
-      margin-top: 20px;
-      margin-bottom: 20px;
-  }
-  a:hover {
-      text-decoration: underline;
-  }
-  .section {
-      padding: 20px;
-      margin-bottom: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-  .travel-section {
-      background: #f7faff;
+      margin: 20px 0;
   }
   table {
       margin: 20px auto;
       border-collapse: collapse;
       width: 80%;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   }
   table th, table td {
       border: 1px solid #ddd;
@@ -44,13 +26,6 @@ author_profile: true
   table th {
       background-color: #f2f2f2;
       font-weight: bold;
-  }
-  table a {
-      text-decoration: none;
-      color: #014552;
-  }
-  table a:hover {
-      text-decoration: underline;
   }
 
   /* Modal styles */
@@ -62,45 +37,74 @@ author_profile: true
       top: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.8);
+      background-color: rgba(0, 0, 0, 0.9);
+      overflow: hidden;
   }
   .modal-content {
-      position: fixed;
+      position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 90%;
-      max-width: 600px;
-      background: white;
-      border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      max-width: 90%;
+      max-height: 80%;
+      text-align: center;
   }
-  .modal img {
-      max-width: 100%;
-      margin: 0 auto;
-      display: block;
+  .modal-content img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+  }
+  .thumbnails {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+  }
+  .thumbnails img {
+      width: 80px;
+      height: 60px;
+      margin: 0 5px;
+      cursor: pointer;
+      border: 2px solid transparent;
+      border-radius: 5px;
+      transition: transform 0.2s ease-in-out, border 0.2s ease-in-out;
+  }
+  .thumbnails img:hover,
+  .thumbnails img.active {
+      transform: scale(1.1);
+      border: 2px solid white;
+  }
+  .carousel-controls {
+      position: absolute;
+      width: 100%;
+      top: 50%;
+      transform: translateY(-50%);
+      display: flex;
+      justify-content: space-between;
+  }
+  .carousel-controls span {
+      cursor: pointer;
+      color: white;
+      font-size: 40px;
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 50%;
+      user-select: none;
   }
   .close {
       position: absolute;
       top: 10px;
-      right: 10px;
-      background: rgba(0, 0, 0, 0.6);
-      border-radius: 50%;
-      width: 30px;
-      height: 30px;
-      text-align: center;
+      right: 20px;
       color: white;
-      font-size: 18px;
+      font-size: 40px;
       cursor: pointer;
+      user-select: none;
   }
 </style>
 
 <div class="section travel-section">
   <h2>✈️ Travel</h2>
-  <p>I enjoy exploring new places. Click on a state to see a gallery of my travel pictures from that region.</p>
-  
-  <h3>USA</h3>
+  <p>Click on a state to see a gallery of my travel pictures from that region.</p>
+
   <table>
     <thead>
       <tr>
@@ -111,7 +115,7 @@ author_profile: true
     <tbody>
       <tr>
         <td>Seattle, Washington</td>
-        <td><a href="javascript:void(0)" onclick="openGallery(['/images/INFORMS_Seattle1.jpeg', '/images/INFORMS_Seattle2.jpeg'])">View Photos</a></td>
+        <td><a href="javascript:void(0)" onclick="openGallery(['/images/Seattle1.jpeg', '/images/Seattle2.jpeg'])">View Photos</a></td>
       </tr>
       <tr>
         <td>Boise, Idaho</td>
@@ -120,10 +124,6 @@ author_profile: true
       <tr>
         <td>Chicago, Illinois</td>
         <td><a href="javascript:void(0)" onclick="openGallery(['/images/Chicago1.jpeg', '/images/Chicago2.jpeg'])">View Photos</a></td>
-      </tr>
-      <tr>
-        <td>Austin, Texas</td>
-        <td><a href="javascript:void(0)" onclick="openGallery(['/images/Austin1.jpeg', '/images/Austin2.jpeg'])">View Photos</a></td>
       </tr>
     </tbody>
   </table>
@@ -137,6 +137,7 @@ author_profile: true
       <span id="prev" onclick="prevImage()">&#10094;</span>
       <span id="next" onclick="nextImage()">&#10095;</span>
     </div>
+    <div class="thumbnails" id="thumbnails"></div>
   </div>
 </div>
 
@@ -147,7 +148,7 @@ author_profile: true
   function openGallery(imageArray) {
       images = imageArray;
       currentImageIndex = 0;
-      document.getElementById('modalImage').src = images[currentImageIndex];
+      updateGallery();
       document.getElementById('galleryModal').style.display = 'block';
   }
 
@@ -157,11 +158,24 @@ author_profile: true
 
   function prevImage() {
       currentImageIndex = (currentImageIndex === 0) ? images.length - 1 : currentImageIndex - 1;
-      document.getElementById('modalImage').src = images[currentImageIndex];
+      updateGallery();
   }
 
   function nextImage() {
       currentImageIndex = (currentImageIndex === images.length - 1) ? 0 : currentImageIndex + 1;
+      updateGallery();
+  }
+
+  function updateGallery() {
       document.getElementById('modalImage').src = images[currentImageIndex];
+      const thumbnailsDiv = document.getElementById('thumbnails');
+      thumbnailsDiv.innerHTML = images.map((src, index) => 
+          `<img src="${src}" class="${index === currentImageIndex ? 'active' : ''}" onclick="setImage(${index})">`
+      ).join('');
+  }
+
+  function setImage(index) {
+      currentImageIndex = index;
+      updateGallery();
   }
 </script>
