@@ -13,6 +13,9 @@ main:
   - title: "Updates"
     url: /gallery/
 
+  - title: "Music and travel"
+    url: /music-travel/
+
   - title: "Grad School Resources"
     # url: /publications/
     url: https://debojjal-bagchi.medium.com/
