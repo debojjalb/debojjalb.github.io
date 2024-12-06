@@ -149,11 +149,11 @@ author_profile: true
     <tbody>
       <tr>
         <td>Texas</td>
-        <td><a href="javascript:void(0)" onclick="openGallery(['texas1.jpg', 'texas2.jpg', 'texas3.jpg'])">View Photos</a></td>
+        <td><a href="javascript:void(0)" onclick="openGallery(['/images/INFORMS_Seattle1.jpeg', '/images/INFORMS_Seattle1.jpeg'])">View Photos</a></td>
       </tr>
       <tr>
         <td>Idaho</td>
-        <td><a href="javascript:void(0)" onclick="openGallery(['idaho1.jpg', 'idaho2.jpg'])">View Photos</a></td>
+        <td><a href="javascript:void(0)" onclick="openGallery(['/images/INFORMS_Seattle1.jpeg', '/images/INFORMS_Seattle1.jpeg'])">View Photos</a></td>
       </tr>
     </tbody>
   </table>
