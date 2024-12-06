@@ -62,24 +62,6 @@ redirect_from:
 
 You can access it through GitHub [https://github.com/debojjalb/UTAustinBeamer](https://github.com/debojjalb/UTAustinBeamer). I have tried to replicate the colors and logos as per the UT official design rules but my template is not official. Please crosscheck before using! 
 
-## I am learning to play the guitar and keyboard
-
-Links to some of my guitar covers:
-
-- Recently, my grilfriend visited me at Austin, and we recorded a cover to [Purano sei diner kotha](https://youtu.be/i9sKbcSbjF4).
-
-- This song is perfect to be played on acoustic guitar, and I believe it will be a timeless classic. Here's my version of [Ishq Wala Love (इश्क वाला लव)](/videos/IshqWalaLove.mov).
-
-- One of my favorite licks is the opening intro to Choo lo. [Here’s my attempt! (छू लो)](/videos/Video-374.mov)
-
-- Bengali is my mother tongue, and though I never learned singing, I gave [Coffee House er shei adda ta (কফি হাউসের সেই আড্ডাটা)](https://youtube.com/shorts/_3zst7uvgE8?si=JbpdwBvnh7QRhbRP) a try.
-
-
-When back home in Kolkata, I play on my keyboard:
-
-- [Bosonto esge geche (বসন্ত এসে গেছে)](https://youtu.be/boWtt-A6qTU?si=vzbv0Mmv89o3w9Pc)
-- [Purano shei diner kotha (পুরানো সেই দিনের কথা)](https://youtu.be/uqbLpiiSf9M?si=j1hw4WHTiQ6bVB4t)
-- [Pran chay chokhu na chay (প্রাণ চায় চক্ষু না চায়)](https://youtu.be/M9QqOV-6YJo?si=dbRzfBskeRMM-rgm)
 
 ## INFORMS Annual Meeting 2024
 

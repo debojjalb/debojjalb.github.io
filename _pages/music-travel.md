@@ -63,15 +63,22 @@ author_profile: true
 
 <div class="section music-section">
   <h2>🎵 Music</h2>
-  <p>Music is my escape. I love playing guitar and keyboard. Here are some of my favorite covers:</p>
+  <p>Music is my escape. I love playing guitar and keyboard.</p>
+  <p>Links to some of my guitar covers:</p>
   <ul>
-    <li><a href="https://youtu.be/i9sKbcSbjF4">Purano Sei Diner Kotha</a></li>
-    <li><a href="/videos/IshqWalaLove.mov">Ishq Wala Love</a></li>
-    <li><a href="/videos/Video-374.mov">Choo Lo</a></li>
-    <li><a href="https://youtube.com/shorts/_3zst7uvgE8">Coffee House er Shei Adda Ta</a></li>
+    <li>Recently, my girlfriend visited me in Austin, and we recorded a cover of <a href="https://youtu.be/i9sKbcSbjF4">Purano Sei Diner Kotha</a>.</li>
+    <li>This song is perfect to be played on acoustic guitar, and I believe it will be a timeless classic. Here's my version of <a href="/videos/IshqWalaLove.mov">Ishq Wala Love (इश्क वाला लव)</a>.</li>
+    <li>One of my favorite licks is the opening intro to Choo Lo. <a href="/videos/Video-374.mov">Here’s my attempt! (छू लो)</a></li>
+    <li>Bengali is my mother tongue, and though I never learned singing, I gave <a href="https://youtube.com/shorts/_3zst7uvgE8?si=JbpdwBvnh7QRhbRP">Coffee House er Shei Adda Ta (কফি হাউসের সেই আড্ডাটা)</a> a try.</li>
   </ul>
-  <p>Check out my <a href="/gallery/music-gallery">music gallery</a> for more!</p>
+  <p>When back home in Kolkata, I play on my keyboard:</p>
+  <ul>
+    <li><a href="https://youtu.be/boWtt-A6qTU?si=vzbv0Mmv89o3w9Pc">Bosonto Eshe Geche (বসন্ত এসে গেছে)</a></li>
+    <li><a href="https://youtu.be/uqbLpiiSf9M?si=j1hw4WHTiQ6bVB4t">Purano Sei Diner Kotha (পুরানো সেই দিনের কথা)</a></li>
+    <li><a href="https://youtu.be/M9QqOV-6YJo?si=dbRzfBskeRMM-rgm">Pran Chay Chokhu Na Chay (প্রাণ চায় চক্ষু না চায়)</a></li>
+  </ul>
 </div>
+
 
 <div class="section travel-section">
   <h2>✈️ Travel</h2>
