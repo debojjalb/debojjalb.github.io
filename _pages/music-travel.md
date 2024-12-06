@@ -1,5 +1,5 @@
 ---
-permalink: /gallery/
+permalink: /music-travel/
 author_profile: true
 ---
 
