@@ -176,7 +176,23 @@ author_profile: true
         <td><a href="javascript:void(0)" onclick="openGallery(['/images/INFORMS_Seattle1.jpeg', '/images/INFORMS_Seattle2.jpeg'])">View Photos</a></td>
       </tr>
       <tr>
-        <td>Idaho</td>
+        <td>Boise, Idaho</td>
+        <td><a href="javascript:void(0)" onclick="openGallery(['/images/INFORMS_Seattle3.jpeg', '/images/INFORMS_Seattle4.jpeg'])">View Photos</a></td>
+      </tr>
+      <tr>
+        <td>Chicago, Illinois</td>
+        <td><a href="javascript:void(0)" onclick="openGallery(['/images/INFORMS_Seattle3.jpeg', '/images/INFORMS_Seattle4.jpeg'])">View Photos</a></td>
+      </tr>
+      <tr>
+        <td>Austin, Texas</td>
+        <td><a href="javascript:void(0)" onclick="openGallery(['/images/INFORMS_Seattle3.jpeg', '/images/INFORMS_Seattle4.jpeg'])">View Photos</a></td>
+      </tr>
+      <tr>
+        <td>Dallas, Texas</td>
+        <td><a href="javascript:void(0)" onclick="openGallery(['/images/INFORMS_Seattle3.jpeg', '/images/INFORMS_Seattle4.jpeg'])">View Photos</a></td>
+      </tr>
+      <tr>
+        <td>San Antonio, Texas</td>
         <td><a href="javascript:void(0)" onclick="openGallery(['/images/INFORMS_Seattle3.jpeg', '/images/INFORMS_Seattle4.jpeg'])">View Photos</a></td>
       </tr>
     </tbody>
