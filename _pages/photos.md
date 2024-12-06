@@ -1,184 +1,167 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Debojjal's Travel Gallery</title>
-    <style>
-        /* Global Styling */
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            background: #f9f9f9;
-            color: #333;
-        }
-        header {
-            background: #ff6f61;
-            color: white;
-            padding: 20px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-        }
-        header p {
-            margin: 5px 0 0;
-        }
+---
+permalink: /travel/
+author_profile: true
+---
 
-        /* Filter Buttons */
-        .filter-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 10px;
-            margin: 20px 0;
-        }
-        .filter-buttons button {
-            padding: 10px 20px;
-            border: none;
-            border-radius: 20px;
-            background: #ff6f61;
-            color: white;
-            font-size: 1rem;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        .filter-buttons button:hover {
-            background: #e05b50;
-        }
+<style>
+  body {
+      font-family: "Arial", sans-serif;
+      font-size: 14px;
+      color: #333;
+  }
+  a {
+      color: #014552;
+  }
+  h2 {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  a:hover {
+      text-decoration: underline;
+  }
+  .section {
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  .travel-section {
+      background: #f7faff;
+  }
+  table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 80%;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  table th, table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+  }
+  table th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+  }
+  table a {
+      text-decoration: none;
+      color: #014552;
+  }
+  table a:hover {
+      text-decoration: underline;
+  }
 
-        /* Gallery Styling */
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            padding: 20px;
-        }
-        .gallery-item {
-            position: relative;
-            border-radius: 10px;
-            overflow: hidden;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-            background: white;
-        }
-        .gallery-item img {
-            width: 100%;
-            height: auto;
-            display: block;
-            transition: transform 0.3s ease;
-        }
-        .gallery-item:hover img {
-            transform: scale(1.05);
-        }
-        .gallery-item .caption {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: rgba(0, 0, 0, 0.6);
-            color: white;
-            padding: 10px;
-            text-align: center;
-            font-size: 1rem;
-            opacity: 0;
-            transition: opacity 0.3s ease;
-        }
-        .gallery-item:hover .caption {
-            opacity: 1;
-        }
+  /* Modal styles */
+  .modal {
+      display: none;
+      position: fixed;
+      z-index: 10000;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.8);
+  }
+  .modal-content {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 90%;
+      max-width: 600px;
+      background: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  }
+  .modal img {
+      max-width: 100%;
+      margin: 0 auto;
+      display: block;
+  }
+  .close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      text-align: center;
+      color: white;
+      font-size: 18px;
+      cursor: pointer;
+  }
+</style>
 
-        /* Responsive Grid */
-        @media (max-width: 600px) {
-            .filter-buttons {
-                flex-direction: column;
-                gap: 10px;
-            }
-        }
-    </style>
-</head>
-<body>
-
-<header>
-    <h1>Debojjal's Travel Gallery</h1>
-    <p>Discover the beauty of the world, one city at a time!</p>
-</header>
-
-<!-- Filter Buttons -->
-<div class="filter-buttons">
-    <button onclick="filterGallery('all')">All</button>
-    <button onclick="filterGallery('texas')">Texas</button>
-    <button onclick="filterGallery('idaho')">Idaho</button>
-    <button onclick="filterGallery('washington')">Washington</button>
-    <button onclick="filterGallery('quebec')">Quebec</button>
-    <button onclick="filterGallery('ontario')">Ontario</button>
+<div class="section travel-section">
+  <h2>✈️ Travel</h2>
+  <p>I enjoy exploring new places. Click on a state to see a gallery of my travel pictures from that region.</p>
+  
+  <h3>USA</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>State</th>
+        <th>Gallery</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Seattle, Washington</td>
+        <td><a href="javascript:void(0)" onclick="openGallery(['/images/Seattle1.jpeg', '/images/Seattle2.jpeg'])">View Photos</a></td>
+      </tr>
+      <tr>
+        <td>Boise, Idaho</td>
+        <td><a href="javascript:void(0)" onclick="openGallery(['/images/Boise1.jpeg', '/images/Boise2.jpeg'])">View Photos</a></td>
+      </tr>
+      <tr>
+        <td>Chicago, Illinois</td>
+        <td><a href="javascript:void(0)" onclick="openGallery(['/images/Chicago1.jpeg', '/images/Chicago2.jpeg'])">View Photos</a></td>
+      </tr>
+      <tr>
+        <td>Austin, Texas</td>
+        <td><a href="javascript:void(0)" onclick="openGallery(['/images/Austin1.jpeg', '/images/Austin2.jpeg'])">View Photos</a></td>
+      </tr>
+    </tbody>
+  </table>
 </div>
 
-<!-- Gallery Section -->
-<div class="gallery">
-    <!-- Texas Photos -->
-    <div class="gallery-item texas">
-        <img src="texas1.jpg" alt="Texas">
-        <div class="caption">Texas - Sunset in Austin</div>
+<div id="galleryModal" class="modal">
+  <span class="close" onclick="closeGallery()">&times;</span>
+  <div class="modal-content">
+    <img id="modalImage" src="" alt="Gallery Image">
+    <div class="carousel-controls">
+      <span id="prev" onclick="prevImage()">&#10094;</span>
+      <span id="next" onclick="nextImage()">&#10095;</span>
     </div>
-    <div class="gallery-item texas">
-        <img src="texas2.jpg" alt="Texas">
-        <div class="caption">Texas - Dallas Skyscrapers</div>
-    </div>
-
-    <!-- Idaho Photos -->
-    <div class="gallery-item idaho">
-        <img src="idaho1.jpg" alt="Idaho">
-        <div class="caption">Idaho - Mountains</div>
-    </div>
-    <div class="gallery-item idaho">
-        <img src="idaho2.jpg" alt="Idaho">
-        <div class="caption">Idaho - Peaceful Lake</div>
-    </div>
-
-    <!-- Washington Photos -->
-    <div class="gallery-item washington">
-        <img src="washington1.jpg" alt="Washington">
-        <div class="caption">Washington - Seattle Skyline</div>
-    </div>
-    <div class="gallery-item washington">
-        <img src="washington2.jpg" alt="Washington">
-        <div class="caption">Washington - Rainy Forests</div>
-    </div>
-
-    <!-- Quebec Photos -->
-    <div class="gallery-item quebec">
-        <img src="quebec1.jpg" alt="Quebec">
-        <div class="caption">Quebec - Old Town</div>
-    </div>
-    <div class="gallery-item quebec">
-        <img src="quebec2.jpg" alt="Quebec">
-        <div class="caption">Quebec - Winter Wonderland</div>
-    </div>
-
-    <!-- Ontario Photos -->
-    <div class="gallery-item ontario">
-        <img src="ontario1.jpg" alt="Ontario">
-        <div class="caption">Ontario - Niagara Falls</div>
-    </div>
-    <div class="gallery-item ontario">
-        <img src="ontario2.jpg" alt="Ontario">
-        <div class="caption">Ontario - Toronto Skyline</div>
-    </div>
+  </div>
 </div>
 
 <script>
-    function filterGallery(category) {
-        const items = document.querySelectorAll('.gallery-item');
-        items.forEach(item => {
-            if (category === 'all' || item.classList.contains(category)) {
-                item.style.display = 'block';
-            } else {
-                item.style.display = 'none';
-            }
-        });
-    }
-</script>
+  let currentImageIndex = 0;
+  let images = [];
 
-</body>
-</html>
+  function openGallery(imageArray) {
+      images = imageArray;
+      currentImageIndex = 0;
+      document.getElementById('modalImage').src = images[currentImageIndex];
+      document.getElementById('galleryModal').style.display = 'block';
+  }
+
+  function closeGallery() {
+      document.getElementById('galleryModal').style.display = 'none';
+  }
+
+  function prevImage() {
+      currentImageIndex = (currentImageIndex === 0) ? images.length - 1 : currentImageIndex - 1;
+      document.getElementById('modalImage').src = images[currentImageIndex];
+  }
+
+  function nextImage() {
+      currentImageIndex = (currentImageIndex === images.length - 1) ? 0 : currentImageIndex + 1;
+      document.getElementById('modalImage').src = images[currentImageIndex];
+  }
+</script>
