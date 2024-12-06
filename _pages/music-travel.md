@@ -34,30 +34,27 @@ author_profile: true
   .travel-section {
       background: #f7faff;
   }
-  .state-map img {
-      width: 100%;
-      max-width: 500px;
-      margin: auto;
-      display: block;
-  }
-  .map-caption {
-      text-align: center;
-      font-style: italic;
-      color: #666;
-      margin-top: 10px;
-  }
-  .image-group {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 20px;
-      justify-content: center;
-  }
-  .image-group img {
-      width: 200px;
-      height: 150px;
-      object-fit: cover;
-      border-radius: 10px;
+  table {
+      margin: 20px auto;
+      border-collapse: collapse;
+      width: 80%;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  }
+  table th, table td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+  }
+  table th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+  }
+  table a {
+      text-decoration: none;
+      color: #014552;
+  }
+  table a:hover {
+      text-decoration: underline;
   }
 </style>
 
@@ -79,44 +76,51 @@ author_profile: true
   </ul>
 </div>
 
-
 <div class="section travel-section">
   <h2>✈️ Travel</h2>
   <p>I enjoy exploring new places. Click on a state to see a gallery of my travel pictures from that region.</p>
-  <div class="state-map">
-    <img src="/images/usa-map.png" alt="Clickable USA Map" usemap="#usamap" />
-    <map name="usamap">
-      <area shape="poly" coords="100,200,150,250,200,200" alt="Texas" href="/gallery/texas" />
-      <area shape="poly" coords="250,300,300,350,350,300" alt="California" href="/gallery/california" />
-      <!-- Add more <area> elements for each state with respective href links -->
-    </map>
-    <p class="map-caption">Interactive map: Click on a state to explore!</p>
-  </div>
+  
+  <h3>USA</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>State</th>
+        <th>Gallery</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Texas</td>
+        <td><a href="/gallery/texas">View Photos</a></td>
+      </tr>
+      <tr>
+        <td>Idaho</td>
+        <td><a href="/gallery/idaho">View Photos</a></td>
+      </tr>
+      <tr>
+        <td>Indiana</td>
+        <td><a href="/gallery/indiana">View Photos</a></td>
+      </tr>
+      <tr>
+        <td>Illinois</td>
+        <td><a href="/gallery/illinois">View Photos</a></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h3>India</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>State</th>
+        <th>Gallery</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Karnataka</td>
+        <td><a href="/gallery/karnataka">View Photos</a></td>
+      </tr>
+    </tbody>
+  </table>
 </div>
-
----
-<!-- 
-### Example Gallery Pages
-
-**Texas Gallery:**
-Create a separate page for Texas with the following structure:
-
-```html
----
-permalink: /gallery/texas/
-title: "Texas Travel Gallery"
-author_profile: true
----
-
-<div class="image-group">
-  <div>
-    <a href="/images/texas1.jpg" data-lightbox="texas" data-title="Texas Road Trip">
-      <img src="/images/texas1.jpg" alt="Texas Road Trip">
-    </a>
-  </div>
-  <div>
-    <a href="/images/texas2.jpg" data-lightbox="texas" data-title="Sunset in Austin">
-      <img src="/images/texas2.jpg" alt="Sunset in Austin">
-    </a>
-  </div>
-</div> -->
