@@ -66,21 +66,48 @@ You can access it through GitHub [https://github.com/debojjalb/UTAustinBeamer](h
 
 Links to some of my guitar covers:
 
-- This song is perfect to be played on acoustic guitar, and I believe it will be a timeless classic. Here's my version of [Ishq Wala Love (इश्क वाला लव)](/videos/IshqWalaLove.mov).
+- Recently, my grilfriend visited me at Austin, and we recorded a cover to [Purano sei diner kotha](https://youtu.be/i9sKbcSbjF4).
 
-- I played this song on my father's birthday from the movie Animal. Keeping the stir that this movie created aside, I feel this song is just beautiful. [Papa meri jaan (पापा मेरी जान)](/videos/PapaMeriJaan.MP4)
+- This song is perfect to be played on acoustic guitar, and I believe it will be a timeless classic. Here's my version of [Ishq Wala Love (इश्क वाला लव)](/videos/IshqWalaLove.mov).
 
 - One of my favorite licks is the opening intro to Choo lo. [Here’s my attempt! (छू लो)](/videos/Video-374.mov)
 
 - Bengali is my mother tongue, and though I never learned singing, I gave [Coffee House er shei adda ta (কফি হাউসের সেই আড্ডাটা)](https://youtube.com/shorts/_3zst7uvgE8?si=JbpdwBvnh7QRhbRP) a try.
 
-- I also played [Ye jism hai to kya (ये जिस्म है तो क्या)](/videos/Video-417.mov) on my friend's electric guitar.
 
 When back home in Kolkata, I play on my keyboard:
 
 - [Bosonto esge geche (বসন্ত এসে গেছে)](https://youtu.be/boWtt-A6qTU?si=vzbv0Mmv89o3w9Pc)
 - [Purano shei diner kotha (পুরানো সেই দিনের কথা)](https://youtu.be/uqbLpiiSf9M?si=j1hw4WHTiQ6bVB4t)
 - [Pran chay chokhu na chay (প্রাণ চায় চক্ষু না চায়)](https://youtu.be/M9QqOV-6YJo?si=dbRzfBskeRMM-rgm)
+
+
+<div class="image-group four-images">
+    <div>
+        <a href="/images/INFORMS_Seattle1.jpeg" data-lightbox="informs-2025" data-title="With Kyle">
+            <img src="/images/INFORMS_Seattle1.jpeg" alt="Image 1">
+        </a>
+        <p class="caption">Caption for Image 1</p>
+    </div>
+    <div>
+        <a href="/images/INFORMS_Seattle2.jpeg" data-lightbox="informs-2025" data-title="With UT transportation graduate students">
+            <img src="/images/INFORMS_Seattle2.jpeg" alt="Image 2">
+        </a>
+        <p class="caption">Caption for Image 2</p>
+    </div>
+    <div>
+        <a href="/images/INFORMS_Seattle3.jpeg" data-lightbox="informs-2025" data-title="During my presentation (PC: Qianqian)">
+            <img src="/images/INFORMS_Seattle3.jpeg" alt="Image 3">
+        </a>
+        <p class="caption">Caption for Image 3</p>
+    </div>
+    <div>
+        <a href="/images/INFORMS_Seattle4.jpeg" data-lightbox="informs-2025" data-title="During my presentation (PC: Jake)">
+            <img src="/images/INFORMS_Seattle4.jpeg" alt="Image 4">
+        </a>
+        <p class="caption">Caption for Image 4</p>
+    </div>
+</div>
 
 
 
