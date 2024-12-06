@@ -102,7 +102,7 @@ I preseneted our work on bounds for stochastic user equilibrium traffic assignme
         <a href="/images/INFORMS_Seattle3.jpeg" data-lightbox="informs-2025" data-title="During my presentation (PC: Qianqian)">
             <img src="/images/INFORMS_Seattle3.jpeg" alt="Image 3">
         </a>
-        <p class="caption">"During my presentation (PC: Qianqian)</p>
+        <p class="caption">During my presentation (PC: Qianqian)</p>
     </div>
     <div>
         <a href="/images/INFORMS_Seattle4.jpeg" data-lightbox="informs-2025" data-title="During my presentation (PC: Jake)">
