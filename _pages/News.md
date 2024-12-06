@@ -58,9 +58,9 @@ redirect_from:
     }
 </style>
 
-## I made a UT Austin Beamer Template
+<!-- ## I made a UT Austin Beamer Template
 
-You can access it through GitHub [https://github.com/debojjalb/UTAustinBeamer](https://github.com/debojjalb/UTAustinBeamer). I have tried to replicate the colors and logos as per the UT official design rules but my template is not official. Please crosscheck before using! 
+You can access it through GitHub [https://github.com/debojjalb/UTAustinBeamer](https://github.com/debojjalb/UTAustinBeamer). I have tried to replicate the colors and logos as per the UT official design rules but my template is not official. Please crosscheck before using!  -->
 
 
 ## INFORMS Annual Meeting 2024
