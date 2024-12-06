@@ -1,5 +1,5 @@
 ---
-permalink: /music/
+permalink: /travel/
 author_profile: true
 ---
 
@@ -164,7 +164,7 @@ author_profile: true
   </ul>
 </div>
 
-<!-- 
+
 <div class="section travel-section">
   <h2>✈️ Travel</h2>
   <p>I enjoy exploring new places. Click on a state to see a gallery of my travel pictures from that region.</p>
@@ -207,7 +207,7 @@ author_profile: true
 </div>
 
 <!-- Modal Carousel -->
-<!-- <div id="galleryModal" class="modal">
+<div id="galleryModal" class="modal">
   <span class="close" onclick="closeGallery()">&times;</span>
   <div class="modal-content">
     <img id="modalImage" src="" alt="Gallery Image">
@@ -216,7 +216,7 @@ author_profile: true
       <span id="next" onclick="nextImage()">&#10095;</span>
     </div>
   </div>
-</div> --> -->
+</div>
 
 <script>
   let currentImageIndex = 0;
