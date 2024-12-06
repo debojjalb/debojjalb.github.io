@@ -91,6 +91,8 @@ Houston port operations for simulation. . In __Transportation Research Board 104
 
 - A k-best Link Tolling Scheme, 2023 [Report](/files/tolling_scheme_report.pdf), [Presentation](/files/tolling_Scheme.pdf) (**Collaborators:** Debojjal Bagchi, Keya Li, and Qianqian Tong)
 
+- Cement plant rail track design and analysis, 2023 [Report](/files/railProject.pdf) (**Collaborators:** Debojjal Bagchi, Brennan Groh, Wali Latif)
+
 - Fair and Efficient Allocation of Indivisible Public Good -- Paper Review and Future Directions, Debojjal Bagchi, 2023 [Summary](/files/gmtd_summary.pdf), [Report](/files/gmtf_report.pdf), [Presentation](/files/gmtd_ppt.pdf)
 
 - Literature Review and Project Proposal on Horizontal Collaboration between Dial-a-ride Services, Debojjal Bagchi, 2023 [Proposal](/files/NYU_Proposal.pdf)
