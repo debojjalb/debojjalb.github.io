@@ -148,12 +148,12 @@ author_profile: true
     </thead>
     <tbody>
       <tr>
-        <td>Texas</td>
-        <td><a href="javascript:void(0)" onclick="openGallery(['/images/INFORMS_Seattle1.jpeg', '/images/INFORMS_Seattle1.jpeg'])">View Photos</a></td>
+        <td>Seattle, Washington</td>
+        <td><a href="javascript:void(0)" onclick="openGallery(['/images/INFORMS_Seattle1.jpeg', '/images/INFORMS_Seattle2.jpeg'])">View Photos</a></td>
       </tr>
       <tr>
         <td>Idaho</td>
-        <td><a href="javascript:void(0)" onclick="openGallery(['/images/INFORMS_Seattle1.jpeg', '/images/INFORMS_Seattle1.jpeg'])">View Photos</a></td>
+        <td><a href="javascript:void(0)" onclick="openGallery(['/images/INFORMS_Seattle3.jpeg', '/images/INFORMS_Seattle4.jpeg'])">View Photos</a></td>
       </tr>
     </tbody>
   </table>
