@@ -1,123 +1,110 @@
+---
+permalink: /travel/
+author_profile: true
+---
+
 <style>
   body {
       font-family: "Arial", sans-serif;
-      font-size: 14px;
+      font-size: 16px;
       color: #333;
-  }
-  body.no-scroll {
-      overflow: hidden; /* Prevent scrolling */
-  }
-  a {
-      color: #014552;
+      margin: 0;
+      padding: 0;
+      background: #fdf8f6;
   }
   h2 {
       text-align: center;
+      font-size: 2rem;
       font-weight: bold;
-      margin-top: 20px;
-      margin-bottom: 20px;
+      color: #014552;
+      margin: 20px 0;
   }
-  a:hover {
-      text-decoration: underline;
+  p {
+      text-align: center;
+      font-size: 1.2rem;
+      margin: 0 20px 30px;
+      color: #555;
   }
-  .section {
-      padding: 20px;
-      margin-bottom: 30px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-  .travel-section {
-      background: #f7faff;
+  .table-container {
+      display: flex;
+      justify-content: center;
+      margin: 0 auto;
   }
   table {
-      margin: 20px auto;
-      border-collapse: collapse;
-      width: 80%;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-  table th, table td {
-      border: 1px solid #ddd;
-      padding: 10px;
-      text-align: center;
-  }
-  table th {
-      background-color: #f2f2f2;
-      font-weight: bold;
-  }
-  table a {
-      text-decoration: none;
-      color: #014552;
-  }
-  table a:hover {
-      text-decoration: underline;
-  }
-
-  /* Modal styles */
-  .modal {
-      display: none;
-      position: fixed;
-      z-index: 10000;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 1); /* Fully black background */
-  }
-  .modal-content {
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 90%;
-      max-width: 600px;
       background: white;
       border-radius: 10px;
-      padding: 20px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      width: 90%;
+      max-width: 800px;
   }
-  .modal img {
-      max-width: 100%;
-      margin: 0 auto;
-      display: block;
+  table thead {
+      background: #f7faff;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-size: 0.9rem;
+      color: #014552;
   }
-  .close {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      background: rgba(0, 0, 0, 0.6);
-      border-radius: 50%;
-      width: 30px;
-      height: 30px;
+  table th, table td {
+      padding: 15px;
       text-align: center;
-      color: white;
-      font-size: 18px;
-      cursor: pointer;
+      border-bottom: 1px solid #ddd;
+  }
+  table tbody tr:last-child td {
+      border-bottom: none;
+  }
+  table td a {
+      display: inline-block;
+      text-decoration: none;
+      color: #fff;
+      background: #014552;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 0.9rem;
+  }
+  table td a:hover {
+      background: #016e76;
+  }
+  footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #999;
+      margin: 40px 0 20px;
   }
 </style>
 
-<script>
-  let currentImageIndex = 0;
-  let images = [];
+<div>
+  <h2>✈️ My Travel Adventures</h2>
+  <p>Here are some of my favorite moments from the places I’ve traveled. Explore them through my Pinterest inspirations below!</p>
+</div>
 
-  function openGallery(imageArray) {
-      images = imageArray;
-      currentImageIndex = 0;
-      document.getElementById('modalImage').src = images[currentImageIndex];
-      document.getElementById('galleryModal').style.display = 'block';
-      document.body.classList.add('no-scroll'); // Disable background scrolling
-  }
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>State</th>
+        <th>Pinterest Board</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Seattle, Washington</td>
+        <td><a href="https://pin.it/5yHjvEYUM" target="_blank">Explore Board</a></td>
+      </tr>
+      <tr>
+        <td>Boise, Idaho</td>
+        <td><a href="https://pin.it/5yHjvEYUM" target="_blank">Explore Board</a></td>
+      </tr>
+      <tr>
+        <td>Chicago, Illinois</td>
+        <td><a href="https://pin.it/5yHjvEYUM" target="_blank">Explore Board</a></td>
+      </tr>
+      <tr>
+        <td>Austin, Texas</td>
+        <td><a href="https://pin.it/5yHjvEYUM" target="_blank">Explore Board</a></td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-  function closeGallery() {
-      document.getElementById('galleryModal').style.display = 'none';
-      document.body.classList.remove('no-scroll'); // Re-enable background scrolling
-  }
-
-  function prevImage() {
-      currentImageIndex = (currentImageIndex === 0) ? images.length - 1 : currentImageIndex - 1;
-      document.getElementById('modalImage').src = images[currentImageIndex];
-  }
-
-  function nextImage() {
-      currentImageIndex = (currentImageIndex === images.length - 1) ? 0 : currentImageIndex + 1;
-      document.getElementById('modalImage').src = images[currentImageIndex];
-  }
-</script>
+<footer>💖 Crafted with love for wanderlust moments 💖</footer>
