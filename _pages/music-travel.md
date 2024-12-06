@@ -95,7 +95,7 @@ author_profile: true
 </div>
 
 ---
-
+<!-- 
 ### Example Gallery Pages
 
 **Texas Gallery:**
@@ -119,4 +119,4 @@ author_profile: true
       <img src="/images/texas2.jpg" alt="Sunset in Austin">
     </a>
   </div>
-</div>
+</div> -->
