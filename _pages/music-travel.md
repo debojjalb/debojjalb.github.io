@@ -1,6 +1,6 @@
 ---
 permalink: /music-travel/
-title: "Music and Travel Gallery"
+# title: "Music and Travel Gallery"
 author_profile: true
 ---
 
