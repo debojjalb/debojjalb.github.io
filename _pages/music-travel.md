@@ -1,6 +1,5 @@
 ---
-permalink: /music-travel/
-# title: "Music and Travel Gallery"
+permalink: /gallery/
 author_profile: true
 ---
 
