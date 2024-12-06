@@ -88,27 +88,27 @@ I preseneted our work on bounds for stochastic user equilibrium traffic assignme
 <div class="image-group four-images">
     <div>
         <a href="/images/INFORMS_Seattle1.jpeg" data-lightbox="informs-2025" data-title="With Kyle">
-            <img src="/images/INFORMS_Seattle1.jpeg" alt="Image 1">
+            <img src="/images/INFORMS_Seattle1.jpeg" alt="With Kyle">
         </a>
-        <p class="caption">Caption for Image 1</p>
+        <p class="caption">With Kyle</p>
     </div>
     <div>
         <a href="/images/INFORMS_Seattle2.jpeg" data-lightbox="informs-2025" data-title="With UT transportation graduate students">
             <img src="/images/INFORMS_Seattle2.jpeg" alt="Image 2">
         </a>
-        <p class="caption">Caption for Image 2</p>
+        <p class="caption">With UT transportation graduate students</p>
     </div>
     <div>
         <a href="/images/INFORMS_Seattle3.jpeg" data-lightbox="informs-2025" data-title="During my presentation (PC: Qianqian)">
             <img src="/images/INFORMS_Seattle3.jpeg" alt="Image 3">
         </a>
-        <p class="caption">Caption for Image 3</p>
+        <p class="caption">"During my presentation (PC: Qianqian)</p>
     </div>
     <div>
         <a href="/images/INFORMS_Seattle4.jpeg" data-lightbox="informs-2025" data-title="During my presentation (PC: Jake)">
             <img src="/images/INFORMS_Seattle4.jpeg" alt="Image 4">
         </a>
-        <p class="caption">Caption for Image 4</p>
+        <p class="caption">During my presentation (PC: Jake)</p>
     </div>
 </div>
 
