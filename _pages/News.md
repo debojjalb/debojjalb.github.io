@@ -81,6 +81,9 @@ When back home in Kolkata, I play on my keyboard:
 - [Purano shei diner kotha (পুরানো সেই দিনের কথা)](https://youtu.be/uqbLpiiSf9M?si=j1hw4WHTiQ6bVB4t)
 - [Pran chay chokhu na chay (প্রাণ চায় চক্ষু না চায়)](https://youtu.be/M9QqOV-6YJo?si=dbRzfBskeRMM-rgm)
 
+## INFORMS Annual Meeting 2024
+
+I preseneted our work on bounds for stochastic user equilibrium traffic assignment at INFORMS Annual Meeting 2024 at Seattle, Washington. See my Research page for more details.
 
 <div class="image-group four-images">
     <div>
@@ -176,7 +179,7 @@ I graduated top of my major with a gold medal from IISc Bangalore with a Bachelo
 
 ## INFORMS Annual Meeting 2023
 
-I preseneted our work on Electric Vehcile Last Mile Logistics. See my Research page for more details.
+I preseneted our work on Electric Vehcile Last Mile Logistics at INFORMS Annual Meeting 2024 at Indianapolis, Indiana. See my Research page for more details.
 
 <div class="image-group two-images">
     <div>
