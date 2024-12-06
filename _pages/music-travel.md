@@ -68,13 +68,21 @@ author_profile: true
       background-color: rgba(0, 0, 0, 0.8);
       overflow: hidden; /* Prevent background scrolling */
   }
-  .modal-content {
-      position: relative;
-      margin: auto;
-      padding: 0;
-      width: 80%;
-      max-width: 700px;
-  }
+    .modal-content {
+        position: fixed;
+        top: 50%; /* Vertically centers the modal */
+        left: 50%; /* Horizontally centers the modal */
+        transform: translate(-50%, -50%); /* Adjusts for the modal's dimensions */
+        margin: 0; /* Removes any default margins */
+        padding: 0;
+        width: 80%;
+        max-width: 700px;
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        overflow: hidden; /* Ensures content fits inside */
+}
+
   .modal img {
       width: 100%;
       height: auto;
