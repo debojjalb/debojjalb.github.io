@@ -2,8 +2,6 @@
 permalink: /travel/
 author_profile: true
 ---
-
-
 <style>
   body {
       font-family: "Arial", sans-serif;
@@ -41,13 +39,6 @@ author_profile: true
       height: 100%;
       background-color: rgba(0, 0, 0, 0.9);
       overflow: hidden;
-  }
-  .modal.show {
-      display: block;
-      overflow: hidden;
-  }
-  body.modal-open {
-      overflow: hidden; /* Disable scrolling */
   }
   .modal-content {
       position: absolute;
@@ -101,17 +92,11 @@ author_profile: true
   }
   .close {
       position: absolute;
-      top: 20px;
+      top: 10px;
       right: 20px;
       color: white;
       font-size: 40px;
       cursor: pointer;
-      background: rgba(0, 0, 0, 0.6);
-      border-radius: 50%;
-      text-align: center;
-      width: 40px;
-      height: 40px;
-      line-height: 40px;
       user-select: none;
   }
 </style>
@@ -164,13 +149,11 @@ author_profile: true
       images = imageArray;
       currentImageIndex = 0;
       updateGallery();
-      document.body.classList.add('modal-open'); // Disable scrolling
-      document.getElementById('galleryModal').classList.add('show');
+      document.getElementById('galleryModal').style.display = 'block';
   }
 
   function closeGallery() {
-      document.getElementById('galleryModal').classList.remove('show');
-      document.body.classList.remove('modal-open'); // Enable scrolling
+      document.getElementById('galleryModal').style.display = 'none';
   }
 
   function prevImage() {
