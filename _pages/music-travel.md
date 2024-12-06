@@ -56,7 +56,7 @@ author_profile: true
       text-decoration: underline;
   }
   
-  /* Carousel styles */
+  /* Modal styles */
   .modal {
       display: none;
       position: fixed;
@@ -66,7 +66,7 @@ author_profile: true
       width: 100%;
       height: 100%;
       background-color: rgba(0, 0, 0, 0.8);
-      overflow: auto;
+      overflow: hidden; /* Prevent background scrolling */
   }
   .modal-content {
       position: relative;
@@ -81,12 +81,22 @@ author_profile: true
   }
   .close {
       position: absolute;
-      top: 10px;
-      right: 25px;
-      color: #fff;
-      font-size: 35px;
+      top: 15px;
+      right: 15px;
+      background: rgba(0, 0, 0, 0.6);
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      color: white;
+      font-size: 20px;
       font-weight: bold;
       cursor: pointer;
+      transition: background 0.3s;
+  }
+  .close:hover {
+      background: rgba(0, 0, 0, 0.8);
   }
   .carousel-controls {
       display: flex;
@@ -110,7 +120,7 @@ author_profile: true
   <p>Music is my escape. I love playing guitar and keyboard.</p>
   <p>Links to some of my guitar covers:</p>
   <ul>
-    <li>Recently, my girlfriend visited me in Austin, and we recorded a cover of <a href="https://youtu.be/i9sKbcSbjF4">Purano Sei Diner Kotha</a>.</li>
+    <li>Recently, my girlfriend visited me in Austin, and we recorded a cover of <a href="https://youtu.be/i9sKbcSbjF4">Purano Sei Diner Kotha (পুরানো সেই দিনের কথা)</a>.</li>
     <li>This song is perfect to be played on acoustic guitar, and I believe it will be a timeless classic. Here's my version of <a href="/videos/IshqWalaLove.mov">Ishq Wala Love (इश्क वाला लव)</a>.</li>
     <li>One of my favorite licks is the opening intro to Choo Lo. <a href="/videos/Video-374.mov">Here’s my attempt! (छू लो)</a></li>
     <li>Bengali is my mother tongue, and though I never learned singing, I gave <a href="https://youtube.com/shorts/_3zst7uvgE8?si=JbpdwBvnh7QRhbRP">Coffee House er Shei Adda Ta (কফি হাউসের সেই আড্ডাটা)</a> a try.</li>
@@ -122,6 +132,7 @@ author_profile: true
     <li><a href="https://youtu.be/M9QqOV-6YJo?si=dbRzfBskeRMM-rgm">Pran Chay Chokhu Na Chay (প্রাণ চায় চক্ষু না চায়)</a></li>
   </ul>
 </div>
+
 
 <div class="section travel-section">
   <h2>✈️ Travel</h2>
@@ -138,11 +149,11 @@ author_profile: true
     <tbody>
       <tr>
         <td>Texas</td>
-        <td><a href="#" onclick="openGallery(['texas1.jpg', 'texas2.jpg', 'texas3.jpg'])">View Photos</a></td>
+        <td><a href="javascript:void(0)" onclick="openGallery(['texas1.jpg', 'texas2.jpg', 'texas3.jpg'])">View Photos</a></td>
       </tr>
       <tr>
         <td>Idaho</td>
-        <td><a href="#" onclick="openGallery(['idaho1.jpg', 'idaho2.jpg'])">View Photos</a></td>
+        <td><a href="javascript:void(0)" onclick="openGallery(['idaho1.jpg', 'idaho2.jpg'])">View Photos</a></td>
       </tr>
     </tbody>
   </table>
@@ -184,4 +195,17 @@ author_profile: true
       currentImageIndex = (currentImageIndex === images.length - 1) ? 0 : currentImageIndex + 1;
       document.getElementById('modalImage').src = images[currentImageIndex];
   }
+
+  document.addEventListener('click', function(event) {
+      const modal = document.getElementById('galleryModal');
+      if (modal.style.display === 'block' && !event.target.closest('.modal-content') && !event.target.closest('[onclick^="openGallery"]')) {
+          closeGallery();
+      }
+  });
+
+  document.addEventListener('keydown', function(event) {
+      if (event.key === 'Escape') {
+          closeGallery();
+      }
+  });
 </script>
