@@ -57,31 +57,33 @@ author_profile: true
   }
   
   /* Modal styles */
-  .modal {
-      display: none;
-      position: fixed;
-      z-index: 1000;
-      left: 0;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.8);
-      overflow: hidden; /* Prevent background scrolling */
-  }
+    .modal {
+        display: none;
+        position: fixed;
+        z-index: 1050; /* Ensures the modal is above other elements, including the menu */
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8); /* Dimmed background */
+        overflow: hidden; /* Prevents background scrolling */
+    }
+
     .modal-content {
         position: fixed;
-        top: 50%; /* Vertically centers the modal */
-        left: 50%; /* Horizontally centers the modal */
-        transform: translate(-50%, -50%); /* Adjusts for the modal's dimensions */
-        margin: 0; /* Removes any default margins */
-        padding: 0;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 20px; /* Adds some space inside the modal */
         width: 80%;
         max-width: 700px;
         background: white;
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        overflow: hidden; /* Ensures content fits inside */
-}
+        z-index: 1100; /* Ensures the content is above the modal backdrop */
+    }
+
 
   .modal img {
       width: 100%;
