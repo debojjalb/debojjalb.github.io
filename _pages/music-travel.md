@@ -60,13 +60,13 @@ author_profile: true
     .modal {
         display: none;
         position: fixed;
-        z-index: 1050; /* Ensures the modal is above other elements, including the menu */
+        z-index: 10000; /* Higher z-index to ensure it appears above the menu */
         left: 0;
         top: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.8); /* Dimmed background */
-        overflow: hidden; /* Prevents background scrolling */
+        background-color: rgba(0, 0, 0, 0.8);
+        overflow: hidden; /* Prevent background scrolling */
     }
 
     .modal-content {
@@ -105,24 +105,38 @@ author_profile: true
       cursor: pointer;
       transition: background 0.3s;
   }
-  .close:hover {
-      background: rgba(0, 0, 0, 0.8);
-  }
-  .carousel-controls {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: absolute;
-      top: 50%;
-      width: 100%;
-      transform: translateY(-50%);
-  }
-  .carousel-controls span {
-      color: #fff;
-      font-size: 30px;
-      cursor: pointer;
-      padding: 0 20px;
-  }
+    .carousel-controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        transform: translateY(-50%);
+        z-index: 10002; /* Higher z-index to stay above the modal content */
+        pointer-events: none; /* Prevent blocking clicks outside the modal */
+    }
+
+    .carousel-controls span {
+        pointer-events: all; /* Enable clicking on the buttons */
+        color: #fff;
+        font-size: 30px;
+        cursor: pointer;
+        padding: 0 20px;
+        background: rgba(0, 0, 0, 0.5);
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        text-align: center;
+        user-select: none;
+        transition: background 0.3s ease;
+    }
+
+    .carousel-controls span:hover {
+        background: rgba(0, 0, 0, 0.8);
+    }
+
 </style>
 
 <div class="section music-section">
