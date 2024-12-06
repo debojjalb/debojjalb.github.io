@@ -102,13 +102,13 @@ I organised a volunteering event with UT Austin chapter of ITS/ITE along with CA
 
 <div class="image-group two-images">
     <div>
-        <a href="/images/KABD.jpeg" data-lightbox="keep-austin-beautiful-day" data-title="UT Transportation participated in Keep Austin Beautiful Day">
+        <a href="/images/KABD.jpg" data-lightbox="keep-austin-beautiful-day" data-title="UT Transportation participated in Keep Austin Beautiful Day">
             <img src="/images/KABD.jpeg" alt="In front of the UT Tower">
         </a>
         <p class="caption">UT Transportation participated in Keep Austin Beautiful Day</p>
     </div>
     <div>
-        <a href="/images/CASITE.jpeg" data-lightbox="keep-austin-beautiful-day" data-title="With Capital Area Section Institute of Transportation Engineers (CASITE)">
+        <a href="/images/CASITE.jpg" data-lightbox="keep-austin-beautiful-day" data-title="With Capital Area Section Institute of Transportation Engineers (CASITE)">
             <img src="/images/CASITE.jpeg" alt="With friends from India in Austin">
         </a>
         <p class="caption">With Capital Area Section Institute of Transportation Engineers (CASITE)</p>
