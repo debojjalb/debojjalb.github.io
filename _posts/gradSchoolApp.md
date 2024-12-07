@@ -1,0 +1,119 @@
+---
+title: 'Grad School Application Guide - SOP, LORs, Resume, Shortlist'
+date: 2023-12-14
+permalink: /posts/GradSchollAppGuide/
+tags:
+  - Grad School
+---
+
+Aren't headings cool?
+------
+
+
+---
+
+This is essentially an application material preparation guide. I would soon write a post on what you should do develop you profile, but that's the story for another day! For now, you're all set to apply and smash that "apply now" button on your application portal. But wait, you haven't gone past your first SOP draft yet! Well done! You're in the perfect time to read this article. I will not go over the generic stuffs, we all know that! But, I will rather focus on some of the "secret sauce" that might help you stand out and scream "I'm the one!" Well, putting the drama aside lets jump right in.
+
+I will divide this article in 4-parts:
+How to choose the grad schools you apply to
+Why your recommendation letters could be a game changer
+How to draft your perfect SOP and diversity statements
+How to write a killer resume.
+
+And yes, I highly encourage reading them in order.
+
+---
+
+1/4: How to choose the right grad schools to apply?
+======
+Here is a step by step guide:
+Fine tune your research interest. Academics love niche. Your niche should ideally be at an intersection of what you had done in your undergrad and what you would like to do in your graduate studies. It's awesome if you already have some research background in your niche. If not, having any research experience helps, more on that later.
+Find advisors who works in your niche. This is the most time consuming part of your application. You will scrape the internet during this period! Ideally you should keep 2–3 months for this. Look into various universities, their department websites, head over to the "people" section. Skim through researches done by various professors and see who are working in the same niche as you would like to work. Update everything in an excel sheet. You should track the universities, potential advisors (PI) and how much match you think there is between their work and your niche.
+Here's a quick trick: Search on google the following phrase to find advisors who are currently recruiting "recruiting PhD students [topic] twitter X" and so some web scraping.
+Talk with your recommenders. Ask them which universities they have contacts in. I used to take an excel sheet with a fairly long list of university and potential advisors that I wanted to apply and ask my recommenders which places should I finally apply / which groups are doing great in the field / which advisors they have personal contacts with, and so on.
+Please do not just apply to advisors who are from your country. (ofcourse, this applies only if youre an international student!) Many students think there is a higher chance of getting selected if you apply to someone from your country. NO! In most cases they are already getting hundreds of mails and applications from students from your country and diversity is highly encouraged in most labs / groups in US.
+Mail. Mail. Mail. Your excel sheet is about to become colorful! Start mailing your potential advisors along with your time in step 2. Color code your excel sheet rows with whether you mailed your PI, whether they replied positively, negatively or did not reply. It's okay even if they do not reply. And most of them wouldn't. They are probably receiving hundreds of such mails. However, they will get a call-back to your email when they see your application. Many professors contacted me after I applied on the same thread that I had mailed them earlier. If they do reply and encourage you to apply, don't forget to remind them once you apply. A simple "I am looking forward to you reading my application" should be good. Your mail should have a structure like: 
+a) Introduction: Talk who you are, your educational background and that you're applying to grad program and state your intent of the mail that you're mailing to ask if they would be recuitiung PhD students this admission cycle. 
+b) Your Background: Briefly talk about your research background, your publications, projects, and conferences. Dont overload. One or two should be fine. 
+c) Why them?: Explain how their research matches with your niche. State the papers of them that are in similar domains to your current work. Explain how they would ideal for your academic aspiarations.
+d) Conclude: Conclude saying you would love to discuss further with them over video conferencing if they could give some time to you. 
+Attach your resume and transcripts and hit that send button! Oh, dont forget to proofread!
+Create your research powerpoint. Time to showoff! If your get a interview call from any potential advisors as a reply to your mail tell them you prepared a short powerpoint with your research work. Academicians love people who are in control. Show your meticulous work in those 5 slides! Go all in! Here's a general schema of your presentation:
+- Slide 1: Your educational background, your research imterests and your skills.
+- Slide 2: Your research #1, put a small photo of your conference if you attaended one! Condense all your research in one slide. Show the results, flowcharts and details.
+- Slide 3: Your research #2. Similar to slide 2.
+- Slide 4: Why you're applying to the particular university, why that particular advisor.
+- Slide 5: Keep a set of questions that you would ask to your potential PI - About the group, about length of the program, whether you would be a GRA or TA, what type of projects would they be taking in next few years, how frequent are group meeting, what are some other logistics, etc.
+Decide how many schools you would apply. Understand there are application fees assoscaited. If your GRE went well you could qualify for application fee waivers. If you attend the graduate school application seminars, many schools would give you application fee waiver. Generally people apply to around 10–12 grad schools. Partition your schools into three groups - Dream, Moderate and Safe. Your "Dream", "Moderate", and "Safe" schools should not based on department rankings but your probability of getting selected / your research alignment with the department / PI.
+Finalize your schools. Got a interview call? Apply! Your interview went well? Apply! Did not get a reply back on mail? Apply! Found a PI who works in same domain as your interests? Apply! Here are some pointers that you might use to select which universities to apply:
+- Are there potential PI in that school who work in your niche?
+- Is the department well known in your domain?
+- How many students are there currently in your relevant research groups.
+- If at all you are considering university rankings to choose schools, consider the USNews department wise graduate rankings. (There are general rankings which mainly focus on undergrads and overall grad rankings that focus on all departments, those won't be much applicable for you in most cases).
+
+---
+
+2/4: How your recommendation letters could be a game changer!
+======
+Well done! You have chosen your graduate schools. The next step is to request your current advisors, professors and instructors for a reference letters. A reference letter can make or break your application. A recommendation from someone very well known in the field with good connections is very helpful in your application. Try to have a balance between people who know you very well and people who are very well known in the field.
+Here are few people you could request a recommendation letter:
+Your undergraduate thesis / desertion advisor.
+A professor you did a research internship with.
+An instructor whose course went very well for you. You had a good ranking in the course and the course is related to your niche.
+
+Give your recommenders enough time to write letters. Atleast 2 months should be good. Remind them once a month and close to deadline. If possible meet them couple of times in the process. Send them a document with the schools you're applying to, the deadline and the department name. Send them your CV and let them know if you'd like them to mention anything specific. For example: I scored highest in a grad level course during my undergrad, I requested my recommender to write about that. In another course, I did a course project during the course, I reminded him about the course project and sent him the project report.
+In most cases if you're applying to a school where there's someone in the committee who knows about your recommender they will definitely reach to your recommender. And if they speak highly of you, your admission is kinda secured! See? How important it is to find the right grad schools to apply and reach out to PIs who are in contact with your recommenders.
+
+---
+
+3/4: How to draft the perfect Statement of Purpose and Diversity Statement?
+======
+A single piece of paper can't decide your future. Wrong! SOP is that single piece of paper that represents you to the committee. Imagine the closed room, with a bunch of SOPs and a committee going over each of them and debating why you should / should not get in. Do you want this document to be loose? No! Pour all your heart and brain in and there you have a perfect SOP. Here's a step by step guide on drafting your future-deciding piece of paper.
+Read a lot of quality SOPs and diversity statements. There are annotated SOPs that are available on the the MIT website. Here are links to 7 such annotated SOPs. These will give you an idea of how to draft your SOPs / What to include / What not to include. 3 SOPs, 2 more SOPs, and another two! These websites have a lot of tips on how to write a SOP. Read them thoroughly, then scroll down and you would see the links to annotated SOPs. These are real SOPs of students who got admitted to various engineering programs at MIT annotated with what sets them apart. Also read some comments on stuffs which are a big No-No for SOPs here. Then go ahead and request people who are in grad school in your domain to send their SOPs. Read them. (Here is a link to a plethora of SOP, Resume and Staements of successful grad admit students. Might be a good read.) Get an idea about how a SOP is written. Your SOP need not follow the same trend, but it should be "professional." Reading a lot of SOPs will give you an idea of what a professional SOP looks like.
+Write your statements! No surprise there. Please don't hire a professional. No one knows you more than you. Have a coherent flow between paragraphs. Write, Read, Edit, Iterate.
+Your diversity statement is not about how diverse you are but how you plan to improve diversity once into the program. If you are from a diverse background great, you have a lot to write. If you are not, write about what makes you unique. What is something that only you bring to the table. What are the challenges you faced and how you overcame them. How does the learnings you had by overcoming your challenges help others. Do you have a unique skill? How can that help the university / program. I have seen many students saying "I am just another person, I have nothing unique" - Really?! That just means you didn't introspect yourself much. Think of what motivates you, what makes you different from others and write that. It will take time but in the end the experience will be worth the time.
+Use Generative AI resources. ChatGPT is excellent in this purpose. Once you have made a couple of iterations of your SOP and personal statements ask ChatGPT to make it professional. Do not copy paste stuffs. Get the idea and make it your own.
+You application materials should be grammatically perfect. You can use any tools for this purpose. Grammarly and Quillbot are excellent resources.
+Get your SOP and diversity statement read by as many people possible. Your peers, current PhD students who have written papers in good journals, and your current advisor. (There are many small things which has huge impact - en dash vs em dash, dangling modifiers, having a flow between paragraphs, using "comma-and", and so on). Your ability to write papers will be judged through your SOP along with the conventional stuffs like motivation and achievements. You can reach out to current graduate students through LinkedIn and Reddit and request them a SOP review. Give them sufficient time.
+Mention anything important in your SOP. Think you're selling. Think of stuffs that can improve your application. For example, my undergrad major was different from my applied major for grad school, I explained that in my SOP as a positive: Heres someone who brings a different outlook on the table.
+Iterate over you SOP and Personal Statements as many times as possible. There is no good number. The more you read it the better it is. Have a single draft ready first. Then tweak it for different universities.
+
+---
+
+4/4: How to make a killer Resumé?
+======
+Awesome! Your statements are ready! The final piece of document required is your resume. Yay we are in the time to brag! Go for it. Write all your achievements, 100s of projects you did, and why not about the scuba diving championship you just won? No silly! This is academic resume. Here are few points that you might consider:
+Try to have a very professional resume. Use a LaTeX template if possible.
+Don't go over 2 pages and have as much less white space as possible.
+This is an academic resume and not a job resume. Draft it accordingly.
+If you published a paper mention them just after your education. If you have papers you submitted to journal write it under "Manuscripts under review". If your work is complete but you're yet to send it to a journal, mention it under "Manuscripts under preparation". If you presented your research at a conference, put it under "Conferences".
+Have a "Relevant Coursework" section in the end that has coursework in bullets relevant to your research. If you took plenty of grad level courses, mention that with an asterisk.
+Do not throw tens of tens of projects. Your internship + project should be under 5. Mention the top 5. Explain each in bullets. Give links to "results" of each of them.
+If you would like to mention more projects put them just as single bullets (with no details).
+I will give you a example of the sections I had in my resume.
+Education: Undergrad school, major, CGPA, major GPA, minor, school, school CGPA
+Publications under review (I had one)
+Conferences (I had 2 international and 1 domestic)
+Research Internships (I had 1 international and 2 domestic, I had link to the internship reports and advisors. I had 3–5 bullets explaining the methodology, impact and results)
+Projects (I mentioned top 2 with 2 bullets explaining each) 
+Skills (I mentioned 3 in bullets: programming languages, softwares and libraries)
+Scholastic Achievements (I mentioned top 6 - included hackathons and national level government awards) 
+Relevant Coursework (I had two columns of 5 courses each)
+Leadership roles and co-curricular activities (I had 3)
+It was exactly 2 page long with very little white space.
+Again, show your resume to as many people as possible and ask for feedback.
+
+---
+
+Bonus Section
+======
+Lovely! You made it till here. And, awesome! You finished planning all your application materials! Feels good no? Since, you stuck till here, here are some bonus tips for you!
+GRE scores are not so important. If your GRE did not go as good as you expected consider giving more time to your application than re-taking it. Remember GRE scores are on a non linear scale and as you go closer to 340, increasing your score by a single point becomes harder. If you havent taken GRE yet and plan to take it, give importance to AWA. It is the MOST important score in your overall GRE (even though numerically its least). Try to have atleast 3.5/6. Anything above 4 is good enough.
+Don't worry about English Proficiency scores as long as that makes you eligible. Most schools will allow you to retake english proficiency if you get accepted and if your GRA / TA requires a higher english proficiency than your scores. (It is not just a rule on paper, many of my friends who got into UChicago, UT, etc had much lower score in TOEFL and had to give a english test upon joining but that had no impact on their admission.)
+Think of stuffs that can improve your application. For example: My major GPA was higher than my overall CGPA. I wrote that in my resume. My undergrad major was different from my applied major for grad school, I explained that in my SOP as a positive as I bring a different outlook on the table. When I went for a conference in US, I looked into presentations similar to my domain, looked up the presenters and their advisors. Went up to them and talked to them. Later when I mailed them I had a call back to the conference in the first line. These are things that worked for me, think of stuffs that would work for you.
+r/gradadmissions is an excellent subreddit. There are people who are applying in this cycle. There are people who went through the process. Make use of it. Talk with people, ask your doubts.
+Give sufficient time to your application. This is not just filling up a form. The whole process will take time. You will have to introspect a lot. And hopefully, the introspection would help you in your grad school journey.
+Many graduate schools make the statistics available on their website. Google "Application statistics: ABC university grad school" and you could find the average GPA, and background of students selected. This might help you select which universities would be safe for you.
+
+All the best with your application! Go ahead and kill it!
+I applied in transportation engineering and OR grad programs in Fall '23 cycle, if you're applying in the same field and would like to discuss more, shoot a reply and I will get back to you!
