@@ -198,7 +198,7 @@ author_profile: true
     <!-- Texas -->
     <div class="travel-column">
       <h3>Texas, US</h3>
-      <p>Austin</p>
+      <p>Austin, San Antanio, Dallas</p>
       <a 
           data-pin-do="embedBoard" 
           data-pin-board-width="400" 
@@ -224,7 +224,7 @@ author_profile: true
     <!-- Quebec -->
     <div class="travel-column">
       <h3>Quebec, Canada</h3>
-      <p>Montreal</p>
+      <p>Montreal, Quebec City, Trois Rivieres</p>
       <a 
           data-pin-do="embedBoard" 
           data-pin-board-width="400" 
@@ -237,7 +237,7 @@ author_profile: true
     <!-- Ontario -->
     <div class="travel-column">
       <h3>Ontario, Canada</h3>
-      <p>Toronto</p>
+      <p>Toronto, Niagara Falls</p>
       <a 
           data-pin-do="embedBoard" 
           data-pin-board-width="400" 
@@ -262,8 +262,8 @@ author_profile: true
 
     <!-- Jaipur -->
     <div class="travel-column">
-      <h3>Jaipur, India</h3>
-      <p>Pink City</p>
+      <h3>Rajasthan, India</h3>
+      <p>Jaipur</p>
       <a 
           data-pin-do="embedBoard" 
           data-pin-board-width="400" 
@@ -289,7 +289,7 @@ author_profile: true
     <!-- Goa -->
     <div class="travel-column">
       <h3>Goa, India</h3>
-      <p>Panjim</p>
+      <p>Panjim, Madgaon, Vaco Da Gama</p>
       <a 
           data-pin-do="embedBoard" 
           data-pin-board-width="400" 
