@@ -166,18 +166,18 @@ author_profile: true
 
 <div class="section travel-section">
   <h2>🌍 Travel</h2>
-  <p>Traveling lets me explore and experience new cultures, cuisines, and places. Below are some Pinterest boards that capture the beauty of Seattle, Idaho, and Texas, places that hold special memories for me.</p>
+  <p>Traveling lets me explore and experience new cultures, cuisines, and places. Below are some Pinterest boards that capture the beauty of different places across the world that hold special memories for me.</p>
   
   <div class="travel-columns">
     <!-- Seattle Pinterest Board -->
     <div class="travel-column">
-      <h3>Seattle, Washington</h3>
+      <h3>Washington</h3>
       <a 
           data-pin-do="embedBoard" 
           data-pin-board-width="400" 
           data-pin-scale-height="240" 
           data-pin-scale-width="60" 
-          href="https://www.pinterest.com/bdebojjal/seattle-washington/">
+          href="https://www.pinterest.com/bdebojjal/washington/">
       </a>
     </div>
 
