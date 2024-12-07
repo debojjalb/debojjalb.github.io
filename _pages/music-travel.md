@@ -164,7 +164,7 @@ author_profile: true
   </ul>
 </div>
 
-<<div class="section travel-section">
+<div class="section travel-section">
   <h2>🌍 Travel</h2>
   <p>Traveling lets me explore and experience new cultures, cuisines, and places. Below are some Pinterest boards that capture the beauty of different places across the world that hold special memories for me.</p>
   
@@ -182,10 +182,23 @@ author_profile: true
       </a>
     </div>
 
+    <!-- Idaho -->
+    <div class="travel-column">
+      <h3>Idaho, US</h3>
+      <p>Boise</p>
+      <a 
+          data-pin-do="embedBoard" 
+          data-pin-board-width="400" 
+          data-pin-scale-height="240" 
+          data-pin-scale-width="60" 
+          href="https://www.pinterest.com/bdebojjal/idaho/">
+      </a>
+    </div>
+
     <!-- Texas -->
     <div class="travel-column">
       <h3>Texas, US</h3>
-      <p>Austin, San Antonio, Dallas</p>
+      <p>Austin</p>
       <a 
           data-pin-do="embedBoard" 
           data-pin-board-width="400" 
@@ -211,7 +224,7 @@ author_profile: true
     <!-- Quebec -->
     <div class="travel-column">
       <h3>Quebec, Canada</h3>
-      <p>Montreal, Quebec City, Trois Rivieres</p>
+      <p>Montreal</p>
       <a 
           data-pin-do="embedBoard" 
           data-pin-board-width="400" 
@@ -224,7 +237,7 @@ author_profile: true
     <!-- Ontario -->
     <div class="travel-column">
       <h3>Ontario, Canada</h3>
-      <p>Toronto, Niagara Falls</p>
+      <p>Toronto</p>
       <a 
           data-pin-do="embedBoard" 
           data-pin-board-width="400" 
@@ -249,14 +262,14 @@ author_profile: true
 
     <!-- Jaipur -->
     <div class="travel-column">
-      <h3>Rajasthan, India</h3>
-      <p>Jaipur</p>
+      <h3>Jaipur, India</h3>
+      <p>Pink City</p>
       <a 
           data-pin-do="embedBoard" 
           data-pin-board-width="400" 
           data-pin-scale-height="240" 
           data-pin-scale-width="60" 
-          href="https://www.pinterest.com/bdebojjal/rajasthan/">
+          href="https://www.pinterest.com/bdebojjal/jaipur/">
       </a>
     </div>
 
@@ -276,7 +289,7 @@ author_profile: true
     <!-- Goa -->
     <div class="travel-column">
       <h3>Goa, India</h3>
-      <p>Madgaon, Panjim, Vasco Da Gama</p>
+      <p>Panjim</p>
       <a 
           data-pin-do="embedBoard" 
           data-pin-board-width="400" 
