@@ -164,14 +164,15 @@ author_profile: true
   </ul>
 </div>
 
-<div class="section travel-section">
+<<div class="section travel-section">
   <h2>🌍 Travel</h2>
   <p>Traveling lets me explore and experience new cultures, cuisines, and places. Below are some Pinterest boards that capture the beauty of different places across the world that hold special memories for me.</p>
   
   <div class="travel-columns">
-    <!-- Seattle Pinterest Board -->
+    <!-- Washington -->
     <div class="travel-column">
-      <h3>Washington</h3>
+      <h3>Washington, US</h3>
+      <p>Seattle</p>
       <a 
           data-pin-do="embedBoard" 
           data-pin-board-width="400" 
@@ -181,27 +182,120 @@ author_profile: true
       </a>
     </div>
 
-    <!-- Idaho Pinterest Board -->
+    <!-- Texas -->
     <div class="travel-column">
-      <h3>Idaho</h3>
-      <a 
-          data-pin-do="embedBoard" 
-          data-pin-board-width="400" 
-          data-pin-scale-height="240" 
-          data-pin-scale-width="60" 
-          href="https://www.pinterest.com/bdebojjal/idaho/">
-      </a>
-    </div>
-
-    <!-- Texas Pinterest Board -->
-    <div class="travel-column">
-      <h3>Texas</h3>
+      <h3>Texas, US</h3>
+      <p>Austin, San Antonio, Dallas</p>
       <a 
           data-pin-do="embedBoard" 
           data-pin-board-width="400" 
           data-pin-scale-height="240" 
           data-pin-scale-width="60" 
           href="https://www.pinterest.com/bdebojjal/texas/">
+      </a>
+    </div>
+
+    <!-- Illinois -->
+    <div class="travel-column">
+      <h3>Illinois, US</h3>
+      <p>Chicago</p>
+      <a 
+          data-pin-do="embedBoard" 
+          data-pin-board-width="400" 
+          data-pin-scale-height="240" 
+          data-pin-scale-width="60" 
+          href="https://www.pinterest.com/bdebojjal/illinois/">
+      </a>
+    </div>
+
+    <!-- Quebec -->
+    <div class="travel-column">
+      <h3>Quebec, Canada</h3>
+      <p>Montreal, Quebec City, Trois Rivieres</p>
+      <a 
+          data-pin-do="embedBoard" 
+          data-pin-board-width="400" 
+          data-pin-scale-height="240" 
+          data-pin-scale-width="60" 
+          href="https://www.pinterest.com/bdebojjal/quebec/">
+      </a>
+    </div>
+
+    <!-- Ontario -->
+    <div class="travel-column">
+      <h3>Ontario, Canada</h3>
+      <p>Toronto, Niagara Falls</p>
+      <a 
+          data-pin-do="embedBoard" 
+          data-pin-board-width="400" 
+          data-pin-scale-height="240" 
+          data-pin-scale-width="60" 
+          href="https://www.pinterest.com/bdebojjal/ontario/">
+      </a>
+    </div>
+
+    <!-- Ottawa -->
+    <div class="travel-column">
+      <h3>Ottawa, Canada</h3>
+      <p>Gatineau</p>
+      <a 
+          data-pin-do="embedBoard" 
+          data-pin-board-width="400" 
+          data-pin-scale-height="240" 
+          data-pin-scale-width="60" 
+          href="https://www.pinterest.com/bdebojjal/ottawa/">
+      </a>
+    </div>
+
+    <!-- Jaipur -->
+    <div class="travel-column">
+      <h3>Rajasthan, India</h3>
+      <p>Jaipur</p>
+      <a 
+          data-pin-do="embedBoard" 
+          data-pin-board-width="400" 
+          data-pin-scale-height="240" 
+          data-pin-scale-width="60" 
+          href="https://www.pinterest.com/bdebojjal/rajasthan/">
+      </a>
+    </div>
+
+    <!-- Karnataka -->
+    <div class="travel-column">
+      <h3>Karnataka, India</h3>
+      <p>Bangalore</p>
+      <a 
+          data-pin-do="embedBoard" 
+          data-pin-board-width="400" 
+          data-pin-scale-height="240" 
+          data-pin-scale-width="60" 
+          href="https://www.pinterest.com/bdebojjal/karnataka/">
+      </a>
+    </div>
+
+    <!-- Goa -->
+    <div class="travel-column">
+      <h3>Goa, India</h3>
+      <p>Madgaon, Panjim, Vasco Da Gama</p>
+      <a 
+          data-pin-do="embedBoard" 
+          data-pin-board-width="400" 
+          data-pin-scale-height="240" 
+          data-pin-scale-width="60" 
+          href="https://www.pinterest.com/bdebojjal/goa/">
+      </a>
+    </div>
+
+    <!-- Indiana -->
+    <div class="travel-column">
+      <h3>Indiana, US</h3>
+      <p>Indianapolis</p>
+      <a 
+          data-pin-do="embedBoard" 
+          data-pin-board-width="400" 
+          data-pin-scale-height="240" 
+          data-pin-scale-width="60" 
+          href="https://www.pinterest.com/bdebojjal/indiana/">
       </a>
     </div>
   </div>
@@ -229,8 +323,14 @@ author_profile: true
 
   .travel-column h3 {
       text-align: center;
-      margin-bottom: 10px;
+      margin-bottom: 5px;
       color: #014552;
+  }
+
+  .travel-column p {
+      text-align: center;
+      margin-bottom: 15px;
+      font-weight: bold;
   }
 
   @media (max-width: 768px) {
