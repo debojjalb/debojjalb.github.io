@@ -1,87 +1,72 @@
 ---
-layout: archive
 permalink: /year-archive/
 title: "Blog Posts"
 author_profile: true
-redirect_from:
-  - /wordpress/blog-posts/
 ---
 
 <style>
-/* Blog Archive Page Styles */
-body {
-  font-family: 'Poppins', sans-serif; /* Google Font */
-  background-color: #f5f5f5; /* Light Gray Background */
-  margin: 0;
-  padding: 0;
-}
-
-.archive-container {
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  background: #ffffff; /* White card background */
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.archive__subtitle {
-  font-size: 28px;
-  margin-top: 40px;
-  margin-bottom: 20px;
-  color: #3F51B5; /* Cool Blue */
-  display: flex;
-  align-items: center;
-}
-
-.year-icon {
-  margin-right: 10px;
-}
-
-.archive__post {
-  padding: 15px;
-  background: #f9f9f9;
-  border-radius: 8px;
-  margin-bottom: 20px;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.archive__post:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
+  body {
+      font-family: "Arial", sans-serif;
+      font-size: 14px;
+      color: #333;
+  }
+  a {
+      color: #014552;
+  }
+  h2 {
+      text-align: center;
+      font-weight: bold;
+      margin-top: 20px;
+      margin-bottom: 20px;
+  }
+  a:hover {
+      text-decoration: underline;
+  }
+  .section {
+      padding: 20px;
+      margin-bottom: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background: #fdf4f7;
+  }
   .archive-container {
-    padding: 15px;
+      margin: 20px auto;
+      max-width: 800px;
   }
-
   .archive__subtitle {
-    font-size: 24px;
+      text-align: center;
+      font-weight: bold;
+      margin-top: 20px;
+      font-size: 22px;
+      color: #333;
   }
-
   .archive__post {
-    padding: 10px;
+      margin: 15px 0;
+      padding: 15px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
   }
-}
+  .archive__post:hover {
+      transform: translateY(-5px);
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
 </style>
 
-{% include base_path %}
-{% capture written_year %}'None'{% endcapture %}
-
-<div class="archive-container">
-  {% for post in site.posts %}
-    {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
-    {% if year != written_year %}
-      <h2 id="{{ year | slugify }}" class="archive__subtitle">
-        <span class="year-icon">📅</span> {{ year }}
-      </h2>
-      {% capture written_year %}{{ year }}{% endcapture %}
-    {% endif %}
-    <div class="archive__post">
-      {% include archive-single.html %}
-    </div>
-  {% endfor %}
+<div class="section">
+  <h2>📚 Blog Archive</h2>
+  <div class="archive-container">
+    {% capture written_year %}'None'{% endcapture %}
+    {% for post in site.posts %}
+      {% capture year %}{{ post.date | date: '%Y' }}{% endcapture %}
+      {% if year != written_year %}
+        <h2 class="archive__subtitle">{{ year }}</h2>
+        {% capture written_year %}{{ year }}{% endcapture %}
+      {% endif %}
+      <div class="archive__post">
+        {% include archive-single.html %}
+      </div>
+    {% endfor %}
+  </div>
 </div>
