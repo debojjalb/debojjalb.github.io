@@ -13,11 +13,11 @@ main:
   - title: "Updates"
     url: /gallery/
 
-  - title: "Music"
+  - title: "Music and travel"
     url: /music/
 
-  - title: "Travel"
-    url: /travel/
+  # - title: "Travel"
+  #   url: /travel/
 
   - title: "Grad School Resources"
     # url: /publications/
