@@ -164,95 +164,40 @@ author_profile: true
   </ul>
 </div>
 
-<!-- 
 <div class="section travel-section">
-  <h2>✈️ Travel</h2>
-  <p>I enjoy exploring new places. Click on a state to see a gallery of my travel pictures from that region.</p>
+  <h2>🌍 Travel</h2>
+  <p>Traveling lets me explore and experience new cultures, cuisines, and places. Below are some Pinterest boards that capture the beauty of Seattle, Idaho, and Texas, places that hold special memories for me.</p>
   
-  <h3>USA</h3>
-  <table>
-    <thead>
-      <tr>
-        <th>State</th>
-        <th>Gallery</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Seattle, Washington</td>
-        <td><a href="javascript:void(0)" onclick="openGallery(['/images/INFORMS_Seattle1.jpeg', '/images/INFORMS_Seattle2.jpeg'])">View Photos</a></td>
-      </tr>
-      <tr>
-        <td>Boise, Idaho</td>
-        <td><a href="javascript:void(0)" onclick="openGallery(['/images/INFORMS_Seattle3.jpeg', '/images/INFORMS_Seattle4.jpeg'])">View Photos</a></td>
-      </tr>
-      <tr>
-        <td>Chicago, Illinois</td>
-        <td><a href="javascript:void(0)" onclick="openGallery(['/images/INFORMS_Seattle3.jpeg', '/images/INFORMS_Seattle4.jpeg'])">View Photos</a></td>
-      </tr>
-      <tr>
-        <td>Austin, Texas</td>
-        <td><a href="javascript:void(0)" onclick="openGallery(['/images/INFORMS_Seattle3.jpeg', '/images/INFORMS_Seattle4.jpeg'])">View Photos</a></td>
-      </tr>
-      <tr>
-        <td>Dallas, Texas</td>
-        <td><a href="javascript:void(0)" onclick="openGallery(['/images/INFORMS_Seattle3.jpeg', '/images/INFORMS_Seattle4.jpeg'])">View Photos</a></td>
-      </tr>
-      <tr>
-        <td>San Antonio, Texas</td>
-        <td><a href="javascript:void(0)" onclick="openGallery(['/images/INFORMS_Seattle3.jpeg', '/images/INFORMS_Seattle4.jpeg'])">View Photos</a></td>
-      </tr>
-    </tbody>
-  </table>
+  <!-- Seattle Pinterest Board -->
+  <h3>Seattle, Washington</h3>
+  <a 
+      data-pin-do="embedBoard" 
+      data-pin-board-width="800" 
+      data-pin-scale-height="240" 
+      data-pin-scale-width="80" 
+      href="https://www.pinterest.com/bdebojjal/seattle-washington/">
+  </a>
+
+  <!-- Idaho Pinterest Board -->
+  <h3>Idaho</h3>
+  <a 
+      data-pin-do="embedBoard" 
+      data-pin-board-width="800" 
+      data-pin-scale-height="240" 
+      data-pin-scale-width="80" 
+      href="https://www.pinterest.com/bdebojjal/idaho/">
+  </a>
+
+  <!-- Texas Pinterest Board -->
+  <h3>Texas</h3>
+  <a 
+      data-pin-do="embedBoard" 
+      data-pin-board-width="800" 
+      data-pin-scale-height="240" 
+      data-pin-scale-width="80" 
+      href="https://www.pinterest.com/bdebojjal/texas/">
+  </a>
 </div>
 
-<!-- Modal Carousel -->
-<!-- <div id="galleryModal" class="modal">
-  <span class="close" onclick="closeGallery()">&times;</span>
-  <div class="modal-content">
-    <img id="modalImage" src="" alt="Gallery Image">
-    <div class="carousel-controls">
-      <span id="prev" onclick="prevImage()">&#10094;</span>
-      <span id="next" onclick="nextImage()">&#10095;</span>
-    </div>
-  </div>
-</div> --> -->
-
-<script>
-  let currentImageIndex = 0;
-  let images = [];
-
-  function openGallery(imageArray) {
-      images = imageArray;
-      currentImageIndex = 0;
-      document.getElementById('modalImage').src = images[currentImageIndex];
-      document.getElementById('galleryModal').style.display = 'block';
-  }
-
-  function closeGallery() {
-      document.getElementById('galleryModal').style.display = 'none';
-  }
-
-  function prevImage() {
-      currentImageIndex = (currentImageIndex === 0) ? images.length - 1 : currentImageIndex - 1;
-      document.getElementById('modalImage').src = images[currentImageIndex];
-  }
-
-  function nextImage() {
-      currentImageIndex = (currentImageIndex === images.length - 1) ? 0 : currentImageIndex + 1;
-      document.getElementById('modalImage').src = images[currentImageIndex];
-  }
-
-  document.addEventListener('click', function(event) {
-      const modal = document.getElementById('galleryModal');
-      if (modal.style.display === 'block' && !event.target.closest('.modal-content') && !event.target.closest('[onclick^="openGallery"]')) {
-          closeGallery();
-      }
-  });
-
-  document.addEventListener('keydown', function(event) {
-      if (event.key === 'Escape') {
-          closeGallery();
-      }
-  });
-</script>
+<!-- Include Pinterest Script -->
+<script async defer src="https://assets.pinterest.com/js/pinit.js"></script>

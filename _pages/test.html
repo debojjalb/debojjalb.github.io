@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seattle Pinterest Board</title>
+    <script async defer src="https://assets.pinterest.com/js/pinit.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        h3 {
+            font-size: 2rem;
+            color: #4caf50;
+            margin-bottom: 1rem;
+        }
+
+        .pinterest-container {
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 850px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .pinterest-container a {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="pinterest-container">
+        <h3>Discover Seattle, Washington 🌟</h3>
+        <a 
+            data-pin-do="embedBoard" 
+            data-pin-board-width="800" 
+            data-pin-scale-height="240" 
+            data-pin-scale-width="80" 
+            href="https://www.pinterest.com/bdebojjal/seattle-washington/">
+        </a>
+    </div>
+</body>
+</html>
