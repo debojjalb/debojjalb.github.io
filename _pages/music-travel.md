@@ -192,7 +192,7 @@ author_profile: true
           href="https://www.pinterest.com/bdebojjal/idaho/">
       </a>
     </div>
-    
+
     <!-- Texas Pinterest Board -->
     <div class="travel-column">
       <h3>Texas</h3>
@@ -219,7 +219,7 @@ author_profile: true
   }
   
   .travel-column {
-      flex: 1 1 calc(50% - 20px); /* Two columns with spacing */
+      flex: 1 1 48%; /* Each column takes approximately half the width */
       box-sizing: border-box;
       padding: 10px;
       background-color: #ffffff;
