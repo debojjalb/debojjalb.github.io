@@ -168,74 +168,36 @@ author_profile: true
   <h2>🌍 Travel</h2>
   <p>Traveling lets me explore and experience new cultures, cuisines, and places. Below are some Pinterest boards that capture the beauty of Seattle, Idaho, and Texas, places that hold special memories for me.</p>
   
-  <div class="travel-columns">
-    <!-- Seattle Pinterest Board -->
-    <div class="travel-column">
-      <h3>Seattle, Washington</h3>
-      <a 
-          data-pin-do="embedBoard" 
-          data-pin-board-width="400" 
-          data-pin-scale-height="240" 
-          data-pin-scale-width="60" 
-          href="https://www.pinterest.com/bdebojjal/seattle-washington/">
-      </a>
-    </div>
+  <!-- Seattle Pinterest Board -->
+  <h3>Seattle, Washington</h3>
+  <a 
+      data-pin-do="embedBoard" 
+      data-pin-board-width="800" 
+      data-pin-scale-height="240" 
+      data-pin-scale-width="80" 
+      href="https://www.pinterest.com/bdebojjal/seattle-washington/">
+  </a>
 
-    <!-- Idaho Pinterest Board -->
-    <div class="travel-column">
-      <h3>Idaho</h3>
-      <a 
-          data-pin-do="embedBoard" 
-          data-pin-board-width="400" 
-          data-pin-scale-height="240" 
-          data-pin-scale-width="60" 
-          href="https://www.pinterest.com/bdebojjal/idaho/">
-      </a>
-    </div>
+  <!-- Idaho Pinterest Board -->
+  <h3>Idaho</h3>
+  <a 
+      data-pin-do="embedBoard" 
+      data-pin-board-width="800" 
+      data-pin-scale-height="240" 
+      data-pin-scale-width="80" 
+      href="https://www.pinterest.com/bdebojjal/idaho/">
+  </a>
 
-    <!-- Texas Pinterest Board -->
-    <div class="travel-column">
-      <h3>Texas</h3>
-      <a 
-          data-pin-do="embedBoard" 
-          data-pin-board-width="400" 
-          data-pin-scale-height="240" 
-          data-pin-scale-width="60" 
-          href="https://www.pinterest.com/bdebojjal/texas/">
-      </a>
-    </div>
-  </div>
+  <!-- Texas Pinterest Board -->
+  <h3>Texas</h3>
+  <a 
+      data-pin-do="embedBoard" 
+      data-pin-board-width="800" 
+      data-pin-scale-height="240" 
+      data-pin-scale-width="80" 
+      href="https://www.pinterest.com/bdebojjal/texas/">
+  </a>
 </div>
 
 <!-- Include Pinterest Script -->
 <script async defer src="https://assets.pinterest.com/js/pinit.js"></script>
-
-<style>
-  .travel-columns {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 20px;
-  }
-  
-  .travel-column {
-      flex: 1 1 48%; /* Each column takes approximately half the width */
-      box-sizing: border-box;
-      padding: 10px;
-      background-color: #ffffff;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  }
-
-  .travel-column h3 {
-      text-align: center;
-      margin-bottom: 10px;
-      color: #014552;
-  }
-
-  @media (max-width: 768px) {
-      .travel-column {
-          flex: 1 1 100%; /* Stack columns on smaller screens */
-      }
-  }
-</style>
