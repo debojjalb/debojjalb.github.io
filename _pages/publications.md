@@ -48,12 +48,34 @@ redirect_from:
         color: #014552;
         font-weight: bold;
     }
+    .subscribe-box {
+        margin-top: 30px;
+        text-align: center;
+    }
+    .subscribe-button {
+        display: inline-block;
+        background-color: #014552;
+        color: #fff;
+        padding: 10px 20px;
+        font-size: 16px;
+        text-decoration: none;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s ease;
+    }
+    .subscribe-button:hover {
+        background-color: #012f36;
+    }
 </style>
 
 <div class="center-box">
     <div class="download-box">
         <a href="/files/Resume.pdf" download>Download CV</a>
     </div>
+</div>
+
+<div class="subscribe-box">
+    <a class="subscribe-button" href="https://scholar.google.com/citations?hl=en&user=vzSxiw4AAAAJ#d=gsc_md_fol&t=1735021017135" target="_blank">Subscribe to New Research Updates</a>
 </div>
 
 
