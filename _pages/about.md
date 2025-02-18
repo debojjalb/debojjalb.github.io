@@ -29,16 +29,19 @@ redirect_from:
 
         /* Ensure each section takes up full screen */
         .section {
-            min-height: 100vh; /* Ensures section fills at least full screen */
-            box-sizing: border-box; /* Ensures padding is included in height calculations */
-            padding: 20px; /* Add padding to prevent content from touching edges */
+            min-height: 100vh; 
+            width: 100%;
+            box-sizing: border-box;
+            padding: 20px;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            overflow-y: auto; /* Allows internal scrolling if content overflows */
-
+            overflow-y: auto; /* Ensure scrolling inside sections */
+            text-align: center; /* Center text for better mobile view */
+            word-wrap: break-word;
         }
+
 
         a {
             color: #58a6ff; /* GitHub blue */
@@ -136,7 +139,7 @@ redirect_from:
     <p><strong>Major:</strong> Transportation Engineering; <strong>Minor:</strong> Industrial Engineering and Operations Research, <a href="https://www.utexas.edu/">UT Austin</a></p>
     <p><strong>Advisor:</strong> <a href="https://sboyles.github.io/">Prof. Stephen Boyles</a></p>
 </div>
-
+<p>
 <div class="education-entry">
     <p><strong>Bachelor of Science (B.S. by Research)</strong> - Aug 2019 – May 2023</p>
     <p><strong>Major:</strong> Earth and Environmental Science; <strong>Minor:</strong> Mathematics, <a href="https://iisc.ac.in/">IISc, Bengaluru</a></p>
