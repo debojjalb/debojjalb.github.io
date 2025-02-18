@@ -65,6 +65,13 @@ redirect_from:
             width: 0;
             animation: typing 3s steps(35, end) forwards, blinkCursor 0.8s infinite;
         }
+        .education-entry {
+            margin-bottom: 10px; /* Reduces space between M.S. and B.S. */
+        }
+
+        .education-entry p {
+            margin: 3px 0; /* Reduces space between individual paragraphs */
+        }
         
         @keyframes typing {
             from { width: 0; }
@@ -114,18 +121,24 @@ redirect_from:
     </div>
 
 <div class="section">
-        <h2>Education</h2>
+    <h2>Education</h2>
+    
+    <div class="education-entry">
         <p><strong>Master of Science in Engineering (M.S.E)</strong> - Aug 2023 – Fall 2024 (Expected)</p>
         <p>(Admitted to the Ph.D. program with an M.S. (Thesis) en route)</p>
         <p><strong>Major:</strong> Transportation Engineering; <strong>Minor:</strong> Industrial Engineering and Operations Research, <a href="https://www.utexas.edu/">UT Austin</a></p>
         <p><strong>Advisor:</strong> <a href="https://sboyles.github.io/">Prof. Stephen Boyles</a></p>
-        
+    </div>
+
+    <div class="education-entry">
         <p><strong>Bachelor of Science (B.S. by Research)</strong> - Aug 2019 – May 2023</p>
         <p><strong>Major:</strong> Earth and Environmental Science; <strong>Minor:</strong> Mathematics, <a href="https://iisc.ac.in/">IISc, Bengaluru</a></p>
         <p><strong>Awards:</strong> Gold Medal for highest GPA in major, Highest project grade, First Class Distinction</p>
         <p><strong>Thesis:</strong> Energy Efficient and Safe Routing for Last-mile Logistics</p>
         <p><strong>Advisor:</strong> <a href="http://civil.iisc.ernet.in/%7Etarunr/">Prof. Tarun Rambha</a></p>
     </div>
+</div>
+
 
     <div class="section">
         <h2>Research Interests</h2>
