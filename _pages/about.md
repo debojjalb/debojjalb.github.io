@@ -139,7 +139,7 @@ redirect_from:
     <p><strong>Major:</strong> Transportation Engineering; <strong>Minor:</strong> Industrial Engineering and Operations Research, <a href="https://www.utexas.edu/">UT Austin</a></p>
     <p><strong>Advisor:</strong> <a href="https://sboyles.github.io/">Prof. Stephen Boyles</a></p>
 </div>
-<p>
+
 <div class="education-entry">
     <p><strong>Bachelor of Science (B.S. by Research)</strong> - Aug 2019 – May 2023</p>
     <p><strong>Major:</strong> Earth and Environmental Science; <strong>Minor:</strong> Mathematics, <a href="https://iisc.ac.in/">IISc, Bengaluru</a></p>
@@ -225,11 +225,13 @@ redirect_from:
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
 <script>
     new fullpage('#fullpage', {
-        autoScrolling: true,
-        navigation: true,
-        navigationPosition: 'right',
-        scrollHorizontally: true
-    });
+    autoScrolling: true,
+    navigation: true,
+    navigationPosition: 'right',
+    scrollHorizontally: true,
+    responsiveWidth: 768, // Disable autoScrolling below 768px width
+    responsiveHeight: 600  // Disable autoScrolling below 600px height
+});
 </script>
 
 </body>
