@@ -24,7 +24,7 @@ redirect_from:
     h1, h2, h3, h4, h5, h6 {
         font-weight: bold;
         color: #e6edf3;
-        text-transform: uppercase;
+        /* text-transform: uppercase; */
         letter-spacing: 1px;
     }
 
@@ -92,7 +92,6 @@ redirect_from:
     <div><img src="/images/INFORMS_Seattle4.jpeg" alt="Presentation"><p class="caption">During my presentation (PC: Jake)</p></div>
 </div>
 
----
 
 ## Keep Austin Beautiful Day '24
 
@@ -103,7 +102,6 @@ redirect_from:
     <div><img src="/images/CASITE.jpg" alt="With CASITE"><p class="caption">With CASITE</p></div>
 </div>
 
----
 
 ## IISc Convocation 🎓
 
@@ -115,7 +113,6 @@ redirect_from:
     <div><img src="/images/IIScGrad.jpg" alt="With Parents"><p class="caption">With parents in front of IISc Main Building</p></div>
 </div>
 
----
 
 ## MITACS Globalink Internship 2023 🇨🇦
 
@@ -127,7 +124,6 @@ redirect_from:
     <div><img src="/images/MITACS4.jpg" alt="City of Trois-Rivières"><p class="caption">City of Trois-Rivières</p></div>
 </div>
 
----
 
 ## Niagara Falls 🇨🇦
 
@@ -137,7 +133,6 @@ redirect_from:
     <div><img src="/images/Niagara3.jpg" alt="White Water Walk"><p class="caption">White Water Walk near Niagara Falls</p></div>
 </div>
 
----
 
 ## The Telegraph School Awards 🏆
 
@@ -145,7 +140,6 @@ redirect_from:
     <div><img src="/images/TELEGRAPH.jpeg" alt="Receiving Telegraph School Award"><p class="caption">Father receiving Telegraph School Award</p></div>
 </div>
 
----
 
 ## JBNSTS Award Ceremony 🏅
 
