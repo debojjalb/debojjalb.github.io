@@ -4,8 +4,8 @@ title: "👋🏼 Hello there, I'm Debojjal (Deb)!"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
-  - /about/
-  - /about.html
+  - /building/
+  - /building.html
 ---
 
 <!-- Load AOS for Animations -->
