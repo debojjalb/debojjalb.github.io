@@ -106,9 +106,7 @@ redirect_from:
         Currently, I call the vibrant and musically-rich city of Austin my home.
     </p>
     <p>
-        Thank you for visiting my site. I invite you to explore the site and learn more about my research. 
-        Should you wish to discuss my research or simply chat, please don't hesitate to reach out via 
-        <a href="mailto:debojjalb@utexas.edu">email</a>.
+        Scroll down to continue
     </p>
     </div>
 
@@ -132,7 +130,19 @@ redirect_from:
         <h2>Non-Academic Interests</h2>
         <p>Guitar, Chess, YouTube Content Creation, Travel, Startups.</p>
     </div>
+
+    <div class="section">
+    <h2>Contact</h2>
+    <p>
+        Thank you for visiting my site. I invite you to explore the site and learn more about my research. 
+        Should you wish to discuss my research or simply chat, please don't hesitate to reach out via 
+        <a href="mailto:debojjalb@utexas.edu">email</a>.
+    </p>
+    </div>
+
 </div>
+
+
 
 <!-- FullPage.js Library -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
