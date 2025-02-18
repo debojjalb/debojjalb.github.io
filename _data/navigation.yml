@@ -13,6 +13,9 @@ main:
   - title: "Updates"
     url: /gallery/
 
+  - title: "Test"
+    url: /building/
+
   # - title: "Music and travel"
   #   url: /music/
 
