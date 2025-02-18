@@ -29,12 +29,15 @@ redirect_from:
 
         /* Ensure each section takes up full screen */
         .section {
-            text-align: center;
+            min-height: 100vh; /* Ensures section fills at least full screen */
+            box-sizing: border-box; /* Ensures padding is included in height calculations */
+            padding: 20px; /* Add padding to prevent content from touching edges */
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            overflow-y: auto; /* Allows internal scrolling if content overflows */
+
         }
 
         a {
