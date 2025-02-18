@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "👋🏼 Hello there, I'm Debojjal  (Deb)!"
+# title: "👋🏼 Hello there, I'm Debojjal  (Deb)!"
 excerpt: "About me"
 author_profile: true
 redirect_from: 
@@ -60,7 +60,7 @@ redirect_from:
     }
 </style>
 
-<div class="typing-container">Hi, I am Debojjal (Deb)</div>
+<div class="typing-container">👋🏼 Hello there, I'm Debojjal  (Deb)!</div>
 
 <div class="intro">
     > Welcome to my personal site. Keep scrolling to debug my life.
