@@ -228,12 +228,15 @@ redirect_from:
 <!-- FullPage.js Library -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
 <script>
-    new fullpage('#fullpage', {
-    // autoScrolling: window.innerWidth > 568, // Only disable on mobile
+   new fullpage('#fullpage', {
+    autoScrolling: true,
     navigation: true,
     navigationPosition: 'right',
-    scrollHorizontally: true
+    scrollHorizontally: true,
+    scrollOverflow: true // Allows scrolling within a section before moving to the next
 });
 </script>
+
+
 
 </body>
