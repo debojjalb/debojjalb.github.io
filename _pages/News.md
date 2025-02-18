@@ -83,7 +83,7 @@ redirect_from:
 
 ## INFORMS Annual Meeting 2024
 
-> *Presented our work on stochastic user equilibrium traffic assignment at INFORMS Annual Meeting 2024 in Seattle, Washington.*
+> *Presented our work on stochastic user equilibrium traffic assignment at INFORMS Annual Meeting 2024 in Seattle, Washington. See my Research page for more details.*
 
 <div class="image-group">
     <div><img src="/images/INFORMS_Seattle1.jpeg" alt="With Kyle"><p class="caption">With Kyle</p></div>
@@ -123,7 +123,6 @@ redirect_from:
 </div>
 
 
-
 ## MITACS Globalink Internship 2023 🇨🇦
 
 > *A short vlog of my MITACS internship experience:* [🎥 Watch on YouTube](https://youtu.be/YhyQzgftU6Y?si=9H4cYrdd136VDaGd)
@@ -136,6 +135,8 @@ redirect_from:
 
 ## I visited Canada as part of the MITACS Globalink Internship 2023
 
+> *I visited Montreal, Quebec City and Toronto. Here are some clips from the tour, more on my travel page*
+
 <div class="image-group">
     <div><img src="/images/Toronto.jpg" alt="View of Downtown Toronto from CN Tower"><p class="caption">View of Downtown Toronto from CN Tower</p></div>
     <div><img src="/images/Ottawa.jpg" alt="Parliament Hill and Peace Tower in Ottawa"><p class="caption">Parliament Hill and Peace Tower in Ottawa</p></div>
@@ -144,8 +145,9 @@ redirect_from:
 </div>
 
 
-
 ## Niagara Falls 🇨🇦
+
+> *Niagara Falls is one of the most famous waterfalls in the world, located on the border between Canada and the United States. It consists of three waterfalls: Horseshoe Falls, American Falls, and Bridal Veil Falls. The falls are known for their powerful flow and breathtaking views. We experienced Niagara by taking a boat ride, walking along the river, and enjoying the illuminated falls at night.*
 
 <div class="image-group">
     <div><img src="/images/Niagara.jpg" alt="Niagara Falls at Night"><p class="caption">Niagara Falls at Night</p></div>
@@ -156,12 +158,16 @@ redirect_from:
 
 ## The Telegraph School Awards 🏆
 
+> *The Telegraph School Awards recognize outstanding students, teachers, and institutions for excellence in academics, sports, and extracurricular achievements. I was selected as a winner under the Academic Excellence category after a jury decision and received a special honor as a student. My father accepted the award on my behalf.*
+
 <div class="image-group">
     <div><img src="/images/TELEGRAPH.jpeg" alt="Receiving Telegraph School Award"><p class="caption">Father receiving Telegraph School Award</p></div>
 </div>
 
 
 ## JBNSTS Award Ceremony 🏅
+
+> *The JBNSTS (Jagadis Bose National Science Talent Search) Award is a prestigious recognition for young scholars in India, honoring excellence in science and academics. I was selected as a JBNSTS Scholar and was awarded by the director of ISI Kolkata*
 
 <div class="image-group">
     <div><img src="/images/JBNSTS.jpeg" alt="Receiving JBNSTS Award"><p class="caption">Receiving JBNSTS Award</p></div>
