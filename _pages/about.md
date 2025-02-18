@@ -47,7 +47,7 @@ redirect_from:
         overflow: hidden;
         border-right: 4px solid #58a6ff;
         width: 0;
-        animation: typing 3s steps(20, end) forwards, blinkCursor 0.8s infinite;
+        animation: typing 3s steps(35, end) forwards, blinkCursor 0.8s infinite;
     }
     
     @keyframes typing {
@@ -63,7 +63,7 @@ redirect_from:
 <div class="typing-container">👋🏼 Hello there, I'm Debojjal  (Deb)!</div>
 
 <div class="intro">
-    > Welcome to my personal site. Keep scrolling to debug my life.
+    > Welcome to my personal site.
 </div>
 
 
