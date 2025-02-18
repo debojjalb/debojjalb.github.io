@@ -8,7 +8,6 @@ redirect_from:
   - /about.html
 ---
 
-
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
 
@@ -36,10 +35,32 @@ redirect_from:
         margin-bottom: 20px;
         animation: blinkCursor 1s infinite;
     }
+    .typing-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        font-weight: bold;
+        color: #58a6ff;
+        height: 50px;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 4px solid #58a6ff;
+        width: 0;
+        animation: typing 3s steps(20, end) forwards, blinkCursor 0.8s infinite;
+    }
+    
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 280px; }
+    }
+
     @keyframes blinkCursor {
-        50% { border-left-color: transparent; }
+        50% { border-color: transparent; }
     }
 </style>
+
+<div class="typing-container">Hi, I am Debojjal (Deb)</div>
 
 <div class="intro">
     > Welcome to my personal site. Keep scrolling to debug my life.
