@@ -79,7 +79,7 @@ redirect_from:
 <div id="fullpage">
     <div class="section">
         <div class="typing-container">Hello there, I'm Debojjal (Deb)!</div>
-        <p>Welcome to my personal site.</p>
+        <p>Welcome to my personal site. Scroll down to know more.</p>
     </div>
 
     <div class="section">
