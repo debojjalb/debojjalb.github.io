@@ -69,11 +69,15 @@ redirect_from:
             animation: typing 3s steps(35, end) forwards, blinkCursor 0.8s infinite;
         }
         .education-entry {
-            margin-bottom: 10px; /* Reduces space between M.S. and B.S. */
+            margin-bottom: 20px; /* Reduces space between M.S. and B.S. */
         }
 
         .education-entry p {
             margin: 3px 0; /* Reduces space between individual paragraphs */
+        }
+
+        .fp-nav ul li a span {
+            background: white !important;
         }
         
         @keyframes typing {
