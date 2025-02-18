@@ -8,82 +8,143 @@ redirect_from:
 ---
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+
+    /* Dark Mode */
     body {
-        font-family: "Times New Roman", Times, serif;
+        font-family: 'Source Code Pro', monospace;
         font-size: 14px;
-        color: #000;
+        background-color: #0d1117;
+        color: #c9d1d9;
+        margin: 0;
+        padding: 20px;
     }
+
     a {
-        color: #014552;
+        color: #58a6ff;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
     }
+
+    a:hover {
+        color: #1f6feb;
+        text-decoration: underline;
+    }
+
     h1, h2, h3, h4, h5, h6 {
-        margin-top: 24px;
-        margin-bottom: 16px;
-        font-weight: 600;
-        line-height: 1.25;
+        font-weight: bold;
+        color: #e6edf3;
     }
+
     ul, ol {
-        margin-bottom: 6px;
+        margin-bottom: 10px;
     }
+
     li {
-        margin-bottom: 3px;
+        margin-bottom: 5px;
     }
+
+    /* Code-style Block */
+    .code-block {
+        background-color: #161b22;
+        padding: 10px;
+        border-radius: 6px;
+        font-size: 14px;
+        font-family: 'Source Code Pro', monospace;
+        color: #c9d1d9;
+        border-left: 4px solid #58a6ff;
+        animation: fadeIn 1s ease-in-out;
+    }
+
+    /* Animated Typing Effect */
+    .typing-effect {
+        display: inline-block;
+        white-space: nowrap;
+        overflow: hidden;
+        border-right: 3px solid #58a6ff;
+        animation: typing 2s steps(30, end), blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+
+    @keyframes blink-caret {
+        50% { border-color: transparent; }
+    }
+
+    /* Download Box */
     .center-box {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 20px;
-        margin-bottom: 20px;
+        margin: 20px 0;
     }
+
     .download-box {
-        border: 2px solid #014552;
+        border: 2px solid #58a6ff;
         padding: 10px;
         text-align: center;
         font-size: 16px;
-        background-color: #f9f9f9;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #161b22;
+        color: #c9d1d9;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        transition: transform 0.3s ease-in-out;
     }
+
     .download-box a {
         text-decoration: none;
-        color: #014552;
+        color: #58a6ff;
         font-weight: bold;
     }
-    .subscribe-box {
-        margin-top: 30px;
-        text-align: center;
+
+    .download-box:hover {
+        transform: scale(1.05);
     }
+
+    /* Subscribe Button */
+    .subscribe-box {
+        text-align: center;
+        margin-top: 30px;
+    }
+
     .subscribe-button {
         display: inline-block;
-        background-color: #014552;
-        color: #fff;
+        background-color: #58a6ff;
+        color: #0d1117;
         padding: 10px 20px;
         font-size: 16px;
         text-decoration: none;
         border-radius: 5px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        transition: background-color 0.3s ease;
+        font-weight: bold;
+        transition: all 0.3s ease-in-out;
     }
+
     .subscribe-button:hover {
-        background-color: #012f36;
+        background-color: #1f6feb;
+        color: #fff;
     }
 </style>
 
 <div class="center-box">
     <div class="download-box">
-        <a href="/files/Resume.pdf" download>Download CV</a>
+        <a href="/files/Resume.pdf" download>📄 Download CV</a>
     </div>
 </div>
 
 <div class="subscribe-box">
-    <a class="subscribe-button" href="https://scholar.google.com/citations?hl=en&user=vzSxiw4AAAAJ#d=gsc_md_fol&t=1735021017135" target="_blank">Subscribe to New Research Updates</a>
+    <a class="subscribe-button" href="https://scholar.google.com/citations?hl=en&user=vzSxiw4AAAAJ#d=gsc_md_fol&t=1735021017135" target="_blank">🔔 Subscribe to New Research Updates</a>
 </div>
-
 
 ## Manuscripts under Review 
 
-- Agarwal, P.†, **Bagchi, D.**†, Rambha, T., and Pandey, V. (2024). A Bi-criterion Steiner Traveling Salesperson Problem with Time Windows for Last-Mile Electric Vehicle Logistics. [[Code](https://github.com/transnetlab/last-mile-ev-logistics)] [[Preprint](https://arxiv.org/abs/2409.14848)]
+```plaintext
+> A Bi-criterion Steiner Traveling Salesperson Problem with Time Windows for Last-Mile Electric Vehicle Logistics
+  - Agarwal, P.†, Bagchi, D.†, Rambha, T., and Pandey, V. (2024)
+  - [Code](https://github.com/transnetlab/last-mile-ev-logistics) | [Preprint](https://arxiv.org/abs/2409.14848)
 
-    **† Equal contribution.**
+† Equal contribution.
 
 
 ## Refereed Conference Presentations
