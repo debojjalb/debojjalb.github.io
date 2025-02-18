@@ -38,7 +38,6 @@ redirect_from:
             justify-content: center;
             align-items: center;
             text-align: center; /* Center text for better mobile view */
-            word-wrap: break-word;
         }
 
 
@@ -94,7 +93,7 @@ redirect_from:
 <!-- Full Page Scroll Sections -->
 <div id="fullpage">
 <div class="section">
-    <div class="typing-container">Hi there, I'm Debojjal</div>
+    <div class="typing-container">Hi, I'm Debojjal</div>
     <p>Welcome to my personal site. Scroll down to know more.</p>
 </div>
 
