@@ -1,10 +1,6 @@
 ---
 permalink: /test/
-title: "👋🏼 Hello there, I'm Debojjal (Deb)!"
 author_profile: true
-# redirect_from: 
-#   - /test/
-#   - /test.html
 ---
 
 <!-- AOS Library -->
