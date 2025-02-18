@@ -82,7 +82,7 @@ redirect_from:
         
         @keyframes typing {
             from { width: 0; }
-            to { width: 280px; }
+            to { width: auto; }
         }
 
         @keyframes blinkCursor {
