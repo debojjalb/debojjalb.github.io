@@ -2,7 +2,6 @@
 permalink: /
 title: "👋🏼 Hello there, I'm Debojjal  (Deb)!"
 excerpt: "About me"
-sitemap: false
 author_profile: true
 redirect_from: 
   - /about/
@@ -43,10 +42,8 @@ redirect_from:
 </style>
 
 <div class="intro">
-    > Hi, I'm Debojjal. Welcome to my personal site. Keep scrolling to debug my life.
+    > Welcome to my personal site. Keep scrolling to debug my life.
 </div>
-
-## `system.log("Whoami")`
 
 
 Hi! I'm currently a graduate student specializing in [Transportation Engineering](https://www.caee.utexas.edu/research/research-areas/transportation-engineering) at the [Department of Civil, Architectural, and Environmental Engineering](https://www.caee.utexas.edu/), [University of Texas at Austin](https://www.utexas.edu/). My academic journey began with a [BS (research)](https://ug.iisc.ac.in/) degree from the [Indian Institute of Science (IISc), Bangalore](https://iisc.ac.in/), where I majored in Earth & Environmental Science along with a minor in Mathematics. During my time there, I was associated with the [Transportation Networks Lab](http://civil.iisc.ernet.in/%7Etarunr/group.html) at the [Center for Infrastructure, Sustainable Transportation & Urban Planning (CiSTUP)](https://cistup.iisc.ac.in/). Over the past two years, I have delved into sustainable logistics and transportation.

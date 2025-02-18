@@ -83,21 +83,13 @@ redirect_from:
 
 ## INFORMS Annual Meeting 2024
 
-> *I presented our work on stochastic user equilibrium traffic assignment at INFORMS Annual Meeting 2024 in Seattle, Washington.*
+> *Presented our work on stochastic user equilibrium traffic assignment at INFORMS Annual Meeting 2024 in Seattle, Washington.*
 
 <div class="image-group">
-    <div>
-        <a href="/images/INFORMS_Seattle1.jpeg" target="_blank">
-            <img src="/images/INFORMS_Seattle1.jpeg" alt="With Kyle">
-        </a>
-        <p class="caption">With Kyle</p>
-    </div>
-    <div>
-        <a href="/images/INFORMS_Seattle2.jpeg" target="_blank">
-            <img src="/images/INFORMS_Seattle2.jpeg" alt="UT transportation graduate students">
-        </a>
-        <p class="caption">With UT transportation graduate students</p>
-    </div>
+    <div><img src="/images/INFORMS_Seattle1.jpeg" alt="With Kyle"><p class="caption">With Kyle</p></div>
+    <div><img src="/images/INFORMS_Seattle2.jpeg" alt="UT transportation graduate students"><p class="caption">With UT transportation graduate students</p></div>
+    <div><img src="/images/INFORMS_Seattle3.jpeg" alt="Presentation"><p class="caption">During my presentation (PC: Qianqian)</p></div>
+    <div><img src="/images/INFORMS_Seattle4.jpeg" alt="Presentation"><p class="caption">During my presentation (PC: Jake)</p></div>
 </div>
 
 ---
@@ -107,18 +99,8 @@ redirect_from:
 > *Organized a volunteering event with UT Austin chapter of ITS/ITE and CASITE for Keep Austin Beautiful Day 2024.*
 
 <div class="image-group">
-    <div>
-        <a href="/images/KABD.jpg" target="_blank">
-            <img src="/images/KABD.jpg" alt="Keep Austin Beautiful Day">
-        </a>
-        <p class="caption">UT Transportation participated in Keep Austin Beautiful Day</p>
-    </div>
-    <div>
-        <a href="/images/CASITE.jpg" target="_blank">
-            <img src="/images/CASITE.jpg" alt="With CASITE">
-        </a>
-        <p class="caption">With CASITE</p>
-    </div>
+    <div><img src="/images/KABD.jpg" alt="Keep Austin Beautiful Day"><p class="caption">UT Transportation participated in Keep Austin Beautiful Day</p></div>
+    <div><img src="/images/CASITE.jpg" alt="With CASITE"><p class="caption">With CASITE</p></div>
 </div>
 
 ---
@@ -128,18 +110,9 @@ redirect_from:
 > *Graduated as the **gold medalist** from IISc Bangalore with a B.S. (Research) degree in Earth & Environmental Science.*
 
 <div class="image-group">
-    <div>
-        <a href="/images/Grad.png" target="_blank">
-            <img src="/images/Grad.png" alt="Receiving Gold Medal">
-        </a>
-        <p class="caption">Receiving Gold Medal at IISc Bangalore</p>
-    </div>
-    <div>
-        <a href="/images/IISc.jpg" target="_blank">
-            <img src="/images/IISc.jpg" alt="Friends from IISc '23 batch">
-        </a>
-        <p class="caption">Friends from IISc '23 batch</p>
-    </div>
+    <div><img src="/images/Grad.png" alt="Receiving Gold Medal"><p class="caption">Receiving Gold Medal at IISc Bangalore</p></div>
+    <div><img src="/images/IISc.jpg" alt="Friends from IISc '23 batch"><p class="caption">Friends from IISc '23 batch</p></div>
+    <div><img src="/images/IIScGrad.jpg" alt="With Parents"><p class="caption">With parents in front of IISc Main Building</p></div>
 </div>
 
 ---
@@ -149,18 +122,9 @@ redirect_from:
 > *A short vlog of my MITACS internship experience:* [🎥 Watch on YouTube](https://youtu.be/YhyQzgftU6Y?si=9H4cYrdd136VDaGd)
 
 <div class="image-group">
-    <div>
-        <a href="/images/MITACS.png" target="_blank">
-            <img src="/images/MITACS.png" alt="First day at UQTR">
-        </a>
-        <p class="caption">First day at UQTR</p>
-    </div>
-    <div>
-        <a href="/images/MITACS_Mentor.jpg" target="_blank">
-            <img src="/images/MITACS_Mentor.jpg" alt="With mentor">
-        </a>
-        <p class="caption">With MITACS Intern and mentor</p>
-    </div>
+    <div><img src="/images/MITACS.png" alt="First day at UQTR"><p class="caption">First day at UQTR</p></div>
+    <div><img src="/images/MITACS_Mentor.jpg" alt="With mentor"><p class="caption">With MITACS Intern and mentor</p></div>
+    <div><img src="/images/MITACS4.jpg" alt="City of Trois-Rivières"><p class="caption">City of Trois-Rivières</p></div>
 </div>
 
 ---
@@ -168,18 +132,9 @@ redirect_from:
 ## Niagara Falls 🇨🇦
 
 <div class="image-group">
-    <div>
-        <a href="/images/Niagara.jpg" target="_blank">
-            <img src="/images/Niagara.jpg" alt="Niagara Falls at Night">
-        </a>
-        <p class="caption">Niagara Falls at Night</p>
-    </div>
-    <div>
-        <a href="/images/Niagara2.jpg" target="_blank">
-            <img src="/images/Niagara2.jpg" alt="Boat ride into Niagara Falls">
-        </a>
-        <p class="caption">Boat ride into Niagara Falls</p>
-    </div>
+    <div><img src="/images/Niagara.jpg" alt="Niagara Falls at Night"><p class="caption">Niagara Falls at Night</p></div>
+    <div><img src="/images/Niagara2.jpg" alt="Boat ride into Niagara Falls"><p class="caption">Boat ride into Niagara Falls</p></div>
+    <div><img src="/images/Niagara3.jpg" alt="White Water Walk"><p class="caption">White Water Walk near Niagara Falls</p></div>
 </div>
 
 ---
@@ -187,12 +142,7 @@ redirect_from:
 ## The Telegraph School Awards 🏆
 
 <div class="image-group">
-    <div>
-        <a href="/images/TELEGRAPH.jpeg" target="_blank">
-            <img src="/images/TELEGRAPH.jpeg" alt="Receiving Telegraph School Award">
-        </a>
-        <p class="caption">Father receiving Telegraph School Award</p>
-    </div>
+    <div><img src="/images/TELEGRAPH.jpeg" alt="Receiving Telegraph School Award"><p class="caption">Father receiving Telegraph School Award</p></div>
 </div>
 
 ---
@@ -200,10 +150,5 @@ redirect_from:
 ## JBNSTS Award Ceremony 🏅
 
 <div class="image-group">
-    <div>
-        <a href="/images/JBNSTS.jpeg" target="_blank">
-            <img src="/images/JBNSTS.jpeg" alt="Receiving JBNSTS Award">
-        </a>
-        <p class="caption">Receiving JBNSTS Award</p>
-    </div>
+    <div><img src="/images/JBNSTS.jpeg" alt="Receiving JBNSTS Award"><p class="caption">Receiving JBNSTS Award</p></div>
 </div>
