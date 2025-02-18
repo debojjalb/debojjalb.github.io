@@ -81,6 +81,18 @@ redirect_from:
     }
 </style>
 
+## TRB Annual Meeting 2025
+
+> *Presented our work on multimnodal port system in the Ports and Channels Committee Lectern Sessionat TRB Annual Meeting 2025 in Washington D.C. This work stems from our collaboration with the U.S. Army Corps of Engineers (ERDC) on studying resilience in multimodal port networks. See my Research page for more details.*
+
+<div class="image-group">
+    <div><img src="/images/TRB_25_1.jpeg" alt="With Kyle"><p class="caption">With Kyle</p></div>
+    <div><img src="/images/TRB_25_2.jpeg" alt="UT transportation graduate students"><p class="caption">With UT transportation graduate students</p></div>
+    <div><img src="/images/TRB_25_3.jpeg" alt="Presentation"><p class="caption">During my presentation (PC: Qianqian)</p></div>
+    <div><img src="/images/TRB_25_4.jpeg" alt="Presentation"><p class="caption">During my presentation (PC: Jake)</p></div>
+</div>
+
+
 ## INFORMS Annual Meeting 2024
 
 > *Presented our work on stochastic user equilibrium traffic assignment at INFORMS Annual Meeting 2024 in Seattle, Washington. See my Research page for more details.*
@@ -100,6 +112,15 @@ redirect_from:
 <div class="image-group">
     <div><img src="/images/KABD.jpg" alt="Keep Austin Beautiful Day"><p class="caption">UT Transportation participated in Keep Austin Beautiful Day</p></div>
     <div><img src="/images/CASITE.jpg" alt="With CASITE"><p class="caption">With CASITE</p></div>
+</div>
+
+## I Joined UT Austin as a Graduate Student  
+
+> *Started my **MS/PhD degree** in **Transportation Engineering** at the **Fariborz Maseeh Department of Civil, Architectural, and Environmental Engineering** in the **Cockrell School of Engineering**. I am working with **Dr. Stephen Boyles** in the **Simulation, Parking, Autonomous Vehicles, Routing, & Traffic Assignment (SPARTA) Lab**.*  
+
+<div class="image-group">
+    <div><img src="/images/UT2.jpg" alt="In front of the UT Tower"><p class="caption">In front of the UT Tower</p></div>
+    <div><img src="/images/UT.jpg" alt="With friends from India in Austin"><p class="caption">With friends from India in Austin</p></div>
 </div>
 
 
