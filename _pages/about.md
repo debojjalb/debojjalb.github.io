@@ -18,11 +18,12 @@ redirect_from:
         color: #c9d1d9;
     }
     a {
-        color: #58a6ff; /* GitHub blue */
-        text-decoration: none;
+    color: #ff79c6; /* Soft pink */
+    text-decoration: none;
     }
     a:hover {
         text-decoration: underline;
+        color: #ff92d0; /* Lighter pink on hover */
     }
     h1, h2, h3, h4, h5, h6 {
         font-weight: 700;
