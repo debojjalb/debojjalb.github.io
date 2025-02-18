@@ -1,10 +1,10 @@
 ---
-permalink: /building/
+permalink: /test/
 title: "👋🏼 Hello there, I'm Debojjal (Deb)!"
 author_profile: true
 redirect_from: 
-  - /building/
-  - /building.html
+  - /test/
+  - /test.html
 ---
 
 <!DOCTYPE html>
