@@ -75,10 +75,10 @@ redirect_from:
         .education-entry p {
             margin: 3px 0; /* Reduces space between individual paragraphs */
         }
-
+<!-- 
         .fp-nav ul li a span {
             background: white !important;
-        }
+        } -->
         
         @keyframes typing {
             from { width: 0; }
