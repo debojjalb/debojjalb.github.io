@@ -113,6 +113,16 @@ redirect_from:
     <div><img src="/images/IIScGrad.jpg" alt="With Parents"><p class="caption">With parents in front of IISc Main Building</p></div>
 </div>
 
+## INFORMS Annual Meeting 2023
+
+> *I presented our work on Electric Vehicle Last Mile Logistics at INFORMS Annual Meeting 2023 in Indianapolis, Indiana. See my Research page for more details.*
+
+<div class="image-group">
+    <div><img src="/images/INFORMS.jpeg" alt="Presenting at INFORMS Annual Meeting"><p class="caption">Presenting at INFORMS Annual Meeting, Indianapolis</p></div>
+    <div><img src="/images/Chicago.jpg" alt="Detour to Chicago"><p class="caption">Detour to Chicago</p></div>
+</div>
+
+
 
 ## MITACS Globalink Internship 2023 🇨🇦
 
@@ -123,6 +133,16 @@ redirect_from:
     <div><img src="/images/MITACS_Mentor.jpg" alt="With mentor"><p class="caption">With MITACS Intern and mentor</p></div>
     <div><img src="/images/MITACS4.jpg" alt="City of Trois-Rivières"><p class="caption">City of Trois-Rivières</p></div>
 </div>
+
+## I visited Canada as part of the MITACS Globalink Internship 2023
+
+<div class="image-group">
+    <div><img src="/images/Toronto.jpg" alt="View of Downtown Toronto from CN Tower"><p class="caption">View of Downtown Toronto from CN Tower</p></div>
+    <div><img src="/images/Ottawa.jpg" alt="Parliament Hill and Peace Tower in Ottawa"><p class="caption">Parliament Hill and Peace Tower in Ottawa</p></div>
+    <div><img src="/images/Montreal.jpg" alt="Fireworks Festival in Montreal"><p class="caption">Fireworks Festival in Montreal</p></div>
+    <div><img src="/images/Quebec.jpg" alt="Downtown Quebec City"><p class="caption">Downtown Quebec City</p></div>
+</div>
+
 
 
 ## Niagara Falls 🇨🇦
