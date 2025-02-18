@@ -235,3 +235,10 @@
     }
   }
 }
+
+/* Specifically hide Sitemap & Follow sections */
+.sidebar h2:contains("Sitemap"),
+.sidebar h2:contains("Follow"),
+.sidebar ul {
+    display: none !important;
+}
