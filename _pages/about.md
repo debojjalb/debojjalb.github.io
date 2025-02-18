@@ -233,10 +233,9 @@ redirect_from:
     navigation: true,
     navigationPosition: 'right',
     scrollHorizontally: true,
-    responsiveWidth: 768, // Disable autoScrolling below 768px width
-    responsiveHeight: 600  // Disable autoScrolling below 600px height
+    responsiveWidth: 568, // Disable autoScrolling below 768px width
+    responsiveHeight: 400  // Disable autoScrolling below 600px height
 });
 </script>
 
 </body>
-</html>
