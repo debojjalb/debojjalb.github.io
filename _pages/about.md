@@ -2,6 +2,7 @@
 permalink: /
 title: "👋🏼 Hello there, I'm Debojjal  (Deb)!"
 excerpt: "About me"
+sitemap: false
 author_profile: true
 redirect_from: 
   - /about/

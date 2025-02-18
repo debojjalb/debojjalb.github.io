@@ -2,6 +2,7 @@
 layout: archive
 title: "Ongoing Research"
 permalink: /research/
+sitemap: false
 author_profile: true
 ---
 
