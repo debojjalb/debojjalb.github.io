@@ -31,7 +31,7 @@ redirect_from:
     }
     .intro {
         font-size: 16px;
-        border-left: 4px solid #58a6ff;
+        border-left: 4px solid #ff79c6;
         padding-left: 12px;
         margin-bottom: 20px;
         animation: blinkCursor 1s infinite;
@@ -42,13 +42,13 @@ redirect_from:
         justify-content: center;
         font-size: 24px;
         font-weight: bold;
-        color: #58a6ff;
+        color: #ff79c6;
         height: 50px;
         white-space: nowrap;
         overflow: hidden;
-        border-right: 4px solid #58a6ff;
+        border-right: 4px solid #ff79c6;
         width: 0;
-        animation: typing 3s steps(35, end) forwards, blinkCursor 0.8s infinite;
+        animation: typing 3s steps(40, end) forwards, blinkCursor 0.8s infinite;
     }
     
     @keyframes typing {
