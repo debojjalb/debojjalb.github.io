@@ -81,15 +81,39 @@ redirect_from:
     }
 </style>
 
+<!-- Include Lightbox2 CSS & JS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
 ## TRB Annual Meeting 2025
 
-> *Presented our work on multimnodal port system in the Ports and Channels Committee Lectern Sessionat TRB Annual Meeting 2025 in Washington D.C. This work stems from our collaboration with the U.S. Army Corps of Engineers (ERDC) on studying resilience in multimodal port networks. See my Research page for more details.*
+> *Presented our work on multimodal port system in the Ports and Channels Committee Lectern Session at TRB Annual Meeting 2025 in Washington D.C. This work stems from our collaboration with the U.S. Army Corps of Engineers (ERDC) on studying resilience in multimodal port networks. See my Research page for more details.*
 
 <div class="image-group">
-    <div><img src="/images/TRB_25_1.jpeg" alt="Presenting at lecturn session"><p class="caption">With Kyle</p></div>
-    <div><img src="/images/TRB_25_2.jpeg" alt="UT transportation graduate students"><p class="caption">With USACE team</p></div>
-    <div><img src="/images/TRB_25_3.jpeg" alt="Presentation"><p class="caption">At Wshington Convention Centre</p></div>
-    <div><img src="/images/TRB_25_4.jpeg" alt="Presentation"><p class="caption">UT team</p></div>
+    <div>
+        <a href="/images/TRB_25_1.jpeg" data-lightbox="trb-gallery" data-title="With Kyle">
+            <img src="/images/TRB_25_1.jpeg" alt="Presenting at lectern session">
+        </a>
+        <p class="caption">With Kyle</p>
+    </div>
+    <div>
+        <a href="/images/TRB_25_2.jpeg" data-lightbox="trb-gallery" data-title="With USACE team">
+            <img src="/images/TRB_25_2.jpeg" alt="UT transportation graduate students">
+        </a>
+        <p class="caption">With USACE team</p>
+    </div>
+    <div>
+        <a href="/images/TRB_25_3.jpeg" data-lightbox="trb-gallery" data-title="At Washington Convention Centre">
+            <img src="/images/TRB_25_3.jpeg" alt="Presentation">
+        </a>
+        <p class="caption">At Washington Convention Centre</p>
+    </div>
+    <div>
+        <a href="/images/TRB_25_4.jpeg" data-lightbox="trb-gallery" data-title="UT team">
+            <img src="/images/TRB_25_4.jpeg" alt="Presentation">
+        </a>
+        <p class="caption">UT team</p>
+    </div>
 </div>
 
 
