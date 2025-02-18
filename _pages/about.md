@@ -8,143 +8,92 @@ redirect_from:
   - /about.html
 ---
 
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debojjal's Site</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
 
-    body {
-        font-family: 'Source Code Pro', monospace;
-        font-size: 14px;
-        background-color: #0d1117;
-        color: #c9d1d9;
-    }
-    a {
-    color: #ff79c6; /* Soft pink */
-    text-decoration: none;
-    }
-    a:hover {
-        text-decoration: underline;
-        color: #ff92d0; /* Lighter pink on hover */
-    }
-    h1, h2, h3, h4, h5, h6 {
-        font-weight: 700;
-        color: #e6edf3;
-    }
-    .intro {
-        font-size: 16px;
-        border-left: 4px solid #ff79c6;
-        padding-left: 12px;
-        margin-bottom: 20px;
-        animation: blinkCursor 1s infinite;
-    }
-    .typing-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 24px;
-        font-weight: bold;
-        color: #ff79c6;
-        height: 50px;
-        white-space: nowrap;
-        overflow: hidden;
-        border-right: 4px solid #ff79c6;
-        width: 0;
-        animation: typing 3s steps(40, end) forwards, blinkCursor 0.8s infinite;
-    }
+        html, body {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            scroll-snap-type: y mandatory;
+            font-family: 'Source Code Pro', monospace;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            overflow: hidden;
+        }
+
+        section {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            scroll-snap-align: start;
+        }
+
+        .section1 {
+            font-size: 3rem;
+            font-weight: bold;
+            color: #ff79c6;
+        }
+
+        .section2, .section3, .section4, .section5 {
+            padding: 20px;
+        }
+
+        a {
+            color: #ff79c6;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: #ff92d0;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            color: #e6edf3;
+        }
+    </style>
+</head>
+<body>
+    <section class="section1">
+        Hi there! I'm Debojjal.<br>Welcome to my site.
+    </section>
     
-    @keyframes typing {
-        from { width: 0; }
-        to { width: 280px; }
-    }
-
-    @keyframes blinkCursor {
-        50% { border-color: transparent; }
-    }
-</style>
-
-<div class="typing-container">👋🏼 Hello there, I'm Debojjal  (Deb)!</div>
-
-<div class="intro">
-    > Welcome to my personal site.
-</div>
-
-
-Hi! I'm currently a graduate student specializing in [Transportation Engineering](https://www.caee.utexas.edu/research/research-areas/transportation-engineering) at the [Department of Civil, Architectural, and Environmental Engineering](https://www.caee.utexas.edu/), [University of Texas at Austin](https://www.utexas.edu/). My academic journey began with a [BS (research)](https://ug.iisc.ac.in/) degree from the [Indian Institute of Science (IISc), Bangalore](https://iisc.ac.in/), where I majored in Earth & Environmental Science along with a minor in Mathematics. During my time there, I was associated with the [Transportation Networks Lab](http://civil.iisc.ernet.in/%7Etarunr/group.html) at the [Center for Infrastructure, Sustainable Transportation & Urban Planning (CiSTUP)](https://cistup.iisc.ac.in/). Over the past two years, I have delved into sustainable logistics and transportation.
-
-My roots trace back to the picturesque city of Kalyani, nestled near Kolkata. I then moved to Bangalore, often referred to as the Garden City of India, for my undergraduate studies. Currently, I call the vibrant and musically-rich city of Austin my home. 
-
-Thank you for visiting my site. I invite you to explore the site and learn more about my research. Should you wish to discuss my research or simply chat, please don't hesitate to reach out via [email](mailto:debojjalb@utexas.edu).
-
-## Education
-
-**Master of Science in Engineering (M.S.E)** - Aug 2023 -- Fall, 2024 (Expected) 
-(Admitted to the Ph.D. program with an M.S. (Thesis) en route)  
-*Major*: Transportation Engineering; *Minor*: Industrial Engineering and Operations Research, [UT Austin](https://www.utexas.edu/)    
-*Advisor*: [Prof. Stephen Boyles](https://sboyles.github.io/)  
-
-**Bachelor of Science (B.S. by Research)** - Aug 2019 -- May, 2023  
-*Major*: Earth and Environmental Science; *Minor*: Mathematics, [IISc, Bengaluru](https://iisc.ac.in/)   
-*Awards*: **Gold Medal** for highest GPA in major, **Highest project grade**, First Class **Distinction**  
-*Thesis*: Energy Efficient and Safe Routing for Last-mile Logistics   
-*Advisor*: [Prof. Tarun Rambha](http://civil.iisc.ernet.in/%7Etarunr/) 
-
-
-## Research Interests
-
-My primary area of interest lies in transportation network analysis, traffic assignment and the optimization of routes with a focus on their environmental impacts. I have worked extensively on reverse logistics network design, variants of the Travelling Salesman Problem, and traffic routing. Recently, I developed a keen interest in congestion pricing and tolling. In my research, I consistently employ metaheuristics and mathematical programming as my go-to solution techniques.
-
-**Primary Focus**: Transportation Network Optimisation, Sustainable Transportation, Congestion Pricing, Traffic Equilibrium
-
-**Allied Focus**: Convex Optimization, Discrete Event Simulation, Metaheuristics, Machine Learning, Algorithmic Game Theory, Mathematical Programming
-
-<!-- [Learn more about my research](Research.html) -->
-
-## Achievements
-
-I am an [NTSE National Scholar](https://ncert.nic.in/national-talent-examination.php) recognized by MHRD, Govt. of India & [KVPY Research Fellow](http://www.kvpy.iisc.ernet.in/main/about.htm). I was awarded [Jagadish Bose National Science Talent Search Fellowship](https://jbnsts.ac.in) by Padma Shree [Prof. Sanghamitra Bandyopadhyay](https://www.isical.ac.in/%7Esanghami/) (Currently director of ISI, Kolkata). Further, I received the [Dhirubhai Ambani Fellowship](https://das.reliancefoundation.org) and [The Telegraph School Award](https://www.youtube.com/watch?v=gjFi4Li04hE). I was awarded the [MITACS Globalink Research Internship Award](https://www.mitacs.ca/en/programs/globalink/globalink-research-internship) to carry out 12 weeks of research in Canada. Most recently, I was granted the [Graduate School Fellowship](https://gradschool.utexas.edu/finances/fellowships) from the University of Texas at Austin.
-
-
-## Non Academic Interests
-
-I am currently learning to play the guitar. My leisure moments are often spent engrossed in chess or exploring new content for my budding YouTube channel. I'm fervently passionate about the startup ecosystem and love hearing stories and pitches from aspiring entrepreneurs. I was one of the founding members of [coachio.in](https://play.google.com/store/apps/details?id=co.sansa.uyolx). Oh, and yes! planning or going on a trip? Always count me in!
-
-
-
-
-
-<!-- ![Illustration of combining vision and language modalities](/images/image_to_text_vis.png){: .align-right width="300px"}
-👨🏻‍💻 I'm a final year graduate student at the TU Berlin.
-
-🔬 My research interests are in bridging vision and language modalities and Self-Supervised Learning!
-
-📚 I'm currently working towards my Master's Thesis in the field of Vision-Language-Modelling.
-
-📽️ I am also interested in assisting others on their path in the world of Machine Learning and academia.
-
-# Selected Experience
-
-## 🤖 Open Source Contributions
-I have experience contributing to [Arena Bench](https://github.com/Arena-Rosnav) a large open-source project for robotic obstacle avoidance using Deep Reinforcement Learning.
-
-Moreover, I have published a [respective paper](https://sudo-boris.github.io/publication/2022-Arena-Bench) at the IROS conference and in the Robotics and Automation Letters (RA-L) journal.
-
-## 📜 Reimplementing and Reproducing Papers
-I have experience with independent research. I have implemented the Reward Constrained Policy Optimization paper into stable-baselines3 PPO and reproduced the original results by running and tracking experiments.
-
-To accompany this work, I have submitted a blog post to the **ICLR** Blogposts Track communicating the paper's theory and my results.
-
-Feel free to look at my specific [portfolio entry](https://sudo-boris.github.io/portfolio/RCPPO/).
-
-## 👨🏻‍🔬 Professional Experience
-Currently I am working as a **Student Researcher** at the Reliable Multimodal AI Lab at the TU Darmstadt under the supervision of Prof. Marcus Rohrbach working on **Generative Video-Language Modelling**.
-Additionally, I have professional experience working as an **Applied Machine Learning Student Researcher** at the Fraunhofer Heinrich Hertz Institute. \
-There I worked on dynamic traffic flow forecasting using Graph Neural Networks.
-
-## 📚 Teaching and Community Contributions
-To further contribute to the Machine Learning community, I have a [YouTube](https://www.youtube.com/@borismeinardus) and [Medium](https://medium.com/@boris.meinardus) channel where I publish educational Machine Learning content.
-
-
-
-
-
-
- -->
+    <section class="section2">
+        <h2>About Me</h2>
+        <p>I'm currently a graduate student specializing in <a href="https://www.caee.utexas.edu/research/research-areas/transportation-engineering">Transportation Engineering</a> at UT Austin...</p>
+    </section>
+    
+    <section class="section3">
+        <h2>Research Interests</h2>
+        <p>Transportation Network Optimisation, Sustainable Transportation, Congestion Pricing, Traffic Equilibrium...</p>
+    </section>
+    
+    <section class="section4">
+        <h2>Achievements</h2>
+        <p>NTSE National Scholar, KVPY Research Fellow, Graduate School Fellowship at UT Austin...</p>
+    </section>
+    
+    <section class="section5">
+        <h2>Non-Academic Interests</h2>
+        <p>Guitar, Chess, YouTube, Startups, Travel Enthusiast...</p>
+    </section>
+    
+    <script>
+        document.addEventListener("wheel", (event) => {
+            event.preventDefault();
+            window.scrollBy({ top: window.innerHeight * (event.deltaY > 0 ? 1 : -1), behavior: "smooth" });
+        }, { passive: false });
+    </script>
+</body>
+</html>
