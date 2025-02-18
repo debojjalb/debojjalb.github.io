@@ -86,10 +86,10 @@ redirect_from:
 > *Presented our work on multimnodal port system in the Ports and Channels Committee Lectern Sessionat TRB Annual Meeting 2025 in Washington D.C. This work stems from our collaboration with the U.S. Army Corps of Engineers (ERDC) on studying resilience in multimodal port networks. See my Research page for more details.*
 
 <div class="image-group">
-    <div><img src="/images/TRB_25_1.jpeg" alt="With Kyle"><p class="caption">With Kyle</p></div>
-    <div><img src="/images/TRB_25_2.jpeg" alt="UT transportation graduate students"><p class="caption">With UT transportation graduate students</p></div>
-    <div><img src="/images/TRB_25_3.jpeg" alt="Presentation"><p class="caption">During my presentation (PC: Qianqian)</p></div>
-    <div><img src="/images/TRB_25_4.jpeg" alt="Presentation"><p class="caption">During my presentation (PC: Jake)</p></div>
+    <div><img src="/images/TRB_25_1.jpeg" alt="Presenting at lecturn session"><p class="caption">With Kyle</p></div>
+    <div><img src="/images/TRB_25_2.jpeg" alt="UT transportation graduate students"><p class="caption">With USACE team</p></div>
+    <div><img src="/images/TRB_25_3.jpeg" alt="Presentation"><p class="caption">At Wshington Convention Centre</p></div>
+    <div><img src="/images/TRB_25_4.jpeg" alt="Presentation"><p class="caption">UT team</p></div>
 </div>
 
 
