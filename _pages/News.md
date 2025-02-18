@@ -9,270 +9,199 @@ redirect_from:
 ---
 
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+
+    /* Dark Theme */
     body {
-        font-family: "Times New Roman", Times, serif;
+        font-family: 'Source Code Pro', monospace;
         font-size: 14px;
-        color: #000;
+        background-color: #0d1117;
+        color: #c9d1d9;
+        margin: 0;
+        padding: 20px;
     }
-    a {
-        color: #014552; /* Dark blue color for links */
-    }
+
     h1, h2, h3, h4, h5, h6 {
-        margin-top: 24px;
-        margin-bottom: 16px;
-        font-weight: 600;
-        line-height: 1.25;
+        font-weight: bold;
+        color: #e6edf3;
+        text-transform: uppercase;
+        letter-spacing: 1px;
     }
+
+    a {
+        color: #58a6ff;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+    }
+
     a:hover {
+        color: #1f6feb;
         text-decoration: underline;
     }
-    h1, h2, h3, h4, h5, h6 {
-        margin-top: 24px;
-        margin-bottom: 16px;
-        font-weight: 700;
-        line-height: 1.25;
-        color: #111;
-    }
+
+    /* Image Gallery */
     .image-group {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 20px;
         margin-bottom: 40px;
     }
+
     .image-group div {
         flex: 1;
         text-align: center;
+        animation: fadeIn 1s ease-in-out;
     }
+
     .image-group img {
-        width: 300px; /* Set a fixed width */
-        height: 200px; /* Set a fixed height */
-        object-fit: cover; /* Ensure images are cropped to fit the dimensions */
-        border-radius: 10px;
-        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 6px;
+        box-shadow: 0 4px 15px rgba(88, 166, 255, 0.2);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     }
+
+    .image-group img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 6px 20px rgba(88, 166, 255, 0.4);
+    }
+
     .caption {
         font-style: italic;
-        color: #666;
+        color: #8b949e;
         margin-top: 8px;
+    }
+
+    /* Fade-in Animation */
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
     }
 </style>
 
-<!-- ## I made a UT Austin Beamer Template
-
-You can access it through GitHub [https://github.com/debojjalb/UTAustinBeamer](https://github.com/debojjalb/UTAustinBeamer). I have tried to replicate the colors and logos as per the UT official design rules but my template is not official. Please crosscheck before using!  -->
-
-
 ## INFORMS Annual Meeting 2024
 
-I preseneted our work on bounds for stochastic user equilibrium traffic assignment at INFORMS Annual Meeting 2024 at Seattle, Washington. See my Research page for more details.
+> *I presented our work on stochastic user equilibrium traffic assignment at INFORMS Annual Meeting 2024 in Seattle, Washington.*
 
-<div class="image-group four-images">
+<div class="image-group">
     <div>
-        <a href="/images/INFORMS_Seattle1.jpeg" data-lightbox="informs-2025" data-title="With Kyle">
+        <a href="/images/INFORMS_Seattle1.jpeg" target="_blank">
             <img src="/images/INFORMS_Seattle1.jpeg" alt="With Kyle">
         </a>
         <p class="caption">With Kyle</p>
     </div>
     <div>
-        <a href="/images/INFORMS_Seattle2.jpeg" data-lightbox="informs-2025" data-title="With UT transportation graduate students">
-            <img src="/images/INFORMS_Seattle2.jpeg" alt="Image 2">
+        <a href="/images/INFORMS_Seattle2.jpeg" target="_blank">
+            <img src="/images/INFORMS_Seattle2.jpeg" alt="UT transportation graduate students">
         </a>
         <p class="caption">With UT transportation graduate students</p>
     </div>
-    <div>
-        <a href="/images/INFORMS_Seattle3.jpeg" data-lightbox="informs-2025" data-title="During my presentation (PC: Qianqian)">
-            <img src="/images/INFORMS_Seattle3.jpeg" alt="Image 3">
-        </a>
-        <p class="caption">During my presentation (PC: Qianqian)</p>
-    </div>
-    <div>
-        <a href="/images/INFORMS_Seattle4.jpeg" data-lightbox="informs-2025" data-title="During my presentation (PC: Jake)">
-            <img src="/images/INFORMS_Seattle4.jpeg" alt="Image 4">
-        </a>
-        <p class="caption">During my presentation (PC: Jake)</p>
-    </div>
 </div>
 
-
+---
 
 ## Keep Austin Beautiful Day '24
 
-I organised a volunteering event with UT Austin chapter of ITS/ITE along with CASITE for Keep Austin Beautiful Day 2024. 
+> *Organized a volunteering event with UT Austin chapter of ITS/ITE and CASITE for Keep Austin Beautiful Day 2024.*
 
-<div class="image-group two-images">
+<div class="image-group">
     <div>
-        <a href="/images/KABD.jpg" data-lightbox="keep-austin-beautiful-day" data-title="UT Transportation participated in Keep Austin Beautiful Day">
-            <img src="/images/KABD.jpeg" alt="In front of the UT Tower">
+        <a href="/images/KABD.jpg" target="_blank">
+            <img src="/images/KABD.jpg" alt="Keep Austin Beautiful Day">
         </a>
         <p class="caption">UT Transportation participated in Keep Austin Beautiful Day</p>
     </div>
     <div>
-        <a href="/images/CASITE.jpg" data-lightbox="keep-austin-beautiful-day" data-title="With Capital Area Section Institute of Transportation Engineers (CASITE)">
-            <img src="/images/CASITE.jpeg" alt="With friends from India in Austin">
+        <a href="/images/CASITE.jpg" target="_blank">
+            <img src="/images/CASITE.jpg" alt="With CASITE">
         </a>
-        <p class="caption">With Capital Area Section Institute of Transportation Engineers (CASITE)</p>
+        <p class="caption">With CASITE</p>
     </div>
 </div>
 
-## I joined UT Austin as a Grad Student
+---
 
-I am starting my MS/PhD Degree at The Fariborz Maseeh Department of Civil, Architectural and Environmental Engineering in the Cockrell School of Engineering in the Transportaion Engineering Field. I will be working with Dr. Stephen Boyles at the Simulation, Parking, Autonomous vehicles, Routing, & Traffic Assignment (SPARTA) lab.
+## IISc Convocation 🎓
 
-<div class="image-group two-images">
+> *Graduated as the **gold medalist** from IISc Bangalore with a B.S. (Research) degree in Earth & Environmental Science.*
+
+<div class="image-group">
     <div>
-        <a href="/images/UT2.jpg" data-lightbox="ut-austin" data-title="In front of the UT Tower">
-            <img src="/images/UT2.jpg" alt="In front of the UT Tower">
-        </a>
-        <p class="caption">In front of the UT Tower</p>
-    </div>
-    <div>
-        <a href="/images/UT.jpg" data-lightbox="ut-austin" data-title="With friends from India in Austin">
-            <img src="/images/UT.jpg" alt="With friends from India in Austin">
-        </a>
-        <p class="caption">With friends from India in Austin</p>
-    </div>
-</div>
-
-## IISc Convocation
-
-I graduated top of my major with a gold medal from IISc Bangalore with a Bachelor of Science (Research) degree.
-
-<div class="image-group three-images">
-    <div>
-        <a href="/images/Grad.png" data-lightbox="iisc-convocation" data-title="Receiving Gold Medal at IISc Bangalore">
-            <img src="/images/Grad.png" alt="Receiving Gold Medal at IISc Bangalore">
+        <a href="/images/Grad.png" target="_blank">
+            <img src="/images/Grad.png" alt="Receiving Gold Medal">
         </a>
         <p class="caption">Receiving Gold Medal at IISc Bangalore</p>
     </div>
     <div>
-        <a href="/images/IISc.jpg" data-lightbox="iisc-convocation" data-title="Friends from IISc '23 batch">
+        <a href="/images/IISc.jpg" target="_blank">
             <img src="/images/IISc.jpg" alt="Friends from IISc '23 batch">
         </a>
         <p class="caption">Friends from IISc '23 batch</p>
     </div>
-    <div>
-        <a href="/images/IIScGrad.jpg" data-lightbox="iisc-convocation" data-title="With parents in front of IISc Main Building">
-            <img src="/images/IIScGrad.jpg" alt="With parents in front of IISc Main Building">
-        </a>
-        <p class="caption">With parents in front of IISc Main Building</p>
-    </div>
 </div>
 
-## INFORMS Annual Meeting 2023
+---
 
-I preseneted our work on Electric Vehcile Last Mile Logistics at INFORMS Annual Meeting 2024 at Indianapolis, Indiana. See my Research page for more details.
+## MITACS Globalink Internship 2023 🇨🇦
 
-<div class="image-group two-images">
+> *A short vlog of my MITACS internship experience:* [🎥 Watch on YouTube](https://youtu.be/YhyQzgftU6Y?si=9H4cYrdd136VDaGd)
+
+<div class="image-group">
     <div>
-        <a href="/images/INFORMS.jpeg" data-lightbox="informs" data-title="Presenting at INFORMS Annual Meeting, Indianapolis">
-            <img src="/images/INFORMS.jpeg" alt="Presenting at INFORMS Annual Meeting">
-        </a>
-        <p class="caption">Presenting at INFORMS Annual Meeting, Indianapolis</p>
-    </div>
-    <div>
-        <a href="/images/Chicago.jpg" data-lightbox="informs" data-title="Detour to Chicago">
-            <img src="/images/Chicago.jpg" alt="Detour to Chicago">
-        </a>
-        <p class="caption">Detour to Chicago</p>
-    </div>
-</div>
-
-## MITACS Globalink Internship 2023
-
-Here's a short vlog of my typical day during MITACS: [Watch on Youtube](https://youtu.be/YhyQzgftU6Y?si=9H4cYrdd136VDaGd)
-
-<div class="image-group three-images">
-    <div>
-        <a href="/images/MITACS.png" data-lightbox="mitacs" data-title="First day at UQTR">
+        <a href="/images/MITACS.png" target="_blank">
             <img src="/images/MITACS.png" alt="First day at UQTR">
         </a>
         <p class="caption">First day at UQTR</p>
     </div>
     <div>
-        <a href="/images/MITACS_Mentor.jpg" data-lightbox="mitacs" data-title="With MITACS Intern and mentor">
-            <img src="/images/MITACS_Mentor.jpg" alt="With MITACS Intern and mentor">
+        <a href="/images/MITACS_Mentor.jpg" target="_blank">
+            <img src="/images/MITACS_Mentor.jpg" alt="With mentor">
         </a>
         <p class="caption">With MITACS Intern and mentor</p>
     </div>
-    <div>
-        <a href="/images/MITACS4.jpg" data-lightbox="mitacs" data-title="City of Trois-Rivières">
-            <img src="/images/MITACS4.jpg" alt="City of Trois-Rivières">
-        </a>
-        <p class="caption">City of Trois-Rivières</p>
-    </div>
 </div>
 
-## I visited Canada as a part of MITACS Globalink Internship
+---
 
-<div class="image-group two-images">
-    <div>
-        <a href="/images/Toronto.jpg" data-lightbox="canada" data-title="View of Downtown Toronto from CN Tower">
-            <img src="/images/Toronto.jpg" alt="View of Downtown Toronto from CN Tower">
-        </a>
-        <p class="caption">View of Downtown Toronto from CN Tower</p>
-    </div>
-    <div>
-        <a href="/images/Ottawa.jpg" data-lightbox="canada" data-title="Parliament Hill and Peace Tower in Ottawa">
-            <img src="/images/Ottawa.jpg" alt="Parliament Hill and Peace Tower in Ottawa">
-        </a>
-        <p class="caption">Parliament Hill and Peace Tower in Ottawa</p>
-    </div>
-</div>
-<div class="image-group two-images">
-    <div>
-        <a href="/images/Montreal.jpg" data-lightbox="canada" data-title="Fireworks Festival in Montreal">
-            <img src="/images/Montreal.jpg" alt="Fireworks Festival in Montreal">
-        </a>
-        <p class="caption">Fireworks Festival in Montreal</p>
-    </div>
-    <div>
-        <a href="/images/Quebec.jpg" data-lightbox="canada" data-title="Downtown Quebec City">
-            <img src="/images/Quebec.jpg" alt="Downtown Quebec City">
-        </a>
-        <p class="caption">Downtown Quebec City</p>
-    </div>
-</div>
+## Niagara Falls 🇨🇦
 
-## Niagara Falls
-
-<div class="image-group three-images">
+<div class="image-group">
     <div>
-        <a href="/images/Niagara.jpg" data-lightbox="niagara" data-title="Niagara Falls at Night">
+        <a href="/images/Niagara.jpg" target="_blank">
             <img src="/images/Niagara.jpg" alt="Niagara Falls at Night">
         </a>
         <p class="caption">Niagara Falls at Night</p>
     </div>
     <div>
-        <a href="/images/Niagara2.jpg" data-lightbox="niagara" data-title="Boat ride into Niagara Falls">
+        <a href="/images/Niagara2.jpg" target="_blank">
             <img src="/images/Niagara2.jpg" alt="Boat ride into Niagara Falls">
         </a>
         <p class="caption">Boat ride into Niagara Falls</p>
     </div>
-    <div>
-        <a href="/images/Niagara3.jpg" data-lightbox="niagara" data-title="White Water Walk near Niagara Falls">
-            <img src="/images/Niagara3.jpg" alt="White Water Walk near Niagara Falls">
-        </a>
-        <p class="caption">White Water Walk near Niagara Falls</p>
-    </div>
 </div>
 
-## The Telegraph School Awards
+---
 
-<div class="image-group one-image">
+## The Telegraph School Awards 🏆
+
+<div class="image-group">
     <div>
-        <a href="/images/TELEGRAPH.jpeg" data-lightbox="telegraph" data-title="Father receiving Telegraph School Award">
-            <img src="/images/TELEGRAPH.jpeg" alt="Father receiving Telegraph School Award">
+        <a href="/images/TELEGRAPH.jpeg" target="_blank">
+            <img src="/images/TELEGRAPH.jpeg" alt="Receiving Telegraph School Award">
         </a>
         <p class="caption">Father receiving Telegraph School Award</p>
     </div>
 </div>
 
-## JBNSTS Award Ceremony
+---
 
-<div class="image-group one-image">
+## JBNSTS Award Ceremony 🏅
+
+<div class="image-group">
     <div>
-        <a href="/images/JBNSTS.jpeg" data-lightbox="jbnsts" data-title="Receiving JBNSTS Award">
+        <a href="/images/JBNSTS.jpeg" target="_blank">
             <img src="/images/JBNSTS.jpeg" alt="Receiving JBNSTS Award">
         </a>
         <p class="caption">Receiving JBNSTS Award</p>
