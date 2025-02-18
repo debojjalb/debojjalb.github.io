@@ -37,7 +37,6 @@ redirect_from:
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            overflow-y: auto; /* Ensure scrolling inside sections */
             text-align: center; /* Center text for better mobile view */
             word-wrap: break-word;
         }
@@ -69,7 +68,7 @@ redirect_from:
             animation: typing 3s steps(35, end) forwards, blinkCursor 0.8s infinite;
         }
         .education-entry {
-            margin-bottom: 20px; /* Reduces space between M.S. and B.S. */
+            margin-bottom: 30px; /* Reduces space between M.S. and B.S. */
         }
 
         .education-entry p {
