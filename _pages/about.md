@@ -229,7 +229,7 @@ redirect_from:
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js"></script>
 <script>
     new fullpage('#fullpage', {
-    autoScrolling: window.innerWidth > 568, // Only disable on mobile
+    // autoScrolling: window.innerWidth > 568, // Only disable on mobile
     navigation: true,
     navigationPosition: 'right',
     scrollHorizontally: true
