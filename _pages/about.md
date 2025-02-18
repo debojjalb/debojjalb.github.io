@@ -8,33 +8,44 @@ redirect_from:
   - /about.html
 ---
 
+
 <style>
+    @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;700&display=swap');
+
     body {
-        font-family: "Times New Roman", Times, serif;
+        font-family: 'Source Code Pro', monospace;
         font-size: 14px;
-        color: #000;
+        background-color: #0d1117;
+        color: #c9d1d9;
     }
     a {
-        color: #014552; /* Dark blue color for links */
+        color: #58a6ff; /* GitHub blue */
+        text-decoration: none;
+    }
+    a:hover {
+        text-decoration: underline;
     }
     h1, h2, h3, h4, h5, h6 {
-        margin-top: 24px;
-        margin-bottom: 16px;
-        font-weight: 600;
-        line-height: 1.25;
+        font-weight: 700;
+        color: #e6edf3;
     }
     .intro {
-        animation: fadeIn 2s ease-in-out;
+        font-size: 16px;
+        border-left: 4px solid #58a6ff;
+        padding-left: 12px;
+        margin-bottom: 20px;
+        animation: blinkCursor 1s infinite;
     }
-    @keyframes fadeIn {
-        0% { opacity: 0; transform: translateY(-10px); }
-        100% { opacity: 1; transform: translateY(0); }
+    @keyframes blinkCursor {
+        50% { border-left-color: transparent; }
     }
 </style>
 
 <div class="intro">
-    <p>Hi there! 👋🏼 Welcome to my personal website. Scroll down to learn more about me!</p>
+    > Hi, I'm Debojjal. Welcome to my personal site. Keep scrolling to debug my life.
 </div>
+
+## `system.log("Whoami")`
 
 
 Hi! I'm currently a graduate student specializing in [Transportation Engineering](https://www.caee.utexas.edu/research/research-areas/transportation-engineering) at the [Department of Civil, Architectural, and Environmental Engineering](https://www.caee.utexas.edu/), [University of Texas at Austin](https://www.utexas.edu/). My academic journey began with a [BS (research)](https://ug.iisc.ac.in/) degree from the [Indian Institute of Science (IISc), Bangalore](https://iisc.ac.in/), where I majored in Earth & Environmental Science along with a minor in Mathematics. During my time there, I was associated with the [Transportation Networks Lab](http://civil.iisc.ernet.in/%7Etarunr/group.html) at the [Center for Infrastructure, Sustainable Transportation & Urban Planning (CiSTUP)](https://cistup.iisc.ac.in/). Over the past two years, I have delved into sustainable logistics and transportation.
