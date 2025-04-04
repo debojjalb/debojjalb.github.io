@@ -65,53 +65,55 @@ education:
     date_start: 2023-08-07
     date_end: 2025-05-07
     summary: |
-      GPA: 4.0/4.0
+      **GPA**: 4.0/4.0
 
-      Courses included: 
-      -Transportation: Static and dynamic traffic assignment, discrete choice modelling, traffic engineerin, public transportation, railway project design
-      - Operations Research: Optimization, linear programming, non-linear programming
+      **Courses included**: 
+
+        - **Transportation**: Static and dynamic traffic assignment, discrete choice modelling, traffic engineerin, public transportation, railway project design
+        - **Operations Research**: Optimization, linear programming, non-linear programming
     button:
-      text: 'Read Thesis'
+      text: 'Read Thesis: Error bounds for stochastic user equilibrium traffic assignment'
       url: 'https://example.com'
-  - area: BS (Research) in Earth, Environmental science (Major) and Mathematics (Minor)
+  - area: BS (Research) 
     institution: Indian Institute of Science, Bengaluru
     date_start: 2019-08-07
     date_end: 2023-04-30
     summary: |
-      GPA: 8.7/10 (Major GPA: 9.4/10)
+      **GPA**: 8.7/10 (Major GPA: 9.4/10)
 
-      Awards: Gold medal for highest GPA in major, Highest project grade 
+      **Awards**: Gold medal for highest GPA in major, Highest project grade 
       
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      **Courses included**:
+      - **Civil engineering:** Traffic network equilibreium, public transportation, satellite geodesy
+      - **Computer science & math**: Introduction to computing for AI & ML, game theory, linear algebra, computer vision, algebra-I, real analysis, probability & statistics, data structures and algorithms, introduction to material science, introduction to electronics
+      - **Management**: Finance and accounts, principles of management, behavioral science
+      - **Humanities**: Journalism for scientists
     button:
       text: 'Read Thesis: Energy-efficient and Safe Routing for Last-mile Logistics'
-      url: uploads/BS_thesis.pdf
-work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
-    company_url: ''
-    company_logo: ''
-    date_start: 2021-01-01
-    date_end: ''
-    summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
-    company_url: ''
-    company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      url: BS_thesis.pdf
+# work:
+#   - position: Director of Cloud Infrastructure
+#     company_name: GenCoin
+#     company_url: ''
+#     company_logo: ''
+#     date_start: 2021-01-01
+#     date_end: ''
+#     summary: |2-
+#       Responsibilities include:
+#       - lorem ipsum dolor sit amet, consectetur adipiscing elit
+#       - lorem ipsum dolor sit amet, consectetur adipiscing elit
+#       - lorem ipsum dolor sit amet, consectetur adipiscing elit
+#   - position: Backend Software Engineer
+#     company_name: X
+#     company_url: ''
+#     company_logo: ''
+#     date_start: 2016-01-01
+#     date_end: 2020-12-31
+#     summary: |
+#       Responsibilities include:
+#       - Migrated infrastructure to a new data center
+#       - lorem ipsum dolor sit amet, consectetur adipiscing elit
+#       - lorem ipsum dolor sit amet, consectetur adipiscing elit
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -130,22 +132,30 @@ skills:
         description: ''
         percent: 40
         icon: circle-stack
-  - name: Hobbies
+  - name: Personal Interests
     color: '#eeac02'
     color_border: '#f0bf23'
     items:
-      - name: Hiking
-        description: ''
-        percent: 60
-        icon: person-simple-walk
-      - name: Cats
-        description: ''
+      - name: Chess
+        description: 'Rated 1200-1300 on Lichess.org in rapid chess (10 min control)'
+        percent: 90
+        icon: chess
+      - name: Travel
+        description: 'I love travelling countryside, beaches and mountains'
         percent: 100
-        icon: cat
-      - name: Photography
-        description: ''
+        icon: airplane
+      - name: Content Creation
+        description: 'I vlog on my YouTube channel with over 100,000 views'
         percent: 80
-        icon: camera
+        icon: video
+      - name: Guitar
+        description: 'Currently learning and loving the process of mastering chords'
+        percent: 50
+        icon: music
+      - name: Startups
+        description: 'I was a co-founder of the startup Coachio.in which ran for 3 years.'
+        percent: 100
+        icon: lightbulb
 
 languages:
   - name: English
@@ -159,32 +169,32 @@ languages:
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
 #   Begin multi-line `summary` with YAML's `|` or `|2-` multi-line prefix and indent 2 spaces below.
-awards:
-  - title: Neural Networks and Deep Learning
-    url: https://www.coursera.org/learn/neural-networks-deep-learning
-    date: '2023-11-25'
-    awarder: Coursera
-    icon: coursera
-    summary: |
-      I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
-  - title: Blockchain Fundamentals
-    url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-    date: '2023-07-01'
-    awarder: edX
-    icon: edx
-    summary: |
-      Learned:
-      - Synthesize your own blockchain solutions
-      - Gain an in-depth understanding of the specific mechanics of Bitcoin
-      - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
-  - title: 'Object-Oriented Programming in R'
-    url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
-    certificate_url: https://www.datacamp.com
-    date: '2023-01-21'
-    awarder: datacamp
-    icon: datacamp
-    summary: |
-      Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
+# awards:
+#   - title: Neural Networks and Deep Learning
+#     url: https://www.coursera.org/learn/neural-networks-deep-learning
+#     date: '2023-11-25'
+#     awarder: Coursera
+#     icon: coursera
+#     summary: |
+#       I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
+#   - title: Blockchain Fundamentals
+#     url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
+#     date: '2023-07-01'
+#     awarder: edX
+#     icon: edx
+#     summary: |
+#       Learned:
+#       - Synthesize your own blockchain solutions
+#       - Gain an in-depth understanding of the specific mechanics of Bitcoin
+#       - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
+#   - title: 'Object-Oriented Programming in R'
+#     url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
+#     certificate_url: https://www.datacamp.com
+#     date: '2023-01-21'
+#     awarder: datacamp
+#     icon: datacamp
+#     summary: |
+#       Object-oriented programming (OOP) lets you specify relationships between functions and the objects that they can act on, helping you manage complexity in your code. This is an intermediate level course, providing an introduction to OOP, using the S3 and R6 systems. S3 is a great day-to-day R programming tool that simplifies some of the functions that you write. R6 is especially useful for industry-specific analyses, working with web APIs, and building GUIs.
 ---
 
 ## About Me
