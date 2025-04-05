@@ -1,6 +1,6 @@
 ---
 title: "Research"
-cms_exclude: true
+# cms_exclude: true
 view: citation
-layout: combined
+# layout: compact
 ---

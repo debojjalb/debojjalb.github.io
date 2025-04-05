@@ -53,7 +53,7 @@ featured: false
 
 # Featured image
 image:
-  # caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/pLCdAaMFLTE)'
+  caption: 'AI generated image'
   focal_point: ''
   preview_only: false
 
