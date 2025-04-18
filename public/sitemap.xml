@@ -126,9 +126,6 @@
     <lastmod>2022-10-22T13:00:00+00:00</lastmod>
     <changefreq>weekly</changefreq>
   </url><url>
-    <loc>http://localhost:1313/publication/test/</loc>
-    <changefreq>weekly</changefreq>
-  </url><url>
     <loc>http://localhost:1313/news/</loc>
     <changefreq>weekly</changefreq>
   </url>

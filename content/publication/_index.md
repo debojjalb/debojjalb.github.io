@@ -1,6 +1,6 @@
 ---
 title: "Research"
 # cms_exclude: true
-view: card
+view: article-grid
 # layout: card
 ---
