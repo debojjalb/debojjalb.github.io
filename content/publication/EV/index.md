@@ -67,7 +67,10 @@ image:
 ---
 
 {{% callout note %}}
-The codebase and preprint is available on the buttons above article. Click the _Cite_ button above to cite this article.
+The codebase and preprint are available on the buttons below the article.
 {{% /callout %}}
+
+Click on the title to know more.
+
 
 

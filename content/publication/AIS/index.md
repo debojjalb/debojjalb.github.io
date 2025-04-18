@@ -66,6 +66,6 @@ image:
 ---
 
 {{% callout note %}}
-More details will be availabale soon!
+More details will be available soon!
 {{% /callout %}}
 
