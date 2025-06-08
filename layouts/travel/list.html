@@ -1,0 +1,175 @@
+{{ define "main" }}
+<!-- Swiper CSS & JS -->
+<link
+  rel="stylesheet"
+  href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+/>
+<script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<section style="max-width:1000px; margin:0 auto; padding:2rem 1rem; display:flex; flex-direction:column; gap:3rem;">
+  <!-- Page Title -->
+  <h1 style="text-align:center; font-size:2rem; font-weight:700; margin-bottom:1rem;">
+    My Travel Diary and Major Updates
+    <br>
+    <span style="font-size:1rem; color:#666;">(Click on images to view in lightbox)</span>
+  </h1>
+
+  {{ $places := slice
+    (dict "name" "TRB Annual Meeting 2025 at Washington D.C."
+          "desc" "I presented the paper 'A queueing capacity-based operating capacity model for multimodal port systems' at the 2025 TRB Annual Meeting. I was thrilled to receive a podium presentation slot for our work, which was a collaboration between the US Army Corps of Engineers (ERDC) and the University of Texas at Austin. Here are some photos from the conference as well as from D.C. Fun fact: It snows in D.C. every 3-4 years, and my first time in D.C., it snowed!"
+          "folder" "TRB_2025")
+    (dict "name" "INFORMS Annual Meeting 2024 at Seattle"
+          "desc" "Returning to the INFORMS Annual Meeting, this time in Seattle, I presented my work on error bounds for stochastic user equilibrium traffic assignment models. I was fortunate to speak at the Transportation Science and Logistics (TSL) invited session—an amazing experience. INFORMS is always a great place to connect with friends, colleagues, and fellow researchers. Here are some photos from the conference. I also took out some time to visit around Seattle!"
+          "folder" "INFORMS_Seattle_2024")
+    (dict "name" "Keep Austin Beautiful Day 2024 at Austin"
+          "desc" "I spent a bright Saturday volunteering with neighbors to clean up Austin’s parks—a heartwarming reminder of community spirit. UT Austin ITS/ITE/WTS teamed up with the Capital Area Section of ITE (CASITE). As the Social Service Chair of UT Austin ITS/ITE/WTS, I helped organize this event. It was a great experience to engage with fellow members and volunteers."
+          "folder" "Keep_Austin_Beautiful_Day_2024")
+    (dict "name" "I joined UT Austin for a MS+PhD!"
+          "desc" "Extremely excited to begin my PhD at the University of Texas at Austin in the Department of Civil, Architectural and Environmental Engineering. I was awarded a 4-year graduate school fellowship in addition to GRA/TA responsibilities for my funding. I look forward to working with my advisor, Dr. Stephen Boyles, and the incredible transportation research group at UT Austin. Here are some photos from my first day!"
+          "folder" "UT_Admission_2023")
+    (dict "name" "I graduated my undergraduate degree!"
+          "desc" "I graduated with a B.S. (Research) in Civil Engineering from the Indian Institute of Science (IISc), Bangalore, with first class distinction. I was honored to receive the institute gold medal for achieving the highest CGPA in my major. I am deeply grateful to my parents, friends, and professors for their support throughout this journey. Here are some moments from convocation."
+          "folder" "IISC_BS_Research_grad_gold_medal_2023")
+    (dict "name" "INFORMS Annual Meeting 2022 at Chicago"
+          "desc" "Nervous yet excited, I gave my first conference presentation at the INFORMS Annual Meeting in Indianapolis. I shared my research on the multi-objective steiner traveling salesman problem and electric vehicle last-mile logistics."
+          "folder" "INFORMS_Chicago_2022")
+    (dict "name" "I am a Mitacs GRI Fellow!"
+          "desc" "As a Mitacs Globalink Research Intern, I spent a summer in Canada at the University of Quebec’s Department of Management. I worked on reverse logistics network design for wood recycling facilities, and visited Montreal, Quebec City, Ottawa, Toronto, and Niagara Falls—cherished memories with friends and colleagues. Here are some photos from the trip."
+          "folder" "MITACS_Canada_2022")
+  }}
+
+  {{ range $places }}
+    {{ $folder := .folder }}
+    {{ $raw    := readDir (printf "static/images/travel/%s" $folder) }}
+    {{ $files  := where $raw "IsDir" "eq" false }}
+    {{ $images := where $files ".Name" "not in" (slice ".DS_Store") }}
+    {{ $count  := len $images }}
+    {{ $middle := div $count 2 }}
+
+    <div>
+      <h2 style="font-size:1.25rem; font-weight:600; margin-bottom:0.25rem;">
+        {{ .name }}
+      </h2>
+      <p style="color:#555; font-size:0.9rem; margin-bottom:0.5rem;">
+        {{ .desc }}
+      </p>
+
+      <!-- Swiper container for this place -->
+      <div class="swiper-container swiper-{{ $folder }}" style="position:relative;">
+        <div class="swiper-wrapper">
+          {{ range $images }}
+            <div class="swiper-slide" style="width:auto; display:flex; justify-content:center;">
+              <img
+                src="{{ printf "/images/travel/%s/%s" $folder .Name }}"
+                alt="{{ .Name }}"
+                class="gallery-img"
+                style="width:260px; height:196px; object-fit:cover; border-radius:8px; border:1px solid #ddd; cursor:pointer;"
+              />
+            </div>
+          {{ end }}
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- Pagination Bullets -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <!-- Initialize Swiper -->
+      <script>
+        document.addEventListener('DOMContentLoaded', function() {
+          new Swiper('.swiper-{{ $folder }}', {
+            slidesPerView:   {{ if lt $count 5 }}{{ $count }}{{ else }}4{{ end }},
+            spaceBetween:    10,
+            loop:            {{ if lt $count 5 }}false{{ else }}true{{ end }},
+            centeredSlides:  {{ if lt $count 5 }}true{{ else }}false{{ end }},
+            {{ if lt $count 5 }}
+            initialSlide: {{ $middle }},
+            {{ end }}
+            navigation: {
+              nextEl: '.swiper-{{ $folder }} .swiper-button-next',
+              prevEl: '.swiper-{{ $folder }} .swiper-button-prev',
+            },
+            pagination: {
+              el: '.swiper-{{ $folder }} .swiper-pagination',
+              clickable: true,
+            },
+          });
+        });
+      </script>
+    </div>
+  {{ end }}
+</section>
+
+<!-- Lightbox Overlay -->
+<div id="lightbox-overlay" style="
+    display:none;
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,0.8);
+    align-items:center;
+    justify-content:center;
+    z-index:10000;
+  ">
+  <img id="lightbox-img" src="" alt="" style="max-width:90%; max-height:90%; border-radius:8px;" />
+</div>
+
+<!-- Styles -->
+<style>
+  /* Hover zoom effect */
+  .gallery-img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .gallery-img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  /* Arrows styling */
+  .swiper-button-prev,
+  .swiper-button-next {
+    width:40px;
+    height:40px;
+    background:#000;
+    border-radius:50%;
+    color:#fff;
+    top:50%;
+    transform:translateY(-50%);
+    box-shadow:0 2px 6px rgba(0,0,0,0.4);
+  }
+  .swiper-button-prev { left:-20px; }
+  .swiper-button-next { right:-20px; }
+  .swiper-button-prev:after,
+  .swiper-button-next:after {
+    font-size:20px;
+    font-weight:bold;
+  }
+
+  /* Pagination bullets */
+  .swiper-pagination-bullet {
+    background:#ccc !important;
+    opacity:1 !important;
+    margin:0 4px !important;
+  }
+  .swiper-pagination-bullet-active {
+    background:#000 !important;
+  }
+  .swiper-pagination {
+    bottom:-20px !important;
+  }
+</style>
+
+<!-- Lightbox Script -->
+<script>
+  document.addEventListener('click', function(e) {
+    if (e.target.classList.contains('gallery-img')) {
+      document.getElementById('lightbox-img').src = e.target.src;
+      document.getElementById('lightbox-overlay').style.display = 'flex';
+    } else if (e.target.id === 'lightbox-overlay') {
+      e.target.style.display = 'none';
+    }
+  });
+</script>
+{{ end }}

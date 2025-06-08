@@ -16,8 +16,8 @@ main:
   - name: Experience
     url: experience/
     weight: 12
-  - name: Updates
-    url: /post/
+  - name: Travel
+    url: /travel/
     weight: 13
   - name: Talks
     url: /event/
