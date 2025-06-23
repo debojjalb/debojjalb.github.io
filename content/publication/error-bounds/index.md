@@ -66,10 +66,9 @@ image:
 ---
 
 {{% callout note %}}
-The codebase and conference extended abstract are available on the buttons below the article.
+The codebase and thesis are available on the buttons below the article.
 {{% /callout %}}
 
-Click on the title to know more.
 
 
 

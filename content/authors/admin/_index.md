@@ -52,44 +52,43 @@ interests:
   - Multimodal logistics and resilience
 
 education:
-  - area: PhD Transportation Engineering (Currently persuing)
+  - area: PhD Transportation Engineering (Currently pursuing)
     institution: The University of Texas at Austin
     date_start: 2025-06-01
     date_end: 2028-06-30
-    summary: |
-    # button:
-    #   text: 'Read Thesis'
-    #   url: 'https://example.com'
+    # summary: |
+    # # button:
+    # #   text: 'Read Thesis'
+    # #   url: 'https://example.com'
   - area: M.S.E Civil Engineering (Transportation)
     institution: The University of Texas at Austin
     date_start: 2023-08-07
     date_end: 2025-05-07
-    summary: |
-      **GPA**: 4.0/4.0
+    # summary: |
+    #   **GPA**: 4.0/4.0
 
-      **Courses included**: 
+    #   **Courses included**: 
 
-        - **Transportation**: Static and dynamic traffic assignment, discrete choice modelling, traffic engineerin, public transportation, railway project design
-        - **Operations Research**: Optimization, linear programming, non-linear programming
+    #     - **Transportation**: Static and dynamic traffic assignment, discrete choice modelling, traffic engineerin, public transportation, railway project design
+    #     - **Operations Research**: Optimization, linear programming, non-linear programming
     button:
       text: 'Read Thesis: Error bounds for stochastic user equilibrium traffic assignment'
-      url: 'https://example.com'
+      url: MS_thesis.pdf
   - area: BS (Research) 
     institution: Indian Institute of Science, Bengaluru
     date_start: 2019-08-07
     date_end: 2023-04-30
-    summary: |
-      **GPA**: 8.7/10 (Major GPA: 9.4/10)
-
-      **Awards**: Gold medal for highest GPA in major, Highest project grade 
+    # summary: |
+    #   **GPA**: 8.7/10 (Major GPA: 9.4/10)
+    #   **Awards**: Gold medal for highest GPA in major, Highest project grade 
       
-      **Courses included**:
-      - **Civil engineering:** Traffic network equilibreium, public transportation, satellite geodesy
-      - **Computer science & math**: Introduction to computing for AI & ML, game theory, linear algebra, computer vision, algebra-I, real analysis, probability & statistics, data structures and algorithms, introduction to material science, introduction to electronics
-      - **Management**: Finance and accounts, principles of management, behavioral science
-      - **Humanities**: Journalism for scientists
+    #   **Courses included**:
+    #   - **Civil engineering:** Traffic network equilibreium, public transportation, satellite geodesy
+    #   - **Computer science & math**: Introduction to computing for AI & ML, game theory, linear algebra, computer vision, algebra-I, real analysis, probability & statistics, data structures and algorithms, introduction to material science, introduction to electronics
+    #   - **Management**: Finance and accounts, principles of management, behavioral science
+    #   - **Humanities**: Journalism for scientists
     button:
-      text: 'Read Thesis: Energy-efficient and Safe Routing for Last-mile Logistics'
+      text: 'Read Thesis: Energy-efficient and safe routing for last-mile logistics'
       url: BS_thesis.pdf
 work:
   - position: Graduate Research Assistant
