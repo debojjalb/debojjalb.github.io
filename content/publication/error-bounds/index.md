@@ -42,7 +42,7 @@ featured: true
 # - name: Custom Link
 #   url: http://example.org
 
-url_pdf: ''
+url_pdf: 'https://debojjalb.github.io/experience/MS_thesis.pdf'
 url_code: 'https://github.com/debojjalb/SUE_Bounds'
 #url_dataset: 'https://github.com/HugoBlox/hugo-blox-builder'
 #url_poster: ''
