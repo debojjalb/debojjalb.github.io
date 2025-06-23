@@ -4,7 +4,7 @@ title: "Error bounds for stochastic user equilibrium traffic assignment"
 # Authors
 authors:
   - admin
-  - Stephen Boyles
+  - steve
 
 # Author notes (optional)
 # author_notes:
