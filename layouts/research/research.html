@@ -1,0 +1,420 @@
+{{ define "main" }}
+<main class="container" style="max-width:980px;margin:0 auto;padding:2rem 1rem;">
+
+  <h1 style="font-size:2rem;line-height:1.2;margin:0 0 1rem 0;">Research</h1>
+  {{ with .Content }}
+    <div class="prose" style="margin-bottom:1.5rem;">{{ . }}</div>
+  {{ end }}
+
+  {{/* =========================
+       SECTION CONFIG (edit me)
+     ========================= */}}
+{{ $sectionMeta := dict
+      "port" (dict
+        "label" "Maritime logistics"
+        "blurb" "I am interested in how ports connect to their hinterlands and how bottlenecks in one component ripple across the system. My focus includes capacity measurement, anchorage and terminal queues, resilience during disruptions, re-routing, and the interaction of waterside, terminal, and landside operations. I am also drawn to questions of data quality and integration, as well as economic and policy aspects such as port pricing, demurrage, environmental costs, and the safety and sustainability of large-scale multimodal freight systems.<br><br>Some publications that reflect these interests include:<br><br>"
+      )
+        "truck" (dict
+        "label" "Trucking logistics"
+        "blurb" "I am interested in routing and scheduling problems in freight logistics, especially extensions of classic vehicle routing problems (VRPs). These often involve multiple objectives and practical constraints such as time windows. My interests also include modern contexts like last-mile deliveries and electric freight systems.<br><br>Some publications that reflect these interests include:<br><br>"
+      )
+      "ta" (dict
+        "label" "Traffic Assignment"
+        "blurb" "I am interested in the efficiency and robustness of traffic assignment models, particularly under imperfect or uncertain data. This includes probabilistic route choice models like stochastic user equilibrium, methods for quantifying error when algorithms terminate early, and approaches to managing queue spillback in dynamic traffic assignment. More broadly, my interest lies in building data-efficient, reliable models that can inform real-world planning.<br><br>Some publications that reflect these interests include:<br><br>"
+      )
+}}
+
+
+
+
+  {{ $sectionOrder := slice "port" "truck" "ta" }}
+
+  {{/* =========================
+       LOAD & PARSE publications.csv
+     ========================= */}}
+  {{ $rows := slice }}
+  {{ with resources.Get "publications.csv" }}
+    {{ $rows = . | transform.Unmarshal (dict "delimiter" ",") }}
+  {{ end }}
+
+  {{ if not (gt (len $rows) 0) }}
+    <p style="color:#666;">No publications found (ensure <code>assets/publications.csv</code> exists).</p>
+  {{ else }}
+
+    {{/* Convert [][]string -> []map using first row as header */}}
+    {{ $header := index $rows 0 }}
+    {{ $data := after 1 $rows }}
+    {{ $pubs := slice }}
+    {{ range $r := $data }}
+      {{ $m := dict }}
+      {{ range $i, $h := $header }}
+        {{ $val := "" }}
+        {{ if lt $i (len $r) }}{{ $val = index $r $i }}{{ end }}
+        {{ $m = merge $m (dict $h $val) }}
+      {{ end }}
+      {{/* numeric year for sorting */}}
+      {{ $yi := 0 }}
+      {{ with (index $m "year") }}
+        {{ $try := 0 }}{{ $try = int . }}{{ $yi = $try }}
+      {{ end }}
+      {{ $m = merge $m (dict "year_i" $yi) }}
+      {{ $pubs = $pubs | append $m }}
+    {{ end }}
+
+    {{/* Sort pubs: year desc, then title */}}
+    {{ $pubs = sort $pubs "title" }}
+    {{ $pubs = sort $pubs "year_i" "desc" }}
+
+    {{/* Discover sections from CSV */}}
+    {{ $csvSections := slice }}
+    {{ range $p := $pubs }}
+      {{ $sec := index $p "section" }}
+      {{ if and $sec (not (in $csvSections $sec)) }}
+        {{ $csvSections = $csvSections | append $sec }}
+      {{ end }}
+    {{ end }}
+
+    {{/* Merge desired order with discovered sections */}}
+    {{ $sections := slice }}
+    {{ range $k := $sectionOrder }}{{ if in $csvSections $k }}{{ $sections = $sections | append $k }}{{ end }}{{ end }}
+    {{ range $k := $csvSections }}{{ if not (in $sections $k) }}{{ $sections = $sections | append $k }}{{ end }}{{ end }}
+
+    {{ if gt (len $sections) 0 }}
+
+      {{/* ===== Research Domains header ===== */}}
+      <h2 style="font-size:1.5rem;margin:1.25rem 0 0.5rem 0;">Research Domains</h2>
+
+      {{/* ---------- Tab Nav ---------- */}}
+      <div class="tabs-wrap" style="margin:0.75rem 0 1rem 0;">
+        <div class="tabs-nav" role="tablist" style="display:flex;gap:0.5rem;flex-wrap:wrap;">
+          {{ range $i, $s := $sections }}
+            {{ $meta := index $sectionMeta $s }}
+            {{ $label := cond (and $meta (index $meta "label")) (index $meta "label") ($s | title) }}
+            <button
+              class="tab-btn"
+              role="tab"
+              aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}"
+              data-tab="{{ $s }}"
+              style="border:1px solid #ddd;background:{{ if eq $i 0 }}#111{{ else }}#fff{{ end }};color:{{ if eq $i 0 }}#fff{{ else }}#111{{ end }};padding:0.5rem 0.85rem;border-radius:999px;cursor:pointer;font-size:0.95rem;">
+              {{ $label }}
+            </button>
+          {{ end }}
+        </div>
+      </div>
+
+      {{/* ---------- Panels ---------- */}}
+      <div id="pub-sections">
+        {{ range $i, $s := $sections }}
+          {{ $meta := index $sectionMeta $s }}
+          {{ $blurb := "" }}
+          {{ if and $meta (index $meta "blurb") }}{{ $blurb = index $meta "blurb" }}{{ end }}
+
+          <section class="pub-section" data-tab-panel="{{ $s }}"
+            style="display:{{ if eq $i 0 }}block{{ else }}none{{ end }};margin-top:0.5rem;">
+            
+            {{ with $blurb }}
+              <div style="margin:0 0 0.75rem 0;color:#333;line-height:1.5;font-size:1.05rem;font-weight:450;">
+                {{ . | safeHTML}}
+              </div>
+            {{ end }}
+
+            <ul style="list-style:disc;padding-left:1.25rem;display:flex;flex-direction:column;gap:0.85rem;margin:0;">
+              {{ $count := 0 }}
+              {{ range $row := $pubs }}
+                {{ if eq (index $row "section") $s }}
+                  {{ $count = add $count 1 }}
+                  <li class="pub-item" style="line-height:1.45;">
+                    <div style="display:flex;flex-direction:column;gap:0.35rem;">
+                      <div>
+                        <a href="{{ index $row "link" }}" class="pub-link"
+                           style="font-weight:600;text-decoration:none;display:inline-block;">
+                          {{ index $row "title" }}
+                        </a>
+                        <span style="color:#666;font-size:0.92rem;display:block;margin-top:2px;">
+                          {{ index $row "authors" }} · {{ index $row "year" }}
+                        </span>
+                      </div>
+
+                      <span style="color:#444;">{{ index $row "description" }}</span>
+                      {{ with (index $row "conference") }}
+                        <span style="color:#555;font-size:0.9rem;">Presented at: {{ . }}</span>
+                      {{ end }}
+                      {{ with (index $row "journal") }}
+                        <span style="color:#555;font-size:0.9rem;">Journal: {{ . }}</span>
+                      {{ end }}
+
+                      {{/* ===== CTA buttons: View Paper / View Code ===== */}}
+                      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:2px;">
+                        {{ with (index $row "link") }}
+                          {{ if . }}
+                            <a href="{{ . }}" style="display:inline-block;border:1px solid #0d7533;background:#0d7533;color:#fff;border-radius:999px;padding:6px 12px;font-size:0.88rem;text-decoration:none;transition:background .15s ease,border-color .15s ease;">
+                              View Paper
+                            </a>
+                          {{ end }}
+                        {{ end }}
+                        {{ with (index $row "code") }}
+                          {{ if . }}
+                            <a href="{{ . }}" style="display:inline-block;border:1px solid #0d7533;background:#0d7533;color:#fff;border-radius:999px;padding:6px 12px;font-size:0.88rem;text-decoration:none;transition:background .15s ease,border-color .15s ease;">
+                              View Code
+                            </a>
+                          {{ end }}
+                        {{ end }}
+                      </div>
+                    </div>
+                  </li>
+                {{ end }}
+              {{ end }}
+            </ul>
+
+            {{ if eq $count 0 }}
+              <p style="color:#666;margin-top:0.5rem;">No items in this section.</p>
+            {{ end }}
+          </section>
+        {{ end }}
+      </div>
+
+    {{ end }}
+  {{ end }}
+
+  {{/* =========================
+       OPEN SOURCE CODE BASE
+     ========================= */}}
+  <h2 style="font-size:1.5rem;margin:2rem 0 0.5rem 0;">Open Source Code Base</h2>
+
+  {{ $osRows := slice }}
+  {{ with resources.Get "open_source.csv" }}
+    {{ $osRows = . | transform.Unmarshal (dict "delimiter" ",") }}
+  {{ end }}
+
+  {{ if not (gt (len $osRows) 0) }}
+    <p style="color:#666;">No open-source projects listed (ensure <code>assets/open_source.csv</code> exists).</p>
+  {{ else }}
+    {{ $osHeader := index $osRows 0 }}
+    {{ $osData := after 1 $osRows }}
+    {{ $projects := slice }}
+    {{ range $r := $osData }}
+      {{ $m := dict }}
+      {{ range $i, $h := $osHeader }}
+        {{ $val := "" }}
+        {{ if lt $i (len $r) }}{{ $val = index $r $i }}{{ end }}
+        {{ $m = merge $m (dict $h $val) }}
+      {{ end }}
+      {{ $projects = $projects | append $m }}
+    {{ end }}
+
+    {{ $projects = sort $projects "name" }}
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;">
+      {{ range $p := $projects }}
+        <div style="border:1px solid #eee;border-radius:14px;padding:14px;">
+          <a href="{{ index $p "link" }}" style="font-weight:600;text-decoration:none;display:inline-block;margin-bottom:2px;">
+            {{ index $p "name" }}
+          </a>
+          {{ with (index $p "role") }}
+            <div style="color:#666;font-size:0.9rem;margin-bottom:6px;">{{ . }}</div>
+          {{ end }}
+          {{ with (index $p "description") }}
+            <div style="color:#333;line-height:1.5;margin-bottom:8px;">{{ . }}</div>
+          {{ end }}
+          {{ with (index $p "tags") }}
+            {{ $tags := split . ";" }}
+            <div style="display:flex;flex-wrap:wrap;gap:6px;">
+              {{ range $t := $tags }}
+                {{ if $t }}
+                  <span style="border:1px solid #ddd;border-radius:999px;padding:2px 8px;font-size:0.8rem;color:#333;">{{ $t }}</span>
+                {{ end }}
+              {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
+
+{{/* =========================
+     PUBLICATIONS
+   ========================= */}}
+<h2 style="font-size:1.5rem;margin:2rem 0 0.5rem 0;">Publications</h2>
+
+<!-- Make [Preprint]/[PDF]/[Code] GREEN no matter what the theme says -->
+<style>
+  a.pub-tag, a.pub-tag:visited {
+    color: #0a8a3a !important;
+    font-weight: 600;
+    text-decoration: none;
+  }
+</style>
+
+<!-- {{/* ---- Data ---- */}}
+{{ $journals := slice
+  (dict
+    "id" "J1"
+    "authors" "<strong>Bagchi, D.</strong>, Bathgate, K., and Boyles, S. D."
+    "year" "2025"
+    "title" "Throughput Curves for Seaport Systems: A Simulation-Based Study"
+    "venue" "Transportation Research Part E"
+    "preprint" "#"
+    "pdf" "#"
+    "code" "https://github.com/spartalab/port-simulation"
+  )
+}} -->
+
+{{ $underReview := slice
+  (dict
+    "id" "M1"
+    "authors" "Agarwal, P.*, <strong>Bagchi, D.</strong>*, Rambha, T., and Pandey, V."
+    "year" "2024"
+    "title" "A Bi-criterion Steiner Traveling Salesperson Problem with Time Windows for Last-Mile Electric Vehicle Logistics"
+    "venue" "Computers & Operations Research, under review"
+    "code" "https://github.com/transnetlab/last-mile-ev-logistics"
+    "preprint" "https://arxiv.org/abs/2409.14848"
+    "note" "* Equal contribution"
+  )
+}}
+
+{{ $inPrep := slice
+  (dict "id" "W8" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, and Boyles, S. D."
+        "title" "Resilience Metrics for Characterizing Hurricanes in Ports.")
+  (dict "id" "W7" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, and Boyles, S. D."
+        "title" "Characterizing Anchorage Queue Dynamics Due To Channel Fog Closures At The Port Of Houston.")
+  (dict "id" "W6" "authors" "<strong>Bagchi, D.</strong> and Boyles, S. D."
+        "title" "A Dynamic Ultimate Capacity Framework For Seaport Systems.")
+  (dict "id" "W5" "authors" "<strong>Bagchi, D.</strong> and Boyles, S. D."
+        "title" "A Simulation Framework For Modelling Multimodal Port Operations With A Case Study On The Port Of Houston — A Throughput Curve Approach.")
+  (dict "id" "W4" "authors" "<strong>Bagchi, D.</strong> and Boyles, S. D."
+        "title" "Error Bounds For Stochastic User Equilibrium Traffic Assignment.")
+  (dict "id" "W3" "authors" "Robbennolt, J., <strong>Bagchi, D.</strong>, and Boyles, S. D."
+        "title" "Localized Queue Spillback With Uncertain Demand.")
+  (dict "id" "W2" "authors" "<strong>Bagchi, D.</strong>, Bathgate, K., and Boyles, S. D."
+        "title" "A Queuing-Theory-Based Operating Capacity Model For Multimodal Port Operations.")
+  (dict "id" "W1" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, and Boyles, S. D."
+        "title" "Use Of AIS Data To Characterize Vessel Mix In Houston Port Operations For Simulation.")
+}}
+
+<!-- <h3 style="font-size:1.1rem;margin:1rem 0 0.25rem 0;">Journal articles</h3>
+<ul style="list-style:disc;padding-left:1.25rem;display:flex;flex-direction:column;gap:0.75rem;margin:0 0 1rem 0;"> -->
+  <!-- {{ range $j := $journals }}
+    <li>
+      {{ $j.authors | safeHTML }} ({{ $j.year }}).
+      {{ $j.title | title }}.
+      <em>{{ $j.venue }}</em>.
+      {{ if $j.preprint }}<a class="pub-tag" href="{{ $j.preprint }}">[Preprint]</a>{{ end }}
+      {{ if $j.pdf }}<a class="pub-tag" href="{{ $j.pdf }}">[PDF]</a>{{ end }}
+      {{ if $j.code }}<a class="pub-tag" href="{{ $j.code }}">[Code]</a>{{ end }}
+    </li>
+  {{ end }}
+</ul> -->
+
+<h3 style="font-size:1.1rem;margin:1rem 0 0.25rem 0;">Manuscripts under review</h3>
+<ul style="list-style:disc;padding-left:1.25rem;display:flex;flex-direction:column;gap:0.75rem;margin:0 0 1rem 0;">
+  {{ range $p := $underReview }}
+    <li>
+      {{ $p.authors | safeHTML }} ({{ $p.year }}).
+      {{ $p.title | title }}.
+      <em>{{ $p.venue }}</em>.
+      {{ if $p.preprint }}<a class="pub-tag" href="{{ $p.preprint }}">[Preprint]</a>{{ end }}
+      {{ if $p.pdf }}<a class="pub-tag" href="{{ $p.pdf }}">[PDF]</a>{{ end }}
+      {{ if $p.code }}<a class="pub-tag" href="{{ $p.code }}">[Code]</a>{{ end }}
+      {{ with $p.note }} <span style="color:#555;">({{ . | safeHTML }})</span>{{ end }}
+    </li>
+  {{ end }}
+</ul>
+
+<h3 style="font-size:1.1rem;margin:0.75rem 0 0.25rem 0;">Manuscripts in preparation</h3>
+<ul style="list-style:disc;padding-left:1.25rem;display:flex;flex-direction:column;gap:0.5rem;margin:0;">
+  {{ range $p := $inPrep }}
+    <li>
+      {{ $p.authors | safeHTML }} {{ with $p.year }}({{ . }}). {{ end }}
+      {{ $p.title | title }}
+      {{ with $p.venue }}. <em>{{ . }}</em>{{ end }}
+      {{ if $p.preprint }}<a class="pub-tag" href="{{ $p.preprint }}">[Preprint]</a>{{ end }}
+      {{ if $p.pdf }}<a class="pub-tag" href="{{ $p.pdf }}">[PDF]</a>{{ end }}
+      {{ if $p.code }}<a class="pub-tag" href="{{ $p.code }}">[Code]</a>{{ end }}
+    </li>
+  {{ end }}
+</ul>
+
+{{/* =========================
+     REFEREED CONFERENCE PRESENTATIONS
+   ========================= */}}
+<h2 style="font-size:1.5rem;margin:2rem 0 0.5rem 0;">Refereed conference presentations</h2>
+
+{{ $confs := slice
+  (dict "id" "C8" "year" "2025" "authors" "Robbennolt, J., <strong>Bagchi, D.</strong> and Boyles, S. D."
+        "title" "Localized Queue Spillback With Uncertain Demand."
+        "venue" "10th International Symposium on Dynamic Traffic Assignment (DTA 2025), Salerno, Italy"
+        "note" "Accepted")
+  (dict "id" "C7" "year" "2025" "authors" "<strong>Bagchi, D.</strong> and Boyles, S. D."
+        "title" "Error Bounds For Stochastic User Equilibrium Traffic Assignment."
+        "venue" "12th Triennial Symposium on Transportation Analysis (TRISTAN XII), Okinawa, Japan"
+        "note" "Accepted")
+  (dict "id" "C6" "year" "2025" "authors" "<strong>Bagchi, D.</strong>, Bathgate, K., and Boyles, S. D."
+        "title" "A Queuing-Theory-Based Operating Capacity Model For Multimodal Port Operations."
+        "venue" "Transportation Research Board (TRB) 104th Annual Meeting, Washington, D.C., USA"
+        "note" "Lectern session")
+  (dict "id" "C5" "year" "2025" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, and Boyles, S. D."
+        "title" "Use Of AIS Data To Characterize Vessel Mix In Houston Port Operations For Simulation."
+        "venue" "Transportation Research Board (TRB) 104th Annual Meeting, Washington, D.C., USA"
+        "note" "Lectern session")
+  (dict "id" "C4" "year" "2024" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, and Boyles, S. D."
+        "title" "Identifying Capacities In A Multimodal Maritime Freight Network."
+        "venue" "INFORMS Annual Meeting 2024, Seattle, USA")
+  (dict "id" "C3" "year" "2024" "authors" "<strong>Bagchi, D.</strong>, and Boyles, S. D."
+        "title" "Error Bounds For Stochastic User Equilibrium Traffic Assignment."
+        "venue" "INFORMS Annual Meeting 2024, Seattle, USA"
+        "note" "TSL Invited session")
+  (dict "id" "C2" "year" "2023" "authors" "<strong>Bagchi, D.</strong>, Agarwal, P., Rambha, T., and Pandey, V."
+        "title" "A Local Search Heuristic For Bi-Criterion Steiner Travelling Salesman Problem."
+        "venue" "Transportation Research Board (TRB) 102nd Annual Meeting 2023, Washington, D.C., USA")
+  (dict "id" "C1" "year" "2022" "authors" "<strong>Bagchi, D.</strong>, Agarwal, P., Rambha, T., and Pandey, V."
+        "title" "A Local Search Heuristic For Bi-Criterion Steiner Travelling Salesman Problem."
+        "venue" "INFORMS Annual Meeting 2022, Indianapolis, USA")
+}}
+
+<ul style="list-style:disc;padding-left:1.25rem;display:flex;flex-direction:column;gap:0.75rem;margin:0;">
+  {{ range $c := $confs }}
+    <li>
+      {{ $c.authors | safeHTML }} ({{ $c.year }}).
+      {{ $c.title | title }}.
+      <em>{{ $c.venue }}</em>{{ with $c.note }} — <span style="color:#666;">{{ . }}</span>{{ end }}
+    </li>
+  {{ end }}
+</ul>
+
+
+
+</main>
+
+<script>
+  (function () {
+    const btns = Array.from(document.querySelectorAll('.tab-btn'));
+    const panels = Array.from(document.querySelectorAll('[data-tab-panel]'));
+    function activate(key) {
+      btns.forEach(b => {
+        const on = b.getAttribute('data-tab') === key;
+        b.setAttribute('aria-selected', on ? 'true' : 'false');
+        b.style.background = on ? '#111' : '#fff';
+        b.style.color = on ? '#fff' : '#111';
+      });
+      panels.forEach(p => {
+        p.style.display = (p.getAttribute('data-tab-panel') === key) ? 'block' : 'none';
+      });
+    }
+    btns.forEach(b => b.addEventListener('click', () => activate(b.getAttribute('data-tab'))));
+
+    // simple hover effect for green buttons if CSS is allowed
+    document.addEventListener('mouseover', function(e){
+      if(e.target.matches('a[style*="#16a34a"]')){
+        e.target.style.background = '#15803d'; /* darker green */
+        e.target.style.borderColor = '#15803d';
+      }
+    });
+    document.addEventListener('mouseout', function(e){
+      if(e.target.matches('a[style*="#16a34a"]')){
+        e.target.style.background = '#16a34a';
+        e.target.style.borderColor = '#16a34a';
+      }
+    });
+  })();
+</script>
+{{ end }}

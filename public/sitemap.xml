@@ -129,6 +129,9 @@
     <loc>http://localhost:1313/news/</loc>
     <changefreq>weekly</changefreq>
   </url><url>
+    <loc>http://localhost:1313/research/</loc>
+    <changefreq>weekly</changefreq>
+  </url><url>
     <loc>http://localhost:1313/travel/</loc>
     <changefreq>weekly</changefreq>
   </url>

@@ -8,8 +8,11 @@ main:
     url: /
     weight: 10
   - name: Research
-    url: /publication/
+    url: /research/
     weight: 11
+  # - name: Research
+  #   url: /publication/
+  #   weight: 11
   # - name: Talks
   #   url: /#talks
   #   weight: 12
@@ -19,12 +22,13 @@ main:
   - name: Travel
     url: /travel/
     weight: 13
-  - name: Talks
-    url: /event/
-    weight: 14
-  # - name: Projects
-  #   url: projects/
-  #   weight: 30
+  # - name: Talks
+  #   url: /event/
+  #   weight: 14
+  # - name: Research (new)
+  #   url: /research/
+  #   weight: 20
+
   # - name: Teaching
   #   url: teaching/
   #   weight: 40
