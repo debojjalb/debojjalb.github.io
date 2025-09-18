@@ -105,7 +105,7 @@ sections:
       text: |-
         [**For more details and pictures, see my travel page →**](https://debojjalb.github.io/travel/)
 
-        **Sep, 2025:** I will presenting our work on "A framework for measuring maritime port system capacities with limited input data" at INFORMS Annual Meeting 2025 in Atlandta (2:45-4:00 PM, TSL invited session on Network Design).
+        **Sep, 2025:** I will presenting our work on "A framework for measuring maritime port system capacities with limited input data" at INFORMS Annual Meeting 2025 in Atlanta (2:45-4:00 PM, TSL invited session on Network Design).
 
         **Sep 2025:** I have been appointed as Member of the TRB Standing Committee on Intermodal Freight and Truck Transportation for the 2025–2028 term. I aim to contrinute to the committee on multimodal port operations, capacity, and resilience. [More details here](https://www.linkedin.com/posts/debojjal-bagchi_excited-to-share-that-following-the-recent-activity-7365922069374537730-Qcfo?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-24_ABlBO97b8VIUpjxdDlIw_oB4ljeX8)
         

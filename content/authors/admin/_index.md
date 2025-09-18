@@ -52,7 +52,7 @@ interests:
   - Multimodal logistics and resilience
 
 education:
-  - area: PhD Transportation Engineering (Currently pursuing)
+  - area: PhD Transportation Engineering
     institution: The University of Texas at Austin
     date_start: 2025-06-01
     date_end: 2028-06-30
@@ -60,7 +60,7 @@ education:
     # # button:
     # #   text: 'Read Thesis'
     # #   url: 'https://example.com'
-  - area: M.S.E Civil Engineering (Transportation)
+  - area: M.S.E Civil Engineering
     institution: The University of Texas at Austin
     date_start: 2023-08-07
     date_end: 2025-05-07
