@@ -67,7 +67,7 @@ sections:
         
         **July 2025:** I presented master's thesis on Error Bounds for Stochastic User Equilibrium Traffic Assignment at TRISTAN XII in Okinawa, Japan, focusing on early termination criteria for stochastic traffic assignment problems. [More details here.](https://www.linkedin.com/posts/debojjal-bagchi_presented-my-masters-thesis-link-in-comments-activity-7351498036625219584-FcWJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-24_ABlBO97b8VIUpjxdDlIw_oB4ljeX8)
         
-        **Apr 2025:** Our paper was accepted at [DTA 2025](https://www.motusanimi.it/dta-abstracts/) in Salerno, Italy on localized queue spillback with uncertain demand.
+        **Apr 2025:** Our paper on localised queue spillback was accepted at [DTA 2025](https://www.motusanimi.it/dta-abstracts/) in Salerno, Italy on localized queue spillback with uncertain demand.
         
-        **Apr 2025:** Our manuscript on bi-criterion Steiner TSP for last-mile electric vehicle logistics to Computers & Operations Research. [A preprint is available here.](https://arxiv.org/abs/2409.14848)
+        **Apr 2025:** Our manuscript on bi-criterion Steiner TSP for last-mile electric vehicle logistics is under review in Computers & Operations Research. [A preprint is available here.](https://arxiv.org/abs/2409.14848)
 ---
