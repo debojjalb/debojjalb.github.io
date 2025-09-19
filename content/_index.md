@@ -53,7 +53,21 @@ sections:
       background:
         color: '#e8f5e8'  # Light green background
       text_color_light: false
+      css_class: 'full-width-section'
       css_style: |
+        .full-width-section {
+          width: 100vw !important;
+          position: relative !important;
+          left: 50% !important;
+          right: 50% !important;
+          margin-left: -50vw !important;
+          margin-right: -50vw !important;
+          padding: 4rem 3rem !important;
+        }
+        .full-width-section .container {
+          max-width: 100% !important;
+          padding: 0 3rem !important;
+        }
         .block-markdown h2 {
           color: #2e7d2e !important;
         }
@@ -64,40 +78,7 @@ sections:
           color: #2e7d2e !important;
           font-weight: bold;
         }
-  # - block: collection
-  #   id: papers
-  #   content:
-  #     title: Featured Research
-  #     filters:
-  #       folders:
-  #         - publication
-  #       featured_only: true
-  #     count: 3
-
-  #   design:
-  #     view: article-grid
-  #     columns: 3
-  # - block: collection
-  #   content:
-  #     title: Recent Conferences and Publications
-  #     text: ""
-  #     filters:
-  #       folders:
-  #         - publication
-  #       exclude_featured: false
-  #   design:
-  #     view: citation
-  # - block: collection
-  #   id: talks
-  #   content:
-  #     title: Recent & Upcoming Talks
-  #     filters:
-  #       folders:
-  #         - event
-  #   design:
-  #     view: article-grid
-  #     columns: 3
-  - block: markdown
+  - block: custom
     id: recent-updates
     content:
       title: 'Recent Updates'
@@ -107,28 +88,32 @@ sections:
 
         **Sep, 2025:** I will presenting our work on "A framework for measuring maritime port system capacities with limited input data" at INFORMS Annual Meeting 2025 in Atlanta (2:45-4:00 PM, TSL invited session on Network Design).
 
-        **Sep 2025:** I have been appointed as Member of the TRB Standing Committee on Intermodal Freight and Truck Transportation for the 2025–2028 term. I aim to contrinute to the committee on multimodal port operations, capacity, and resilience. [More details here](https://www.linkedin.com/posts/debojjal-bagchi_excited-to-share-that-following-the-recent-activity-7365922069374537730-Qcfo?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-24_ABlBO97b8VIUpjxdDlIw_oB4ljeX8)
+        **Sep 2025:** I have been appointed as Member of the TRB Standing Committee on Intermodal Freight and Truck Transportation for the 2025–2028 term. I aim to contrinute to the committee on multimodal port operations, capacity, and resilience. [More details here.](https://www.linkedin.com/posts/debojjal-bagchi_excited-to-share-that-following-the-recent-activity-7365922069374537730-Qcfo?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-24_ABlBO97b8VIUpjxdDlIw_oB4ljeX8)
         
-        **July 2025:** I presented master's thesis on Error Bounds for Stochastic User Equilibrium Traffic Assignment at TRISTAN XII in Okinawa, Japan, focusing on early termination criteria for stochastic traffic assignment problems. [More details here](https://www.linkedin.com/posts/debojjal-bagchi_presented-my-masters-thesis-link-in-comments-activity-7351498036625219584-FcWJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-24_ABlBO97b8VIUpjxdDlIw_oB4ljeX8)
+        **July 2025:** I presented master's thesis on Error Bounds for Stochastic User Equilibrium Traffic Assignment at TRISTAN XII in Okinawa, Japan, focusing on early termination criteria for stochastic traffic assignment problems. [More details here.](https://www.linkedin.com/posts/debojjal-bagchi_presented-my-masters-thesis-link-in-comments-activity-7351498036625219584-FcWJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-24_ABlBO97b8VIUpjxdDlIw_oB4ljeX8)
         
         **Apr 2025:** Our paper was accepted at [DTA 2025](https://www.motusanimi.it/dta-abstracts/) in Salerno, Italy on localized queue spillback with uncertain demand.
         
-        **Apr 2025:** Our manuscript on bi-criterion Steiner TSP for last-mile electric vehicle logistics to Computers & Operations Research. [A preprint is available here](https://arxiv.org/abs/2409.14848)
-
+        **Apr 2025:** Our manuscript on bi-criterion Steiner TSP for last-mile electric vehicle logistics to Computers & Operations Research. [A preprint is available here.](https://arxiv.org/abs/2409.14848)
+    design:
       columns: '1'
-      spacing:
-        padding: ["15px", "10px", "15px", "10px"]
       background:
         color: '#f8f9fa'
       text_color_light: false
+      css_class: 'full-width-updates'
       css_style: |
-        .block-markdown {
-          max-width: 100% !important;
-          margin: 0 !important;
+        .full-width-updates {
+          width: 100vw !important;
+          position: relative !important;
+          left: 50% !important;
+          right: 50% !important;
+          margin-left: -50vw !important;
+          margin-right: -50vw !important;
+          padding: 4rem 3rem !important;
         }
-        .block-markdown .container {
+        .full-width-updates .container {
           max-width: 100% !important;
-          padding: 0 !important;
+          padding: 0 3rem !important;
         }
         .block-markdown h2 {
           color: #2c3e50 !important;
@@ -160,24 +145,4 @@ sections:
           padding-bottom: 0.5rem !important;
           border-bottom: 1px solid #e2e8f0 !important;
         }
-  # - block: cta-card
-  #   demo: true # Only display this section in the Hugo Blox Builder demo site
-  #   content:
-  #     title: 👉 Build your own academic website like this
-  #     text: |-
-  #       This site is generated by Hugo Blox Builder - the FREE, Hugo-based open source website builder trusted by 250,000+ academics like you.
-
-  #       <a class="github-button" href="https://github.com/HugoBlox/hugo-blox-builder" data-color-scheme="no-preference: light; light: light; dark: dark;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star HugoBlox/hugo-blox-builder on GitHub">Star</a>
-
-  #       Easily build anything with blocks - no-code required!
-        
-  #       From landing pages, second brains, and courses to academic resumés, conferences, and tech blogs.
-  #     button:
-  #       text: Get Started
-  #       url: https://hugoblox.com/templates/
-    # design:
-    #   card:
-    #     # Card background color (CSS class)
-    #     css_class: "bg-primary-700"
-    #     css_style: ""
 ---
