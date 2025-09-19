@@ -6,7 +6,7 @@ type: landing
 
 design:
   # Default section spacing
-  spacing: "6rem"
+  spacing: "2rem"
 
 sections:
   - block: resume-biography-3
@@ -30,10 +30,9 @@ sections:
           size: cover
           position: center
           parallax: false
-  - block: markdown
+  - block: custom
     content:
       title: 'My Research'
-      subtitle: ''
       text: |-
         My work centers on three interconnected domains: **trucking infrastructure**, **port–hinterland systems**, and **traffic assignment modeling**. Within these areas, I use operations research techniques and data-driven methods to study and improve multimodal freight and logistics networks.
         
@@ -49,41 +48,17 @@ sections:
         
         Please reach out to collaborate 😃
     design:
-      columns: '1'
       background:
-        color: '#e8f5e8'  # Light green background
-      text_color_light: false
-      css_class: 'full-width-section'
-      css_style: |
-        .full-width-section {
-          width: 100vw !important;
-          position: relative !important;
-          left: 50% !important;
-          right: 50% !important;
-          margin-left: -50vw !important;
-          margin-right: -50vw !important;
-          padding: 4rem 3rem !important;
-        }
-        .full-width-section .container {
-          max-width: 100% !important;
-          padding: 0 3rem !important;
-        }
-        .block-markdown h2 {
-          color: #2e7d2e !important;
-        }
-        .block-markdown strong {
-          color: #2e7d2e !important;
-        }
-        .block-markdown a {
-          color: #2e7d2e !important;
-          font-weight: bold;
-        }
+        color: '#f0fdf4'
+      title:
+        border_color: '#166534' # A dark, professional green
+      # spacing: "2rem"
+
   - block: custom
     id: recent-updates
     content:
       title: 'Recent Updates'
-      subtitle: ''
-      text: |-
+      text: |
         [**For more details and pictures, see my travel page →**](https://debojjalb.github.io/travel/)
 
         **Sep, 2025:** I will presenting our work on "A framework for measuring maritime port system capacities with limited input data" at INFORMS Annual Meeting 2025 in Atlanta (2:45-4:00 PM, TSL invited session on Network Design).
@@ -95,54 +70,4 @@ sections:
         **Apr 2025:** Our paper was accepted at [DTA 2025](https://www.motusanimi.it/dta-abstracts/) in Salerno, Italy on localized queue spillback with uncertain demand.
         
         **Apr 2025:** Our manuscript on bi-criterion Steiner TSP for last-mile electric vehicle logistics to Computers & Operations Research. [A preprint is available here.](https://arxiv.org/abs/2409.14848)
-    design:
-      columns: '1'
-      background:
-        color: '#f8f9fa'
-      text_color_light: false
-      css_class: 'full-width-updates'
-      css_style: |
-        .full-width-updates {
-          width: 100vw !important;
-          position: relative !important;
-          left: 50% !important;
-          right: 50% !important;
-          margin-left: -50vw !important;
-          margin-right: -50vw !important;
-          padding: 4rem 3rem !important;
-        }
-        .full-width-updates .container {
-          max-width: 100% !important;
-          padding: 0 3rem !important;
-        }
-        .block-markdown h2 {
-          color: #2c3e50 !important;
-          font-weight: 600 !important;
-          font-size: 1.5rem !important;
-          margin-bottom: 0.8rem !important;
-        }
-        .block-markdown p {
-          margin-bottom: 0.4rem !important;
-          line-height: 1.4 !important;
-          font-size: 0.95rem !important;
-          color: #4a5568 !important;
-        }
-        .block-markdown strong {
-          color: #2d3748 !important;
-          font-weight: 600 !important;
-        }
-        .block-markdown a {
-          color: #3182ce !important;
-          text-decoration: none !important;
-          font-weight: 500 !important;
-        }
-        .block-markdown a:hover {
-          color: #2c5aa0 !important;
-          text-decoration: underline !important;
-        }
-        .block-markdown p:first-of-type {
-          margin-bottom: 0.8rem !important;
-          padding-bottom: 0.5rem !important;
-          border-bottom: 1px solid #e2e8f0 !important;
-        }
 ---

@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- This site was created with Hugo Blox. https://hugoblox.com -->
-<!-- Last Published: September 18, 2025 --><html lang="en-us" dir="ltr"
+<!-- Last Published: September 19, 2025 --><html lang="en-us" dir="ltr"
       data-wc-theme-default="system">
   
 <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
@@ -64,6 +64,9 @@
   
   
 
+  
+    
+    <link href="/css/custom.min.dbd22486790ed55c8d1b6086ee1729d2c31f6df09e24adf56d8ff1bb5195c6eb.css" rel="stylesheet" />
   
 
   <script>
@@ -401,89 +404,6 @@
 
 
 
-<link type="text/css" rel="stylesheet" href="/dist/pagefind/pagefind-ui.be766eb419317a14ec769d216e9779bfe8f3737c80e780f4ba0dafb57a41a482.css" integrity="sha256-vnZutBkxehTsdp0hbpd5v&#43;jzc3yA54D0ug2vtXpBpII=" />
-
-
-<script src="/dist/pagefind/pagefind-ui.87693d7c6f2b3b347ce359d0ede762c033419f0a32b22ce508c335a81d841f1b.js" integrity="sha256-h2k9fG8rOzR841nQ7ediwDNBnwoysizlCMM1qB2EHxs="></script>
-
-
-<script>window.hbb.pagefind = {"baseUrl":"/"};</script>
-
-<style>
-  html.dark {
-    --pagefind-ui-primary: #eeeeee;
-    --pagefind-ui-text: #eeeeee;
-    --pagefind-ui-background: #152028;
-    --pagefind-ui-border: #152028;
-    --pagefind-ui-tag: #152028;
-  }
-
-   
-  .search-close > svg {
-    height: calc(64px * var(--pagefind-ui-scale));
-    width: calc(64px * var(--pagefind-ui-scale));
-  }
-</style>
-
-<script>
-  
-  let searchWrapper = null;
-
-  window.addEventListener('DOMContentLoaded', (event) => {
-    
-    new PagefindUI({
-      element: "#search",
-      showSubResults: true,
-      baseUrl: window.hbb.pagefind.baseUrl,
-      bundlePath: window.hbb.pagefind.baseUrl + "pagefind/",
-    });
-
-    
-    searchWrapper = document.getElementById('search-wrapper');
-
-    
-    let triggers = document.querySelectorAll('[data-search-toggle]');
-    triggers.forEach(trigger =>
-      trigger.addEventListener('click', handleSearchToggle)
-    );
-  });
-
-  function handleSearchToggle(event) {
-    if (!searchWrapper) return;
-
-    const isHidden = searchWrapper.classList.contains('hidden');
-    searchWrapper.classList.toggle('hidden');
-    document.body.style.overflow = isHidden ? 'hidden' : '';
-
-    const searchInput = searchWrapper.querySelector("input");
-    if (searchInput) {
-      searchInput.value = "";
-      searchInput.focus();
-    }
-
-    if (!searchWrapper.classList.contains('hidden')) {
-      let clearTrigger = document.querySelector('.pagefind-ui__search-clear');
-
-      if (clearTrigger && !clearTrigger.hasAttribute('listenerOnClick')) {
-        clearTrigger.setAttribute('listenerOnClick', 'true');
-
-        clearTrigger.addEventListener('click', () => {
-          searchInput.focus();
-        });
-      }
-    }
-  }
-
-  
-  document.addEventListener('keydown', (event) => {
-    if (event.key === 'Escape' && searchWrapper && !searchWrapper.classList.contains('hidden')) {
-      searchWrapper.classList.add('hidden');
-    }
-  });
-</script>
-
-
-
 
 
 
@@ -640,39 +560,8 @@
       
       
       
-      <button
-        aria-label="toggle search"
-        class="text-black hover:text-primary  inline-block px-3 text-xl dark:text-white"
-        data-search-toggle>
-        <svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512" fill="currentColor"><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
-      </button>
-      
 
       
-      
-      <div class="px-3 text-black hover:text-primary-700 dark:text-white dark:hover:text-primary-300
-            [&.active]:font-bold [&.active]:text-black/90 dark:[&.active]:text-white">
-        <button class="theme-toggle mt-1" accesskey="t" title="appearance">
-          <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-               stroke-linejoin="round" class="dark:hidden">
-            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-          </svg>
-          <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
-               fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-               stroke-linejoin="round" class=" dark:block [&:not(dark)]:hidden">
-            <circle cx="12" cy="12" r="5"></circle>
-            <line x1="12" y1="1" x2="12" y2="3"></line>
-            <line x1="12" y1="21" x2="12" y2="23"></line>
-            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-            <line x1="1" y1="12" x2="3" y2="12"></line>
-            <line x1="21" y1="12" x2="23" y2="12"></line>
-            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-          </svg>
-        </button>
-      </div>
       
 
       
@@ -684,26 +573,6 @@
   </nav>
 </header>
 
-<div
-  id="search-wrapper"
-  class="hidden fixed inset-0 z-50 bg-white dark:bg-gray-900 flex flex-col overflow-hidden"
->
-  <div class="flex justify-end p-3">
-    <button
-      aria-label="search"
-      class="search-close text-black hover:text-primary dark:text-white"
-      data-search-toggle
-    >
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-      </svg>
-    </button>
-  </div>
-
-  <div id="search" class="flex-1 overflow-y-auto p-3">
-    
-  </div>
-</div>
 
 
         
@@ -816,7 +685,7 @@
 
 
 
-<section id="section-resume-biography-3" class="relative hbb-section blox-resume-biography-3  dark" style="padding: 6rem 0 6rem 0;" >
+<section id="section-resume-biography-3" class="relative hbb-section blox-resume-biography-3  dark" style="padding: 2rem 0 2rem 0;" >
  <div class="home-section-bg  bg-image" style="background-color: black;background-image: url(&#39;http://localhost:1313/media/stacked-peaks.svg&#39;);background-size: cover;background-position: center;filter: brightness(1);">
    
  </div>
@@ -1120,6 +989,11 @@
 
 
 
+  
+  
+    
+  
+
 
 
 
@@ -1160,7 +1034,6 @@
 
 
 
-  
 
 
 
@@ -1184,65 +1057,42 @@
 
 
 
-
-<section id="section-markdown" class="relative hbb-section blox-markdown  full-width-section" style="padding: 6rem 0 6rem 0;.full-width-section {
-  width: 100vw !important;
-  position: relative !important;
-  left: 50% !important;
-  right: 50% !important;
-  margin-left: -50vw !important;
-  margin-right: -50vw !important;
-  padding: 4rem 3rem !important;
-}
-.full-width-section .container {
-  max-width: 100% !important;
-  padding: 0 3rem !important;
-}
-.block-markdown h2 {
-  color: #2e7d2e !important;
-}
-.block-markdown strong {
-  color: #2e7d2e !important;
-}
-.block-markdown a {
-  color: #2e7d2e !important;
-  font-weight: bold;
-}
-" >
- <div class="home-section-bg " style="background-color: #e8f5e8;">
+<section id="section-custom" class="relative hbb-section blox-custom  " style="padding: 2rem 0 2rem 0;" >
+ <div class="home-section-bg " style="background-color: #f0fdf4;">
    
  </div>
   
 
   
 
-    
+    <div style="width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; background-color: #f0fdf4; padding: 4rem 0;">
+  <div style="max-width: 1100px; margin: 0 auto; padding: 0 3rem;"><h2 style="
+          text-align: left; 
+          margin-bottom: 2.5rem; 
+          font-size: 1.875rem;
+          font-weight: 600;
+          color: #111827;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,sans-serif;
+          letter-spacing: -0.01em;
+          border-bottom: 2px solid #166534;
+          padding-bottom: 1rem;
+        ">
+        My Research
+      </h2><div style="
+      font-size: 1.0625rem;
+      line-height: 1.75;
+      color: #374151;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    "><p style='margin-bottom: 1.25rem; color: #1f2937; font-size: 1.0625rem; line-height: 1.75;'>My work centers on three interconnected domains: <strong style='color: #111827; font-weight: 600;'>trucking infrastructure</strong>, <strong style='color: #111827; font-weight: 600;'>port–hinterland systems</strong>, and <strong style='color: #111827; font-weight: 600;'>traffic assignment modeling</strong>. Within these areas, I use operations research techniques and data-driven methods to study and improve multimodal freight and logistics networks.</p>
+<p style='margin-bottom: 1.25rem; color: #1f2937; font-size: 1.0625rem; line-height: 1.75;'>I am particularly interested in how ports connect to their hinterlands and how bottlenecks in one component ripple across the system. My focus includes capacity measurement, anchorage and terminal queues, resilience during disruptions, re-routing, and the interaction of waterside, terminal, and landside operations. I am also drawn to questions of data quality and integration, as well as economic and policy aspects such as port pricing, demurrage, environmental costs, and the safety and sustainability of large-scale multimodal freight systems.</p>
+<p style='margin-bottom: 1.25rem; color: #1f2937; font-size: 1.0625rem; line-height: 1.75;'><strong style='color: #111827; font-weight: 600;'>Primary Focus:</strong> Maritime Logistics, Trucking Logistics, Traffic Assignment, Port Operations, Multimodal Freight Networks</p>
+<p style='margin-bottom: 1.25rem; color: #1f2937; font-size: 1.0625rem; line-height: 1.75;'><strong style='color: #111827; font-weight: 600;'>Allied Focus:</strong> Operations Research, Queueing Theory, Discrete Event Simulation, Stochastic User Equilibrium, Network Optimization, Data-Driven Methods</p>
+<p style='margin-bottom: 1.25rem; color: #1f2937; font-size: 1.0625rem; line-height: 1.75;'>Beyond publications, I am a strong advocate of open source research and strive to release large-scale frameworks along with documentation for community use.</p>
+<p style='margin-bottom: 1.25rem; color: #1f2937; font-size: 1.0625rem; line-height: 1.75;'><a style='color: #15803d; font-weight: 500; text-decoration: none; border-bottom: 1px solid #15803d; transition: color 0.2s ease, border-color 0.2s ease;' onmouseover='this.style.color="#14532d"; this.style.borderBottomColor="#14532d";' onmouseout='this.style.color="#15803d"; this.style.borderBottomColor="#15803d";' href="https://debojjalb.github.io/research/" target="_blank" rel="noopener"><strong style='color: #111827; font-weight: 600;'>To know more, view my research page →</strong></a></p>
+<p style='margin-bottom: 1.25rem; color: #1f2937; font-size: 1.0625rem; line-height: 1.75;'>Please reach out to collaborate 😃</p>
 
-
-
-
-
-
-
-
-
-<div class="flex flex-col items-center max-w-prose mx-auto gap-3 justify-center px-6">
-
-  <div class="mb-6 text-3xl font-bold text-gray-900 dark:text-white">
-    My Research
-  </div>
-
-  
-  <div class="prose prose-slate lg:prose-xl dark:prose-invert max-w-prose"><p>My work centers on three interconnected domains: <strong>trucking infrastructure</strong>, <strong>port–hinterland systems</strong>, and <strong>traffic assignment modeling</strong>. Within these areas, I use operations research techniques and data-driven methods to study and improve multimodal freight and logistics networks.</p>
-<p>I am particularly interested in how ports connect to their hinterlands and how bottlenecks in one component ripple across the system. My focus includes capacity measurement, anchorage and terminal queues, resilience during disruptions, re-routing, and the interaction of waterside, terminal, and landside operations. I am also drawn to questions of data quality and integration, as well as economic and policy aspects such as port pricing, demurrage, environmental costs, and the safety and sustainability of large-scale multimodal freight systems.</p>
-<p><strong>Primary Focus:</strong> Maritime Logistics, Trucking Logistics, Traffic Assignment, Port Operations, Multimodal Freight Networks</p>
-<p><strong>Allied Focus:</strong> Operations Research, Queueing Theory, Discrete Event Simulation, Stochastic User Equilibrium, Network Optimization, Data-Driven Methods</p>
-<p>Beyond publications, I am a strong advocate of open source research and strive to release large-scale frameworks along with documentation for community use.</p>
-<p><a href="https://debojjalb.github.io/research/" target="_blank" rel="noopener"><strong>To know more, view my research page →</strong></a></p>
-<p>Please reach out to collaborate 😃</p>
+    </div></div>
 </div>
-</div>
-
 
   
 
@@ -1294,8 +1144,6 @@
 
 
 
-  
-
 
 
 
@@ -1319,7 +1167,6 @@
 
 
 
-  
 
 
 
@@ -1343,109 +1190,40 @@
 
 
 
-
-<section id="recent-updates" class="relative hbb-section blox-custom  full-width-updates" style="padding: 6rem 0 6rem 0;.full-width-updates {
-  width: 100vw !important;
-  position: relative !important;
-  left: 50% !important;
-  right: 50% !important;
-  margin-left: -50vw !important;
-  margin-right: -50vw !important;
-  padding: 4rem 3rem !important;
-}
-.full-width-updates .container {
-  max-width: 100% !important;
-  padding: 0 3rem !important;
-}
-.block-markdown h2 {
-  color: #2c3e50 !important;
-  font-weight: 600 !important;
-  font-size: 1.5rem !important;
-  margin-bottom: 0.8rem !important;
-}
-.block-markdown p {
-  margin-bottom: 0.4rem !important;
-  line-height: 1.4 !important;
-  font-size: 0.95rem !important;
-  color: #4a5568 !important;
-}
-.block-markdown strong {
-  color: #2d3748 !important;
-  font-weight: 600 !important;
-}
-.block-markdown a {
-  color: #3182ce !important;
-  text-decoration: none !important;
-  font-weight: 500 !important;
-}
-.block-markdown a:hover {
-  color: #2c5aa0 !important;
-  text-decoration: underline !important;
-}
-.block-markdown p:first-of-type {
-  margin-bottom: 0.8rem !important;
-  padding-bottom: 0.5rem !important;
-  border-bottom: 1px solid #e2e8f0 !important;
-}
-" >
- <div class="home-section-bg " style="background-color: #f8f9fa;">
+<section id="recent-updates" class="relative hbb-section blox-custom  " style="padding: 2rem 0 2rem 0;" >
+ <div class="home-section-bg " >
    
  </div>
   
 
   
 
-    
-
-
-
-<div style="width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; background-color: #f8f9fa; padding: 4rem 0;">
-  <div style="max-width: 1100px; margin: 0 auto; padding: 0 3rem;">
-    
-      <h2 style="
-        text-align: left; 
-        margin-bottom: 2.5rem; 
-        font-size: 1.875rem;
-        font-weight: 600;
-        color: #111827;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-        letter-spacing: -0.01em;
-        border-bottom: 2px solid #e5e7eb;
-        padding-bottom: 1rem;
-      ">
+    <div style="width: 100vw; position: relative; left: 50%; right: 50%; margin-left: -50vw; margin-right: -50vw; background-color: #f9fafb; padding: 4rem 0;">
+  <div style="max-width: 1100px; margin: 0 auto; padding: 0 3rem;"><h2 style="
+          text-align: left; 
+          margin-bottom: 2.5rem; 
+          font-size: 1.875rem;
+          font-weight: 600;
+          color: #111827;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial,sans-serif;
+          letter-spacing: -0.01em;
+          border-bottom: 2px solid #e5e7eb;
+          padding-bottom: 1rem;
+        ">
         Recent Updates
-      </h2>
-    
-    
-    <div style="
+      </h2><div style="
       font-size: 1.0625rem;
       line-height: 1.75;
       color: #374151;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-    ">
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      
-      <p style='margin-bottom: 1.25rem; color: #1f2937; font-size: 1.0625rem; line-height: 1.75;'><a style='color: #15803d; font-weight: 500; text-decoration: none; border-bottom: 1px solid #15803d; transition: color 0.2s ease, border-color 0.2s ease;' onmouseover='this.style.color="#14532d"; this.style.borderBottomColor="#14532d";' onmouseout='this.style.color="#15803d"; this.style.borderBottomColor="#15803d";' href="https://debojjalb.github.io/travel/" target="_blank" rel="noopener"><strong style='color: #111827; font-weight: 600;'>For more details and pictures, see my travel page →</strong></a></p>
+    "><p style='margin-bottom: 1.25rem; color: #1f2937; font-size: 1.0625rem; line-height: 1.75;'><a style='color: #15803d; font-weight: 500; text-decoration: none; border-bottom: 1px solid #15803d; transition: color 0.2s ease, border-color 0.2s ease;' onmouseover='this.style.color="#14532d"; this.style.borderBottomColor="#14532d";' onmouseout='this.style.color="#15803d"; this.style.borderBottomColor="#15803d";' href="https://debojjalb.github.io/travel/" target="_blank" rel="noopener"><strong style='color: #111827; font-weight: 600;'>For more details and pictures, see my travel page →</strong></a></p>
 <p style='margin-bottom: 1.25rem; color: #1f2937; font-size: 1.0625rem; line-height: 1.75;'><strong style='color: #111827; font-weight: 600;'>Sep, 2025:</strong> I will presenting our work on &ldquo;A framework for measuring maritime port system capacities with limited input data&rdquo; at INFORMS Annual Meeting 2025 in Atlanta (2:45-4:00 PM, TSL invited session on Network Design).</p>
 <p style='margin-bottom: 1.25rem; color: #1f2937; font-size: 1.0625rem; line-height: 1.75;'><strong style='color: #111827; font-weight: 600;'>Sep 2025:</strong> I have been appointed as Member of the TRB Standing Committee on Intermodal Freight and Truck Transportation for the 2025–2028 term. I aim to contrinute to the committee on multimodal port operations, capacity, and resilience. <a style='color: #15803d; font-weight: 500; text-decoration: none; border-bottom: 1px solid #15803d; transition: color 0.2s ease, border-color 0.2s ease;' onmouseover='this.style.color="#14532d"; this.style.borderBottomColor="#14532d";' onmouseout='this.style.color="#15803d"; this.style.borderBottomColor="#15803d";' href="https://www.linkedin.com/posts/debojjal-bagchi_excited-to-share-that-following-the-recent-activity-7365922069374537730-Qcfo?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAB-24_ABlBO97b8VIUpjxdDlIw_oB4ljeX8" target="_blank" rel="noopener">More details here.</a></p>
 <p style='margin-bottom: 1.25rem; color: #1f2937; font-size: 1.0625rem; line-height: 1.75;'><strong style='color: #111827; font-weight: 600;'>July 2025:</strong> I presented master&rsquo;s thesis on Error Bounds for Stochastic User Equilibrium Traffic Assignment at TRISTAN XII in Okinawa, Japan, focusing on early termination criteria for stochastic traffic assignment problems. <a style='color: #15803d; font-weight: 500; text-decoration: none; border-bottom: 1px solid #15803d; transition: color 0.2s ease, border-color 0.2s ease;' onmouseover='this.style.color="#14532d"; this.style.borderBottomColor="#14532d";' onmouseout='this.style.color="#15803d"; this.style.borderBottomColor="#15803d";' href="https://www.linkedin.com/posts/debojjal-bagchi_presented-my-masters-thesis-link-in-comments-activity-7351498036625219584-FcWJ?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAAB-24_ABlBO97b8VIUpjxdDlIw_oB4ljeX8" target="_blank" rel="noopener">More details here.</a></p>
 <p style='margin-bottom: 1.25rem; color: #1f2937; font-size: 1.0625rem; line-height: 1.75;'><strong style='color: #111827; font-weight: 600;'>Apr 2025:</strong> Our paper was accepted at <a style='color: #15803d; font-weight: 500; text-decoration: none; border-bottom: 1px solid #15803d; transition: color 0.2s ease, border-color 0.2s ease;' onmouseover='this.style.color="#14532d"; this.style.borderBottomColor="#14532d";' onmouseout='this.style.color="#15803d"; this.style.borderBottomColor="#15803d";' href="https://www.motusanimi.it/dta-abstracts/" target="_blank" rel="noopener">DTA 2025</a> in Salerno, Italy on localized queue spillback with uncertain demand.</p>
 <p style='margin-bottom: 1.25rem; color: #1f2937; font-size: 1.0625rem; line-height: 1.75;'><strong style='color: #111827; font-weight: 600;'>Apr 2025:</strong> Our manuscript on bi-criterion Steiner TSP for last-mile electric vehicle logistics to Computers &amp; Operations Research. <a style='color: #15803d; font-weight: 500; text-decoration: none; border-bottom: 1px solid #15803d; transition: color 0.2s ease, border-color 0.2s ease;' onmouseover='this.style.color="#14532d"; this.style.borderBottomColor="#14532d";' onmouseout='this.style.color="#15803d"; this.style.borderBottomColor="#15803d";' href="https://arxiv.org/abs/2409.14848" target="_blank" rel="noopener">A preprint is available here.</a></p>
 
-    </div>
-    
-    
-    
-    <style>
+    </div><style>
       #recent-updates p {
         margin-bottom: 1.5rem;
         padding-bottom: 1.5rem;
@@ -1485,12 +1263,7 @@
         color: #14532d !important;
         border-bottom-color: #14532d !important;
       }
-    </style>
-    
-    
-    
-    
-  </div>
+    </style></div>
 </div>
 
   
