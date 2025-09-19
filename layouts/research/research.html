@@ -118,12 +118,13 @@
               </div>
             {{ end }}
 
-            <ul style="list-style:disc;padding-left:1.25rem;display:flex;flex-direction:column;gap:0.85rem;margin:0;">
+            <ul style="list-style:none;padding-left:0;display:flex;flex-direction:column;gap:0.85rem;margin:0;">
               {{ $count := 0 }}
               {{ range $row := $pubs }}
                 {{ if eq (index $row "section") $s }}
                   {{ $count = add $count 1 }}
-                  <li class="pub-item" style="line-height:1.45;">
+                  <li class="pub-item" style="line-height:1.45;display:flex;gap:0.6em;align-items:flex-start;">
+                    <span style="margin-top:0.15em;">•</span>
                     <div style="display:flex;flex-direction:column;gap:0.35rem;">
                       <div>
                         <a href="{{ index $row "link" }}" class="pub-link"
@@ -236,7 +237,6 @@
    ========================= */}}
 <h2 style="font-size:1.5rem;margin:2rem 0 0.5rem 0;">Publications</h2>
 
-<!-- Make [Preprint]/[PDF]/[Code] GREEN no matter what the theme says -->
 <style>
   a.pub-tag, a.pub-tag:visited {
     color: #0a8a3a !important;
@@ -244,20 +244,6 @@
     text-decoration: none;
   }
 </style>
-
-<!-- {{/* ---- Data ---- */}}
-{{ $journals := slice
-  (dict
-    "id" "J1"
-    "authors" "<strong>Bagchi, D.</strong>, Bathgate, K., and Boyles, S. D."
-    "year" "2025"
-    "title" "Throughput Curves for Seaport Systems: A Simulation-Based Study"
-    "venue" "Transportation Research Part E"
-    "preprint" "#"
-    "pdf" "#"
-    "code" "https://github.com/spartalab/port-simulation"
-  )
-}} -->
 
 {{ $underReview := slice
   (dict
@@ -290,20 +276,6 @@
   (dict "id" "W1" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, and Boyles, S. D."
         "title" "Use Of AIS Data To Characterize Vessel Mix In Houston Port Operations For Simulation.")
 }}
-
-<!-- <h3 style="font-size:1.1rem;margin:1rem 0 0.25rem 0;">Journal articles</h3>
-<ul style="list-style:disc;padding-left:1.25rem;display:flex;flex-direction:column;gap:0.75rem;margin:0 0 1rem 0;"> -->
-  <!-- {{ range $j := $journals }}
-    <li>
-      {{ $j.authors | safeHTML }} ({{ $j.year }}).
-      {{ $j.title | title }}.
-      <em>{{ $j.venue }}</em>.
-      {{ if $j.preprint }}<a class="pub-tag" href="{{ $j.preprint }}">[Preprint]</a>{{ end }}
-      {{ if $j.pdf }}<a class="pub-tag" href="{{ $j.pdf }}">[PDF]</a>{{ end }}
-      {{ if $j.code }}<a class="pub-tag" href="{{ $j.code }}">[Code]</a>{{ end }}
-    </li>
-  {{ end }}
-</ul> -->
 
 <h3 style="font-size:1.1rem;margin:1rem 0 0.25rem 0;">Manuscripts under review</h3>
 <ul style="list-style:disc;padding-left:1.25rem;display:flex;flex-direction:column;gap:0.75rem;margin:0 0 1rem 0;">
