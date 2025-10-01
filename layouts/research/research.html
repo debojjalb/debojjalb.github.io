@@ -245,7 +245,20 @@
   }
 </style>
 
-{{ $underReview := slice
+{{ $accepted := slice
+  (dict
+    "id" "M1"
+    "authors" "Agarwal, P.*, <strong>Bagchi, D.</strong>*, Rambha, T., and Pandey, V."
+    "year" "2024"
+    "title" "A Bi-criterion Steiner Traveling Salesperson Problem with Time Windows for Last-Mile Electric Vehicle Logistics"
+    "venue" "Computers & Operations Research, in print"
+    "code" "https://github.com/transnetlab/last-mile-ev-logistics"
+    "preprint" "https://arxiv.org/abs/2409.14848"
+    "note" "* Equal contribution"
+  )
+}}
+
+<!-- {{ $underReview := slice
   (dict
     "id" "M1"
     "authors" "Agarwal, P.*, <strong>Bagchi, D.</strong>*, Rambha, T., and Pandey, V."
@@ -256,28 +269,54 @@
     "preprint" "https://arxiv.org/abs/2409.14848"
     "note" "* Equal contribution"
   )
-}}
+}} -->
 
 {{ $inPrep := slice
-  (dict "id" "W8" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, and Boyles, S. D."
-        "title" "Resilience Metrics for Characterizing Hurricanes in Ports.")
-  (dict "id" "W7" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, and Boyles, S. D."
-        "title" "Characterizing Anchorage Queue Dynamics Due To Channel Fog Closures At The Port Of Houston.")
-  (dict "id" "W6" "authors" "<strong>Bagchi, D.</strong> and Boyles, S. D."
-        "title" "A Dynamic Ultimate Capacity Framework For Seaport Systems.")
-  (dict "id" "W5" "authors" "<strong>Bagchi, D.</strong> and Boyles, S. D."
-        "title" "A Simulation Framework For Modelling Multimodal Port Operations With A Case Study On The Port Of Houston — A Throughput Curve Approach.")
-  (dict "id" "W4" "authors" "<strong>Bagchi, D.</strong> and Boyles, S. D."
-        "title" "Error Bounds For Stochastic User Equilibrium Traffic Assignment.")
-  (dict "id" "W3" "authors" "Robbennolt, J., <strong>Bagchi, D.</strong>, and Boyles, S. D."
-        "title" "Localized Queue Spillback With Uncertain Demand.")
-  (dict "id" "W2" "authors" "<strong>Bagchi, D.</strong>, Bathgate, K., and Boyles, S. D."
-        "title" "A Queuing-Theory-Based Operating Capacity Model For Multimodal Port Operations.")
-  (dict "id" "W1" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, and Boyles, S. D."
-        "title" "Use Of AIS Data To Characterize Vessel Mix In Houston Port Operations For Simulation.")
+ (dict "id" "W8" "authors" "<strong>Bagchi, D.</strong>, Bathgate, K., Boyles, S. D., Mitchell, K. N., Asborno, M. I., and Kress, M. M."
+ "title" "A Queuing Theory-Based Operating Capacity Model For Multi-Modal Port Operations."
+ "year" "2025"
+ "note" "Preprint"
+ "link" "https://arxiv.org/abs/2509.22961")
+ (dict "id" "W7" "authors" "<strong>Bagchi, D.</strong>, Bathgate, K., Boyles, S. D., Mitchell, K. N., and Asborno, M. I."
+ "title" "A Dynamic Ultimate Capacity Framework For Seaport Systems."
+ "year" "2025")
+ (dict "id" "W6" "authors" "<strong>Bagchi, D.</strong>*, Bathgate, K.*, Boyles, S. D., Mitchell, K. N., Asborno, M. I., and Kress, M. M."
+ "title" "A Generalizable Simulation Framework For Evaluating The Resilience And Capacity Of Multimodal Port Operations."
+ "year" "2025"
+ "note" "Equal contribution"
+ "link" "https://github.com/spartalab/port-simulation"
+ "linkType" "Code")
+ (dict "id" "W5" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, Boyles, S. D., Mitchell, K. N., Asborno, M. I., and Kress, M. M."
+ "title" "Hurricane Characteristics Influencing Multimodal Freight Resilience At The Port Of Houston."
+ "year" "2025")
+ (dict "id" "W4" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, Boyles, S. D., Mitchell, K. N., Asborno, M. I., and Kress, M. M."
+ "title" "Characterizing Anchorage Queue Dynamics Due To Channel Fog Closures At The Port Of Houston."
+ "year" "2025")
+ (dict "id" "W3" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, Boyles, S. D., Mitchell, K. N., Asborno, M. I., and Kress, M. M."
+ "title" "Use Of AIS Data To Characterize Vessel Mix In Houston Port Operations For Simulation."
+ "year" "2025")
+ (dict "id" "W2" "authors" "Robbennolt, J., <strong>Bagchi, D.</strong>, and Boyles, S. D."
+ "title" "Dynamic Traffic Assignment With Uncertain Demand: A Localized Queue Spillback Approach.")
+ (dict "id" "W1" "authors" "<strong>Bagchi, D.</strong> and Boyles, S. D."
+ "title" "Error Bounds For Stochastic User Equilibrium Traffic Assignment.")
 }}
 
-<h3 style="font-size:1.1rem;margin:1rem 0 0.25rem 0;">Manuscripts under review</h3>
+<h3 style="font-size:1.1rem;margin:1rem 0 0.25rem 0;">Publications</h3>
+<ul style="list-style:disc;padding-left:1.25rem;display:flex;flex-direction:column;gap:0.75rem;margin:0 0 1rem 0;">
+  {{ range $p := $accepted }}
+    <li>
+      {{ $p.authors | safeHTML }} ({{ $p.year }}).
+      {{ $p.title | title }}.
+      <em>{{ $p.venue }}</em>.
+      {{ if $p.preprint }}<a class="pub-tag" href="{{ $p.preprint }}">[Preprint]</a>{{ end }}
+      {{ if $p.pdf }}<a class="pub-tag" href="{{ $p.pdf }}">[PDF]</a>{{ end }}
+      {{ if $p.code }}<a class="pub-tag" href="{{ $p.code }}">[Code]</a>{{ end }}
+      {{ with $p.note }} <span style="color:#555;">({{ . | safeHTML }})</span>{{ end }}
+    </li>
+  {{ end }}
+</ul>
+
+<!-- <h3 style="font-size:1.1rem;margin:1rem 0 0.25rem 0;">Manuscripts under review</h3>
 <ul style="list-style:disc;padding-left:1.25rem;display:flex;flex-direction:column;gap:0.75rem;margin:0 0 1rem 0;">
   {{ range $p := $underReview }}
     <li>
@@ -290,7 +329,7 @@
       {{ with $p.note }} <span style="color:#555;">({{ . | safeHTML }})</span>{{ end }}
     </li>
   {{ end }}
-</ul>
+</ul> -->
 
 <h3 style="font-size:1.1rem;margin:0.75rem 0 0.25rem 0;">Manuscripts in preparation</h3>
 <ul style="list-style:disc;padding-left:1.25rem;display:flex;flex-direction:column;gap:0.5rem;margin:0;">
@@ -312,35 +351,50 @@
 <h2 style="font-size:1.5rem;margin:2rem 0 0.5rem 0;">Refereed conference presentations</h2>
 
 {{ $confs := slice
-  (dict "id" "C8" "year" "2025" "authors" "Robbennolt, J., <strong>Bagchi, D.</strong> and Boyles, S. D."
-        "title" "Localized Queue Spillback With Uncertain Demand."
-        "venue" "10th International Symposium on Dynamic Traffic Assignment (DTA 2025), Salerno, Italy"
-        "note" "Accepted")
-  (dict "id" "C7" "year" "2025" "authors" "<strong>Bagchi, D.</strong> and Boyles, S. D."
-        "title" "Error Bounds For Stochastic User Equilibrium Traffic Assignment."
-        "venue" "12th Triennial Symposium on Transportation Analysis (TRISTAN XII), Okinawa, Japan"
-        "note" "Accepted")
-  (dict "id" "C6" "year" "2025" "authors" "<strong>Bagchi, D.</strong>, Bathgate, K., and Boyles, S. D."
-        "title" "A Queuing-Theory-Based Operating Capacity Model For Multimodal Port Operations."
-        "venue" "Transportation Research Board (TRB) 104th Annual Meeting, Washington, D.C., USA"
-        "note" "Lectern session")
-  (dict "id" "C5" "year" "2025" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, and Boyles, S. D."
-        "title" "Use Of AIS Data To Characterize Vessel Mix In Houston Port Operations For Simulation."
-        "venue" "Transportation Research Board (TRB) 104th Annual Meeting, Washington, D.C., USA"
-        "note" "Lectern session")
-  (dict "id" "C4" "year" "2024" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, and Boyles, S. D."
-        "title" "Identifying Capacities In A Multimodal Maritime Freight Network."
-        "venue" "INFORMS Annual Meeting 2024, Seattle, USA")
-  (dict "id" "C3" "year" "2024" "authors" "<strong>Bagchi, D.</strong>, and Boyles, S. D."
-        "title" "Error Bounds For Stochastic User Equilibrium Traffic Assignment."
-        "venue" "INFORMS Annual Meeting 2024, Seattle, USA"
-        "note" "TSL Invited session")
-  (dict "id" "C2" "year" "2023" "authors" "<strong>Bagchi, D.</strong>, Agarwal, P., Rambha, T., and Pandey, V."
-        "title" "A Local Search Heuristic For Bi-Criterion Steiner Travelling Salesman Problem."
-        "venue" "Transportation Research Board (TRB) 102nd Annual Meeting 2023, Washington, D.C., USA")
-  (dict "id" "C1" "year" "2022" "authors" "<strong>Bagchi, D.</strong>, Agarwal, P., Rambha, T., and Pandey, V."
-        "title" "A Local Search Heuristic For Bi-Criterion Steiner Travelling Salesman Problem."
-        "venue" "INFORMS Annual Meeting 2022, Indianapolis, USA")
+ (dict "id" "C12" "year" "2026" "authors" "<strong>Bagchi, D.</strong>, Bathgate, K., Boyles, S. D., and Asborno, M. I."
+ "title" "A Dynamic Ultimate Capacity Framework For Seaport Systems."
+ "venue" "Transportation Research Board (TRB) 105th Annual Meeting, Washington, D.C., USA"
+ "note" "Accepted")
+ (dict "id" "C11" "year" "2026" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, Boyles, S. D., Mitchell, K. N., Asborno, M. I., and Kress, M. M."
+ "title" "Characterizing Anchorage Queue Dynamics Due To Channel Fog Closures At The Port Of Houston."
+ "venue" "Transportation Research Board (TRB) 105th Annual Meeting, Washington, D.C., USA"
+ "note" "Accepted")
+ (dict "id" "C10" "year" "2026" "authors" "Robbennolt, J., <strong>Bagchi, D.</strong>, and Boyles, S. D."
+ "title" "Dynamic Traffic Assignment With Uncertain Demand: A Localized Queue Spillback Approach."
+ "venue" "Transportation Research Board (TRB) 105th Annual Meeting, Washington, D.C., USA"
+ "note" "Accepted")
+ (dict "id" "C9" "year" "2025" "authors" "Robbennolt, J., <strong>Bagchi, D.</strong> and Boyles, S. D."
+ "title" "Localized Queue Spillback With Uncertain Demand."
+ "venue" "10th International Symposium on Dynamic Traffic Assignment (DTA 2025), Salerno, Italy")
+ (dict "id" "C8" "year" "2025" "authors" "<strong>Bagchi, D.</strong> and Boyles, S. D."
+ "title" "Error Bounds For Stochastic User Equilibrium Traffic Assignment."
+ "venue" "12th Triennial Symposium on Transportation Analysis (TRISTAN XII), Okinawa, Japan")
+ (dict "id" "C7" "year" "2024" "authors" "<strong>Bagchi, D.</strong>, Bathgate, K., and Boyles, S. D."
+ "title" "A Framework For Measuring Maritime Port System Capacities With Limited Input Data."
+ "venue" "INFORMS Annual Meeting 2024, Seattle, USA"
+ "note" "Invited session")
+ (dict "id" "C6" "year" "2025" "authors" "<strong>Bagchi, D.</strong>, Bathgate, K., and Boyles, S. D."
+ "title" "A Queuing-Theory-Based Operating Capacity Model For Multimodal Port Operations."
+ "venue" "Transportation Research Board (TRB) 104th Annual Meeting, Washington, D.C., USA"
+ "note" "Lectern session")
+ (dict "id" "C5" "year" "2025" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, and Boyles, S. D."
+ "title" "Use Of AIS Data To Characterize Vessel Mix In Houston Port Operations For Simulation."
+ "venue" "Transportation Research Board (TRB) 104th Annual Meeting, Washington, D.C., USA"
+ "note" "Lectern session")
+ (dict "id" "C4" "year" "2024" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, and Boyles, S. D."
+ "title" "Identifying Capacities In A Multimodal Maritime Freight Network."
+ "venue" "INFORMS Annual Meeting 2024, Seattle, USA"
+ "note" "Invited session")
+ (dict "id" "C3" "year" "2024" "authors" "<strong>Bagchi, D.</strong>, and Boyles, S. D."
+ "title" "Error Bounds For Stochastic User Equilibrium Traffic Assignment."
+ "venue" "INFORMS Annual Meeting 2024, Seattle, USA"
+ "note" "TSL Invited session")
+ (dict "id" "C2" "year" "2023" "authors" "<strong>Bagchi, D.</strong>, Agarwal, P., Rambha, T., and Pandey, V."
+ "title" "A Local Search Heuristic For Bi-Criterion Steiner Travelling Salesman Problem."
+ "venue" "Transportation Research Board (TRB) 102nd Annual Meeting 2023, Washington, D.C., USA")
+ (dict "id" "C1" "year" "2022" "authors" "<strong>Bagchi, D.</strong>, Agarwal, P., Rambha, T., and Pandey, V."
+ "title" "A Local Search Heuristic For Bi-Criterion Steiner Travelling Salesman Problem."
+ "venue" "INFORMS Annual Meeting 2022, Indianapolis, USA")
 }}
 
 <ul style="list-style:disc;padding-left:1.25rem;display:flex;flex-direction:column;gap:0.75rem;margin:0;">
