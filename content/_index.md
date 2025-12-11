@@ -61,7 +61,7 @@ sections:
       text: |
         [**For more details and pictures, see my travel page →**](https://debojjalb.github.io/travel/)
 
-        **Dec 2025**: I received the CUTC Milton Pikarsky Memorial Award for my master’s thesis on error bounds for stochastic user equilibrium traffic assignment. The award recognizes the best master’s thesis in science and technology in transportation studies across the U.S.
+        **Dec 2025:** I received the CUTC Milton Pikarsky Memorial Award for my master’s thesis on error bounds for stochastic user equilibrium traffic assignment. The award recognizes the best master’s thesis in science and technology in transportation studies across the U.S.
 
         **Nov 2025:** Our manuscript on bi-criterion Steiner TSP for last-mile electric vehicle logistics is accepted Computers & Operations Research. [Here's a link to the paper.](https://doi.org/10.1016/j.cor.2025.107286)
 
