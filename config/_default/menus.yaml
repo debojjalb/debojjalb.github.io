@@ -16,10 +16,10 @@ main:
   # - name: Talks
   #   url: /#talks
   #   weight: 12
-  - name: Experience
-    url: experience/
-    weight: 12
-  - name: Travel
+  # - name: Experience
+  #   url: experience/
+  #   weight: 12
+  - name: Diary
     url: /travel/
     weight: 13
   # - name: Talks

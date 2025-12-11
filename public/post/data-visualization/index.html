@@ -537,22 +537,8 @@
         <a
           class="nav-link "
           
-          href="/experience/"
-        >Experience</a
-        >
-      </li>
-      
-      
-      
-      
-      
-      
-      <li class="nav-item">
-        <a
-          class="nav-link "
-          
           href="/travel/"
-        >Travel</a
+        >Diary</a
         >
       </li>
       
@@ -962,7 +948,7 @@
 
 
 
-<div id="chart-592867431" class="chart"></div>
+<div id="chart-174253869" class="chart"></div>
 <script>
   async function fetchChartJSON() {
     console.debug('Hugo Blox fetching chart JSON...')
@@ -980,7 +966,7 @@
 
       fetchChartJSON().then(chart => {
         console.debug('Plotting chart...')
-        window.Plotly.newPlot('chart-592867431', chart.data, chart.layout, {responsive: true});
+        window.Plotly.newPlot('chart-174253869', chart.data, chart.layout, {responsive: true});
       });
     }, 500 );
   })();
