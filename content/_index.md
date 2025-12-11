@@ -61,13 +61,15 @@ sections:
       text: |
         [**For more details and pictures, see my travel page →**](https://debojjalb.github.io/travel/)
 
-        **Sep, 2025:** I will presenting our work on "A framework for measuring maritime port system capacities with limited input data" at INFORMS Annual Meeting 2025 in Atlanta (2:45-4:00 PM, TSL invited session on Network Design).
+        **Dec 2025**: I received the CUTC Milton Pikarsky Memorial Award for my master’s thesis on error bounds for stochastic user equilibrium traffic assignment. The award recognizes the best master’s thesis in science and technology in transportation studies across the U.S.
+
+        **Nov 2025:** Our manuscript on bi-criterion Steiner TSP for last-mile electric vehicle logistics is accepted Computers & Operations Research. [Here's a link to the paper.](https://doi.org/10.1016/j.cor.2025.107286)
+
+        **Sep 2025:** I will presenting our work on "A framework for measuring maritime port system capacities with limited input data" at INFORMS Annual Meeting 2025 in Atlanta (2:45-4:00 PM, TSL invited session on Network Design).
 
         **Sep 2025:** I have been appointed as Member of the TRB Standing Committee on Intermodal Freight and Truck Transportation for the 2025–2028 term. I aim to contrinute to the committee on multimodal port operations, capacity, and resilience. [More details here.](https://www.linkedin.com/posts/debojjal-bagchi_excited-to-share-that-following-the-recent-activity-7365922069374537730-Qcfo?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-24_ABlBO97b8VIUpjxdDlIw_oB4ljeX8)
         
         **July 2025:** I presented master's thesis on Error Bounds for Stochastic User Equilibrium Traffic Assignment at TRISTAN XII in Okinawa, Japan, focusing on early termination criteria for stochastic traffic assignment problems. [More details here.](https://www.linkedin.com/posts/debojjal-bagchi_presented-my-masters-thesis-link-in-comments-activity-7351498036625219584-FcWJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-24_ABlBO97b8VIUpjxdDlIw_oB4ljeX8)
         
         **Apr 2025:** Our paper on localised queue spillback was accepted at [DTA 2025](https://www.motusanimi.it/dta-abstracts/) in Salerno, Italy on localized queue spillback with uncertain demand.
-        
-        **Apr 2025:** Our manuscript on bi-criterion Steiner TSP for last-mile electric vehicle logistics is under review in Computers & Operations Research. [A preprint is available here.](https://arxiv.org/abs/2409.14848)
 ---
