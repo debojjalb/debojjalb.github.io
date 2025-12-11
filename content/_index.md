@@ -59,13 +59,13 @@ sections:
         **MSE, Civil Engineering (Transportation Systems)** — [The University of Texas at Austin](https://www.utexas.edu/) (2023–25)  
         <span style="display:block; margin-left:1.5rem;">
           **Thesis:** *Error Bounds for Stochastic User Equilibrium Traffic Assignment* • **Advisor:** [Stephen D. Boyles](https://www.caee.utexas.edu/people/faculty/faculty-directory/boyles)  
-          **Winner:** **CUTC Milton Pikarsky Award for Outstanding MS Thesis in Science and Technology**
+          **Winner:** **CUTC Milton Pikarsky Award for outstanding MS thesis in science and technology**
         </span>
 
         **BS (Research), Earth & Environmental Science (Minor: Mathematics)** — [Indian Institute of Science, Bengaluru](https://iisc.ac.in/) (2019–23)  
         <span style="display:block; margin-left:1.5rem;">
           **Thesis:** *Energy Efficient & Safe Routing for Last-Mile Logistics* • **Advisor:** [Tarun Rambha](https://civil.iisc.ac.in/people/faculty/tarun-rambha/)  
-          **Winner:** **Institute Gold Medal**
+          **Winner:** **Institute Gold Medal for highest major GPA**
         </span>
 
                 
