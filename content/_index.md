@@ -6,7 +6,7 @@ type: landing
 
 design:
   # Default section spacing
-  spacing: "2rem"
+  spacing: "0rem"
 
 sections:
   - block: resume-biography-3
@@ -32,8 +32,11 @@ sections:
           parallax: false
   - block: custom
     content:
-      title: 'My Research'
+      # title: 'Biography'
       text: |-
+
+        <span style="font-size: 1.8rem; font-weight: 700;">Research interests</span>
+
         My work centers on three interconnected domains: **trucking infrastructure**, **port–hinterland systems**, and **traffic assignment modeling**. Within these areas, I use operations research techniques and data-driven methods to study and improve multimodal freight and logistics networks.
         
         I am particularly interested in how ports connect to their hinterlands and how bottlenecks in one component ripple across the system. My focus includes capacity measurement, anchorage and terminal queues, resilience during disruptions, re-routing, and the interaction of waterside, terminal, and landside operations. I am also drawn to questions of data quality and integration, as well as economic and policy aspects such as port pricing, demurrage, environmental costs, and the safety and sustainability of large-scale multimodal freight systems.
@@ -42,11 +45,23 @@ sections:
         
         **Allied Focus:** Operations Research, Queueing Theory, Discrete Event Simulation, Stochastic User Equilibrium, Network Optimization, Data-Driven Methods
 
-        Beyond publications, I am a strong advocate of open source research and strive to release large-scale frameworks along with documentation for community use.
-        
+        I am also a strong advocate of open source research and strive to release large-scale frameworks along with documentation for community use.
+
         [**To know more, view my research page →**](https://debojjalb.github.io/research/)
-        
-        Please reach out to collaborate 😃
+
+        <span style="font-size: 1.8rem; font-weight: 700;">Education</span>
+
+        **PhD, Civil Engineering (Transportation Systems)** — [The University of Texas at Austin](https://www.utexas.edu/) (2023–27, exp.)  
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Thesis:** TBD • **Advisor:** [Stephen D. Boyles](https://www.caee.utexas.edu/people/faculty/faculty-directory/boyles)  
+
+        **MSE, Civil Engineering (Transportation Systems)** — [The University of Texas at Austin](https://www.utexas.edu/) (2023–25)  
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Thesis:** *Error Bounds for Stochastic User Equilibrium Traffic Assignment* • **Advisor:** [Stephen D. Boyles](https://www.caee.utexas.edu/people/faculty/faculty-directory/boyles)  
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Winner:** **CUTC Milton Pikarsky Award for Outstanding MS Thesis in Science and Technology**
+
+        **BS (Research), Earth & Environmental Science (Minor: Mathematics)** — [Indian Institute of Science, Bengaluru](https://iisc.ac.in/) (2019–23)  
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Thesis:** *Energy Efficient & Safe Routing for Last-Mile Logistics* • **Advisor:** [Tarun Rambha](https://civil.iisc.ac.in/people/faculty/tarun-rambha/)  
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Winner:** **Institute Gold Medal**
+                
     design:
       background:
         color: '#f0fdf4'
@@ -57,9 +72,12 @@ sections:
   - block: custom
     id: recent-updates
     content:
-      title: 'Recent Updates'
+      # title: 'Recent Updates'
       text: |
+
+        <span style="display:block; font-size: 1.8rem; font-weight: 700; line-height: 1.1; margin-bottom: 0.1rem;">Recent updates</span>
         [**For more details and pictures, see my travel page →**](https://debojjalb.github.io/travel/)
+
 
         **Dec 2025:** I received the CUTC Milton Pikarsky Memorial Award for my master’s thesis on error bounds for stochastic user equilibrium traffic assignment. The award recognizes the best master’s thesis in science and technology in transportation studies across the U.S.
 
@@ -72,4 +90,5 @@ sections:
         **July 2025:** I presented master's thesis on Error Bounds for Stochastic User Equilibrium Traffic Assignment at TRISTAN XII in Okinawa, Japan, focusing on early termination criteria for stochastic traffic assignment problems. [More details here.](https://www.linkedin.com/posts/debojjal-bagchi_presented-my-masters-thesis-link-in-comments-activity-7351498036625219584-FcWJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-24_ABlBO97b8VIUpjxdDlIw_oB4ljeX8)
         
         **Apr 2025:** Our paper on localised queue spillback was accepted at [DTA 2025](https://www.motusanimi.it/dta-abstracts/) in Salerno, Italy on localized queue spillback with uncertain demand.
+    
 ---
