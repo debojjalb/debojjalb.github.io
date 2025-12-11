@@ -52,15 +52,22 @@ sections:
         <span style="font-size: 1.8rem; font-weight: 700;">Education</span>
 
         **PhD, Civil Engineering (Transportation Systems)** — [The University of Texas at Austin](https://www.utexas.edu/) (2023–27, exp.)  
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Thesis:** TBD • **Advisor:** [Stephen D. Boyles](https://www.caee.utexas.edu/people/faculty/faculty-directory/boyles)  
+        <span style="display:block; margin-left:1.5rem;">
+          **Thesis:** TBD • **Advisor:** [Stephen D. Boyles](https://www.caee.utexas.edu/people/faculty/faculty-directory/boyles)
+        </span>
 
         **MSE, Civil Engineering (Transportation Systems)** — [The University of Texas at Austin](https://www.utexas.edu/) (2023–25)  
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Thesis:** *Error Bounds for Stochastic User Equilibrium Traffic Assignment* • **Advisor:** [Stephen D. Boyles](https://www.caee.utexas.edu/people/faculty/faculty-directory/boyles)  
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Winner:** **CUTC Milton Pikarsky Award for Outstanding MS Thesis in Science and Technology**
+        <span style="display:block; margin-left:1.5rem;">
+          **Thesis:** *Error Bounds for Stochastic User Equilibrium Traffic Assignment* • **Advisor:** [Stephen D. Boyles](https://www.caee.utexas.edu/people/faculty/faculty-directory/boyles)  
+          **Winner:** **CUTC Milton Pikarsky Award for Outstanding MS Thesis in Science and Technology**
+        </span>
 
         **BS (Research), Earth & Environmental Science (Minor: Mathematics)** — [Indian Institute of Science, Bengaluru](https://iisc.ac.in/) (2019–23)  
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Thesis:** *Energy Efficient & Safe Routing for Last-Mile Logistics* • **Advisor:** [Tarun Rambha](https://civil.iisc.ac.in/people/faculty/tarun-rambha/)  
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**Winner:** **Institute Gold Medal**
+        <span style="display:block; margin-left:1.5rem;">
+          **Thesis:** *Energy Efficient & Safe Routing for Last-Mile Logistics* • **Advisor:** [Tarun Rambha](https://civil.iisc.ac.in/people/faculty/tarun-rambha/)  
+          **Winner:** **Institute Gold Medal**
+        </span>
+
                 
     design:
       background:
