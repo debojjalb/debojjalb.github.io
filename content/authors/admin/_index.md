@@ -20,12 +20,12 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Graduate Research Assistant
+role: Doctoral Student
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
   - name: The University of Texas at Austin
-    url: https://openai.com/
+    url: https://caee.utexas.edu
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
