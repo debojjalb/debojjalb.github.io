@@ -1,446 +1,505 @@
 {{ define "main" }}
-<main class="container" style="max-width:980px;margin:0 auto;padding:2rem 1rem;">
+<style>
+  /* --- Global & Typography --- */
+  .research-container {
+    max-width: 1080px; /* Widened to allow more horizontal space */
+    margin: 0 auto;
+    padding: 3rem 1rem;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    color: #333;
+  }
+  .page-title {
+    font-size: 2.25rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0 0 1.5rem 0;
+    color: #111;
+  }
+  .section-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 3rem 0 1.25rem 0;
+    color: #111;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.5rem;
+  }
+  .sub-title {
+    font-size: 1.15rem;
+    font-weight: 600;
+    margin: 1.75rem 0 0.75rem 0;
+    color: #222;
+  }
+  .text-muted {
+    color: #666;
+    font-size: 0.95rem;
+  }
+  .prose {
+    margin-bottom: 2.5rem;
+    color: #444;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    max-width: none !important; /* Overrides strict theme typography widths */
+  }
 
-  <h1 style="font-size:2rem;line-height:1.2;margin:0 0 1rem 0;">Research</h1>
-  {{ with .Content }}
-    <div class="prose" style="margin-bottom:1.5rem;">{{ . }}</div>
-  {{ end }}
+  /* --- Intro Layout --- */
+  .intro-layout {
+    display: flex;
+    gap: 2.5rem; /* Slightly larger gap for breathing room */
+    align-items: flex-start;
+    margin-bottom: 3rem;
+    width: 100%;
+  }
+  .intro-photo {
+    flex-shrink: 0;
+    width: 220px; 
+    height: auto;
+    border-radius: 8px; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); 
+  }
+  .intro-text {
+    flex: 1; /* Forces the text to take up all remaining horizontal space */
+    min-width: 0; 
+  }
+  .intro-text p {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    color: #444;
+  }
+  .intro-text a {
+    color: #15803d; /* Brand green */
+    text-decoration: none;
+    font-weight: 600;
+  }
+  .intro-text a:hover {
+    text-decoration: underline;
+  }
+  @media (max-width: 768px) {
+    .intro-layout {
+      flex-direction: column;
+      align-items: center;
+    }
+    .intro-photo {
+      width: 180px;
+    }
+  }
+
+  /* --- Classic Academic Tabs (Green Palette) --- */
+  .tabs-nav {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #eaeaea;
+  }
+  .tab-btn {
+    background: transparent;
+    color: #666;
+    border: none;
+    border-bottom: 2px solid transparent;
+    padding: 0.5rem 0;
+    margin-bottom: -1px; /* Overlap the container border */
+    cursor: pointer;
+    font-size: 1.05rem;
+    font-weight: 500;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+  .tab-btn:hover {
+    color: #15803d; /* Dark green hover */
+  }
+  .tab-btn.active {
+    color: #15803d; /* Brand green */
+    border-bottom-color: #15803d;
+    font-weight: 600;
+  }
+  .tab-panel {
+    display: none;
+  }
+  .tab-panel.active {
+    display: block;
+    animation: fadeIn 0.2s ease-in;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+
+  /* --- Publication Lists --- */
+  .pub-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+  .pub-item {
+    display: flex;
+    gap: 0.75rem;
+    align-items: baseline;
+    line-height: 1.5;
+  }
+  .pub-bullet {
+    color: #999;
+    font-size: 0.9em;
+  }
+  .pub-title {
+    font-weight: 600;
+    color: #111;
+    text-decoration: none;
+    transition: color 0.1s ease;
+  }
+  .pub-title:hover {
+    color: #15803d; /* Brand green */
+    text-decoration: underline;
+  }
+  .pub-meta {
+    display: block;
+    color: #555;
+    font-size: 0.95rem;
+    margin-top: 0.1rem;
+  }
+  .pub-desc {
+    color: #444;
+    margin-top: 0.35rem;
+    font-size: 0.95rem;
+  }
+
+  /* --- Links & Tags --- */
+  .action-links {
+    display: flex;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+    margin-top: 0.4rem;
+  }
+  .pub-tag {
+    color: #15803d; /* Brand green */
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+  }
+  .pub-tag:hover {
+    text-decoration: underline;
+  }
+
+  /* --- Basic Lists --- */
+  .basic-list {
+    list-style: disc;
+    padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    color: #333;
+    line-height: 1.5;
+    margin: 0;
+  }
+  .basic-list li {
+    padding-left: 0.25rem;
+  }
+</style>
+
+<main class="research-container">
+
+  <h1 class="page-title">Research</h1>
+  
+  {{/* =========================
+       INTRO & PHOTO LAYOUT
+     ========================= */}}
+  <div class="intro-layout">
+    <img src="{{ relURL "website_photos/photo.jpeg" }}" alt="Debojjal Bagchi" class="intro-photo">
+    
+    <div class="intro-text">
+      <p>My work centers on three interconnected domains: <strong>trucking infrastructure</strong>, <strong>port–hinterland systems</strong>, and <strong>traffic assignment modeling</strong>. Within these areas, I use operations research techniques and data-driven methods to study and improve multimodal freight and logistics networks. The selected publications below highlight projects that best reflect my research interests and the balance I aim to strike between methodological contributions and real-world empirical applications.</p>
+      
+      <p>Beyond publications, I am a strong advocate of <strong>open source research</strong> and strive to release large-scale frameworks along with documentation for community use. Scroll down to get a list of those. This page also includes my conference presentations and journal publications, which I update regularly with links to supplementary material and code for replicating results (though they may not always be fully up to date). For an up-to-date list, you can <a href="https://debojjalb.github.io/uploads/resume.pdf" target="_blank" rel="noopener noreferrer">download my resume</a>.</p>
+    </div>
+  </div>
+
 
   {{/* =========================
-       SECTION CONFIG (edit me)
+       SECTION CONFIG
      ========================= */}}
-{{ $sectionMeta := dict
-      "port" (dict
-        "label" "Maritime logistics"
-        "blurb" "I am interested in how ports connect to their hinterlands and how bottlenecks in one component ripple across the system. My focus includes capacity measurement, anchorage and terminal queues, resilience during disruptions, re-routing, and the interaction of waterside, terminal, and landside operations. I am also drawn to questions of data quality and integration, as well as economic and policy aspects such as port pricing, demurrage, environmental costs, and the safety and sustainability of large-scale multimodal freight systems.<br><br>Some publications that reflect these interests include:<br><br>"
-      )
+  {{ $sectionMeta := dict
+        "port" (dict
+          "label" "Maritime logistics"
+          "blurb" "I am interested in how ports connect to their hinterlands and how bottlenecks in one component ripple across the system. My focus includes capacity measurement, anchorage and terminal queues, resilience during disruptions, re-routing, and the interaction of waterside, terminal, and landside operations. I am also drawn to questions of data quality and integration, as well as economic and policy aspects such as port pricing, demurrage, environmental costs, and the safety and sustainability of large-scale multimodal freight systems.<br><br>Some publications that reflect these interests include:"
+        )
         "truck" (dict
-        "label" "Trucking logistics"
-        "blurb" "I am interested in routing and scheduling problems in freight logistics, especially extensions of classic vehicle routing problems (VRPs). These often involve multiple objectives and practical constraints such as time windows. My interests also include modern contexts like last-mile deliveries and electric freight systems.<br><br>Some publications that reflect these interests include:<br><br>"
-      )
-      "ta" (dict
-        "label" "Traffic Assignment"
-        "blurb" "I am interested in the efficiency and robustness of traffic assignment models, particularly under imperfect or uncertain data. This includes probabilistic route choice models like stochastic user equilibrium, methods for quantifying error when algorithms terminate early, and approaches to managing queue spillback in dynamic traffic assignment. More broadly, my interest lies in building data-efficient, reliable models that can inform real-world planning.<br><br>Some publications that reflect these interests include:<br><br>"
-      )
-}}
-
-
-
+          "label" "Trucking logistics"
+          "blurb" "I am interested in routing and scheduling problems in freight logistics, especially extensions of classic vehicle routing problems (VRPs). These often involve multiple objectives and practical constraints such as time windows. My interests also include modern contexts like last-mile deliveries and electric freight systems.<br><br>Some publications that reflect these interests include:"
+        )
+        "ta" (dict
+          "label" "Traffic Assignment"
+          "blurb" "I am interested in the efficiency and robustness of traffic assignment models, particularly under imperfect or uncertain data. This includes probabilistic route choice models like stochastic user equilibrium, methods for quantifying error when algorithms terminate early, and approaches to managing queue spillback in dynamic traffic assignment. More broadly, my interest lies in building data-efficient, reliable models that can inform real-world planning.<br><br>Some publications that reflect these interests include:"
+        )
+  }}
 
   {{ $sectionOrder := slice "port" "truck" "ta" }}
 
   {{/* =========================
-       LOAD & PARSE publications.csv
+       DOMAIN PUBLICATIONS (HARDCODED)
      ========================= */}}
-  {{ $rows := slice }}
-  {{ with resources.Get "publications.csv" }}
-    {{ $rows = . | transform.Unmarshal (dict "delimiter" ",") }}
-  {{ end }}
+  {{ $domainPubs := slice
+    (dict
+      "section" "port"
+      "title" "Measuring capacities in multimodal maritime port systems with anchorage queues"
+      "authors" "<strong>Bagchi, D.</strong>*, Bathgate, K.*, Mitchell, K. N., Asborno, M. I., Kress, M. M., and Boyles, S. D."
+      "year" "2025"
+      "description" "Port capacity models often fail to distinguish between sustainable long-term operations and absolute maximum throughput during demand surges. We develop a framework to estimate both: operating capacity using a parsimonious queueing-theoretic model, and ultimate capacity by fitting differential equations to simulation outputs. Applying this to the Port of Houston, we show how to identify critical bottlenecks across different conditions, finding that liquid-bulk terminals limit stable operations while pilot availability dictates capacity during major disruptions."
+      "link" "https://doi.org/10.48550/arXiv.2509.22961"
+      "code" ""
+    )
+    (dict
+      "section" "truck"
+      "title" "A Bi-criterion Steiner Traveling Salesperson Problem with Time Windows for Last-Mile Electric Vehicle Logistics"
+      "authors" "Agarwal, P.*, <strong>Bagchi, D.</strong>*, Rambha, T., and Pandey, V."
+      "year" "2025"
+      "description" "We study energy-efficient and safe routing for last-mile delivery using electric freight vehicles. We account for regenerative braking and explicitly model left turns at intersections, which is tricky since each turn depends on three connected nodes. We frame the problem as a bi-criterion Steiner Traveling Salesperson Problem with time windows, develop exact mixed-integer programming models and local-search heuristics, and validate our methods on benchmark instances and Amazon delivery data from Austin."
+      "link" "https://arxiv.org/abs/2409.14848"
+      "code" "https://github.com/transnetlab/last-mile-ev-logistics"
+    )
+    (dict
+      "section" "ta"
+      "title" "Error Bounds for Stochastic User Equilibrium Traffic Assignment"
+      "authors" "<strong>Bagchi, D.</strong> and Boyles, S. D."
+      "year" "2025"
+      "description" "Most traffic assignment algorithms stop using rule-of-thumb measures like relative gap, but these do not guarantee how close the solution is to equilibrium. We derive upper bounds for stochastic user equilibrium that show how far any feasible solution can be from equilibrium in terms of flows and costs. These bounds give a rigorous way to assess convergence and can serve directly as stopping rules in traffic assignment. We show that the bounds are tight, converge linearly near equilibrium, and drastically can cut runtimes in network design applications."
+      "link" "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=vzSxiw4AAAAJ&citation_for_view=vzSxiw4AAAAJ:qjMakFHDy7sC"
+      "code" "https://github.com/debojjalb/SUE_Bounds"
+    )
+    (dict
+      "section" "ta"
+      "title" "Localized Queue Spillback with Uncertain Demand"
+      "authors" "Robbennolt, J., <strong>Bagchi, D.</strong>, and Boyles, S. D."
+      "year" "2025"
+      "description" "Dynamic traffic assignment models that include spillback are realistic but depend heavily on accurate demand forecasts, while those without spillback are robust but overlook critical congestion. We develop a localized spillback method that applies spillback only on links with a high likelihood of congestion, identified from demand scenarios. On the Austin network, this approach produces more reliable results than either full spillback or no spillback, while keeping the computational cost reasonable."
+      "link" ""
+      "code" ""
+    )
+  }}
 
-  {{ if not (gt (len $rows) 0) }}
-    <p style="color:#666;">No publications found (ensure <code>assets/publications.csv</code> exists).</p>
-  {{ else }}
+  {{/* ===== Research Domains ===== */}}
+  <h2 class="section-title">Research Domains</h2>
 
-    {{/* Convert [][]string -> []map using first row as header */}}
-    {{ $header := index $rows 0 }}
-    {{ $data := after 1 $rows }}
-    {{ $pubs := slice }}
-    {{ range $r := $data }}
-      {{ $m := dict }}
-      {{ range $i, $h := $header }}
-        {{ $val := "" }}
-        {{ if lt $i (len $r) }}{{ $val = index $r $i }}{{ end }}
-        {{ $m = merge $m (dict $h $val) }}
-      {{ end }}
-      {{/* numeric year for sorting */}}
-      {{ $yi := 0 }}
-      {{ with (index $m "year") }}
-        {{ $try := 0 }}{{ $try = int . }}{{ $yi = $try }}
-      {{ end }}
-      {{ $m = merge $m (dict "year_i" $yi) }}
-      {{ $pubs = $pubs | append $m }}
+  {{/* ---------- Tab Nav ---------- */}}
+  <div class="tabs-nav" role="tablist">
+    {{ range $i, $s := $sectionOrder }}
+      {{ $meta := index $sectionMeta $s }}
+      <button
+        class="tab-btn {{ if eq $i 0 }}active{{ end }}"
+        role="tab"
+        aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}"
+        data-tab="{{ $s }}">
+        {{ $meta.label }}
+      </button>
     {{ end }}
+  </div>
 
-    {{/* Sort pubs: year desc, then title */}}
-    {{ $pubs = sort $pubs "title" }}
-    {{ $pubs = sort $pubs "year_i" "desc" }}
+  {{/* ---------- Panels ---------- */}}
+  <div id="pub-sections">
+    {{ range $i, $s := $sectionOrder }}
+      {{ $meta := index $sectionMeta $s }}
 
-    {{/* Discover sections from CSV */}}
-    {{ $csvSections := slice }}
-    {{ range $p := $pubs }}
-      {{ $sec := index $p "section" }}
-      {{ if and $sec (not (in $csvSections $sec)) }}
-        {{ $csvSections = $csvSections | append $sec }}
-      {{ end }}
-    {{ end }}
-
-    {{/* Merge desired order with discovered sections */}}
-    {{ $sections := slice }}
-    {{ range $k := $sectionOrder }}{{ if in $csvSections $k }}{{ $sections = $sections | append $k }}{{ end }}{{ end }}
-    {{ range $k := $csvSections }}{{ if not (in $sections $k) }}{{ $sections = $sections | append $k }}{{ end }}{{ end }}
-
-    {{ if gt (len $sections) 0 }}
-
-      {{/* ===== Research Domains header ===== */}}
-      <h2 style="font-size:1.5rem;margin:1.25rem 0 0.5rem 0;">Research Domains</h2>
-
-      {{/* ---------- Tab Nav ---------- */}}
-      <div class="tabs-wrap" style="margin:0.75rem 0 1rem 0;">
-        <div class="tabs-nav" role="tablist" style="display:flex;gap:0.5rem;flex-wrap:wrap;">
-          {{ range $i, $s := $sections }}
-            {{ $meta := index $sectionMeta $s }}
-            {{ $label := cond (and $meta (index $meta "label")) (index $meta "label") ($s | title) }}
-            <button
-              class="tab-btn"
-              role="tab"
-              aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}"
-              data-tab="{{ $s }}"
-              style="border:1px solid #ddd;background:{{ if eq $i 0 }}#111{{ else }}#fff{{ end }};color:{{ if eq $i 0 }}#fff{{ else }}#111{{ end }};padding:0.5rem 1.15rem;border-radius:999px;cursor:pointer;font-size:1.05rem;font-weight:650;">
-              {{ $label }}
-            </button>
-          {{ end }}
-        </div>
-      </div>
-
-      {{/* ---------- Panels ---------- */}}
-      <div id="pub-sections">
-        {{ range $i, $s := $sections }}
-          {{ $meta := index $sectionMeta $s }}
-          {{ $blurb := "" }}
-          {{ if and $meta (index $meta "blurb") }}{{ $blurb = index $meta "blurb" }}{{ end }}
-
-          <section class="pub-section" data-tab-panel="{{ $s }}"
-            style="display:{{ if eq $i 0 }}block{{ else }}none{{ end }};margin-top:0.5rem;">
-            
-            {{ with $blurb }}
-              <div style="margin:0 0 0.75rem 0;color:#333;line-height:1.5;font-size:1.05rem;font-weight:450;">
-                {{ . | safeHTML}}
-              </div>
-            {{ end }}
-
-            <ul style="list-style:none;padding-left:0;display:flex;flex-direction:column;gap:0.85rem;margin:0;">
-              {{ $count := 0 }}
-              {{ range $row := $pubs }}
-                {{ if eq (index $row "section") $s }}
-                  {{ $count = add $count 1 }}
-                  <li class="pub-item" style="line-height:1.45;display:flex;gap:0.6em;align-items:flex-start;">
-                    <span style="margin-top:0.15em;">•</span>
-                    <div style="display:flex;flex-direction:column;gap:0.35rem;">
-                      <div>
-                        <a href="{{ index $row "link" }}" class="pub-link"
-                           style="font-weight:600;text-decoration:none;display:inline-block;">
-                          {{ index $row "title" }}
-                        </a>
-                        <span style="color:#666;font-size:0.92rem;display:block;margin-top:2px;">
-                          {{ index $row "authors" }} · {{ index $row "year" }}
-                        </span>
-                      </div>
-
-                      <span style="color:#444;">{{ index $row "description" }}</span>
-                      {{ with (index $row "conference") }}
-                        <span style="color:#555;font-size:0.9rem;">Presented at: {{ . }}</span>
-                      {{ end }}
-                      {{ with (index $row "journal") }}
-                        <span style="color:#555;font-size:0.9rem;">Journal: {{ . }}</span>
-                      {{ end }}
-
-                      {{/* ===== CTA buttons: View Paper / View Code ===== */}}
-                      <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:2px;">
-                        {{ with (index $row "link") }}
-                          {{ if . }}
-                            <a href="{{ . }}" style="display:inline-block;border:1px solid #0d7533;background:#0d7533;color:#fff;border-radius:999px;padding:6px 12px;font-size:0.88rem;text-decoration:none;transition:background .15s ease,border-color .15s ease;">
-                              View Paper
-                            </a>
-                          {{ end }}
-                        {{ end }}
-                        {{ with (index $row "code") }}
-                          {{ if . }}
-                            <a href="{{ . }}" style="display:inline-block;border:1px solid #0d7533;background:#0d7533;color:#fff;border-radius:999px;padding:6px 12px;font-size:0.88rem;text-decoration:none;transition:background .15s ease,border-color .15s ease;">
-                              View Code
-                            </a>
-                          {{ end }}
-                        {{ end }}
-                      </div>
-                    </div>
-                  </li>
-                {{ end }}
-              {{ end }}
-            </ul>
-
-            {{ if eq $count 0 }}
-              <p style="color:#666;margin-top:0.5rem;">No items in this section.</p>
-            {{ end }}
-          </section>
+      <section class="tab-panel {{ if eq $i 0 }}active{{ end }}" data-tab-panel="{{ $s }}">
+        
+        {{ with $meta.blurb }}
+          <div class="prose">{{ . | safeHTML }}</div>
         {{ end }}
-      </div>
 
+        <ul class="pub-list">
+          {{ $count := 0 }}
+          {{ range $row := $domainPubs }}
+            {{ if eq $row.section $s }}
+              {{ $count = add $count 1 }}
+              <li class="pub-item">
+                <span class="pub-bullet">•</span>
+                <div>
+                  <div>
+                    {{ if $row.link }}
+                      <a href="{{ $row.link }}" class="pub-title">{{ $row.title }}</a>
+                    {{ else }}
+                      <span class="pub-title" style="cursor: default;">{{ $row.title }}</span>
+                    {{ end }}
+                    <span class="pub-meta">
+                      {{ $row.authors | safeHTML }} ({{ $row.year }})
+                    </span>
+                  </div>
+
+                  <div class="pub-desc">{{ $row.description }}</div>
+
+                  {{/* Minimal Academic Links */}}
+                  <div class="action-links">
+                    {{ if $row.link }}
+                      <a href="{{ $row.link }}" class="pub-tag">[View Paper]</a>
+                    {{ end }}
+                    {{ if $row.code }}
+                      <a href="{{ $row.code }}" class="pub-tag">[View Code]</a>
+                    {{ end }}
+                  </div>
+                </div>
+              </li>
+            {{ end }}
+          {{ end }}
+        </ul>
+
+        {{ if eq $count 0 }}
+          <p class="text-muted">More publications coming soon.</p>
+        {{ end }}
+      </section>
     {{ end }}
-  {{ end }}
+  </div>
+
 
   {{/* =========================
-       OPEN SOURCE CODE BASE
+       ALL PUBLICATIONS (HARDCODED)
      ========================= */}}
-  <h2 style="font-size:1.5rem;margin:2rem 0 0.5rem 0;">Open Source Code Base</h2>
+  <h2 class="section-title">Publications & Presentations</h2>
 
-  {{ $osRows := slice }}
-  {{ with resources.Get "open_source.csv" }}
-    {{ $osRows = . | transform.Unmarshal (dict "delimiter" ",") }}
-  {{ end }}
+  {{/* Publications */}}
+  {{ $publications := slice
+    (dict
+      "id" "M3"
+      "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, Mitchell, K.N., Asborno, M.I., Kress, M.M, and Boyles, S.D."
+      "year" "2026"
+      "title" "Anchorage Queue Dynamics due to Fog Channel Closures at the Port of Houston"
+      "venue" "Journal of Waterway, Port, Coastal, and Ocean Engineering"
+      "link" "https://doi.org/10.1061/jwped5.wweng-2451"
+    )
+    (dict
+      "id" "M2"
+      "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, Mitchell, K.N., Asborno, M.I., and Kress, M.M., and Boyles, S.D."
+      "year" "2026"
+      "title" "Characterizing Longitudinal Vessel Arrival and Queue Behavior from AIS at the Port of Houston"
+      "venue" "Journal of Waterway, Port, Coastal, and Ocean Engineering"
+      "link" "https://doi.org/10.1061/jwped5.wweng-2441"
+    )
+    (dict
+      "id" "M1"
+      "authors" "Agarwal, P.*, <strong>Bagchi, D.</strong>*, Rambha, T., and Pandey, V."
+      "year" "2025"
+      "title" "A Bi-criterion Steiner Traveling Salesperson Problem with Time Windows for Last-Mile Electric Vehicle Logistics"
+      "venue" "Computers & Operations Research"
+      "link" "https://doi.org/10.1016/j.cor.2025.107286"
+      "code" "https://github.com/transnetlab/last-mile-ev-logistics"
+      "note" "* Equal contribution"
+    )
+  }}
 
-  {{ if not (gt (len $osRows) 0) }}
-    <p style="color:#666;">No open-source projects listed (ensure <code>assets/open_source.csv</code> exists).</p>
-  {{ else }}
-    {{ $osHeader := index $osRows 0 }}
-    {{ $osData := after 1 $osRows }}
-    {{ $projects := slice }}
-    {{ range $r := $osData }}
-      {{ $m := dict }}
-      {{ range $i, $h := $osHeader }}
-        {{ $val := "" }}
-        {{ if lt $i (len $r) }}{{ $val = index $r $i }}{{ end }}
-        {{ $m = merge $m (dict $h $val) }}
-      {{ end }}
-      {{ $projects = $projects | append $m }}
+  <h3 class="sub-title">Publications</h3>
+  <ul class="basic-list">
+    {{ range $p := $publications }}
+      <li>
+        {{ $p.authors | safeHTML }} ({{ $p.year }}).
+        {{ $p.title | title }}.
+        <em>{{ $p.venue }}</em>.
+        {{ if $p.link }}<a class="pub-tag" href="{{ $p.link }}" target="_blank" rel="noopener noreferrer">[Link]</a>{{ end }}
+        {{ if $p.code }}<a class="pub-tag" href="{{ $p.code }}" target="_blank" rel="noopener noreferrer">[Code]</a>{{ end }}
+        {{ with $p.note }} <span class="text-muted">({{ . | safeHTML }})</span>{{ end }}
+      </li>
     {{ end }}
+  </ul>
 
-    {{ $projects = sort $projects "name" }}
+  {{/* Papers under review */}}
+  {{ $revPapers := slice
+     (dict
+      "id" "M4"
+      "authors" "<strong>Bagchi, D.</strong>*, Bathgate, K.*, Mitchell, K.N., Asborno, M.I., Kress, M.M., and Boyles, S.D."
+      "year" "2025"
+      "title" "Measuring capacities in multimodal maritime port systems with anchorage queues"
+      "venue" "Preprint"
+      "link" "https://doi.org/10.48550/arXiv.2509.22961"
+      "note" "* Equal contribution"
+    )
+   (dict "id" "W2" "authors" "Robbennolt, J., <strong>Bagchi, D.</strong>, and Boyles, S. D." "title" "Dynamic traffic assignment with uncertain demand: A localized queue spillback approach" "year" "2025")
+  }}
 
-    <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px;">
-      {{ range $p := $projects }}
-        <div style="border:1px solid #eee;border-radius:14px;padding:14px;">
-          <a href="{{ index $p "link" }}" style="font-weight:600;text-decoration:none;display:inline-block;margin-bottom:2px;">
-            {{ index $p "name" }}
-          </a>
-          {{ with (index $p "role") }}
-            <div style="color:#666;font-size:0.9rem;margin-bottom:6px;">{{ . }}</div>
-          {{ end }}
-          {{ with (index $p "description") }}
-            <div style="color:#333;line-height:1.5;margin-bottom:8px;">{{ . }}</div>
-          {{ end }}
-          {{ with (index $p "tags") }}
-            {{ $tags := split . ";" }}
-            <div style="display:flex;flex-wrap:wrap;gap:6px;">
-              {{ range $t := $tags }}
-                {{ if $t }}
-                  <span style="border:1px solid #ddd;border-radius:999px;padding:2px 8px;font-size:0.8rem;color:#333;">{{ $t }}</span>
-                {{ end }}
-              {{ end }}
-            </div>
-          {{ end }}
-        </div>
-      {{ end }}
-    </div>
-  {{ end }}
+  <h3 class="sub-title" style="margin-top: 2.5rem;">Papers under review</h3>
+  <ul class="basic-list">
+    {{ range $p := $revPapers }}
+      <li>
+        {{ $p.authors | safeHTML }} {{ with $p.year }}({{ . }}). {{ end }}
+        {{ $p.title }}.
+        {{ if $p.link }}<a class="pub-tag" href="{{ $p.link }}">[Link]</a>{{ end }}
+        {{ if $p.code }}<a class="pub-tag" href="{{ $p.code }}">[Code]</a>{{ end }}
+        {{ with $p.note }} <span class="text-muted">({{ . | safeHTML }})</span>{{ end }}
+      </li>
+    {{ end }}
+  </ul>
 
-{{/* =========================
-     PUBLICATIONS
-   ========================= */}}
-<h2 style="font-size:1.5rem;margin:2rem 0 0.5rem 0;">Publications</h2>
+  {{/* Working papers */}}
+  {{ $workingPapers := slice
+   (dict "id" "W3" "authors" "<strong>Bagchi, D.</strong>*, Bathgate, K.*, Mitchell, K.N., Asborno, M.I., and Kress, M.M., Boyles, S.D." "title" "A generalizable simulation Framework for evaluating the resilience and capacity of multimodal port operations" "year" "2025" "code" "https://github.com/spartalab/port-simulation" "note" "* Equal contribution")
+   (dict "id" "W1" "authors" "<strong>Bagchi, D.</strong> and Boyles, S. D." "title" "Error bounds for stochastic user equilibrium traffic assignment" "year" "2025")
+  }}
 
-<style>
-  a.pub-tag, a.pub-tag:visited {
-    color: #0a8a3a !important;
-    font-weight: 600;
-    text-decoration: none;
-  }
-</style>
+  <h3 class="sub-title" style="margin-top: 2.5rem;">Working Papers</h3>
+  <ul class="basic-list">
+    {{ range $p := $workingPapers }}
+      <li>
+        {{ $p.authors | safeHTML }} {{ with $p.year }}({{ . }}). {{ end }}
+        {{ $p.title }}.
+        {{ if $p.link }}<a class="pub-tag" href="{{ $p.link }}">[Link]</a>{{ end }}
+        {{ if $p.code }}<a class="pub-tag" href="{{ $p.code }}">[Code]</a>{{ end }}
+        {{ with $p.note }} <span class="text-muted">({{ . | safeHTML }})</span>{{ end }}
+      </li>
+    {{ end }}
+  </ul>
 
-{{ $accepted := slice
-  (dict
-    "id" "M1"
-    "authors" "Agarwal, P.*, <strong>Bagchi, D.</strong>*, Rambha, T., and Pandey, V."
-    "year" "2024"
-    "title" "A Bi-criterion Steiner Traveling Salesperson Problem with Time Windows for Last-Mile Electric Vehicle Logistics"
-    "venue" "Computers & Operations Research, in print"
-    "code" "https://github.com/transnetlab/last-mile-ev-logistics"
-    "preprint" "https://arxiv.org/abs/2409.14848"
-    "note" "* Equal contribution"
-  )
-}}
+  {{/* Conference presentations */}}
+  {{ $confs := slice
+   (dict "id" "C12" "year" "2026" "authors" "<strong>Bagchi, D.</strong>, Bathgate, K., Boyles, S. D., and Asborno, M. I." "title" "A dynamic ultimate capacity framework for seaport systems" "venue" "Transportation Research Board 104th Annual Meeting (TRB), Washington, D.C., USA" "note" "Lectern session")
+   (dict "id" "C11" "year" "2026" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, Boyles, S. D., Mitchell, K. N., Asborno, M. I., and Kress, M. M." "title" "Characterizing anchorage queue dynamics due to channel fog closures at the Port of Houston" "venue" "Transportation Research Board 104th Annual Meeting (TRB), Washington, D.C., USA" "note" "Poster session")
+   (dict "id" "C10" "year" "2026" "authors" "Robbennolt, J., <strong>Bagchi, D.</strong>, and Boyles, S. D." "title" "Dynamic traffic assignment with uncertain demand: A localized queue spillback approach" "venue" "Transportation Research Board 104th Annual Meeting (TRB), Washington, D.C., USA" "note" "Poster session")
+   (dict "id" "C9" "year" "2025" "authors" "Robbennolt, J., <strong>Bagchi, D.</strong> and Boyles, S. D." "title" "Localized Queue Spillback with Uncertain Demand" "venue" "10th International Symposium on Dynamic Traffic Assignment (DTA2025), Salerno, Italy" "note" "Lectern session")
+   (dict "id" "C8" "year" "2025" "authors" "<strong>Bagchi, D.</strong> and Boyles, S. D." "title" "Error bounds for stochastic user equilibrium traffic assignment" "venue" "12th Triennial Symposium on Transportation Analysis conference (TRISTAN XII), Okinawa, Japan" "note" "Lectern session")
+   (dict "id" "C7" "year" "2025" "authors" "<strong>Bagchi, D.</strong>, Bathgate, K., and Boyles, S. D." "title" "A framework for measuring maritime port system capacities with limited input data" "venue" "Institute for Operations Research and the Management Sciences Annual Meeting 2024 (INFORMS), Seattle, USA" "note" "Invited session")
+   (dict "id" "C6" "year" "2025" "authors" "<strong>Bagchi, D.</strong>, Bathgate, K., and Boyles, S. D." "title" "A queuing-theory-based operating capacity model for multimodal port operations" "venue" "Transportation Research Board 104th Annual Meeting 2023 (TRB), Washington, D.C., USA" "note" "Lectern session")
+   (dict "id" "C5" "year" "2025" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, and Boyles, S. D." "title" "Use of AIS data to characterize vessel mix in Houston port operations for simulation" "venue" "Transportation Research Board 104th Annual Meeting 2023 (TRB), Washington, D.C., USA" "note" "Lectern session")
+   (dict "id" "C4" "year" "2024" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, and Boyles, S. D." "title" "Identifying capacities in a multimodal maritime freight network" "venue" "Institute for Operations Research and the Management Sciences Annual Meeting 2024 (INFORMS), Seattle, USA" "note" "Invited session")
+   (dict "id" "C3" "year" "2024" "authors" "<strong>Bagchi, D.</strong>, and Boyles, S. D." "title" "Error Bounds for Stochastic User Equilibrium Traffic Assignment" "venue" "Institute for Operations Research and the Management Sciences Annual Meeting 2024 (INFORMS), Seattle, USA" "note" "Invited session")
+   (dict "id" "C2" "year" "2023" "authors" "<strong>Bagchi, D.</strong>, Agarwal, P., Rambha, T., and Pandey, V." "title" "A Local Search Heuristic for Bi-criterion Steiner Traveling Salesman Problem" "venue" "Transportation Research Board 102nd Annual Meeting 2023 (TRB), Washington, D.C., USA" "note" "Poster session")
+   (dict "id" "C1" "year" "2022" "authors" "<strong>Bagchi, D.</strong>, Agarwal, P., Rambha, T., and Pandey, V." "title" "A Local Search Heuristic for Bi-criterion Steiner Traveling Salesman Problem" "venue" "Institute for Operations Research and the Management Sciences Annual Meeting 2022 (INFORMS), Indianapolis, USA" "note" "Lectern session")
+  }}
 
-<!-- {{ $underReview := slice
-  (dict
-    "id" "M1"
-    "authors" "Agarwal, P.*, <strong>Bagchi, D.</strong>*, Rambha, T., and Pandey, V."
-    "year" "2024"
-    "title" "A Bi-criterion Steiner Traveling Salesperson Problem with Time Windows for Last-Mile Electric Vehicle Logistics"
-    "venue" "Computers & Operations Research, under review"
-    "code" "https://github.com/transnetlab/last-mile-ev-logistics"
-    "preprint" "https://arxiv.org/abs/2409.14848"
-    "note" "* Equal contribution"
-  )
-}} -->
-
-{{ $inPrep := slice
- (dict "id" "W8" "authors" "<strong>Bagchi, D.</strong>, Bathgate, K., Boyles, S. D., Mitchell, K. N., Asborno, M. I., and Kress, M. M."
- "title" "A Queuing Theory-Based Operating Capacity Model For Multi-Modal Port Operations."
- "year" "2025"
- "note" "Preprint"
- "link" "https://arxiv.org/abs/2509.22961")
- (dict "id" "W7" "authors" "<strong>Bagchi, D.</strong>, Bathgate, K., Boyles, S. D., Mitchell, K. N., and Asborno, M. I."
- "title" "A Dynamic Ultimate Capacity Framework For Seaport Systems."
- "year" "2025")
- (dict "id" "W6" "authors" "<strong>Bagchi, D.</strong>*, Bathgate, K.*, Boyles, S. D., Mitchell, K. N., Asborno, M. I., and Kress, M. M."
- "title" "A Generalizable Simulation Framework For Evaluating The Resilience And Capacity Of Multimodal Port Operations."
- "year" "2025"
- "note" "Equal contribution"
- "link" "https://github.com/spartalab/port-simulation"
- "linkType" "Code")
- (dict "id" "W5" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, Boyles, S. D., Mitchell, K. N., Asborno, M. I., and Kress, M. M."
- "title" "Hurricane Characteristics Influencing Multimodal Freight Resilience At The Port Of Houston."
- "year" "2025")
- (dict "id" "W4" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, Boyles, S. D., Mitchell, K. N., Asborno, M. I., and Kress, M. M."
- "title" "Characterizing Anchorage Queue Dynamics Due To Channel Fog Closures At The Port Of Houston."
- "year" "2025")
- (dict "id" "W3" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, Boyles, S. D., Mitchell, K. N., Asborno, M. I., and Kress, M. M."
- "title" "Use Of AIS Data To Characterize Vessel Mix In Houston Port Operations For Simulation."
- "year" "2025")
- (dict "id" "W2" "authors" "Robbennolt, J., <strong>Bagchi, D.</strong>, and Boyles, S. D."
- "title" "Dynamic Traffic Assignment With Uncertain Demand: A Localized Queue Spillback Approach.")
- (dict "id" "W1" "authors" "<strong>Bagchi, D.</strong> and Boyles, S. D."
- "title" "Error Bounds For Stochastic User Equilibrium Traffic Assignment.")
-}}
-
-<h3 style="font-size:1.1rem;margin:1rem 0 0.25rem 0;">Publications</h3>
-<ul style="list-style:disc;padding-left:1.25rem;display:flex;flex-direction:column;gap:0.75rem;margin:0 0 1rem 0;">
-  {{ range $p := $accepted }}
-    <li>
-      {{ $p.authors | safeHTML }} ({{ $p.year }}).
-      {{ $p.title | title }}.
-      <em>{{ $p.venue }}</em>.
-      {{ if $p.preprint }}<a class="pub-tag" href="{{ $p.preprint }}">[Preprint]</a>{{ end }}
-      {{ if $p.pdf }}<a class="pub-tag" href="{{ $p.pdf }}">[PDF]</a>{{ end }}
-      {{ if $p.code }}<a class="pub-tag" href="{{ $p.code }}">[Code]</a>{{ end }}
-      {{ with $p.note }} <span style="color:#555;">({{ . | safeHTML }})</span>{{ end }}
-    </li>
-  {{ end }}
-</ul>
-
-<!-- <h3 style="font-size:1.1rem;margin:1rem 0 0.25rem 0;">Manuscripts under review</h3>
-<ul style="list-style:disc;padding-left:1.25rem;display:flex;flex-direction:column;gap:0.75rem;margin:0 0 1rem 0;">
-  {{ range $p := $underReview }}
-    <li>
-      {{ $p.authors | safeHTML }} ({{ $p.year }}).
-      {{ $p.title | title }}.
-      <em>{{ $p.venue }}</em>.
-      {{ if $p.preprint }}<a class="pub-tag" href="{{ $p.preprint }}">[Preprint]</a>{{ end }}
-      {{ if $p.pdf }}<a class="pub-tag" href="{{ $p.pdf }}">[PDF]</a>{{ end }}
-      {{ if $p.code }}<a class="pub-tag" href="{{ $p.code }}">[Code]</a>{{ end }}
-      {{ with $p.note }} <span style="color:#555;">({{ . | safeHTML }})</span>{{ end }}
-    </li>
-  {{ end }}
-</ul> -->
-
-<h3 style="font-size:1.1rem;margin:0.75rem 0 0.25rem 0;">Manuscripts in preparation</h3>
-<ul style="list-style:disc;padding-left:1.25rem;display:flex;flex-direction:column;gap:0.5rem;margin:0;">
-  {{ range $p := $inPrep }}
-    <li>
-      {{ $p.authors | safeHTML }} {{ with $p.year }}({{ . }}). {{ end }}
-      {{ $p.title | title }}
-      {{ with $p.venue }}. <em>{{ . }}</em>{{ end }}
-      {{ if $p.preprint }}<a class="pub-tag" href="{{ $p.preprint }}">[Preprint]</a>{{ end }}
-      {{ if $p.pdf }}<a class="pub-tag" href="{{ $p.pdf }}">[PDF]</a>{{ end }}
-      {{ if $p.code }}<a class="pub-tag" href="{{ $p.code }}">[Code]</a>{{ end }}
-    </li>
-  {{ end }}
-</ul>
-
-{{/* =========================
-     REFEREED CONFERENCE PRESENTATIONS
-   ========================= */}}
-<h2 style="font-size:1.5rem;margin:2rem 0 0.5rem 0;">Refereed conference presentations</h2>
-
-{{ $confs := slice
- (dict "id" "C12" "year" "2026" "authors" "<strong>Bagchi, D.</strong>, Bathgate, K., Boyles, S. D., and Asborno, M. I."
- "title" "A Dynamic Ultimate Capacity Framework For Seaport Systems."
- "venue" "Transportation Research Board (TRB) 105th Annual Meeting, Washington, D.C., USA"
- "note" "Accepted")
- (dict "id" "C11" "year" "2026" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, Boyles, S. D., Mitchell, K. N., Asborno, M. I., and Kress, M. M."
- "title" "Characterizing Anchorage Queue Dynamics Due To Channel Fog Closures At The Port Of Houston."
- "venue" "Transportation Research Board (TRB) 105th Annual Meeting, Washington, D.C., USA"
- "note" "Accepted")
- (dict "id" "C10" "year" "2026" "authors" "Robbennolt, J., <strong>Bagchi, D.</strong>, and Boyles, S. D."
- "title" "Dynamic Traffic Assignment With Uncertain Demand: A Localized Queue Spillback Approach."
- "venue" "Transportation Research Board (TRB) 105th Annual Meeting, Washington, D.C., USA"
- "note" "Accepted")
- (dict "id" "C9" "year" "2025" "authors" "Robbennolt, J., <strong>Bagchi, D.</strong> and Boyles, S. D."
- "title" "Localized Queue Spillback With Uncertain Demand."
- "venue" "10th International Symposium on Dynamic Traffic Assignment (DTA 2025), Salerno, Italy")
- (dict "id" "C8" "year" "2025" "authors" "<strong>Bagchi, D.</strong> and Boyles, S. D."
- "title" "Error Bounds For Stochastic User Equilibrium Traffic Assignment."
- "venue" "12th Triennial Symposium on Transportation Analysis (TRISTAN XII), Okinawa, Japan")
- (dict "id" "C7" "year" "2024" "authors" "<strong>Bagchi, D.</strong>, Bathgate, K., and Boyles, S. D."
- "title" "A Framework For Measuring Maritime Port System Capacities With Limited Input Data."
- "venue" "INFORMS Annual Meeting 2024, Seattle, USA"
- "note" "Invited session")
- (dict "id" "C6" "year" "2025" "authors" "<strong>Bagchi, D.</strong>, Bathgate, K., and Boyles, S. D."
- "title" "A Queuing-Theory-Based Operating Capacity Model For Multimodal Port Operations."
- "venue" "Transportation Research Board (TRB) 104th Annual Meeting, Washington, D.C., USA"
- "note" "Lectern session")
- (dict "id" "C5" "year" "2025" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, and Boyles, S. D."
- "title" "Use Of AIS Data To Characterize Vessel Mix In Houston Port Operations For Simulation."
- "venue" "Transportation Research Board (TRB) 104th Annual Meeting, Washington, D.C., USA"
- "note" "Lectern session")
- (dict "id" "C4" "year" "2024" "authors" "Bathgate, K., <strong>Bagchi, D.</strong>, and Boyles, S. D."
- "title" "Identifying Capacities In A Multimodal Maritime Freight Network."
- "venue" "INFORMS Annual Meeting 2024, Seattle, USA"
- "note" "Invited session")
- (dict "id" "C3" "year" "2024" "authors" "<strong>Bagchi, D.</strong>, and Boyles, S. D."
- "title" "Error Bounds For Stochastic User Equilibrium Traffic Assignment."
- "venue" "INFORMS Annual Meeting 2024, Seattle, USA"
- "note" "TSL Invited session")
- (dict "id" "C2" "year" "2023" "authors" "<strong>Bagchi, D.</strong>, Agarwal, P., Rambha, T., and Pandey, V."
- "title" "A Local Search Heuristic For Bi-Criterion Steiner Travelling Salesman Problem."
- "venue" "Transportation Research Board (TRB) 102nd Annual Meeting 2023, Washington, D.C., USA")
- (dict "id" "C1" "year" "2022" "authors" "<strong>Bagchi, D.</strong>, Agarwal, P., Rambha, T., and Pandey, V."
- "title" "A Local Search Heuristic For Bi-Criterion Steiner Travelling Salesman Problem."
- "venue" "INFORMS Annual Meeting 2022, Indianapolis, USA")
-}}
-
-<ul style="list-style:disc;padding-left:1.25rem;display:flex;flex-direction:column;gap:0.75rem;margin:0;">
-  {{ range $c := $confs }}
-    <li>
-      {{ $c.authors | safeHTML }} ({{ $c.year }}).
-      {{ $c.title | title }}.
-      <em>{{ $c.venue }}</em>{{ with $c.note }} — <span style="color:#666;">{{ . }}</span>{{ end }}
-    </li>
-  {{ end }}
-</ul>
-
-
+  <h3 class="sub-title" style="margin-top: 2.5rem;">Conference Presentations</h3>
+  <ul class="basic-list">
+    {{ range $c := $confs }}
+      <li>
+        {{ $c.authors | safeHTML }} ({{ $c.year }}).
+        {{ $c.title }}.
+        <em>{{ $c.venue }}</em>{{ with $c.note }} — <span class="text-muted">{{ . }}</span>{{ end }}
+      </li>
+    {{ end }}
+  </ul>
 
 </main>
 
 <script>
-  (function () {
-    const btns = Array.from(document.querySelectorAll('.tab-btn'));
-    const panels = Array.from(document.querySelectorAll('[data-tab-panel]'));
-    function activate(key) {
-      btns.forEach(b => {
-        const on = b.getAttribute('data-tab') === key;
-        b.setAttribute('aria-selected', on ? 'true' : 'false');
-        b.style.background = on ? '#111' : '#fff';
-        b.style.color = on ? '#fff' : '#111';
-      });
-      panels.forEach(p => {
-        p.style.display = (p.getAttribute('data-tab-panel') === key) ? 'block' : 'none';
-      });
-    }
-    btns.forEach(b => b.addEventListener('click', () => activate(b.getAttribute('data-tab'))));
+  document.addEventListener("DOMContentLoaded", () => {
+    const btns = document.querySelectorAll('.tab-btn');
+    const panels = document.querySelectorAll('.tab-panel');
 
-    // simple hover effect for green buttons if CSS is allowed
-    document.addEventListener('mouseover', function(e){
-      if(e.target.matches('a[style*="#16a34a"]')){
-        e.target.style.background = '#15803d'; /* darker green */
-        e.target.style.borderColor = '#15803d';
-      }
+    btns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        const target = btn.getAttribute('data-tab');
+        
+        btns.forEach(b => {
+          b.classList.remove('active');
+          b.setAttribute('aria-selected', 'false');
+        });
+        btn.classList.add('active');
+        btn.setAttribute('aria-selected', 'true');
+
+        panels.forEach(panel => {
+          if (panel.getAttribute('data-tab-panel') === target) {
+            panel.classList.add('active');
+          } else {
+            panel.classList.remove('active');
+          }
+        });
+      });
     });
-    document.addEventListener('mouseout', function(e){
-      if(e.target.matches('a[style*="#16a34a"]')){
-        e.target.style.background = '#16a34a';
-        e.target.style.borderColor = '#16a34a';
-      }
-    });
-  })();
+  });
 </script>
 {{ end }}
