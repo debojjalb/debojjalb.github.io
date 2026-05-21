@@ -92,7 +92,7 @@ sections:
 
         **Sep 2025:** I will presenting our work on "A framework for measuring maritime port system capacities with limited input data" at INFORMS Annual Meeting 2025 in Atlanta (2:45-4:00 PM, TSL invited session on Network Design).
 
-        **Sep 2025:** I have been appointed as Member of the TRB Standing Committee on Intermodal Freight and Truck Transportation for the 2025–2028 term. I aim to contrinute to the committee on multimodal port operations, capacity, and resilience. [More details here.](https://www.linkedin.com/posts/debojjal-bagchi_excited-to-share-that-following-the-recent-activity-7365922069374537730-Qcfo?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-24_ABlBO97b8VIUpjxdDlIw_oB4ljeX8)
+        **Sep 2025:** I have been appointed as Member of the TRB Standing Committee on Intermodal Freight and Truck Transportation for the 2025–2028 term. I aim to contribute to the committee on multimodal port operations, capacity, and resilience. [More details here.](https://www.linkedin.com/posts/debojjal-bagchi_excited-to-share-that-following-the-recent-activity-7365922069374537730-Qcfo?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-24_ABlBO97b8VIUpjxdDlIw_oB4ljeX8)
         
         **July 2025:** I presented master's thesis on Error Bounds for Stochastic User Equilibrium Traffic Assignment at TRISTAN XII in Okinawa, Japan, focusing on early termination criteria for stochastic traffic assignment problems. [More details here.](https://www.linkedin.com/posts/debojjal-bagchi_presented-my-masters-thesis-link-in-comments-activity-7351498036625219584-FcWJ?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB-24_ABlBO97b8VIUpjxdDlIw_oB4ljeX8)
         
