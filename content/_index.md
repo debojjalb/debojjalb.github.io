@@ -27,7 +27,7 @@ links:
 
 I'm currently a graduate student specializing in Transportation Engineering at the Department of Civil, Architectural, and Environmental Engineering, University of Texas at Austin. My research focuses on traffic assignment, multimodal logistics, and transportation network modeling. I'm particularly interested in applying optimization, simulation, and queueing theory to improve the resilience and efficiency of freight systems and urban mobility.
 
-I am currently a member of the [Transportation Research Board's Standing Committee on Intermodal Freight and Truck Transportation (AT014)](https://www.mytrb.org/OnlineDirectory/Committee/Details/7365). As a member, I help review paper submissions, organize conference sessions, and shape research needs in intermodal freight, alongside academic researchers and industry practitioners from across the country.
+I am also currently a member of the [Transportation Research Board's Standing Committee on Intermodal Freight and Truck Transportation (AT014)](https://www.mytrb.org/OnlineDirectory/Committee/Details/7365). 
 
 ## Research interests
 
