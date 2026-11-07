@@ -1,0 +1,82 @@
+{{ define "main" }}
+{{/* Entries are listed in content/travel.md.
+     Photos are read from static/images/travel/<folder>/ */}}
+
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+<script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<div class="travel">
+
+  <h1>My Travel Diary and Major Updates</h1>
+  <p class="muted">(Click on images to view in lightbox)</p>
+
+  {{ range .Params.entries }}
+    {{ $folder := .folder }}
+    {{ $images := slice }}
+    {{ range readDir (printf "static/images/travel/%s" $folder) }}
+      {{ if and (not .IsDir) (ne .Name ".DS_Store") }}
+        {{ $images = $images | append .Name }}
+      {{ end }}
+    {{ end }}
+    {{ $count := len $images }}
+
+    <section class="travel-entry">
+      <h2>{{ .name }}</h2>
+      <p>{{ .text }}</p>
+
+      <div class="swiper-container swiper-{{ $folder }}">
+        <div class="swiper-wrapper">
+          {{ range $images }}
+            <div class="swiper-slide">
+              <img src="{{ printf "/images/travel/%s/%s" $folder . }}" alt="{{ . }}" loading="lazy" class="gallery-img">
+            </div>
+          {{ end }}
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          new Swiper('.swiper-{{ $folder }}', {
+            slidesPerView: {{ if lt $count 2 }}{{ $count }}{{ else }}2{{ end }},
+            breakpoints: {
+              768: { slidesPerView: {{ if lt $count 5 }}{{ $count }}{{ else }}4{{ end }} },
+            },
+            spaceBetween: 10,
+            loop: {{ if lt $count 5 }}false{{ else }}true{{ end }},
+            centeredSlides: {{ if lt $count 5 }}true{{ else }}false{{ end }},
+            {{ if lt $count 5 }}initialSlide: {{ div $count 2 }},{{ end }}
+            navigation: {
+              nextEl: '.swiper-{{ $folder }} .swiper-button-next',
+              prevEl: '.swiper-{{ $folder }} .swiper-button-prev',
+            },
+            pagination: {
+              el: '.swiper-{{ $folder }} .swiper-pagination',
+              clickable: true,
+            },
+          });
+        });
+      </script>
+    </section>
+  {{ end }}
+
+</div>
+
+<div id="lightbox-overlay">
+  <img id="lightbox-img" src="" alt="">
+</div>
+
+<script>
+  document.addEventListener('click', function (e) {
+    if (e.target.classList.contains('gallery-img')) {
+      document.getElementById('lightbox-img').src = e.target.src;
+      document.getElementById('lightbox-overlay').style.display = 'flex';
+    } else if (e.target.id === 'lightbox-overlay') {
+      e.target.style.display = 'none';
+    }
+  });
+</script>
+
+{{ end }}

@@ -1,0 +1,41 @@
+# Site settings
+baseURL: https://debojjalb.github.io/
+title: Debojjal Bagchi
+enableRobotsTXT: true
+
+# Only plain pages are needed (no tags, categories or RSS feeds)
+disableKinds: [taxonomy, term, rss]
+
+params:
+  description: Debojjal Bagchi is a transportation researcher at The University of Texas at Austin, specializing in networks, optimization, and equilibrium modeling.
+  googleAnalytics: G-DPW5CM5CF4
+
+# Top navigation (weight sets the order)
+menus:
+  main:
+    - name: Home
+      url: /
+      weight: 1
+    - name: Research
+      url: /research/
+      weight: 2
+    - name: Diary
+      url: /travel/
+      weight: 3
+    - name: CV
+      url: /uploads/resume.pdf
+      weight: 4
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+# The CV links the BS thesis at its old address (/experience/BS_thesis.pdf),
+# so the same file is also published there.
+module:
+  mounts:
+    - source: static
+      target: static
+    - source: static/uploads/BS_thesis.pdf
+      target: static/experience/BS_thesis.pdf

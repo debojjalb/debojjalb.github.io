@@ -1,0 +1,408 @@
+/* ==========================================================
+   Base
+   ========================================================== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #ffffff;
+  color: #1f2937;
+  font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+  font-size: 16px;
+  line-height: 1.35;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: #166534;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.15;
+  color: #111827;
+  margin: 0 0 0.75rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 1.5rem 0 0.5rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid #b4bac3;
+}
+
+h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #111827;
+  margin: 1.1rem 0 0.3rem;
+}
+
+p {
+  margin: 0 0 0.6rem;
+}
+
+strong {
+  font-weight: 600;
+  color: #111827;
+}
+
+.muted {
+  color: #6b7280;
+}
+
+/* Page width */
+.wrap {
+  max-width: 62rem;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+main.wrap {
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+/* ==========================================================
+   Header and footer
+   ========================================================== */
+.site-header {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.site-header .wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.site-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #111827;
+}
+
+.site-header nav {
+  display: flex;
+  gap: 1.5rem;
+}
+
+/* Menu links use the same regular weight and color as the page text */
+.site-header nav a {
+  color: #1f2937;
+  font-weight: 400;
+}
+
+.site-footer {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #6b7280;
+  padding: 2rem 0 1.5rem;
+}
+
+/* ==========================================================
+   Markdown content (home page body, page intros)
+   ========================================================== */
+.content ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1rem;
+}
+
+.content ul li {
+  margin-bottom: 0.45rem;
+}
+
+.intro {
+  margin-bottom: 1rem;
+}
+
+/* ==========================================================
+   Home page
+   ========================================================== */
+/* The photo is exactly as tall as the text block beside it */
+.profile {
+  display: flex;
+  gap: 1.75rem;
+  align-items: stretch;
+  margin-bottom: 1.25rem;
+}
+
+.profile-photo {
+  position: relative;
+  width: 210px;
+  flex-shrink: 0;
+}
+
+.profile-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.profile h1 {
+  margin: 0;
+  font-size: 1.15rem;
+  line-height: 1.35;
+}
+
+.profile p {
+  margin: 0 0 0.75rem;
+}
+
+.profile .title {
+  font-style: italic;
+}
+
+.profile-links {
+  margin-top: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.8rem;
+  font-size: 0.95rem;
+}
+
+/* Awards in the Education section */
+.award {
+  color: #9a3412;
+}
+
+.award::before {
+  content: "★ ";
+}
+
+@media (max-width: 640px) {
+  .profile {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .profile-photo {
+    height: 230px;
+  }
+}
+
+/* ==========================================================
+   Research and INFORMS pages
+   ========================================================== */
+/* The photo is exactly as tall as the intro text beside it */
+.research-intro {
+  display: flex;
+  gap: 1.75rem;
+  align-items: stretch;
+  margin-bottom: 0.5rem;
+}
+
+.research-photo {
+  position: relative;
+  width: 170px;
+  flex-shrink: 0;
+}
+
+.research-photo img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  border-radius: 4px;
+}
+
+.research-intro .content p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 640px) {
+  .research-intro {
+    flex-direction: column;
+  }
+
+  .research-photo {
+    height: 230px;
+  }
+}
+
+.areas h3 {
+  font-size: 1.05rem;
+  margin-top: 1.4rem;
+}
+
+.areas h3:first-child {
+  margin-top: 0;
+}
+
+figure {
+  margin: 0.75rem 0 1rem;
+}
+
+/* All figures share the same display height */
+figure img {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: min(100%, 500px);
+  max-height: 250px;
+  margin: 0 auto;
+}
+
+figcaption {
+  max-width: 500px;
+  margin: 0.5rem auto 0;
+  font-size: 0.85rem;
+  color: #6b7280;
+  line-height: 1.35;
+}
+
+.paper-title {
+  font-weight: 600;
+  color: #111827;
+}
+
+.paper-authors {
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+.paper-links {
+  font-size: 0.9rem;
+}
+
+.paper-links a {
+  margin-right: 0.9rem;
+}
+
+.ref-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.ref-list li {
+  margin-bottom: 0.45rem;
+}
+
+/* Inline markdown (author lists) should not add paragraph spacing */
+.ref-list p,
+.paper-authors p {
+  display: inline;
+  margin: 0;
+}
+
+.eyebrow {
+  margin: 0 0 0.5rem;
+  color: #166534;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* ==========================================================
+   Diary (travel) page
+   ========================================================== */
+.travel h1 {
+  text-align: center;
+  margin-bottom: 0.25rem;
+}
+
+.travel > .muted {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.travel-entry {
+  margin-bottom: 2rem;
+}
+
+.travel-entry h2 {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin: 0 0 0.25rem;
+  font-size: 1.15rem;
+}
+
+.travel-entry p {
+  color: #555;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.swiper-container {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 1.75rem;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+}
+
+.gallery-img {
+  width: 100%;
+  max-width: 260px;
+  height: 196px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  width: 36px !important;
+  height: 36px !important;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  color: #fff !important;
+  margin-top: -32px !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-size: 16px !important;
+  font-weight: bold;
+}
+
+.swiper-pagination {
+  bottom: 0 !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #111827 !important;
+}
+
+#lightbox-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+#lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+}

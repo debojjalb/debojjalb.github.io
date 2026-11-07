@@ -1,0 +1,40 @@
+{{ define "main" }}
+{{/* Papers are listed in content/informs.md */}}
+
+<p class="eyebrow">INFORMS 2026 · Talk resources</p>
+<h1>Thanks for attending my talk!</h1>
+
+<div class="content intro">
+  {{ .Content }}
+</div>
+
+<h2>Papers &amp; code</h2>
+
+<ul class="ref-list">
+  {{ range .Params.papers }}
+    <li>
+      <div class="paper-title">{{ .title }}</div>
+      <div class="paper-authors">{{ .authors }} · {{ .year }}</div>
+      <div class="paper-links">
+        {{ range .links }}<a href="{{ .url }}">[{{ .name }}]</a>{{ end }}
+      </div>
+    </li>
+  {{ end }}
+</ul>
+
+<h2>Let's stay in touch</h2>
+
+<p>
+  <strong>Debojjal Bagchi</strong><br>
+  PhD student · Transportation Systems<br>
+  The University of Texas at Austin<br>
+  <a href="mailto:debojjalb@utexas.edu">debojjalb@utexas.edu</a>
+</p>
+<p class="paper-links">
+  <a href="/uploads/resume.pdf" download="Debojjal_Bagchi_CV.pdf">[Download CV]</a>
+  <a href="/research/">[More research]</a>
+</p>
+
+<p class="muted">Thank you for stopping by. I look forward to continuing the conversation!</p>
+
+{{ end }}

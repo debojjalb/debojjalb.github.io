@@ -1,0 +1,7 @@
+# Build output (Hugo regenerates these)
+public/
+resources/
+.hugo_build.lock
+
+# macOS
+.DS_Store

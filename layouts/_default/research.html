@@ -1,0 +1,79 @@
+{{ define "main" }}
+{{/* All text, papers, talks and software are in content/research.md */}}
+
+<h1>{{ .Title }}</h1>
+
+<div class="research-intro">
+  <div class="research-photo">
+    <img src="{{ .Params.photo | relURL }}" alt="Debojjal Bagchi presenting at a conference">
+  </div>
+  <div class="content">
+    {{ .Params.intro | markdownify }}
+  </div>
+</div>
+
+
+<h2>Research areas</h2>
+
+<div class="content areas">
+  {{ .Content }}
+</div>
+
+
+<h2>Publications</h2>
+
+{{ $groups := slice
+  (dict "heading" "Journal articles" "items" .Params.journal)
+  (dict "heading" "Under review and preprints" "items" .Params.under_review)
+}}
+
+{{ range $groups }}
+  <h3>{{ .heading }}</h3>
+  <ul class="ref-list">
+    {{ range .items }}
+      <li>
+        {{ .authors | markdownify }} ({{ .year }}). {{ .title }}.
+        {{ with .venue }}<em>{{ . }}</em>.{{ end }}
+        {{ with .paper }}<a href="{{ . }}">[Paper]</a>{{ end }}
+        {{ with .code }}<a href="{{ . }}">[Code]</a>{{ end }}
+        {{ with .note }}<span class="muted">({{ . }})</span>{{ end }}
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}
+
+
+<h2>Presentations</h2>
+
+{{ $talks := slice
+  (dict "heading" "Peer-reviewed conference presentations" "items" .Params.conference)
+  (dict "heading" "Invited presentations" "items" .Params.invited)
+  (dict "heading" "Technical presentations" "items" .Params.technical)
+}}
+
+{{ range $talks }}
+  <h3>{{ .heading }}</h3>
+  <ul class="ref-list">
+    {{ range .items }}
+      <li>
+        {{ .authors | markdownify }} ({{ .year }}). {{ .title }}. <em>{{ .venue }}</em>.
+        {{ with .note }}<span class="muted">{{ . }}.</span>{{ end }}
+      </li>
+    {{ end }}
+  </ul>
+{{ end }}
+
+
+<h2>Open-source software</h2>
+
+<ul class="ref-list">
+  {{ range .Params.software }}
+    <li>
+      <strong>{{ .name }}</strong> <span class="muted">({{ .role }})</span><br>
+      {{ .text }}
+      {{ range .links }}<a href="{{ .url }}">[{{ .name }}]</a> {{ end }}
+    </li>
+  {{ end }}
+</ul>
+
+{{ end }}

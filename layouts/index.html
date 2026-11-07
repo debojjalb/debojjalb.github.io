@@ -1,0 +1,29 @@
+{{ define "main" }}
+{{/* All text and links come from content/_index.md */}}
+
+<div class="profile">
+  <div class="profile-photo">
+    <img src="{{ .Params.photo | relURL }}" alt="{{ site.Title }}">
+  </div>
+  <div>
+    <h1>{{ site.Title }}</h1>
+    <p class="title">{{ .Params.role }}</p>
+    <p>
+      {{ .Params.department }}<br>
+      {{ .Params.university }}<br>
+      {{ range .Params.address }}{{ . }}<br>{{ end }}
+    </p>
+    <p>Email: <a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a></p>
+    <div class="profile-links">
+      {{ range .Params.links }}
+        <a href="{{ .url | relURL }}">[{{ .name }}]</a>
+      {{ end }}
+    </div>
+  </div>
+</div>
+
+<div class="content">
+  {{ .Content }}
+</div>
+
+{{ end }}
