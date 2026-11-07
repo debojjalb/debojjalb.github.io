@@ -7,7 +7,7 @@ photo: /images/podium.jpeg
 intro: |
   My work centers around three interconnected domains: **traffic assignment and network modelling**, **port–hinterland systems**, and **freight and trucking logistics**. Within these areas, I use operations research techniques and data-driven methods to study and improve multimodal freight and logistics networks. The sections below highlight projects that best reflect my research interests and the balance I aim to strike between methodological contributions and real-world empirical applications.
 
-  Beyond publications, I am a (very) strong advocate of **open source research** and strive to release large-scale frameworks along with documentation for community use. This page also lists our publications, presentations, and open-source software, with links to code for replicating results where available. For an up-to-date list, you can [download my curriculum vitae](/uploads/resume.pdf) or contact me for data or code, which I would be happy to share.
+  Beyond publications, I am a strong advocate of **open source research** and strive to release large-scale frameworks along with documentation for community use. This page also lists our publications, presentations, and open-source software, with links to code for replicating results where available. For an up-to-date list, you can [download my curriculum vitae](/uploads/resume.pdf) or contact me for data or code, which I would be happy to share.
 
 # ------------------------------------------------------------------
 # Publications (markdown in authors: **...** makes your name bold)

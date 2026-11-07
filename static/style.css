@@ -317,6 +317,28 @@ figcaption {
 }
 
 /* ==========================================================
+   Tables (Teaching page)
+   ========================================================== */
+.content table {
+  border-collapse: collapse;
+  margin: 0.25rem 0 1rem;
+}
+
+.content th,
+.content td {
+  text-align: left;
+  vertical-align: top;
+  padding: 0.2rem 1.5rem 0.2rem 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.content th {
+  font-weight: 600;
+  color: #111827;
+  border-bottom: 1px solid #b4bac3;
+}
+
+/* ==========================================================
    Diary (travel) page
    ========================================================== */
 .travel h1 {
