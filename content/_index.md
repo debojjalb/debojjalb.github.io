@@ -31,7 +31,7 @@ I am also currently a member of the [Transportation Research Board's Standing Co
 
 ## Research interests
 
-My work centers on three interconnected domains: **trucking infrastructure**, **port–hinterland systems**, and **traffic assignment modeling**. Within these areas, I use operations research techniques and data-driven methods to study and improve multimodal freight and logistics networks.
+My work centers around three interconnected domains: **traffic assignment and network modelling**, **port–hinterland systems**, and **freight and trucking logistics**. Within these areas, I use operations research techniques and data-driven methods to study and improve multimodal freight and logistics networks.
 
 **Primary focus:** Maritime Logistics, Trucking Logistics, Traffic Assignment, Port Operations, Multimodal Freight Networks
 
