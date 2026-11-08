@@ -60,7 +60,7 @@ I am also a strong advocate of open source research and strive to release large-
 
 - **Sep 2026.** Our paper on a simulation framework for evaluating port expansion projects is now under review, and MAPS, the port simulation software behind it, is open source. [[Preprint]](https://doi.org/10.2139/ssrn.7447899) [[Try out MAPS]](https://github.com/spartalab/port-simulation)
 
-- **May 2026.** Two of our papers on logit-based stochastic user equilibrium are now under review: one derives error bounds for traffic assignment, and the other analyzes the spectrum of the logit mapping to build faster algorithms, released with Logit-SUE, our open-source solver. [[Assignment paper]](https://doi.org/10.48550/arXiv.2605.21843) [[Error bounds paper]](mailto:debojjalb@utexas.edu?subject=Request%20for%20SUE%20error%20bounds%20preprint)
+- **May 2026.** Two of our papers on logit-based stochastic user equilibrium are now under review. In the first, we derive error bounds on link flows, link costs, and total system travel time (TSTT) for any feasible solution. In the second, we analyze the spectrum of the logit mapping to build faster algorithms. We are also releasing Logit-SUE, a fast solver with several step-size and algorithm options. [[Assignment paper]](https://doi.org/10.48550/arXiv.2605.21843) [[Error bounds paper]](https://ssrn.com/abstract=7677338) [[Try out Logit-SUE]](https://github.com/spartalab/logit-SUE)
 
 - **Dec 2025.** I received the CUTC Milton Pikarsky Memorial Award for my master's thesis on error bounds for stochastic user equilibrium traffic assignment. The award recognizes the best master's thesis in science and technology in transportation studies across the U.S.
 

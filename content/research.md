@@ -36,6 +36,7 @@ under_review:
     year: 2026
     title: Error Bounds for Stochastic User Equilibrium Traffic Assignment
     venue: Under review at Transportation Science
+    paper: https://ssrn.com/abstract=7677338
     code: https://github.com/debojjalb/SUE_Bounds
   - authors: '**Bagchi, D.**†, Bathgate, K.†, Mitchell, K. N., Asborno, M. I., Kress, M. M., and Boyles, S. D.'
     year: 2026
@@ -187,7 +188,7 @@ software:
 
 Traffic assignment problems (TAPs) predict how travelers choose routes under the congestion that traffic itself creates. My research aims to make these problems more robust to errors in input data and faster to solve. This matters because TAPs are often solved thousands of times inside larger problems such as network design, origin-destination estimation, and model calibration.
 
-TAPs are nonlinear optimization problems, so they cannot be solved exactly in finite time; instead, iterative procedures move closer and closer to equilibrium. As it turns out, an extremely fundamental question in traffic assignment, when to stop these iterative procedures, was not understood theoretically. We often stop at a relative gap of 10<sup>−4</sup>, but that threshold comes from empirical studies, and such rule-of-thumb measures say nothing direct about the error in flows or travel times when a TAP is terminated early. For logit-based stochastic user equilibrium (SUE), we derived **bounds on how far any solution can be from equilibrium** in path flows, link flows, link costs, and total system travel time, using only quantities that each iteration already computes. In a network design application, these bounds let us **discard poor designs after a few iterations** instead of solving each one fully. This work began as a master's thesis that received the **CUTC Milton Pikarsky Memorial Award**. [[See the full preprint here]](mailto:debojjalb@utexas.edu?subject=Request%20for%20SUE%20error%20bounds%20preprint)
+TAPs are nonlinear optimization problems, so they cannot be solved exactly in finite time; instead, iterative procedures move closer and closer to equilibrium. As it turns out, an extremely fundamental question in traffic assignment, when to stop these iterative procedures, was not understood theoretically. We often stop at a relative gap of 10<sup>−4</sup>, but that threshold comes from empirical studies, and such rule-of-thumb measures say nothing direct about the error in flows or travel times when a TAP is terminated early. For logit-based stochastic user equilibrium (SUE), we derived **bounds on how far any solution can be from equilibrium** in path flows, link flows, link costs, and total system travel time, using only quantities that each iteration already computes. In a network design application, these bounds let us **discard poor designs after a few iterations** instead of solving each one fully. This work began as a master's thesis that received the **CUTC Milton Pikarsky Memorial Award**. [[See the full preprint here]](https://ssrn.com/abstract=7677338)
 
 <figure>
   <img src="/images/research/sue-error-bounds.png" alt="Plots of error bounds and true errors against iterations for link flow, link cost, and total system travel time">
