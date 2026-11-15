@@ -11,16 +11,12 @@ photo: /images/profile.jpg
 
 # Links under your name (in this order)
 links:
-  - name: CV
-    url: /uploads/resume.pdf
   - name: Google Scholar
     url: https://scholar.google.com/citations?user=vzSxiw4AAAAJ&hl=en
   - name: GitHub
     url: https://github.com/debojjalb
   - name: LinkedIn
     url: https://www.linkedin.com/in/debojjal-bagchi
-  - name: ORCID
-    url: https://orcid.org/0009-0008-9088-049X
   - name: X
     url: https://twitter.com/debojjalbagchi
 ---
