@@ -25,6 +25,19 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Arrow links ("... →"): a soft, always-visible underline that darkens on hover */
+a.arrow-link {
+  text-decoration: underline;
+  text-decoration-color: rgba(22, 101, 52, 0.3);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+a.arrow-link:hover {
+  text-decoration-color: #166534;
+}
+
 h1 {
   font-size: 1.6rem;
   font-weight: 700;
@@ -262,6 +275,12 @@ figure img {
   max-width: min(100%, 500px);
   max-height: 250px;
   margin: 0 auto;
+}
+
+/* Figures that need more room: 1.2x the standard size */
+figure.figure-large img {
+  max-width: min(100%, 600px);
+  max-height: 300px;
 }
 
 figcaption {

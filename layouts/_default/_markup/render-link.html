@@ -1,0 +1,3 @@
+{{- /* Links whose text ends with an arrow get the soft underline style (.arrow-link in style.css) */ -}}
+<a href="{{ .Destination | safeURL }}"{{ with .Title }} title="{{ . }}"{{ end }}{{ if strings.HasSuffix .PlainText "→" }} class="arrow-link"{{ end }}>{{ .Text | safeHTML }}</a>
+{{- /* keep no trailing newline */ -}}

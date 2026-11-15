@@ -14,7 +14,7 @@
       {{ range .Params.address }}{{ . }}<br>{{ end }}
     </p>
     <p>Email: <a href="mailto:{{ .Params.email }}">{{ .Params.email }}</a></p>
-    <p><a href="/uploads/resume.pdf" download="Debojjal_Bagchi_CV.pdf">Download my CV →</a></p>
+    <p><a class="arrow-link" href="/uploads/resume.pdf" target="_blank" rel="noopener">Curriculum Vitae →</a></p>
     <div class="profile-links">
       {{ range .Params.links }}
         <a href="{{ .url | relURL }}">[{{ .name }}]</a>
