@@ -1,0 +1,8 @@
+{{- /* Photo carousel inside page text: {{< photo-carousel folder="Kalyani" >}}
+       Shows every photo in static/images/travel/<folder>/, and nothing if the folder is empty or missing. */ -}}
+{{ $folder := .Get "folder" }}
+{{ if fileExists (printf "static/images/travel/%s" $folder) }}
+<div class="story-carousel">
+  {{ partial "carousel.html" $folder }}
+</div>
+{{ end }}

@@ -1,0 +1,28 @@
+{{- /* Instagram card used on the About me page: {{< instagram-card >}}
+       Thumbnails are the first 5 images in static/images/instagram/ (sorted by file name). */ -}}
+{{ $thumbs := slice }}
+{{ if fileExists "static/images/instagram" }}
+  {{ range readDir "static/images/instagram" }}
+    {{ if and (not .IsDir) (ne .Name ".DS_Store") }}
+      {{ $thumbs = $thumbs | append .Name }}
+    {{ end }}
+  {{ end }}
+{{ end }}
+<a class="ig-card" href="https://www.instagram.com/deb.roaming/" target="_blank" rel="noopener">
+  <span class="ig-card-head">
+    <span class="ig-card-icon" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+    </span>
+    <span class="ig-card-text">
+      <span class="ig-card-handle">deb.roaming</span>
+    </span>
+    <span class="ig-card-cta">View profile →</span>
+  </span>
+  {{ with first 5 $thumbs }}
+  <span class="ig-card-grid">
+    {{ range . }}
+      <img src="{{ printf "/images/instagram/%s" . }}" alt="" loading="lazy">
+    {{ end }}
+  </span>
+  {{ end }}
+</a>

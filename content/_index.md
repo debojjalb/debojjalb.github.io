@@ -68,4 +68,4 @@ I am also a strong advocate of open source research and strive to release large-
 
 - **Apr 2025.** Our paper on localized queue spillback with uncertain demand was accepted at DTA 2025 in Salerno, Italy. [[Symposium]](https://www.motusanimi.it/dta-abstracts/)
 
-[For more details and pictures, see my diary →](/travel/)
+[For more details and pictures, see my diary →](/about/#notes-from-the-road)

@@ -1,0 +1,40 @@
+{{- /* Lichess card used on the About me page: {{< lichess-card >}}
+       Ratings are loaded live from the public Lichess API when the page opens.
+       If that fails, the card still links to the profile. */ -}}
+<a class="social-card lichess-card" href="https://lichess.org/?user=debojjalb#friend" target="_blank" rel="noopener">
+  <span class="social-card-icon lichess-icon" aria-hidden="true">♞</span>
+  <span class="social-card-body">
+    <span class="social-card-title">debojjalb <span class="lichess-status" id="lichess-status"></span></span>
+    <span class="social-card-sub" id="lichess-sub">lichess.org</span>
+    <span class="lichess-ratings-label" id="lichess-ratings-label" hidden>Current ratings</span>
+    <span class="lichess-ratings" id="lichess-ratings"></span>
+  </span>
+  <span class="social-card-cta">Send a challenge →</span>
+</a>
+<script>
+  (function () {
+    var perfs = [['bullet', 'Bullet'], ['blitz', 'Blitz'], ['rapid', 'Rapid'], ['classical', 'Classical'], ['puzzle', 'Puzzles']];
+    fetch('https://lichess.org/api/user/debojjalb', { headers: { Accept: 'application/json' } })
+      .then(function (r) { if (!r.ok) throw new Error(r.status); return r.json(); })
+      .then(function (u) {
+        var box = document.getElementById('lichess-ratings');
+        perfs.forEach(function (p) {
+          var d = u.perfs && u.perfs[p[0]];
+          if (!d || !d.games) return;
+          var tile = document.createElement('span');
+          tile.className = 'lichess-tile';
+          tile.innerHTML = '<span class="lichess-rating"></span><span class="lichess-label"></span>';
+          tile.firstChild.textContent = d.rating;
+          tile.lastChild.textContent = p[1];
+          box.appendChild(tile);
+          document.getElementById('lichess-ratings-label').hidden = false;
+        });
+        var parts = [];
+        if (u.count && u.count.all) parts.push(u.count.all.toLocaleString() + ' games played');
+        if (u.createdAt) parts.push('member since ' + new Date(u.createdAt).getFullYear());
+        if (parts.length) document.getElementById('lichess-sub').textContent = parts.join(', ');
+        if (u.online) document.getElementById('lichess-status').textContent = 'online now';
+      })
+      .catch(function () { /* keep the plain profile link */ });
+  })();
+</script>

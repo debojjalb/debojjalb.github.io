@@ -1,0 +1,77 @@
+{{ define "main" }}
+{{/* The story and the diary entries are in content/about.md.
+     Diary photos are read from static/images/travel/<folder>/ */}}
+
+<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+<script defer src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+<div class="about">
+
+  <h1>{{ .Title }}</h1>
+
+  <div class="content about-story">
+    {{ .Content }}
+  </div>
+
+  {{ range .Params.entries }}
+    <section class="travel-entry">
+      <h2>{{ .name }}</h2>
+      <p>{{ .text }}</p>
+      {{ partial "carousel.html" .folder }}
+    </section>
+  {{ end }}
+
+</div>
+
+<div id="lightbox-overlay">
+  <button type="button" class="lightbox-nav lightbox-prev" aria-label="Previous photo">&#8249;</button>
+  <img id="lightbox-img" src="" alt="">
+  <button type="button" class="lightbox-nav lightbox-next" aria-label="Next photo">&#8250;</button>
+</div>
+
+<script>
+  /* Lightbox: click a photo to enlarge it; < and > (or the arrow keys) step
+     through the photos of the same entry; click outside or press Esc to close. */
+  (function () {
+    var overlay = document.getElementById('lightbox-overlay');
+    var img = document.getElementById('lightbox-img');
+    var photos = [];
+    var index = 0;
+
+    function show(i) {
+      index = (i + photos.length) % photos.length;
+      img.src = photos[index];
+    }
+
+    function open(target) {
+      var group = target.closest('.swiper-container') || document;
+      var seen = {};
+      photos = [];
+      // Looping carousels duplicate slides, so keep each photo once
+      group.querySelectorAll('.gallery-img').forEach(function (el) {
+        if (!seen[el.src]) { seen[el.src] = true; photos.push(el.src); }
+      });
+      overlay.classList.toggle('single', photos.length < 2);
+      show(photos.indexOf(target.src));
+      overlay.style.display = 'flex';
+    }
+
+    function close() { overlay.style.display = 'none'; }
+
+    document.addEventListener('click', function (e) {
+      if (e.target.classList.contains('gallery-img')) open(e.target);
+      else if (e.target.classList.contains('lightbox-prev')) show(index - 1);
+      else if (e.target.classList.contains('lightbox-next')) show(index + 1);
+      else if (e.target === overlay) close();
+    });
+
+    document.addEventListener('keydown', function (e) {
+      if (overlay.style.display !== 'flex') return;
+      if (e.key === 'ArrowLeft') show(index - 1);
+      else if (e.key === 'ArrowRight') show(index + 1);
+      else if (e.key === 'Escape') close();
+    });
+  })();
+</script>
+
+{{ end }}

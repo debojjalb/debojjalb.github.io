@@ -1,0 +1,47 @@
+{{- /* Photo carousel for one folder under static/images/travel/.
+       Usage: {{ partial "carousel.html" "FolderName" }} */ -}}
+{{ $folder := . }}
+{{ $images := slice }}
+{{ range readDir (printf "static/images/travel/%s" $folder) }}
+  {{ if and (not .IsDir) (ne .Name ".DS_Store") }}
+    {{ $images = $images | append .Name }}
+  {{ end }}
+{{ end }}
+{{ $count := len $images }}
+{{ if gt $count 0 }}
+<div class="swiper-container swiper-{{ $folder }}">
+  <div class="swiper-wrapper">
+    {{ range $images }}
+      <div class="swiper-slide">
+        <img src="{{ printf "/images/travel/%s/%s" $folder . }}" alt="{{ . }}" loading="lazy" class="gallery-img">
+      </div>
+    {{ end }}
+  </div>
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+  <div class="swiper-pagination"></div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Swiper('.swiper-{{ $folder }}', {
+      // Same slide width for every entry, so every photo has the same size
+      slidesPerView: 2,
+      breakpoints: {
+        768: { slidesPerView: 4 },
+      },
+      spaceBetween: 10,
+      centerInsufficientSlides: true, // fewer photos than fit: keep them centred
+      loop: {{ if gt $count 4 }}true{{ else }}false{{ end }},
+      navigation: {
+        nextEl: '.swiper-{{ $folder }} .swiper-button-next',
+        prevEl: '.swiper-{{ $folder }} .swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-{{ $folder }} .swiper-pagination',
+        clickable: true,
+      },
+    });
+  });
+</script>
+{{ end }}

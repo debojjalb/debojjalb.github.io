@@ -22,8 +22,8 @@ menus:
     - name: Teaching
       url: /teaching/
       weight: 3
-    - name: Diary
-      url: /travel/
+    - name: About me
+      url: /about/
       weight: 4
     - name: CV
       url: /uploads/resume.pdf
