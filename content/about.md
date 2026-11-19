@@ -73,7 +73,7 @@ I photograph most of these trips on an iPhone. I find that a phone camera, with 
 
 I play chess regularly, mostly 10-minute rapid games online on Lichess. I particularly like the King's Gambit, and I also play the London System (when I want to stabilize my rating!).
 
-I also absolutely love the banter around the Bongcloud, and I have seen plenty of creative ideas for tricking opponents out of it. As you might expect, winning with the Bongcloud can have a deep psychological impact on your opponent. Magnus Carlsen once opened against Wesley with a variant of the Bongcloud in a 2020 blitz game, and Wesley later called his [defeat a humbling experience](https://www.chess.com/blog/ThummimS/barnes-opening).
+I also absolutely love the banter around the Bongcloud, and I have seen plenty of creative ideas for tricking opponents out of it. As you might expect, winning with the Bongcloud can have a deep psychological impact on your opponent. Magnus once opened against Wesley with a variant of the Bongcloud in a 2020 blitz game, and Wesley later called his [defeat a humbling experience](https://www.chess.com/blog/ThummimS/barnes-opening).
 
 I am always happy to play a game with friends and colleagues, so feel free to send me a challenge.
 
